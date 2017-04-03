@@ -1,0 +1,42 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("hl-todo" customgroup (:user-visible-flag t) nil [1791 1910])
+            ("hl-todo" variable
+               (:default-value (quote ((t (:bold t :foreground "#cc9393"))))
+                :type "face")
+                nil [1912 2245])
+            ("hl-todo-activate-in-modes" variable (:default-value (quote (emacs-lisp-mode))) nil [2247 2448])
+            ("hl-todo-regexp" variable nil nil [2450 2477])
+            ("hl-todo-keyword-faces" variable nil nil [2479 2509])
+            ("hl-todo-set-regexp" function nil nil [2511 2737])
+            ("hl-todo-keyword-faces" variable (:default-value (quote (("HOLD" . "#d0bf8f") ("TODO" . "#cc9393") ("NEXT" . "#dca3a3") ("THEM" . "#dc8cc3") ("PROG" . "#7cb8bb") ("OKAY" . "#7cb8bb") ("DONT" . "#5f7f5f") ("FAIL" . "#8c5353") ("DONE" . "#afd8af") ("NOTE" . "#d0bf8f") ("KLUDGE" . "#d0bf8f") ("HACK" . "#d0bf8f") ("FIXME" . "#cc9393") ("XXX" . "#cc9393") ("XXXX" . "#cc9393") ("???" . "#cc9393")))) nil [2739 3553])
+            ("hl-todo-keywords" variable (:default-value (\` (((lambda (limit) (let (case-fold-search) (and (re-search-forward hl-todo-regexp limit t) (nth 8 (syntax-ppss))))) (1 (hl-todo-get-face) t t))))) nil [3555 3789])
+            ("hl-todo-get-face" function nil nil [3791 3973])
+            ("hl-todo-mode-map" variable (:default-value (make-sparse-keymap)) nil [3975 4052])
+            ("define-minor-mode" code nil nil [4069 4663])
+            ("define-globalized-minor-mode" code nil nil [4680 4777])
+            ("turn-on-hl-todo-mode-if-desired" function nil nil [4779 4902])
+            ("hl-todo-next" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [4919 5522])
+            ("hl-todo-previous" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [5539 6247])
+            ("hl-todo-occur" function (:user-visible-flag t) nil [6264 6509])
+            ("hl-todo" package nil nil [6511 6529]))          
+      :file "hl-todo.el"
+      :pointmax 6608
+      :fsize 6607
+      :lastmodtime '(22659 32507 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!hl-todo-20161102.1337!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

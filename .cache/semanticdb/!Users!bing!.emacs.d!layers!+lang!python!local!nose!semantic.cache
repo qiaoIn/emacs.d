@@ -1,0 +1,49 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [1794 1807])
+            ("nose-project-root-files" variable (:default-value (quote (".projectile" "setup.cfg" ".hg" ".git"))) nil [1825 2001])
+            ("nose-project-root-test" variable (:default-value (quote nose-project-root)) nil [2002 2052])
+            ("nose-use-verbose" variable (:default-value t) nil [2053 2080])
+            ("run-nose" function (:arguments ("tests" "suite" "debug" "failed")) nil [2082 3364])
+            ("nosetests-nose-command" function nil nil [3366 3571])
+            ("nosetests-all" function
+               (:user-visible-flag t
+                :arguments ("debug" "failed"))
+                nil [3573 3687])
+            ("nosetests-failed" function (:arguments ("debug")) nil [3689 3773])
+            ("nosetests-pdb-all" function nil nil [3775 3839])
+            ("nosetests-module" function
+               (:user-visible-flag t
+                :arguments ("debug"))
+                nil [3841 3995])
+            ("nosetests-pdb-module" function nil nil [3997 4067])
+            ("nosetests-suite" function
+               (:user-visible-flag t
+                :arguments ("debug"))
+                nil [4069 4226])
+            ("nosetests-pdb-suite" function nil nil [4228 4296])
+            ("nosetests-one" function
+               (:user-visible-flag t
+                :arguments ("debug"))
+                nil [4298 4513])
+            ("nosetests-pdb-one" function nil nil [4515 4579])
+            ("nose-py-testable" function nil nil [4581 4943])
+            ("inner-testable" function nil nil [4945 5152])
+            ("outer-testable" function nil nil [5154 5482])
+            ("nose-find-project-root" function (:arguments ("dirname")) nil [5484 5860])
+            ("nose-project-root" function (:arguments ("dirname")) nil [5862 6044])
+            ("nose" package nil nil [6046 6061]))          
+      :file "nose.el"
+      :pointmax 6085
+      :fsize 6084
+      :lastmodtime '(22659 32197 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!layers!+lang!python!local!nose!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

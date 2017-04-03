@@ -1,0 +1,313 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [284 301])
+            ("eieio" include nil nil [302 318])
+            ("subr-x" include nil nil [319 336])
+            ("package" include nil nil [337 355])
+            ("warnings" include nil nil [356 375])
+            ("help-mode" include nil nil [376 396])
+            ("ht" include nil nil [397 410])
+            ("core-dotspacemacs" include nil nil [411 439])
+            ("core-funcs" include nil nil [440 461])
+            ("core-spacemacs-buffer" include nil nil [462 494])
+            ("configuration-layer--refresh-package-timeout" variable (:default-value dotspacemacs-elpa-timeout) nil [496 631])
+            ("configuration-layer-template-directory" variable
+               (:constant-flag t
+                :default-value (expand-file-name (concat spacemacs-core-directory "templates/")))
+                nil [633 795])
+            ("configuration-layer-directory" variable
+               (:constant-flag t
+                :default-value (expand-file-name (concat spacemacs-start-directory "layers/")))
+                nil [797 953])
+            ("configuration-layer-private-directory" variable
+               (:constant-flag t
+                :default-value (expand-file-name (concat spacemacs-start-directory "private/")))
+                nil [955 1115])
+            ("configuration-layer-private-layer-directory" variable
+               (:constant-flag t
+                :default-value (let ((dotspacemacs-layer-dir (when dotspacemacs-directory (expand-file-name (concat dotspacemacs-directory "layers/"))))) (if (and dotspacemacs-directory (file-exists-p dotspacemacs-layer-dir)) dotspacemacs-layer-dir configuration-layer-private-directory)))
+                nil [1117 1546])
+            ("configuration-layer/elpa-directory" function (:arguments ("root")) nil [1548 2248])
+            ("configuration-layer-rollback-directory" variable (:default-value (concat spacemacs-cache-directory ".rollback/")) nil [2250 2381])
+            ("configuration-layer-rollback-info" variable
+               (:constant-flag t
+                :default-value "rollback-info")
+                nil [2383 2484])
+            ("cfgl-layer" type
+               (:members 
+                  ( ("name" variable
+                       (:documentation "Name of the layer."
+                        :type "symbol")
+                        nil nil)
+                    ("dir" variable
+                       (:documentation "Absolute path to the layer directory."
+                        :default-value "nil"
+                        :type "(satisfies (lambda (x) (or (null x) (stringp x))))")
+                        nil nil)
+                    ("packages" variable
+                       (:documentation "List of package symbols declared in this layer."
+                        :default-value "nil"
+                        :type "list")
+                        nil nil)
+                    ("selected-packages" variable
+                       (:documentation "List of selected package symbols."
+                        :default-value "(quote all)"
+                        :type "(satisfies (lambda (x) (or (and (symbolp x) (eq (quote all) x)) (listp x))))")
+                        nil nil)
+                    ("variables" variable
+                       (:documentation "A list of variable-value pairs."
+                        :default-value "nil"
+                        :type "list")
+                        nil nil)
+                    ("lazy-install" variable
+                       (:documentation "If non-nil then the layer needs to be installed"
+                        :default-value "nil"
+                        :type "boolean")
+                        nil nil)
+                    ("disabled" variable
+                       (:documentation "A list of layers where this layer is disabled."
+                        :default-value "nil"
+                        :type "list")
+                        nil nil)
+                    ("enabled" variable
+                       (:documentation "(concat \"A list of layers where this layer is enabled. \" \"(Takes precedence over `:disabled-for'.)\")"
+                        :default-value "(quote unspecified)"
+                        :type "(satisfies (lambda (x) (or (listp x) (eq (quote unspecified) x))))")
+                        nil nil))                  
+                :type "class")
+                nil [2486 4072])
+            ("cfgl-layer-owned-packages" function
+               (:parent "cfgl-layer"
+                :arguments ("layer"))
+                nil [4074 4531])
+            ("cfgl-layer-owned-packages" function
+               (:parent "nil"
+                :arguments ("layer"))
+                nil [4533 4633])
+            ("cfgl-layer-get-packages" function
+               (:parent "cfgl-layer"
+                :arguments ("layer"))
+                nil [4635 5039])
+            ("cfgl-package" type
+               (:members 
+                  ( ("name" variable
+                       (:documentation "Name of the package."
+                        :type "symbol")
+                        nil nil)
+                    ("min-version" variable
+                       (:documentation "Minimum version to install as a version list."
+                        :default-value "nil"
+                        :type "list")
+                        nil nil)
+                    ("owners" variable
+                       (:documentation "The layer defining the init function."
+                        :default-value "nil"
+                        :type "list")
+                        nil nil)
+                    ("pre-layers" variable
+                       (:documentation "List of layers with a pre-init function."
+                        :default-value "(quote nil)"
+                        :type "list")
+                        nil nil)
+                    ("post-layers" variable
+                       (:documentation "List of layers with a post-init function."
+                        :default-value "(quote nil)"
+                        :type "list")
+                        nil nil)
+                    ("location" variable
+                       (:documentation "Location of the package."
+                        :default-value "elpa"
+                        :type "(satisfies (lambda (x) (or (stringp x) (memq x (quote (built-in local site elpa))) (and (listp x) (eq (quote recipe) (car x))))))")
+                        nil nil)
+                    ("toggle" variable
+                       (:documentation "Package is enabled/installed if toggle evaluates to non-nil."
+                        :default-value "t"
+                        :type "(satisfies (lambda (x) (or (symbolp x) (listp x))))")
+                        nil nil)
+                    ("step" variable
+                       (:documentation "Initialization step."
+                        :default-value "nil"
+                        :type "(satisfies (lambda (x) (member x (quote (nil bootstrap pre)))))")
+                        nil nil)
+                    ("lazy-install" variable
+                       (:documentation "If non-nil then the package needs to be installed"
+                        :default-value "nil"
+                        :type "boolean")
+                        nil nil)
+                    ("protected" variable
+                       (:documentation "If non-nil then this package cannot be excluded."
+                        :default-value "nil"
+                        :type "boolean")
+                        nil nil)
+                    ("excluded" variable
+                       (:documentation "If non-nil this package is excluded from all layers."
+                        :default-value "nil"
+                        :type "boolean")
+                        nil nil))                  
+                :type "class")
+                nil [5041 7127])
+            ("cfgl-package-enabledp" function
+               (:parent "cfgl-package"
+                :arguments ("pkg" "inhibit-messages"))
+                nil [7129 7380])
+            ("cfgl-package-get-safe-owner" function
+               (:parent "cfgl-package"
+                :arguments ("pkg"))
+                nil [7382 7935])
+            ("cfgl-package-set-property" function
+               (:parent "cfgl-package"
+                :arguments ("pkg" "slot" "value"))
+                nil [7937 8265])
+            ("configuration-layer--elpa-archives" variable (:default-value (quote (("melpa" . "melpa.org/packages/") ("org" . "orgmode.org/elpa/") ("gnu" . "elpa.gnu.org/packages/")))) nil [8267 8475])
+            ("configuration-layer-exclude-all-layers" variable nil nil [8477 8587])
+            ("configuration-layer-force-distribution" variable nil nil [8589 8706])
+            ("configuration-layer--package-archives-refreshed" variable nil nil [8708 8829])
+            ("configuration-layer--load-packages-files" variable nil nil [8831 8962])
+            ("configuration-layer--used-layers" variable (:default-value (quote nil)) nil [8964 9052])
+            ("configuration-layer--indexed-layers" variable (:default-value (make-hash-table :size 1024)) nil [9054 9186])
+            ("configuration-layer--used-packages" variable (:default-value (quote nil)) nil [9188 9292])
+            ("configuration-layer--indexed-packages" variable (:default-value (make-hash-table :size 2048)) nil [9294 9430])
+            ("configuration-layer--used-distant-packages" variable (:default-value (quote nil)) nil [9432 9549])
+            ("configuration-layer--check-new-version-error-packages" variable nil nil [9551 9690])
+            ("configuration-layer--protected-packages" variable nil nil [9692 9815])
+            ("configuration-layer--lazy-mode-alist" variable nil nil [9817 9935])
+            ("configuration-layer--inhibit-warnings" variable nil nil [9937 10064])
+            ("configuration-layer--package-properties-read-onlyp" variable nil nil [10066 10245])
+            ("configuration-layer--declared-layers-usedp" variable nil nil [10247 10365])
+            ("configuration-layer-error-count" variable nil nil [10367 10506])
+            ("configuration-layer-categories" variable (:default-value (quote nil)) nil [10508 10661])
+            ("update-packages-alist" variable (:default-value (quote nil)) nil [10663 10774])
+            ("configuration-layer/initialize" function nil nil [10776 11470])
+            ("configuration-layer//install-quelpa" function nil nil [11472 11955])
+            ("configuration-layer//resolve-package-archives" function (:arguments ("archives")) nil [11957 12971])
+            ("configuration-layer/retrieve-package-archives" function (:arguments ("quiet" "force")) nil [12973 15143])
+            ("configuration-layer/sync" function (:arguments ("no-install")) nil [15145 18402])
+            ("configuration-layer/load-auto-layer-file" function nil nil [18404 18674])
+            ("configuration-layer/create-layer" function (:user-visible-flag t) nil [18676 20969])
+            ("configuration-layer//select-packages" function (:arguments ("layer-specs" "packages")) nil [20971 21994])
+            ("configuration-layer/make-layer" function (:arguments ("layer-specs" "obj" "usedp" "dir")) nil [21996 24231])
+            ("configuration-layer/make-package" function (:arguments ("pkg" "layer-name" "obj")) nil [24233 28948])
+            ("define-button-type" code nil nil [28950 29549])
+            ("configuration-layer/describe-package" function
+               (:user-visible-flag t
+                :arguments ("pkg-symbol" "layer-list" "pkg-list"))
+                nil [29551 37260])
+            ("configuration-layer//warning" function (:arguments ("msg" "args")) nil [37262 37557])
+            ("configuration-layer//add-layer" function (:arguments ("layer" "usedp")) nil [37559 37896])
+            ("configuration-layer/remove-layers" function (:arguments ("layer-names")) nil [37898 38061])
+            ("configuration-layer/remove-layer" function (:arguments ("layer-name")) nil [38063 38264])
+            ("configuration-layer/get-layer" function (:arguments ("layer-name")) nil [38266 38536])
+            ("configuration-layer/get-layers-list" function nil nil [38538 38683])
+            ("configuration-layer/get-layer-local-dir" function (:arguments ("layer")) nil [38685 38906])
+            ("configuration-layer/get-layer-path" function (:arguments ("layer")) nil [38908 39094])
+            ("configuration-layer//add-package" function (:arguments ("pkg" "usedp")) nil [39096 39427])
+            ("configuration-layer/get-packages-list" function nil nil [39429 39569])
+            ("configuration-layer/get-package" function (:arguments ("pkg-name")) nil [39571 39843])
+            ("configuration-layer//sort-packages" function (:arguments ("packages")) nil [39845 40019])
+            ("configuration-layer/make-all-packages" function (:arguments ("usedp")) nil [40021 40285])
+            ("configuration-layer/make-packages-from-layers" function (:arguments ("layer-names" "usedp")) nil [40287 41072])
+            ("configuration-layer/make-packages-from-dotfile" function (:arguments ("usedp")) nil [41074 41953])
+            ("configuration-layer/lazy-install" function (:arguments ("layer-name" "props")) nil [41955 43710])
+            ("configuration-layer//auto-mode" function (:arguments ("layer-name" "mode")) nil [43712 44093])
+            ("configuration-layer/filter-objects" function (:arguments ("objects" "ffunc")) nil [44095 44376])
+            ("configuration-layer//get-distant-packages" function (:arguments ("packages" "usedp")) nil [44378 45032])
+            ("configuration-layer//get-private-layer-dir" function (:arguments ("name")) nil [45034 45255])
+            ("configuration-layer//copy-template" function (:arguments ("name" "template" "layer-dir")) nil [45257 46535])
+            ("configuration-layer//directory-type" function (:arguments ("path")) nil [46537 47367])
+            ("configuration-layer//get-category-from-path" function (:arguments ("dirpath")) nil [47369 47873])
+            ("configuration-layer/discover-layers" function nil nil [47875 50902])
+            ("configuration-layer/declare-layers" function (:arguments ("layers-specs")) nil [50904 51056])
+            ("configuration-layer/declare-layer" function (:arguments ("layer-specs")) nil [51058 52056])
+            ("configuration-layer//declare-used-layers" function (:arguments ("layers-specs")) nil [52058 53415])
+            ("configuration-layer//set-layers-variables" function (:arguments ("layers")) nil [53417 53592])
+            ("configuration-layer//set-layer-variables" function (:arguments ("layer")) nil [53594 54439])
+            ("configuration-layer/layer-usedp" function (:arguments ("layer-name")) nil [54441 54680])
+            ("configuration-layer/package-usedp" function (:arguments ("name")) nil [54682 54927])
+            ("configuration-layer/package-lazy-installp" function (:arguments ("name")) nil [54929 55157])
+            ("configuration-layer//configure-layers" function (:arguments ("layer-names")) nil [55159 55408])
+            ("configuration-layer//declare-used-packages" function (:arguments ("layers")) nil [55410 55861])
+            ("configuration-layer//load-layers-files" function (:arguments ("layer-names" "files")) nil [55863 56087])
+            ("configuration-layer//load-layer-files" function (:arguments ("layer-name" "files")) nil [56089 56430])
+            ("configuration-layer/configured-packages-stats" function (:arguments ("packages")) nil [56432 57758])
+            ("configuration-layer//install-package" function (:arguments ("pkg")) nil [57760 59159])
+            ("configuration-layer//lazy-install-p" function (:arguments ("layer-name")) nil [59161 59477])
+            ("configuration-layer//lazy-install-packages" function (:arguments ("layer-name" "mode")) nil [59479 61022])
+            ("configuration-layer//install-packages" function
+               (:user-visible-flag t
+                :arguments ("packages"))
+                nil [61024 62215])
+            ("configuration-layer//install-from-elpa" function (:arguments ("pkg-name")) nil [62217 62978])
+            ("configuration-layer//install-from-recipe" function (:arguments ("pkg")) nil [62980 63431])
+            ("configuration-layer//filter-packages-with-deps" function (:arguments ("pkg-names" "filter" "use-archive")) nil [63433 64318])
+            ("configuration-layer//get-uninstalled-packages" function (:arguments ("pkg-names")) nil [64320 64710])
+            ("configuration-layer//package-has-recipe-p" function (:arguments ("pkg-name")) nil [64712 65066])
+            ("configuration-layer//get-package-recipe" function (:arguments ("pkg-name")) nil [65068 65403])
+            ("configuration-layer//new-version-available-p" function (:arguments ("pkg-name")) nil [65405 66304])
+            ("configuration-layer//get-packages-to-update" function (:arguments ("pkg-names")) nil [66306 66543])
+            ("configuration-layer//configure-packages" function (:arguments ("packages")) nil [66545 67664])
+            ("configuration-layer//configure-packages-2" function (:arguments ("packages")) nil [67666 69834])
+            ("configuration-layer//package-enabled-p" function (:arguments ("pkg" "layer")) nil [69836 70258])
+            ("configuration-layer//configure-package" function (:arguments ("pkg")) nil [70260 72276])
+            ("configuration-layer//cleanup-rollback-directory" function nil nil [72278 73069])
+            ("configuration-layer/update-packages" function
+               (:user-visible-flag t
+                :arguments ("always-update"))
+                nil [73071 77416])
+            ("configuration-layer//ido-candidate-rollback-slot" function nil nil [77418 78175])
+            ("configuration-layer/rollback" function
+               (:user-visible-flag t
+                :arguments ("slot"))
+                nil [78177 81226])
+            ("configuration-layer//activate-package" function (:arguments ("pkg")) nil [81228 81369])
+            ("configuration-layer//get-packages-dependencies" function nil nil [81371 81954])
+            ("configuration-layer//get-implicit-packages" function (:arguments ("packages")) nil [81956 82273])
+            ("configuration-layer//get-orphan-packages" function (:arguments ("dist-pkgs" "implicit-pkgs" "dependencies")) nil [82275 82595])
+            ("configuration-layer//is-package-orphan" function (:arguments ("pkg-name" "dist-pkgs" "dependencies")) nil [82597 83269])
+            ("configuration-layer//get-package-directory" function (:arguments ("pkg-name")) nil [83271 83484])
+            ("configuration-layer//get-package-deps-from-alist" function (:arguments ("pkg-name")) nil [83486 83726])
+            ("configuration-layer//get-package-deps-from-archive" function (:arguments ("pkg-name")) nil [83728 84276])
+            ("configuration-layer//get-package-version-string" function (:arguments ("pkg-name")) nil [84278 84545])
+            ("configuration-layer//get-package-version" function (:arguments ("pkg-name")) nil [84547 84861])
+            ("configuration-layer//get-latest-package-version-string" function (:arguments ("pkg-name")) nil [84863 85148])
+            ("configuration-layer//get-latest-package-version" function (:arguments ("pkg-name")) nil [85150 85461])
+            ("configuration-layer//package-delete" function (:arguments ("pkg-name")) nil [85463 85852])
+            ("configuration-layer/delete-orphan-packages" function
+               (:user-visible-flag t
+                :arguments ("packages"))
+                nil [85854 87204])
+            ("configuration-layer//gather-auto-mode-extensions" function (:arguments ("mode")) nil [87206 87753])
+            ("configuration-layer//lazy-install-extensions-for-layer" function (:arguments ("layer-name")) nil [87755 88322])
+            ("configuration-layer//insert-lazy-install-form" function (:arguments ("layer-name" "mode" "ext")) nil [88324 88788])
+            ("configuration-layer/insert-lazy-install-configuration" function (:user-visible-flag t) nil [88790 89490])
+            ("configuration-layer--spacemacs-startup-time" variable nil nil [89492 89585])
+            ("configuration-layer/display-summary" function (:arguments ("start-time")) nil [89587 90532])
+            ("configuration-layer/load-or-install-protected-package" function (:arguments ("pkg" "log" "file-to-load")) nil [90534 90899])
+            ("configuration-layer/load-or-install-package" function (:arguments ("pkg" "log" "file-to-load")) nil [90901 92152])
+            ("configuration-layer//increment-error-count" function nil nil [92154 92418])
+            ("core-configuration-layer" package nil nil [92420 92455]))          
+      :file "core-configuration-layer.el"
+      :pointmax 92499
+      :fsize 92498
+      :lastmodtime '(22659 32197 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "core-dotspacemacs.el"
+      :fsize 31966
+      :lastmodtime '(22659 32197 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "core-funcs.el"
+      :fsize 15080
+      :lastmodtime '(22659 32197 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "core-spacemacs-buffer.el"
+      :fsize 43468
+      :lastmodtime '(22659 32197 0 0)))
+  :file "!Users!bing!.emacs.d!core!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,50 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("org-present-mode-keymap" variable (:default-value (make-keymap)) nil [2122 2195])
+            ("define-key" code nil nil [2225 2295])
+            ("define-key" code nil nil [2296 2366])
+            ("define-key" code nil nil [2367 2436])
+            ("define-key" code nil nil [2437 2508])
+            ("define-key" code nil nil [2509 2579])
+            ("define-key" code nil nil [2580 2655])
+            ("define-key" code nil nil [2656 2732])
+            ("define-key" code nil nil [2733 2808])
+            ("define-key" code nil nil [2809 2878])
+            ("org-present-text-scale" variable (:default-value 5) nil [2914 2947])
+            ("org-present-cursor-cache" variable (:default-value (or cursor-type nil)) nil [2948 3069])
+            ("org-present-overlays-list" variable nil nil [3070 3108])
+            ("define-minor-mode" code nil nil [3110 3268])
+            ("make-variable-buffer-local" code nil nil [3270 3316])
+            ("org-present-top" function nil nil [3318 3588])
+            ("org-present-next" function (:user-visible-flag t) nil [3590 4014])
+            ("org-present-prev" function (:user-visible-flag t) nil [4016 4236])
+            ("org-present-narrow" function nil nil [4238 4602])
+            ("org-present-beginning" function (:user-visible-flag t) nil [4604 4750])
+            ("org-present-end" function (:user-visible-flag t) nil [4752 4905])
+            ("org-present-big" function (:user-visible-flag t) nil [4907 5049])
+            ("org-present-small" function (:user-visible-flag t) nil [5075 5184])
+            ("org-present-add-overlay" function (:arguments ("beginning" "end")) nil [5186 5440])
+            ("org-present-show-option" function (:arguments ("string")) nil [5442 5680])
+            ("org-present-add-overlays" function nil nil [5682 6536])
+            ("org-present-rm-overlays" function nil nil [6538 6707])
+            ("org-present-read-only" function (:user-visible-flag t) nil [6709 6951])
+            ("org-present-read-write" function (:user-visible-flag t) nil [6953 7177])
+            ("org-present-hide-cursor" function (:user-visible-flag t) nil [7179 7316])
+            ("org-present-show-cursor" function (:user-visible-flag t) nil [7318 7453])
+            ("org-present" function (:user-visible-flag t) nil [7470 7635])
+            ("org-present-quit" function (:user-visible-flag t) nil [7637 7952])
+            ("org-present" package nil nil [7954 7976]))          
+      :file "org-present.el"
+      :pointmax 8006
+      :fsize 8005
+      :lastmodtime '(22659 33044 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!org-present-20141109.1756!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

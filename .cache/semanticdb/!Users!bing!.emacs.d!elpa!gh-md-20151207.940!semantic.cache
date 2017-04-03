@@ -1,0 +1,45 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("url-http-end-of-headers" variable nil nil [1577 1609])
+            ("url-http" include nil nil [1555 1574])
+            ("json" include nil nil [1612 1627])
+            ("shr" include nil nil [1628 1642])
+            ("eww" include nil nil [1643 1670])
+            ("unless" code nil nil [1741 2275])
+            ("gh-md" customgroup (:user-visible-flag t) nil [2278 2382])
+            ("gh-md-use-gfm" variable nil nil [2384 2507])
+            ("gh-md-context" variable nil nil [2509 2639])
+            ("gh-md-css-path" variable nil nil [2641 2749])
+            ("gh-md-extra-header" variable nil nil [2751 2881])
+            ("gh-md-apiurl" variable (:default-value "https://api.github.com/markdown") nil [2883 2938])
+            ("gh-md-buffer-name" variable (:default-value "*gh-md*") nil [2939 2975])
+            ("gh-md--json-payload" function (:arguments ("begin" "end" "mode")) nil [2977 3556])
+            ("gh-md--generate-html" function (:arguments ("content")) nil [3558 4525])
+            ("gh-md--export-file-name" function (:arguments ("buffer")) nil [4527 4770])
+            ("gh-md--callback" function (:arguments ("status" "output-buffer" "export")) nil [4772 5691])
+            ("defalias" code nil nil [5708 5762])
+            ("gh-md-convert-region" function
+               (:user-visible-flag t
+                :arguments ("begin" "end" "export"))
+                nil [5779 6333])
+            ("gh-md-render-buffer" function (:user-visible-flag t) nil [6350 6490])
+            ("gh-md-export-region" function
+               (:user-visible-flag t
+                :arguments ("begin" "end"))
+                nil [6507 6677])
+            ("gh-md-export-buffer" function (:user-visible-flag t) nil [6694 6852])
+            ("gh-md" package nil nil [6854 6870]))          
+      :file "gh-md.el"
+      :pointmax 6895
+      :fsize 6894
+      :lastmodtime '(22659 32877 0 0)
+      :unmatched-syntax '((close-paren 2275 . 2276) (symbol 1722 . 1738) (open-paren 1721 . 1722) (close-paren 1609 . 1610) (symbol 1535 . 1552) (open-paren 1534 . 1535))))
+  :file "!Users!bing!.emacs.d!elpa!gh-md-20151207.940!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

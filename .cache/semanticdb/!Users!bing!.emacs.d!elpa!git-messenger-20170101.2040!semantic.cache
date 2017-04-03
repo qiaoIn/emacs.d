@@ -1,0 +1,68 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1337 1354])
+            ("popup" include nil nil [1355 1371])
+            ("declare-function" code nil nil [1373 1422])
+            ("git-messenger" customgroup (:user-visible-flag t) nil [1424 1483])
+            ("git-messenger:show-detail" variable nil nil [1485 1584])
+            ("git-messenger:before-popup-hook" variable nil nil [1586 1725])
+            ("git-messenger:after-popup-hook" variable nil nil [1727 1864])
+            ("git-messenger:popup-buffer-hook" variable nil nil [1866 1987])
+            ("git-messenger:handled-backends" variable (:default-value (quote (git svn hg))) nil [1989 2258])
+            ("git-messenger:use-magit-popup" variable nil nil [2260 2370])
+            ("git-messenger:last-message" variable nil nil [2372 2538])
+            ("git-messenger:last-commit-id" variable nil nil [2540 2714])
+            ("git-messenger:vcs" variable nil nil [2716 2746])
+            ("git-messenger:directory-of-vcs" variable
+               (:constant-flag t
+                :default-value (quote ((git . ".git") (svn . ".svn") (hg . ".hg"))))
+                nil [2748 2845])
+            ("git-messenger:blame-arguments" function (:arguments ("vcs" "file" "line")) nil [2847 3176])
+            ("git-messenger:cat-file-arguments" function (:arguments ("commit-id")) nil [3178 3285])
+            ("git-messenger:vcs-command" function (:arguments ("vcs")) nil [3287 3391])
+            ("git-messenger:execute-command" function (:arguments ("vcs" "args" "output")) nil [3393 3881])
+            ("git-messenger:git-commit-info-at-line" function nil nil [3883 4278])
+            ("git-messenger:hg-commit-info-at-line" function (:arguments ("line")) nil [4280 4512])
+            ("git-messenger:svn-commit-info-at-line" function (:arguments ("line")) nil [4514 4744])
+            ("git-messenger:commit-info-at-line" function (:arguments ("vcs" "file" "line")) nil [4746 5244])
+            ("git-messenger:not-committed-id-p" function (:arguments ("commit-id")) nil [5246 5358])
+            ("git-messenger:git-commit-message" function (:arguments ("commit-id")) nil [5360 5687])
+            ("git-messenger:hg-commit-message" function (:arguments ("commit-id")) nil [5689 5956])
+            ("git-messenger:svn-commit-message" function (:arguments ("commit-id")) nil [5958 6351])
+            ("git-messenger:commit-message" function (:arguments ("vcs" "commit-id")) nil [6353 6707])
+            ("git-messenger:commit-date" function (:arguments ("commit-id")) nil [6709 7071])
+            ("git-messenger:hg-commit-date" function (:arguments ("commit-id")) nil [7073 7436])
+            ("git-messenger:format-detail" function (:arguments ("vcs" "commit-id" "author" "message")) nil [7438 8636])
+            ("git-messenger:show-detail-p" function (:arguments ("commit-id")) nil [8638 8801])
+            ("git-messenger:popup-close" function nil nil [8803 8887])
+            ("git-messenger:copy-message" function (:user-visible-flag t) nil [8889 9106])
+            ("git-messenger:copy-commit-id" function (:user-visible-flag t) nil [9108 9326])
+            ("git-messenger:popup-common" function (:arguments ("vcs" "args" "mode")) nil [9328 9952])
+            ("git-messenger:popup-svn-show" function nil nil [9954 10091])
+            ("git-messenger:popup-hg-show" function nil nil [10093 10228])
+            ("git-messenger:popup-diff" function nil nil [10230 10590])
+            ("git-messenger:popup-show" function nil nil [10592 11053])
+            ("git-messenger:popup-show-verbose" function nil nil [11055 11557])
+            ("git-messenger-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map (kbd "q") (quote git-messenger:popup-close)) (define-key map (kbd "c") (quote git-messenger:copy-commit-id)) (define-key map (kbd "d") (quote git-messenger:popup-diff)) (define-key map (kbd "s") (quote git-messenger:popup-show)) (define-key map (kbd "S") (quote git-messenger:popup-show-verbose)) (define-key map (kbd "M-w") (quote git-messenger:copy-message)) (define-key map (kbd ",") (quote git-messenger:show-parent)) map)) nil [11559 12151])
+            ("git-messenger:find-vcs" function nil nil [12153 12553])
+            ("git-messenger:svn-message" function (:arguments ("msg")) nil [12555 12741])
+            ("git-messenger:func-prompt" variable (:default-value (quote ((git-messenger:popup-show . "Show") (git-messenger:popup-show-verbose . "Show verbose") (git-messenger:popup-close . "Close") (git-messenger:copy-commit-id . "Copy hash") (git-messenger:popup-diff . "Diff") (git-messenger:copy-message . "Copy message") (git-messenger:show-parent . "Go Parent") (git-messenger:popup-close . "Quit")))) nil [12743 13142])
+            ("git-messenger:function-to-key" function (:arguments ("func")) nil [13144 13265])
+            ("git-messenger:prompt" function nil nil [13267 13870])
+            ("git-messenger:show-parent" function nil nil [13872 14811])
+            ("git-messenger:popup-message" function nil nil [14828 16408])
+            ("git-messenger" package nil nil [16410 16434]))          
+      :file "git-messenger.el"
+      :pointmax 16538
+      :fsize 16537
+      :lastmodtime '(22659 32878 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!git-messenger-20170101.2040!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

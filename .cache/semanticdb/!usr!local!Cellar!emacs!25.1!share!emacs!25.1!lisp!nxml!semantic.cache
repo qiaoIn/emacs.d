@@ -1,0 +1,555 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("nxml-util" include nil nil [943 963])
+            ("xmltok" include nil nil [964 981])
+            ("nxml-enc" include nil nil [982 1001])
+            ("nxml-ns" include nil nil [1002 1020])
+            ("nxml-parse-file-name" variable nil nil [1022 1055])
+            ("nxml-validate-function" variable nil nil [1057 2716])
+            ("nxml-parse-file" function (:arguments ("file")) nil [2718 4473])
+            ("nxml-parse-find-file" function (:arguments ("file")) nil [4475 4704])
+            ("nxml-parse-instance" function nil nil [4706 4884])
+            ("nxml-parse-instance-1" function nil nil [4886 7338])
+            ("nxml-parse-start-tag" function nil nil [7340 9702])
+            ("nxml-validate-tag" function (:arguments ("text" "text-pos" "tag")) nil [9704 10071])
+            ("nxml-validate-error-position" function (:arguments ("location" "text-pos" "tag")) nil [10073 10683])
+            ("nxml-make-name" function (:arguments ("ns" "local-name")) nil [10685 10775])
+            ("nxml-current-text-string" function nil nil [10777 11282])
+            ("nxml-parse-error" function (:arguments ("position" "args")) nil [11284 11449])
+            ("nxml-check-xmltok-errors" function nil nil [11451 11680])
+            ("nxml-parse" package nil nil [11682 11703]))          
+      :file "nxml-parse.el.gz"
+      :pointmax 11733
+      :fsize 3737
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("nxml-debug" variable (:constant-flag t) nil [913 998])
+            ("nxml-debug" function (:arguments ("format" "args")) nil [1000 1095])
+            ("nxml-debug-change" function (:arguments ("name" "start" "end")) nil [1097 1256])
+            ("nxml-debug-set-inside" function (:arguments ("start" "end")) nil [1258 1535])
+            ("nxml-debug-clear-inside" function (:arguments ("start" "end")) nil [1537 1824])
+            ("nxml-make-namespace" function (:arguments ("str")) nil [1826 2108])
+            ("nxml-namespace-name" function (:arguments ("ns")) nil [2110 2291])
+            ("nxml-xml-namespace-uri" variable
+               (:constant-flag t
+                :default-value (nxml-make-namespace "http://www.w3.org/XML/1998/namespace"))
+                nil [2293 2389])
+            ("nxml-xmlns-namespace-uri" variable
+               (:constant-flag t
+                :default-value (nxml-make-namespace "http://www.w3.org/2000/xmlns/"))
+                nil [2391 2482])
+            ("nxml-with-degradation-on-error" function (:arguments ("context" "body")) nil [2484 2809])
+            ("nxml-with-invisible-motion" function (:arguments ("body")) nil [2811 3006])
+            ("nxml-display-file-parse-error" function (:arguments ("err")) nil [3008 3400])
+            ("nxml-signal-file-parse-error" function (:arguments ("file" "pos" "message" "error-symbol")) nil [3402 3559])
+            ("define-error" code nil nil [3561 3591])
+            ("define-error" code nil nil [3592 3662])
+            ("nxml-util" package nil nil [3664 3684]))          
+      :file "nxml-util.el.gz"
+      :pointmax 3713
+      :fsize 1575
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("nxml-file-name-ignore-case" variable (:default-value (memq system-type (quote (windows-nt)))) nil [1236 1306])
+            ("nxml-cached-file-name-auto-coding-regexp" variable nil nil [1308 1361])
+            ("nxml-cached-auto-mode-alist" variable nil nil [1362 1402])
+            ("nxml-file-name-auto-coding-regexp" function nil nil [1404 2083])
+            ("nxml-non-xml-set-auto-coding-function" variable nil nil [2085 2215])
+            ("nxml-set-auto-coding" function (:arguments ("file-name" "size")) nil [2216 2580])
+            ("nxml-set-xml-coding" function (:arguments ("file-name" "size")) nil [2582 2764])
+            ("declare-function" code nil nil [2766 2867])
+            ("nxml-detect-coding-system" function (:arguments ("limit")) nil [2885 4208])
+            ("nxml-mime-charset-coding-system" function (:arguments ("charset")) nil [4210 4625])
+            ("nxml-start-auto-coding" function (:user-visible-flag t) nil [4627 5052])
+            ("nxml-stop-auto-coding" function (:user-visible-flag t) nil [5054 5396])
+            ("unless" code nil nil [5493 5601])
+            ("nxml-enc" package nil nil [5603 5622]))          
+      :file "nxml-enc.el.gz"
+      :pointmax 5650
+      :fsize 2081
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("when" code nil nil [958 1035])
+            ("cl-lib" include nil nil [1056 1073])
+            ("xmltok" include nil nil [1076 1093])
+            ("nxml-enc" include nil nil [1094 1113])
+            ("nxml-glyph" include nil nil [1114 1135])
+            ("nxml-util" include nil nil [1136 1156])
+            ("nxml-rap" include nil nil [1157 1176])
+            ("nxml-outln" include nil nil [1177 1198])
+            ("nxml-mode" package nil nil [1338 1358])
+            ("rng-nxml" include nil nil [1387 1406])
+            ("nxml" customgroup (:user-visible-flag t) nil [1427 1535])
+            ("nxml-faces" customgroup (:user-visible-flag t) nil [1537 1616])
+            ("nxml-char-ref-display-glyph-flag" variable (:default-value t) nil [1618 1919])
+            ("nxml-sexp-element-flag" variable nil nil [1921 2064])
+            ("nxml-slash-auto-complete-flag" variable nil nil [2066 2252])
+            ("nxml-child-indent" variable (:default-value 2) nil [2254 2506])
+            ("nxml-attribute-indent" variable (:default-value 4) nil [2508 2832])
+            ("nxml-bind-meta-tab-to-complete-flag" variable (:default-value t) nil [2834 2984])
+            ("nxml-prefer-utf-16-to-utf-8-flag" variable nil nil [2986 3287])
+            ("nxml-prefer-utf-16-little-to-big-endian-flag" variable (:default-value (eq system-type (quote windows-nt))) nil [3289 3694])
+            ("nxml-default-buffer-file-coding-system" variable nil nil [3696 4045])
+            ("nxml-auto-insert-xml-declaration-flag" variable nil nil [4047 4274])
+            ("nxml-delimited-data" variable
+               (:default-value (quote ((t (:inherit font-lock-doc-face))))
+                :type "face")
+                nil [4276 4494])
+            ("nxml-name" variable
+               (:default-value (quote ((t (:inherit font-lock-builtin-face))))
+                :type "face")
+                nil [4496 4805])
+            ("nxml-ref" variable
+               (:default-value (quote ((t (:inherit font-lock-constant-face))))
+                :type "face")
+                nil [4807 5018])
+            ("nxml-delimiter" variable (:type "face") nil [5020 5178])
+            ("nxml-text" variable (:type "face") nil [5180 5259])
+            ("nxml-comment-content" variable
+               (:default-value (quote ((t (:inherit font-lock-comment-face))))
+                :type "face")
+                nil [5261 5407])
+            ("nxml-comment-delimiter" variable
+               (:default-value (quote ((t (:inherit font-lock-comment-delimiter-face))))
+                :type "face")
+                nil [5409 5581])
+            ("nxml-processing-instruction-delimiter" variable
+               (:default-value (quote ((t (:inherit nxml-delimiter))))
+                :type "face")
+                nil [5583 5764])
+            ("nxml-processing-instruction-target" variable
+               (:default-value (quote ((t (:inherit font-lock-keyword-face))))
+                :type "face")
+                nil [5766 5931])
+            ("nxml-processing-instruction-content" variable
+               (:default-value (quote ((t (:inherit nxml-delimited-data))))
+                :type "face")
+                nil [5933 6097])
+            ("nxml-cdata-section-delimiter" variable
+               (:default-value (quote ((t (:inherit nxml-delimiter))))
+                :type "face")
+                nil [6099 6268])
+            ("nxml-cdata-section-CDATA" variable
+               (:default-value (quote ((t (:inherit nxml-name))))
+                :type "face")
+                nil [6270 6410])
+            ("nxml-cdata-section-content" variable
+               (:default-value (quote ((t (:inherit nxml-text))))
+                :type "face")
+                nil [6412 6548])
+            ("nxml-char-ref-number" variable
+               (:default-value (quote ((t (:inherit nxml-ref))))
+                :type "face")
+                nil [6550 6725])
+            ("nxml-char-ref-delimiter" variable
+               (:default-value (quote ((t (:inherit nxml-ref))))
+                :type "face")
+                nil [6727 6884])
+            ("nxml-entity-ref-name" variable
+               (:default-value (quote ((t (:inherit nxml-ref))))
+                :type "face")
+                nil [6886 7030])
+            ("nxml-entity-ref-delimiter" variable
+               (:default-value (quote ((t (:inherit nxml-ref))))
+                :type "face")
+                nil [7032 7187])
+            ("nxml-tag-delimiter" variable
+               (:default-value (quote ((t (:inherit nxml-delimiter))))
+                :type "face")
+                nil [7189 7365])
+            ("nxml-tag-slash" variable
+               (:default-value (quote ((t (:inherit nxml-tag-delimiter))))
+                :type "face")
+                nil [7367 7523])
+            ("nxml-element-prefix" variable
+               (:default-value (quote ((t (:inherit nxml-name))))
+                :type "face")
+                nil [7525 7647])
+            ("nxml-element-colon" variable (:type "face") nil [7649 7750])
+            ("nxml-element-local-name" variable
+               (:default-value (quote ((t (:inherit font-lock-function-name-face))))
+                :type "face")
+                nil [7752 7901])
+            ("nxml-attribute-prefix" variable
+               (:default-value (quote ((t (:inherit nxml-name))))
+                :type "face")
+                nil [7903 8029])
+            ("nxml-attribute-colon" variable
+               (:default-value (quote ((t (:inherit nxml-delimiter))))
+                :type "face")
+                nil [8031 8165])
+            ("nxml-attribute-local-name" variable
+               (:default-value (quote ((t (:inherit font-lock-variable-name-face))))
+                :type "face")
+                nil [8167 8320])
+            ("nxml-namespace-attribute-xmlns" variable
+               (:default-value (quote ((t (:inherit nxml-attribute-prefix))))
+                :type "face")
+                nil [8322 8476])
+            ("nxml-namespace-attribute-colon" variable
+               (:default-value (quote ((t (:inherit nxml-attribute-colon))))
+                :type "face")
+                nil [8478 8633])
+            ("nxml-namespace-attribute-prefix" variable
+               (:default-value (quote ((t (:inherit nxml-attribute-local-name))))
+                :type "face")
+                nil [8635 8806])
+            ("nxml-attribute-value" variable
+               (:default-value (quote ((t (:inherit font-lock-string-face))))
+                :type "face")
+                nil [8808 8944])
+            ("nxml-attribute-value-delimiter" variable
+               (:default-value (quote ((t (:inherit nxml-attribute-value))))
+                :type "face")
+                nil [8946 9102])
+            ("nxml-namespace-attribute-value" variable
+               (:default-value (quote ((t (:inherit nxml-attribute-value))))
+                :type "face")
+                nil [9104 9259])
+            ("nxml-namespace-attribute-value-delimiter" variable
+               (:default-value (quote ((t (:inherit nxml-attribute-value-delimiter))))
+                :type "face")
+                nil [9261 9447])
+            ("nxml-prolog-literal-delimiter" variable
+               (:default-value (quote ((t (:inherit nxml-delimited-data))))
+                :type "face")
+                nil [9449 9609])
+            ("nxml-prolog-literal-content" variable
+               (:default-value (quote ((t (:inherit nxml-delimited-data))))
+                :type "face")
+                nil [9611 9766])
+            ("nxml-prolog-keyword" variable
+               (:default-value (quote ((t (:inherit font-lock-keyword-face))))
+                :type "face")
+                nil [9768 9903])
+            ("nxml-markup-declaration-delimiter" variable
+               (:default-value (quote ((t (:inherit nxml-delimiter))))
+                :type "face")
+                nil [9905 10104])
+            ("nxml-hash" variable
+               (:default-value (quote ((t (:inherit nxml-name))))
+                :type "face")
+                nil [10106 10225])
+            ("nxml-glyph" variable
+               (:default-value (quote ((((type x)) (:family "misc-fixed" :background "light grey" :foreground "black" :weight normal :slant normal)) (t (:background "light grey" :foreground "black" :weight normal :slant normal))))
+                :type "face")
+                nil [10227 10618])
+            ("nxml-parent-document" variable nil nil [10642 10775])
+            ("make-variable-buffer-local" code nil nil [10776 10826])
+            ("put" code nil nil [10827 10884])
+            ("nxml-prolog-regions" variable nil nil [10886 11032])
+            ("make-variable-buffer-local" code nil nil [11033 11082])
+            ("nxml-degraded" variable nil nil [11084 11274])
+            ("make-variable-buffer-local" code nil nil [11275 11318])
+            ("nxml-completion-hook" variable nil nil [11320 11418])
+            ("nxml-in-mixed-content-hook" variable nil nil [11420 11688])
+            ("nxml-mixed-scan-distance" variable (:default-value 4000) nil [11690 11801])
+            ("nxml-end-tag-indent-scan-distance" variable (:default-value 4000) nil [11803 11924])
+            ("nxml-char-ref-extra-display" variable (:default-value t) nil [11926 12242])
+            ("make-variable-buffer-local" code nil nil [12243 12300])
+            ("nxml-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "\225" (quote nxml-backward-up-element)) (define-key map "\204" (quote nxml-down-element)) (define-key map "\216" (quote nxml-forward-element)) (define-key map "\220" (quote nxml-backward-element)) (define-key map "\373" (quote nxml-backward-paragraph)) (define-key map "\375" (quote nxml-forward-paragraph)) (define-key map "\350" (quote nxml-mark-paragraph)) (define-key map "" (quote nxml-finish-element)) (define-key map "]" (quote nxml-finish-element)) (define-key map "/" (quote nxml-finish-element)) (define-key map "" (quote nxml-split-element)) (define-key map "" (quote nxml-balanced-close-start-tag-block)) (define-key map "	" (quote nxml-balanced-close-start-tag-inline)) (define-key map "" (quote nxml-insert-xml-declaration)) (define-key map "" (quote nxml-dynamic-markup-word)) (define-key map "" (quote nxml-insert-named-char)) (define-key map "" nxml-outline-prefix-map) (define-key map [S-mouse-2] (quote nxml-mouse-hide-direct-text-content)) (define-key map "/" (quote nxml-electric-slash)) (define-key map "\211" (quote completion-at-point)) map)) nil [12302 13528])
+            ("nxml-font-lock-keywords" variable (:default-value (quote (nxml-fontify-matcher))) nil [13530 13634])
+            ("nxml-set-face" function (:arguments ("start" "end" "face")) nil [13636 13769])
+            ("nxml-parent-document-set" function
+               (:user-visible-flag t
+                :arguments ("parent-document"))
+                nil [13771 15351])
+            ("tildify-space-string" variable nil nil [15353 15382])
+            ("tildify-foreach-region-function" variable nil nil [15383 15423])
+            ("define-derived-mode" code nil nil [15440 21908])
+            ("nxml-cleanup" function nil nil [21910 22272])
+            ("nxml-degrade" function (:arguments ("context" "err")) nil [22274 22608])
+            ("font-lock-beg" variable nil nil [22633 22655])
+            ("font-lock-end" variable nil nil [22656 22678])
+            ("nxml-debug-region" function (:arguments ("start" "end")) nil [22679 22880])
+            ("nxml-after-change" function (:arguments ("start" "end")) nil [22882 23162])
+            ("nxml-after-change1" function (:arguments ("start" "end")) nil [23164 24106])
+            ("nxml-insert-xml-declaration" function (:user-visible-flag t) nil [24123 24733])
+            ("nxml-prepare-to-save" function nil nil [24735 25220])
+            ("nxml-select-coding-system" function nil nil [25222 27485])
+            ("nxml-unsuitable-coding-system-message" function (:arguments ("coding-system" "enc-name")) nil [27487 27785])
+            ("nxml-utf-16-coding-systems" variable
+               (:constant-flag t
+                :default-value (and (coding-system-p (quote utf-16-be)) (coding-system-p (quote utf-16-le)) (quote (utf-16-be utf-16-le))))
+                nil [27787 27925])
+            ("nxml-utf-coding-systems" variable
+               (:constant-flag t
+                :default-value (cons (quote utf-8) nxml-utf-16-coding-systems))
+                nil [27927 28002])
+            ("nxml-coding-system-unicode-p" function (:arguments ("coding-system")) nil [28004 28153])
+            ("nxml-coding-system-name" function (:arguments ("coding-system")) nil [28155 28442])
+            ("nxml-fix-encoding-declaration" function (:arguments ("enc-pos" "coding-system")) nil [28444 29047])
+            ("nxml-choose-suitable-coding-system" function (:arguments ("suitable-coding-systems")) nil [29049 29566])
+            ("nxml-choose-utf-coding-system" function nil nil [29568 30042])
+            ("nxml-choose-utf-16-coding-system" function nil nil [30044 30467])
+            ("nxml-coding-system-member" function (:arguments ("coding-system" "coding-systems")) nil [30469 30749])
+            ("nxml-unfontify-region" function (:arguments ("start" "end")) nil [30770 30908])
+            ("nxml-extend-region" function nil nil [30910 32261])
+            ("nxml-fontify-matcher" function (:arguments ("bound")) nil [32263 32970])
+            ("nxml-fontify-prolog" function nil nil [32972 33380])
+            ("put" code nil nil [33504 33659])
+            ("put" code nil nil [33661 33789])
+            ("put" code nil nil [33791 33954])
+            ("put" code nil nil [33956 34092])
+            ("put" code nil nil [34094 34283])
+            ("put" code nil nil [34285 34448])
+            ("put" code nil nil [34450 34620])
+            ("put" code nil nil [34622 34782])
+            ("put" code nil nil [34784 34935])
+            ("put" code nil nil [34937 35136])
+            ("put" code nil nil [35138 35417])
+            ("put" code nil nil [35419 35482])
+            ("put" code nil nil [35551 35753])
+            ("put" code nil nil [35755 35860])
+            ("put" code nil nil [35862 36053])
+            ("put" code nil nil [36055 36217])
+            ("put" code nil nil [36219 36385])
+            ("put" code nil nil [36387 36559])
+            ("put" code nil nil [36561 36637])
+            ("put" code nil nil [36639 36776])
+            ("put" code nil nil [36778 36885])
+            ("put" code nil nil [36887 36990])
+            ("put" code nil nil [36992 37144])
+            ("put" code nil nil [37146 37247])
+            ("nxml-apply-fontify-rule" function (:arguments ("type" "start" "end")) nil [37249 38814])
+            ("nxml-fontify-attributes" function nil nil [38816 39182])
+            ("nxml-fontify-attribute" function (:arguments ("att" "namespace-declaration")) nil [39184 40601])
+            ("nxml-fontify-qname" function (:arguments ("start" "colon" "end" "prefix-face" "colon-face" "local-name-face" "unprefixed-face")) nil [40603 40991])
+            ("nxml-electric-slash" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [41006 42523])
+            ("nxml-balanced-close-start-tag-block" function (:user-visible-flag t) nil [42525 42935])
+            ("nxml-balanced-close-start-tag-inline" function (:user-visible-flag t) nil [42937 43210])
+            ("nxml-balanced-close-start-tag" function (:arguments ("block-or-inline")) nil [43212 44100])
+            ("nxml-finish-element" function (:user-visible-flag t) nil [44102 44238])
+            ("nxml-last-split-position" variable nil nil [44240 44344])
+            ("nxml-split-element" function (:user-visible-flag t) nil [44346 44851])
+            ("nxml-finish-element-1" function
+               (:user-visible-flag t
+                :arguments ("startp"))
+                nil [44853 46802])
+            ("nxml-comment-quote-nested" function (:arguments ("_cs" "_ce" "unp")) nil [46804 47150])
+            ("nxml-indent-line" function nil nil [47169 47837])
+            ("nxml-compute-indent" function nil nil [47839 48022])
+            ("nxml-compute-indent-from-matching-start-tag" function nil nil [48024 49160])
+            ("nxml-compute-indent-from-previous-line" function nil nil [49162 51046])
+            ("nxml-merge-indent-context-type" function (:arguments ("context")) nil [51048 51751])
+            ("nxml-compute-indent-in-token" function (:arguments ("pos")) nil [51753 52617])
+            ("nxml-compute-indent-in-start-tag" function (:arguments ("pos")) nil [52619 53762])
+            ("nxml-attribute-value-boundary" function (:arguments ("pos")) nil [53764 54570])
+            ("nxml-compute-indent-in-delimited-token" function (:arguments ("pos" "open-delim" "close-delim")) nil [54572 55408])
+            ("nxml-complete" function (:user-visible-flag t) nil [55426 56185])
+            ("nxml-completion-at-point-function" function nil nil [56187 56353])
+            ("nxml-forward-balanced-item" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [56369 57583])
+            ("nxml-forward-single-balanced-item" function nil nil [57585 58300])
+            ("nxml-backward-single-balanced-item" function nil nil [58302 59013])
+            ("nxml-scan-forward-within" function (:arguments ("end")) nil [59015 60005])
+            ("nxml-scan-backward-within" function (:arguments ("_end")) nil [60007 60982])
+            ("nxml-scan-forward-in-attribute-value" function (:arguments ("att")) nil [60984 61693])
+            ("nxml-scan-backward-in-attribute-value" function (:arguments ("att")) nil [61695 62433])
+            ("nxml-find-following-attribute" function nil nil [62435 63181])
+            ("nxml-find-preceding-attribute" function nil nil [63183 63928])
+            ("nxml-up-element" function (:arguments ("arg")) nil [63930 64743])
+            ("nxml-backward-up-element" function (:arguments ("arg")) nil [64745 65581])
+            ("nxml-down-element" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [65583 66268])
+            ("nxml-backward-down-element" function (:arguments ("arg")) nil [66270 66998])
+            ("nxml-forward-element" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [67000 67536])
+            ("nxml-backward-element" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [67538 68141])
+            ("nxml-mark-token-after" function nil nil [68143 68293])
+            ("nxml-mark-paragraph" function (:user-visible-flag t) nil [68311 68563])
+            ("nxml-forward-paragraph" function (:arguments ("arg")) nil [68565 68825])
+            ("nxml-backward-paragraph" function (:arguments ("arg")) nil [68827 69149])
+            ("nxml-forward-single-paragraph" function nil nil [69151 69653])
+            ("nxml-backward-single-paragraph" function nil nil [69655 70895])
+            ("nxml-token-contains-data-p" function (:arguments ("start" "end")) nil [70897 71441])
+            ("nxml-paragraph-end-pos" function (:arguments ("had-data" "offset")) nil [71443 73277])
+            ("nxml-paragraph-start-pos" function (:arguments ("had-data" "offset")) nil [73279 75388])
+            ("nxml-token-ends-line-p" function nil nil [75390 75446])
+            ("nxml-token-begins-line-p" function nil nil [75448 75574])
+            ("nxml-in-mixed-content-p" function (:arguments ("endp")) nil [75576 76834])
+            ("nxml-preceding-sibling-data-p" function nil nil [76836 77663])
+            ("nxml-following-sibling-data-p" function nil nil [77665 78170])
+            ("nxml-do-fill-paragraph" function (:arguments ("arg")) nil [78185 78777])
+            ("nxml-newline-and-indent" function (:arguments ("soft")) nil [78779 78915])
+            ("nxml-dynamic-markup-prev-pos" variable nil nil [78938 78979])
+            ("nxml-dynamic-markup-prev-lengths" variable nil nil [78980 79025])
+            ("nxml-dynamic-markup-prev-found-marker" variable nil nil [79026 79076])
+            ("nxml-dynamic-markup-prev-start-tags" variable (:default-value (make-hash-table :test (quote equal))) nil [79077 79152])
+            ("nxml-dynamic-markup-word" function (:user-visible-flag t) nil [79154 81839])
+            ("nxml-try-copy-markup" function (:arguments ("word-end-pos")) nil [81841 83484])
+            ("nxml-char-name-ignore-case" variable (:default-value t) nil [83508 83545])
+            ("nxml-char-name-alist" variable nil nil [83547 84157])
+            ("nxml-char-name-table" variable (:default-value (make-hash-table :test (quote eq))) nil [84159 84455])
+            ("nxml-autoload-char-name-set-list" variable nil nil [84457 84552])
+            ("nxml-enable-char-name-set" function (:arguments ("nameset")) nil [84554 84643])
+            ("nxml-disable-char-name-set" function (:arguments ("nameset")) nil [84645 84737])
+            ("nxml-char-name-set-enabled-p" function (:arguments ("nameset")) nil [84739 84829])
+            ("nxml-autoload-char-name-set" function (:arguments ("nameset" "file")) nil [84831 85081])
+            ("nxml-define-char-name-set" function (:arguments ("nameset" "alist")) nil [85083 85920])
+            ("nxml-get-char-name" function (:arguments ("code")) nil [85922 86241])
+            ("nxml-named-char-history" variable nil nil [86243 86279])
+            ("nxml-insert-named-char" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [86281 87292])
+            ("nxml-maybe-load-char-name-set" function (:arguments ("sym")) nil [87294 87537])
+            ("nxml-toggle-char-ref-extra-display" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [87539 87910])
+            ("put" code nil nil [87912 87945])
+            ("nxml-char-ref-display-extra" function (:arguments ("start" "end" "n")) nil [87947 88485])
+            ("nxml-clear-char-ref-extra-display" function (:arguments ("start" "end")) nil [88487 88712])
+            ("nxml-start-delimiter-length" function (:arguments ("type")) nil [88715 88812])
+            ("put" code nil nil [88814 88865])
+            ("put" code nil nil [88866 88911])
+            ("put" code nil nil [88912 88972])
+            ("put" code nil nil [88973 89020])
+            ("put" code nil nil [89021 89072])
+            ("put" code nil nil [89073 89132])
+            ("put" code nil nil [89133 89181])
+            ("put" code nil nil [89182 89228])
+            ("nxml-end-delimiter-length" function (:arguments ("type")) nil [89230 89323])
+            ("put" code nil nil [89325 89374])
+            ("put" code nil nil [89375 89418])
+            ("put" code nil nil [89419 89477])
+            ("put" code nil nil [89478 89523])
+            ("put" code nil nil [89524 89573])
+            ("put" code nil nil [89574 89631])
+            ("put" code nil nil [89632 89678])
+            ("put" code nil nil [89679 89723])
+            ("nxml-token-type-friendly-name" function (:arguments ("type")) nil [89725 89832])
+            ("put" code nil nil [89834 89890])
+            ("put" code nil nil [89891 89965])
+            ("put" code nil nil [89966 90022])
+            ("put" code nil nil [90023 90080])
+            ("nxml-mode" package nil nil [90267 90287]))          
+      :file "nxml-mode.el.gz"
+      :pointmax 90316
+      :fsize 20592
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax '((close-paren 1073 . 1074) (symbol 1038 . 1055) (open-paren 1037 . 1038)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("nxml-util" include nil nil [946 966])
+            ("nxml-ns-state" variable nil nil [968 1536])
+            ("nxml-ns-initial-state" variable
+               (:constant-flag t
+                :default-value (list (list nil (cons "xml" nxml-xml-namespace-uri))))
+                nil [1538 1831])
+            ("nxml-ns-state" function nil nil [1833 1874])
+            ("nxml-ns-set-state" function (:arguments ("state")) nil [1876 1941])
+            ("nxml-ns-state-equal" function (:arguments ("state")) nil [1943 2011])
+            ("nxml-ns-save" function (:arguments ("body")) nil [2013 2143])
+            ("nxml-ns-init" function nil nil [2145 2213])
+            ("nxml-ns-push-state" function nil nil [2215 2416])
+            ("nxml-ns-pop-state" function nil nil [2418 2587])
+            ("nxml-ns-get-prefix" function (:arguments ("prefix")) nil [2589 2830])
+            ("nxml-ns-set-prefix" function (:arguments ("prefix" "ns")) nil [2832 3196])
+            ("nxml-ns-get-default" function nil nil [3198 3350])
+            ("nxml-ns-set-default" function (:arguments ("ns")) nil [3352 3606])
+            ("nxml-ns-get-context" function nil nil [3608 3660])
+            ("nxml-ns-prefixes-for" function (:arguments ("ns" "attributep")) nil [3662 4266])
+            ("nxml-ns-prefix-for" function (:arguments ("ns")) nil [4268 4339])
+            ("nxml-ns-changed-prefixes" function nil nil [4341 4709])
+            ("nxml-ns" package nil nil [4711 4729]))          
+      :file "nxml-ns.el.gz"
+      :pointmax 4756
+      :fsize 1718
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("nxml-mode" include nil nil [1147 1167])
+            ("nxml-unicode-blocks" variable
+               (:constant-flag t
+                :default-value (quote (("Basic Latin" 0 127) ("Latin-1 Supplement" 128 255) ("Latin Extended-A" 256 383) ("Latin Extended-B" 384 591) ("IPA Extensions" 592 687) ("Spacing Modifier Letters" 688 767) ("Combining Diacritical Marks" 768 879) ("Greek and Coptic" 880 1023) ("Cyrillic" 1024 1279) ("Cyrillic Supplementary" 1280 1327) ("Armenian" 1328 1423) ("Hebrew" 1424 1535) ("Arabic" 1536 1791) ("Syriac" 1792 1871) ("Thaana" 1920 1983) ("Devanagari" 2304 2431) ("Bengali" 2432 2559) ("Gurmukhi" 2560 2687) ("Gujarati" 2688 2815) ("Oriya" 2816 2943) ("Tamil" 2944 3071) ("Telugu" 3072 3199) ("Kannada" 3200 3327) ("Malayalam" 3328 3455) ("Sinhala" 3456 3583) ("Thai" 3584 3711) ("Lao" 3712 3839) ("Tibetan" 3840 4095) ("Myanmar" 4096 4255) ("Georgian" 4256 4351) ("Hangul Jamo" 4352 4607) ("Ethiopic" 4608 4991) ("Cherokee" 5024 5119) ("Unified Canadian Aboriginal Syllabics" 5120 5759) ("Ogham" 5760 5791) ("Runic" 5792 5887) ("Tagalog" 5888 5919) ("Hanunoo" 5920 5951) ("Buhid" 5952 5983) ("Tagbanwa" 5984 6015) ("Khmer" 6016 6143) ("Mongolian" 6144 6319) ("Latin Extended Additional" 7680 7935) ("Greek Extended" 7936 8191) ("General Punctuation" 8192 8303) ("Superscripts and Subscripts" 8304 8351) ("Currency Symbols" 8352 8399) ("Combining Diacritical Marks for Symbols" 8400 8447) ("Letterlike Symbols" 8448 8527) ("Number Forms" 8528 8591) ("Arrows" 8592 8703) ("Mathematical Operators" 8704 8959) ("Miscellaneous Technical" 8960 9215) ("Control Pictures" 9216 9279) ("Optical Character Recognition" 9280 9311) ("Enclosed Alphanumerics" 9312 9471) ("Box Drawing" 9472 9599) ("Block Elements" 9600 9631) ("Geometric Shapes" 9632 9727) ("Miscellaneous Symbols" 9728 9983) ("Dingbats" 9984 10175) ("Miscellaneous Mathematical Symbols-A" 10176 10223) ("Supplemental Arrows-A" 10224 10239) ("Braille Patterns" 10240 10495) ("Supplemental Arrows-B" 10496 10623) ("Miscellaneous Mathematical Symbols-B" 10624 10751) ("Supplemental Mathematical Operators" 10752 11007) ("CJK Radicals Supplement" 11904 12031) ("Kangxi Radicals" 12032 12255) ("Ideographic Description Characters" 12272 12287) ("CJK Symbols and Punctuation" 12288 12351) ("Hiragana" 12352 12447) ("Katakana" 12448 12543) ("Bopomofo" 12544 12591) ("Hangul Compatibility Jamo" 12592 12687) ("Kanbun" 12688 12703) ("Bopomofo Extended" 12704 12735) ("Katakana Phonetic Extensions" 12784 12799) ("Enclosed CJK Letters and Months" 12800 13055) ("CJK Compatibility" 13056 13311) ("CJK Unified Ideographs Extension A" 13312 19903) ("Yi Syllables" 40960 42127) ("Yi Radicals" 42128 42191) ("Alphabetic Presentation Forms" 64256 64335) ("Arabic Presentation Forms-A" 64336 65023) ("Variation Selectors" 65024 65039) ("Combining Half Marks" 65056 65071) ("CJK Compatibility Forms" 65072 65103) ("Small Form Variants" 65104 65135) ("Arabic Presentation Forms-B" 65136 65279) ("Halfwidth and Fullwidth Forms" 65280 65519) ("Specials" 65520 65535) ("Old Italic" 66304 66351) ("Gothic" 66352 66383) ("Deseret" 66560 66639) ("Byzantine Musical Symbols" 118784 119039) ("Musical Symbols" 119040 119295) ("Mathematical Alphanumeric Symbols" 119808 120831) ("Tags" 917504 917631))))
+                nil [1169 5889])
+            ("nxml-unicode-block-char-name-set" function (:arguments ("name")) nil [5891 6145])
+            ("nxml-enabled-unicode-blocks-default" variable (:default-value (quote (basic-latin latin-1-supplement latin-extended-a latin-extended-b ipa-extensions spacing-modifier-letters combining-diacritical-marks greek-and-coptic cyrillic general-punctuation superscripts-and-subscripts currency-symbols combining-diacritical-marks-for-symbols letterlike-symbols number-forms arrows mathematical-operators miscellaneous-technical control-pictures optical-character-recognition enclosed-alphanumerics box-drawing block-elements geometric-shapes miscellaneous-symbols dingbats miscellaneous-mathematical-symbols-a supplemental-arrows-a supplemental-arrows-b miscellaneous-mathematical-symbols-b supplemental-mathematical-operators cjk-symbols-and-punctuation alphabetic-presentation-forms variation-selectors small-form-variants specials mathematical-alphanumeric-symbols))) nil [6237 7273])
+            ("mapc" code nil nil [7275 7571])
+            ("nxml-internal-unicode-char-name-sets-enabled" variable nil nil [7685 7742])
+            ("nxml-enabled-unicode-blocks" variable (:default-value nxml-enabled-unicode-blocks-default) nil [7744 8466])
+            ("nxml-enable-unicode-char-name-sets" function (:user-visible-flag t) nil [8483 9030])
+            ("nxml-uchnm" package nil nil [9032 9053]))          
+      :file "nxml-uchnm.el.gz"
+      :pointmax 9083
+      :fsize 3346
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("nxml-ascii-glyph-set" variable
+               (:constant-flag t
+                :default-value [(32 . 126)])
+                nil [1137 1190])
+            ("nxml-latin1-glyph-set" variable
+               (:constant-flag t
+                :default-value [(32 . 126) (160 . 255)])
+                nil [1192 1267])
+            ("nxml-misc-fixed-1-glyph-set" variable
+               (:constant-flag t
+                :default-value [(32 . 126) (160 . 255) (256 . 383) 399 402 (536 . 539) 601 (710 . 711) (728 . 733) (884 . 885) 890 894 (900 . 906) 908 (910 . 929) (931 . 974) (1025 . 1036) (1038 . 1103) (1105 . 1116) (1118 . 1119) (1168 . 1169) (1488 . 1514) (7682 . 7683) (7690 . 7691) (7710 . 7711) (7744 . 7745) (7766 . 7767) (7776 . 7777) (7786 . 7787) (7808 . 7813) (7922 . 7923) (8208 . 8226) 8230 8240 (8249 . 8250) 8364 8470 8482 8486 (8539 . 8542) (8592 . 8595) 8800 (8804 . 8805) (9146 . 9149) (9225 . 9229) 9252 9472 9474 9484 9488 9492 9496 9500 9508 9516 9524 9532 9618 9670 9834 65533])
+                nil [1434 2498])
+            ("nxml-misc-fixed-2-glyph-set" variable
+               (:constant-flag t
+                :default-value [(32 . 126) (160 . 255) (256 . 383) 399 402 (506 . 511) (536 . 539) 601 (710 . 711) 713 (728 . 733) (768 . 785) (884 . 885) 890 894 (900 . 906) 908 (910 . 929) (931 . 974) 977 (981 . 982) 1009 (1025 . 1036) (1038 . 1103) (1105 . 1116) (1118 . 1119) (1168 . 1169) (1488 . 1514) (7682 . 7683) (7690 . 7691) (7710 . 7711) (7744 . 7745) (7766 . 7767) (7776 . 7777) (7786 . 7787) (7808 . 7813) (7922 . 7923) (8208 . 8226) 8230 8240 (8242 . 8244) (8249 . 8250) 8252 8254 8260 (8304 . 8305) (8308 . 8334) (8355 . 8356) 8359 8364 (8400 . 8407) 8450 8453 8467 (8469 . 8470) 8474 8477 8482 8484 8486 8494 (8539 . 8542) (8592 . 8597) (8612 . 8616) (8656 . 8661) (8704 . 8713) (8715 . 8716) 8719 (8721 . 8723) 8725 (8728 . 8730) (8733 . 8735) 8737 (8740 . 8747) 8750 8764 8771 8773 (8776 . 8777) 8793 (8799 . 8802) (8804 . 8805) (8810 . 8811) (8834 . 8843) 8853 8855 (8868 . 8871) (8898 . 8899) 8901 8960 8962 (8968 . 8971) 8976 (8992 . 8993) (9001 . 9002) (9146 . 9149) (9225 . 9229) 9252 9472 9474 9484 9488 9492 9496 9500 9508 9516 9524 9532 (9548 . 9587) (9600 . 9633) (9642 . 9644) (9650 . 9651) 9658 9660 9668 9670 (9674 . 9675) 9679 (9688 . 9689) 9702 (9786 . 9788) 9792 9794 9824 9827 (9829 . 9830) (9834 . 9835) (64257 . 64258) 65533])
+                nil [2500 4675])
+            ("nxml-misc-fixed-3-glyph-set" variable
+               (:constant-flag t
+                :default-value [(32 . 126) (160 . 255) (256 . 511) (512 . 544) (546 . 563) (592 . 685) (688 . 750) (768 . 847) (864 . 879) (884 . 885) 890 894 (900 . 906) 908 (910 . 929) (931 . 974) (976 . 1014) (1024 . 1158) (1160 . 1230) (1232 . 1269) (1272 . 1273) (1280 . 1295) (1329 . 1366) (1369 . 1375) (1377 . 1415) (1417 . 1418) (1456 . 1465) (1467 . 1476) (1488 . 1514) (1520 . 1524) (4304 . 4344) 4347 (7680 . 7835) (7840 . 7929) (7936 . 7957) (7960 . 7965) (7968 . 8005) (8008 . 8013) (8016 . 8023) 8025 8027 8029 (8031 . 8061) (8064 . 8116) (8118 . 8132) (8134 . 8147) (8150 . 8155) (8157 . 8175) (8178 . 8180) (8182 . 8190) (8192 . 8202) (8208 . 8231) (8239 . 8274) 8279 (8287 . 8291) (8304 . 8305) (8308 . 8334) (8352 . 8369) (8400 . 8426) (8448 . 8506) (8509 . 8523) (8531 . 8579) (8592 . 8703) (8704 . 8959) (8960 . 9166) (9216 . 9254) (9280 . 9290) (9472 . 9727) (9728 . 9747) (9750 . 9751) (9753 . 9853) (9856 . 9865) (10214 . 10219) (10229 . 10239) (10752 . 10758) 10781 10815 12351 (64256 . 64262) (64275 . 64279) (64285 . 64310) (64312 . 64316) 64318 (64320 . 64321) (64323 . 64324) (64326 . 64335) (65056 . 65059) (65377 . 65439) 65533])
+                nil [4677 6597])
+            ("nxml-wgl4-glyph-set" variable
+               (:constant-flag t
+                :default-value [(32 . 126) (160 . 383) 402 (506 . 511) (710 . 711) 713 (728 . 731) 733 (900 . 906) 908 (910 . 929) (931 . 974) (1025 . 1036) (1038 . 1103) (1105 . 1116) (1118 . 1119) (1168 . 1169) (7808 . 7813) (7922 . 7923) (8211 . 8213) (8215 . 8222) (8224 . 8226) 8230 8240 (8242 . 8243) (8249 . 8250) 8252 8254 8260 8319 (8355 . 8356) 8359 8364 8453 8467 8470 8482 8486 8494 (8539 . 8542) (8592 . 8597) 8616 8706 8710 8719 (8721 . 8722) 8725 (8729 . 8730) (8734 . 8735) 8745 8747 8776 (8800 . 8801) (8804 . 8805) 8962 8976 (8992 . 8993) 9472 9474 9484 9488 9492 9496 9500 9508 9516 9524 9532 (9552 . 9580) 9600 9604 9608 9612 (9616 . 9619) (9632 . 9633) (9642 . 9644) 9650 9658 9660 9668 (9674 . 9675) 9679 (9688 . 9689) 9702 (9786 . 9788) 9792 9794 9824 9827 (9829 . 9830) (9834 . 9835) (64257 . 64258)])
+                nil [6599 7927])
+            ("nxml-glyph-set-functions" variable nil nil [7929 8557])
+            ("define-obsolete-variable-alias" code nil nil [8559 8647])
+            ("nxml-glyph-set" variable nil nil [8649 9126])
+            ("nxml-x-set-glyph-set" function (:arguments ("face")) nil [9128 9300])
+            ("nxml-w32-set-glyph-set" function (:arguments ("face")) nil [9302 9383])
+            ("nxml-window-system-set-glyph-set" function (:arguments ("face")) nil [9385 9478])
+            ("nxml-terminal-set-glyph-set" function (:arguments ("face")) nil [9480 9567])
+            ("add-hook" code nil nil [9569 9799])
+            ("nxml-glyph-display-string" function (:arguments ("n" "face")) nil [9816 10281])
+            ("nxml-glyph-set-contains-p" function (:arguments ("n" "v")) nil [10283 10911])
+            ("nxml-glyph" package nil nil [10913 10934]))          
+      :file "nxml-glyph.el.gz"
+      :pointmax 10964
+      :fsize 3342
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!local!Cellar!emacs!25.1!share!emacs!25.1!lisp!nxml!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

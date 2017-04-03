@@ -1,0 +1,160 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("google-translate-core-ui" include nil nil [5024 5059])
+            ("google-translate-default-ui" customgroup (:user-visible-flag t) nil [5062 5182])
+            ("google-translate-default-source-language" variable nil nil [5184 5944])
+            ("google-translate-default-target-language" variable nil nil [5946 6569])
+            ("google-translate-read-args" function (:arguments ("override-p" "reverse-p")) nil [6571 8192])
+            ("%google-translate-query-translate" function (:arguments ("override-p" "reverse-p")) nil [8194 8859])
+            ("%google-translate-default-ui-read-from-minibuffer" function (:arguments ("source-language" "target-language")) nil [8861 9153])
+            ("google-translate-query-translate" function
+               (:user-visible-flag t
+                :arguments ("override-p"))
+                nil [9170 10494])
+            ("google-translate-query-translate-reverse" function
+               (:user-visible-flag t
+                :arguments ("override-p"))
+                nil [10511 11070])
+            ("%google-translate-at-point" function (:arguments ("override-p" "reverse-p")) nil [11072 11647])
+            ("google-translate-at-point" function
+               (:user-visible-flag t
+                :arguments ("override-p"))
+                nil [11664 11925])
+            ("google-translate-at-point-reverse" function
+               (:user-visible-flag t
+                :arguments ("override-p"))
+                nil [11942 12159])
+            ("google-translate-default-ui" package nil nil [12162 12200]))          
+      :file "google-translate-default-ui.el"
+      :pointmax 12248
+      :fsize 12247
+      :lastmodtime '(22659 32482 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [6716 6729])
+            ("google-translate-core" include nil nil [6731 6763])
+            ("ido" include nil nil [6764 6778])
+            ("google-translate-supported-languages-alist" variable (:default-value (quote (("Afrikaans" . "af") ("Albanian" . "sq") ("Amharic" . "am") ("Arabic" . "ar") ("Armenian" . "hy") ("Azerbaijani" . "az") ("Basque" . "eu") ("Belarusian" . "be") ("Bengali" . "bn") ("Bosnian" . "bs") ("Bulgarian" . "bg") ("Catalan" . "ca") ("Cebuano" . "ceb") ("Chichewa" . "ny") ("Chinese Simplified" . "zh-CN") ("Chinese Traditional" . "zh-TW") ("Corsican" . "co") ("Croatian" . "hr") ("Czech" . "cs") ("Danish" . "da") ("Dutch" . "nl") ("English" . "en") ("Esperanto" . "eo") ("Estonian" . "et") ("Filipino" . "tl") ("Finnish" . "fi") ("French" . "fr") ("Frisian" . "fy") ("Galician" . "gl") ("Georgian" . "ka") ("German" . "de") ("Greek" . "el") ("Gujarati" . "gu") ("Haitian Creole" . "ht") ("Hausa" . "ha") ("Hawaiian" . "haw") ("Hebrew" . "iw") ("Hindi" . "hi") ("Hmong" . "hmn") ("Hungarian" . "hu") ("Icelandic" . "is") ("Igbo" . "ig") ("Indonesian" . "id") ("Irish" . "ga") ("Italian" . "it") ("Japanese" . "ja") ("Javanese" . "jw") ("Kannada" . "kn") ("Kazakh" . "kk") ("Khmer" . "km") ("Korean" . "ko") ("Kurdish (Kurmanji)" . "ku") ("Kyrgyz" . "ky") ("Lao" . "lo") ("Latin" . "la") ("Latvian" . "lv") ("Lithuanian" . "lt") ("Luxembourgish" . "lb") ("Macedonian" . "mk") ("Malagasy" . "mg") ("Malay" . "ms") ("Malayalam" . "ml") ("Maltese" . "mt") ("Maori" . "mi") ("Marathi" . "mr") ("Mongolian" . "mn") ("Myanmar (Burmese)" . "my") ("Nepali" . "ne") ("Norwegian" . "no") ("Pashto" . "ps") ("Persian" . "fa") ("Polish" . "pl") ("Portuguese" . "pt") ("Punjabi" . "pa") ("Romanian" . "ro") ("Russian" . "ru") ("Samoan" . "sm") ("Scots Gaelic" . "gd") ("Serbian" . "sr") ("Sesotho" . "st") ("Shona" . "sn") ("Sindhi" . "sd") ("Sinhala" . "si") ("Slovak" . "sk") ("Slovenian" . "sl") ("Somali" . "so") ("Spanish" . "es") ("Sundanese" . "su") ("Swahili" . "sw") ("Swedish" . "sv") ("Tajik" . "tg") ("Tamil" . "ta") ("Telugu" . "te") ("Thai" . "th") ("Turkish" . "tr") ("Ukrainian" . "uk") ("Urdu" . "ur") ("Uzbek" . "uz") ("Vietnamese" . "vi") ("Welsh" . "cy") ("Xhosa" . "xh") ("Yiddish" . "yi") ("Yoruba" . "yo") ("Zulu" . "zu")))) nil [6781 10706])
+            ("google-translate-translation-listening-debug" variable nil nil [10708 10811])
+            ("gtos" type
+               (:members ("source-language" "target-language" "text" "auto-detected-language" "text-phonetic" "translation" "translation-phonetic" "detailed-translation" "suggestion" "detailed-definition")
+                :type "struct")
+                nil [10813 11144])
+            ("google-translate-core-ui" customgroup (:user-visible-flag t) nil [11146 11264])
+            ("google-translate-enable-ido-completion" variable nil nil [11266 11529])
+            ("google-translate-show-phonetic" variable nil nil [11531 11742])
+            ("google-translate-listen-program" variable (:default-value (executable-find "mplayer")) nil [11744 12144])
+            ("google-translate-output-destination" variable nil nil [12146 12558])
+            ("google-translate-pop-up-buffer-set-focus" variable nil nil [12560 12850])
+            ("google-translate-listen-button-label" variable (:default-value "[Listen]") nil [12852 12998])
+            ("google-translate-text-face" variable
+               (:default-value (quote ((t (:inherit default))))
+                :type "face")
+                nil [13000 13143])
+            ("google-translate-phonetic-face" variable
+               (:default-value (quote ((t (:inherit shadow))))
+                :type "face")
+                nil [13145 13295])
+            ("google-translate-translation-face" variable
+               (:default-value (quote ((t (:weight bold))))
+                :type "face")
+                nil [13297 13450])
+            ("google-translate-suggestion-label-face" variable
+               (:default-value (quote ((t (:foreground "red"))))
+                :type "face")
+                nil [13452 13611])
+            ("google-translate-suggestion-face" variable
+               (:default-value (quote ((t (:slant italic :underline t))))
+                :type "face")
+                nil [13613 13769])
+            ("google-translate-listen-button-face" variable
+               (:default-value (quote ((t (:inherit button :height 0.8))))
+                :type "face")
+                nil [13771 13934])
+            ("google-translate-input-method-auto-toggling" variable nil nil [13936 14285])
+            ("google-translate-preferable-input-methods-alist" variable (:default-value (quote ((nil)))) nil [14287 14996])
+            ("google-translate-supported-languages" function nil nil [14998 15176])
+            ("google-translate-language-abbreviation" function (:arguments ("language")) nil [15178 15408])
+            ("google-translate-language-display-name" function (:arguments ("abbreviation")) nil [15410 15715])
+            ("google-translate-paragraph" function (:arguments ("text" "face" "output-format")) nil [15717 16190])
+            ("google-translate-setup-preferable-input-method" function
+               (:user-visible-flag t
+                :arguments ("source-language"))
+                nil [16192 16549])
+            ("google-translate-find-preferable-input-method" function (:arguments ("source-language")) nil [16551 16991])
+            ("google-translate--translation-title" function (:arguments ("gtos" "format")) nil [16993 17721])
+            ("google-translate--translating-text" function (:arguments ("gtos" "format")) nil [17723 17991])
+            ("google-translate--text-phonetic" function (:arguments ("gtos" "format")) nil [17993 18414])
+            ("google-translate--translated-text" function (:arguments ("gtos" "format")) nil [18416 18655])
+            ("google-translate--translation-phonetic" function (:arguments ("gtos" "format")) nil [18657 19119])
+            ("google-translate--detailed-translation" function (:arguments ("detailed-translation" "translation" "format1" "format2")) nil [19121 20391])
+            ("google-translate--detailed-definition" function (:arguments ("detailed-definition" "definition" "format1" "format2")) nil [20393 21821])
+            ("google-translate--suggestion" function (:arguments ("gtos")) nil [21823 22917])
+            ("google-translate--suggestion-action" function
+               (:user-visible-flag t
+                :arguments ("button"))
+                nil [22919 23377])
+            ("google-translate--listen-button" function (:arguments ("language" "text")) nil [23379 23874])
+            ("google-translate--listen-action" function
+               (:user-visible-flag t
+                :arguments ("button"))
+                nil [23876 24118])
+            ("google-translate-listen-translation" function (:arguments ("language" "text")) nil [24120 24890])
+            ("google-translate-translate" function (:arguments ("source-language" "target-language" "text" "output-destination")) nil [24892 27719])
+            ("google-translate-popup-output-translation" function (:arguments ("gtos")) nil [27721 28033])
+            ("google-translate-echo-area-output-translation" function (:arguments ("gtos")) nil [28035 28385])
+            ("google-translate-kill-ring-output-translation" function (:arguments ("gtos")) nil [28387 28711])
+            ("google-translate-insert-translation" function (:arguments ("gtos")) nil [28713 29417])
+            ("google-translate-buffer-output-translation" function (:arguments ("gtos")) nil [29419 29805])
+            ("google-translate-help-buffer-output-translation" function (:arguments ("gtos")) nil [29807 30062])
+            ("google-translate-buffer-insert-translation" function (:arguments ("gtos")) nil [30064 31729])
+            ("google-translate-read-source-language" function (:arguments ("prompt")) nil [31731 32222])
+            ("google-translate-read-target-language" function (:arguments ("prompt")) nil [32224 32950])
+            ("google-translate-completing-read" function (:arguments ("prompt" "choices" "def")) nil [32952 33327])
+            ("google-translate-core-ui" package nil nil [33329 33364]))          
+      :file "google-translate-core-ui.el"
+      :pointmax 33408
+      :fsize 33407
+      :lastmodtime '(22659 32482 0 0)
+      :unmatched-syntax '((close-paren 6729 . 6730) (symbol 6698 . 6715) (open-paren 6697 . 6698)))
+    (semanticdb-table "semanticdb-table"
+      :file "google-translate-core.el"
+      :fsize 9956
+      :lastmodtime '(22659 32482 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("google-translate-core-ui" include nil nil [4723 4758])
+            ("google-translate-smooth-ui" customgroup (:user-visible-flag t) nil [4761 4872])
+            ("google-translate-translation-directions-alist" variable (:default-value (quote nil)) nil [4874 5443])
+            ("google-translate-current-translation-direction" variable nil nil [5445 5667])
+            ("google-translate-translation-direction-query" variable nil nil [5669 5817])
+            ("google-translate-try-other-direction" variable nil nil [5819 5936])
+            ("google-translate-minibuffer-keymap" variable nil nil [5938 6048])
+            ("google-translate-change-translation-direction" function (:arguments ("direction")) nil [6050 6782])
+            ("google-translate-next-translation-direction" function (:user-visible-flag t) nil [6784 7122])
+            ("google-translate-previous-translation-direction" function (:user-visible-flag t) nil [7124 7474])
+            ("google-translate-query-translate-using-directions" function (:user-visible-flag t) nil [7476 8636])
+            ("google-translate--setup-minibuffer-keymap" function nil nil [8638 9187])
+            ("google-translate-clear-minibuffer" function (:user-visible-flag t) nil [9189 9312])
+            ("google-translate--read-from-minibuffer" function nil nil [9314 10172])
+            ("google-translate--current-direction-source-language" function nil nil [10174 10424])
+            ("google-translate--current-direction-target-language" function nil nil [10426 10676])
+            ("google-translate-smooth-translate" function (:user-visible-flag t) nil [10693 12287])
+            ("google-translate-smooth-ui" package nil nil [12290 12327]))          
+      :file "google-translate-smooth-ui.el"
+      :pointmax 12373
+      :fsize 12372
+      :lastmodtime '(22659 32482 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!google-translate-20161206.1408!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

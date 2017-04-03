@@ -1,0 +1,81 @@
+
+;; ----- smex-history -----
+(
+ org-publish-project
+ check-parens
+ toggle-truncate-lines
+ org-element-cache-reset
+ eval-buffer
+ goto-line
+ emacs-lisp-mode
+ osx-dictionary-search-pointer
+ blog-new
+ customize-group
+ package-list-packages
+ hs-minor-mode
+ man
+ ggtags-mode
+ org-iswitchb
+ org-store-link
+ global-linum-mode
+ magit-status
+ magit-commit
+ magit-push
+ magit-log-all
+ magit-log
+ magit-checkout
+ help
+ recentf-mode
+ ispell
+ occur
+ undo-tree-visualize
+ eval-defun
+ cd
+ 5x5
+ arp
+)
+
+;; ----- smex-data -----
+(
+ (eval-buffer . 20)
+ (eval-defun . 1)
+ (toggle-truncate-lines . 71)
+ (undo-tree-visualize . 2)
+ (occur . 1)
+ (ispell . 2)
+ (emacs-lisp-mode . 3)
+ (recentf-mode . 1)
+ (package-list-packages . 2)
+ (help . 1)
+ (magit-status . 3)
+ (magit-commit . 2)
+ (magit-log . 2)
+ (magit-checkout . 1)
+ (magit-push . 5)
+ (magit-log-all . 1)
+ (zilongshanren/retrieve-chrome-current-tab-url . 1)
+ (global-linum-mode . 2)
+ (org-store-link . 1)
+ (org-iswitchb . 1)
+ (blog-new . 17)
+ (customize-group . 9)
+ (ggtags-mode . 2)
+ (ggtags-create-tags . 2)
+ (ggtags-find-definition . 2)
+ (ggtags-find-file . 1)
+ (ggtags-navigation-mode . 2)
+ (helm-gtags-find-tag . 1)
+ (org-refile . 4)
+ (helm-gtags-find-symbol . 2)
+ (helm-gtags-find-files . 1)
+ (man . 2)
+ (hs-minor-mode . 5)
+ (hs-toggle-hiding . 14)
+ (my-org-screenshot . 2)
+ (osx-dictionary-search-pointer . 1)
+ (goto-line . 2)
+ (org-edit-src-code . 3)
+ (org-publish-project . 96)
+ (org-element-cache-reset . 2)
+ (check-parens . 3)
+)

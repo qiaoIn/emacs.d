@@ -1,0 +1,50 @@
+\section{教程大纲}
+\label{sec:0}
+
+本教程预计分为 9 个单元，第 1-8 个单元附带练习和解答。
+\begin{enumerate}
+  \renewcommand{\labelenumi}{\theenumi.}
+	\setlength{\parsep}{0pt}
+	\setlength{\itemsep}{0pt}
+\item 启程：编译环境、JSON 简介、测试驱动开发、解析器主要函数及各数据结构。练习
+  JSON 布尔类型的解析。
+\item 解析数字：JSON number 的语法。练习 JSON number 类型的校验。
+\item 解析字符串：使用 union 存储 variant、自动扩展的堆栈、JSON string 的语法、
+  valgrind。练习最基本的 JSON string 类型的解析、内存释放。
+\item Unicode：Unicode 和 UTF-8 的基本知识、JSON string 的 unicode 处理。练习
+  完成 JSON string 类型的解析。
+\item 解析数组：JSON array 的语法。练习完成 JSON array 类型的解析、相关内存释
+  放。
+\item 解析对象：JSON object 的语法、重构 string 解析函数。练习完成 JSON object
+  的解析、相关内存释放。
+\item 生成器：JSON 生成过程、注意事项。练习完成 JSON 生成器。
+\item 访问：JSON array／object 的访问及修改。练习完成相关功能。
+\item 终点及新开始：加入 nativejson-benchmark 测试，与 RapidJSON 对比及展望。
+\end{enumerate}
+
+通过这个教程，同学可以了解如何从零开始写一个 JSON 库，其特性如下：
+\begin{itemize}
+  \setlength{\parsep}{0pt}
+	\setlength{\itemsep}{0pt}
+\item 符合标准的 JSON 解析器和生成器；
+\item 手写的递归下降解析器（recursive descent parser）；
+\item 使用标准 C 语言（C89）；
+\item 跨平台／编译器（如 Windows／Linux／OS X，vc／gcc／clang）；
+\item 仅支持 UTF-8 JSON 文本；
+\item 仅支持以 double 存储 JSON number 类型；
+\item 解析器和生成器的代码合共少于 500 行.
+\end{itemize}
+
+除了围绕 JSON 作为例子，希望能在教程中讲述一些课题：
+\begin{itemize}
+  \setlength{\parsep}{0pt}
+	\setlength{\itemsep}{0pt}
+\item 测试驱动开发（test driven development, TDD）
+\item C 语言编程风格
+\item 数据结构
+\item API 设计
+\item 断言
+\item Unicode
+\item 浮点数
+\item Github、CMake、valgrind、Doxygen 等工具
+\end{itemize}

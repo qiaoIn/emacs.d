@@ -1,0 +1,94 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("bytecomp" include nil nil [1583 1602])
+            ("cl-lib" include nil nil [1603 1620])
+            ("dash" include nil nil [1621 1636])
+            ("declare-function" code nil nil [1638 1683])
+            ("declare-function" code nil nil [1684 1739])
+            ("declare-function" code nil nil [1740 1793])
+            ("declare-function" code nil nil [1794 1835])
+            ("Info-directory-list" variable nil nil [1836 1864])
+            ("packed" customgroup (:user-visible-flag t) nil [1879 1969])
+            ("packed-loaddefs-filename" variable (:default-value "loaddefs.el") nil [1971 2120])
+            ("packed-el-suffixes" function (:arguments ("nosuffix" "must-suffix")) nil [2137 2647])
+            ("packed-elc-suffixes" function (:arguments ("nosuffix" "must-suffix")) nil [2649 3160])
+            ("packed--suffixes" function (:arguments ("remove-suffix" "nosuffix" "must-suffix")) nil [3162 3435])
+            ("packed-el-regexp" function nil nil [3437 3721])
+            ("packed-elc-regexp" function nil nil [3723 4008])
+            ("packed-el-file" function (:arguments ("elc")) nil [4010 4455])
+            ("defalias" code nil nil [4457 4508])
+            ("packed-locate-library" function
+               (:user-visible-flag t
+                :arguments ("library" "nosuffix" "path" "interactive-call"))
+                nil [4510 6110])
+            ("packed-ignore-library-regexp" variable
+               (:constant-flag t
+                :default-value "\\(?:^\\.\\|-autoloads\\|-loaddefs\\|-tests?$\\|^ert$\\)")
+                nil [6112 6212])
+            ("packed-ignore-directory-regexp" variable
+               (:constant-flag t
+                :default-value "\\(?:CVS\\|RCS\\|^t$\\|^tests?$\\|^vendor$\\|^script$\\)")
+                nil [6214 6316])
+            ("packed-ignore-directory-p" function (:arguments ("directory" "package")) nil [6318 7322])
+            ("packed-with-file" function (:arguments ("file" "body")) nil [7324 8228])
+            ("packed-library-p" function (:arguments ("file" "package")) nil [8230 9670])
+            ("packed-library-name-p" function (:arguments ("file" "package")) nil [9672 10592])
+            ("packed-libraries" function (:arguments ("directory" "package" "full" "nonrecursive")) nil [10594 11629])
+            ("packed-libraries-1" function (:arguments ("directory" "package" "nonrecursive")) nil [11631 12834])
+            ("packed-main-library" function (:arguments ("directory" "package" "noerror" "nosingle")) nil [12836 13805])
+            ("packed-main-library-1" function (:arguments ("package" "libraries" "noerror" "nosingle")) nil [13807 15294])
+            ("packed-main-library-2" function (:arguments ("package" "libraries")) nil [15296 15570])
+            ("packed-filename" function (:arguments ("file")) nil [15572 15704])
+            ("packed-add-to-load-path" function (:arguments ("directory" "package")) nil [15721 15941])
+            ("packed-remove-from-load-path" function (:arguments ("directory")) nil [15943 16358])
+            ("packed-load-path" function (:arguments ("directory" "package")) nil [16360 16974])
+            ("packed-without-mode-hooks" function (:arguments ("body")) nil [16994 17172])
+            ("packed-byte-compile-file" function (:arguments ("filename" "load")) nil [17174 17355])
+            ("packed-compile-package" function (:arguments ("directory" "package" "force")) nil [17357 18853])
+            ("packed-loaddefs-file" function (:arguments ("directory")) nil [18870 19107])
+            ("packed-load-loaddefs" function (:arguments ("directory")) nil [19109 19282])
+            ("packed-with-loaddefs" function (:arguments ("dest" "body")) nil [19284 19657])
+            ("packed-update-autoloads" function (:arguments ("dest" "path")) nil [19659 19770])
+            ("packed-remove-autoloads" function (:arguments ("dest" "path")) nil [19772 20338])
+            ("packed-provided-regexp" variable
+               (:constant-flag t
+                :default-value "(\\(?:cc-\\|silentcomp-\\)?provide[ 	
+]+'\\([^(), 	
+]+\\)\\(?:[ 	
+]+'(\\([^(),]+\\))\\)?)")
+                nil [20354 20496])
+            ("packed-provided" function nil nil [20498 21620])
+            ("packed-library-feature" function (:arguments ("file")) nil [21622 22703])
+            ("packed-required-regexp" variable
+               (:constant-flag t
+                :default-value "(\\(?:cc-\\)?require[ 	
+]+'\\([^(), 	
+\"]+\\)\\(?:\\(?:[ 	
+]+\\(?:nil\\|\"[^\"]*\"\\)\\)\\(?:[ 	
+]+\\(?:nil\\|\\(t\\)\\)\\)?\\)?)")
+                nil [22705 22891])
+            ("packed-required" function nil nil [22893 23427])
+            ("packed-ginstall-info" variable (:default-value (or (executable-find "ginstall-info") (executable-find "install-info"))) nil [23445 23554])
+            ("packed-texinfo-regexp" variable
+               (:constant-flag t
+                :default-value (concat "\\." (regexp-opt (list "texi" "texinfo" "txi")) "$"))
+                nil [23556 23652])
+            ("packed-enable-info-dir-file" function (:arguments ("dir-file")) nil [23654 24041])
+            ("packed-install-info" function (:arguments ("directory" "dir-file")) nil [24043 25075])
+            ("packed-uninstall-info" function (:arguments ("directory" "dir-file")) nil [25077 26047])
+            ("packed-info-files" function (:arguments ("directory")) nil [26049 27111])
+            ("packed" package nil nil [27113 27130]))          
+      :file "packed.el"
+      :pointmax 27208
+      :fsize 27207
+      :lastmodtime '(22659 32322 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!packed-20160523.600!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

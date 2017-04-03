@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("gntp" customgroup (:user-visible-flag t) nil [2024 2134])
+            ("gntp-application-name" variable (:default-value "Emacs/gntp.el") nil [2136 2254])
+            ("gntp-application-icon" variable nil nil [2256 2390])
+            ("gntp-server" variable (:default-value "localhost") nil [2392 2534])
+            ("gntp-server-port" variable (:default-value 23053) nil [2536 2678])
+            ("gntp-register-alist" variable nil nil [2680 2780])
+            ("gntp-register" function (:arguments ("notifications" "server" "port")) nil [2782 3101])
+            ("gntp-notify" function (:arguments ("name" "title" "text" "server" "port" "priority" "icon")) nil [3118 3420])
+            ("gntp-build-message-register" function (:arguments ("notifications")) nil [3422 4639])
+            ("gntp-notification-lines" function (:arguments ("notice")) nil [4641 5527])
+            ("gntp-build-message-notify" function (:arguments ("name" "title" "text" "priority" "icon")) nil [5529 6170])
+            ("gntp-notice-icon-uri" function (:arguments ("notice")) nil [6311 6431])
+            ("gntp-notice-icon-data" function (:arguments ("notice")) nil [6433 6552])
+            ("gntp-app-icon-uri" function nil nil [6554 6686])
+            ("gntp-app-icon-data" function nil nil [6688 6822])
+            ("gntp-icon-uri" function (:arguments ("icon")) nil [6824 7070])
+            ("gntp-icon-data" function (:arguments ("icon")) nil [7072 7416])
+            ("gntp-notice-name" function (:arguments ("notice")) nil [7418 7616])
+            ("gntp-notice-get" function (:arguments ("notice" "property")) nil [7618 7725])
+            ("gntp-send" function (:arguments ("message" "server" "port")) nil [7727 8197])
+            ("gntp-filter" function (:arguments ("proc" "string")) nil [8199 8471])
+            ("gntp-file-string" function (:arguments ("file")) nil [8626 8796])
+            ("gntp" package nil nil [8798 8813]))          
+      :file "gntp.el"
+      :pointmax 8837
+      :fsize 8836
+      :lastmodtime '(22659 33009 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!gntp-20141024.1950!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

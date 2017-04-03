@@ -1,0 +1,42 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [3499 3512])
+            ("open-junk-file" customgroup (:user-visible-flag t) nil [3514 3578])
+            ("open-junk-file-format" variable (:default-value "~/junk/%Y/%m/%d-%H%M%S.") nil [3579 3788])
+            ("defvaralias" code nil nil [3789 3851])
+            ("open-junk-file-find-file-function" variable (:default-value (quote find-file-other-window)) nil [3852 3997])
+            ("open-junk-file-hook" variable nil nil [3998 4186])
+            ("find-file-hook--open-junk-file" function nil nil [4203 4494])
+            ("add-hook" code nil nil [4511 4569])
+            ("open-junk-file" function
+               (:user-visible-flag t
+                :arguments ("format" "find-file-fn"))
+                nil [4586 5335])
+            ("open-junk-file-maintainer-mail-address" variable (:default-value (concat "rubiki" "tch@ru" "by-lang.org")) nil [5353 5443])
+            ("open-junk-file-bug-report-salutation" variable (:default-value "Describe bug below, using a precise recipe.
+
+When I executed M-x ...
+
+How to send a bug report:
+  1) Be sure to use the LATEST version of open-junk-file.el.
+  2) Enable debugger. M-x toggle-debug-on-error or (setq debug-on-error t)
+  3) Use Lisp version instead of compiled one: (load \"open-junk-file.el\")
+  4) If you got an error, please paste *Backtrace* buffer.
+  5) Type C-c C-c to send.
+# If you are a Japanese, please write in Japanese:-)") nil [5444 5940])
+            ("open-junk-file-send-bug-report" function nil nil [5941 6194])
+            ("open-junk-file" package nil nil [6196 6221]))          
+      :file "open-junk-file.el"
+      :pointmax 6328
+      :fsize 6327
+      :lastmodtime '(22659 32522 0 0)
+      :unmatched-syntax '((close-paren 3512 . 3513) (symbol 3481 . 3498) (open-paren 3480 . 3481))))
+  :file "!Users!bing!.emacs.d!elpa!open-junk-file-20161210.314!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

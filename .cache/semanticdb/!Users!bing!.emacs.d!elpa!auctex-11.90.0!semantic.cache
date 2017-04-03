@@ -1,0 +1,1010 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("if" code nil nil [1383 1460])
+            ("AUCTeX" customgroup (:user-visible-flag t) nil [1587 1842])
+            ("TeX-lisp-directory" variable (:default-value (file-name-directory load-file-name)) nil [1844 2131])
+            ("add-to-list" code nil nil [2133 2176])
+            ("TeX-data-directory" variable (:default-value (file-name-directory load-file-name)) nil [2178 2305])
+            ("TeX-auto-global" variable
+               (:user-visible-flag t
+                :default-value (if (file-writable-p "/usr/local/var/auctex") "/usr/local/var/auctex" "~/.emacs.d/auctex"))
+                nil [2307 2664])
+            ("TeX-mode-alist" variable
+               (:constant-flag t
+                :default-value (quote ((tex-mode . tex-mode) (plain-tex-mode . tex-mode) (texinfo-mode . texinfo) (latex-mode . tex-mode) (doctex-mode . tex-mode))))
+                nil [2666 2890])
+            ("defalias" code nil nil [2892 2925])
+            ("add-hook" code nil nil [2927 3621])
+            ("TeX-modes-set" function (:arguments ("var" "value" "update")) nil [3623 4556])
+            ("TeX-modes" variable (:default-value (mapcar (function car) TeX-mode-alist)) nil [4558 5143])
+            ("AUCTeX-version" variable
+               (:constant-flag t
+                :default-value "11.90.0")
+                nil [5145 5255])
+            ("AUCTeX-date" variable
+               (:constant-flag t
+                :default-value "2017-01-11")
+                nil [5257 5355])
+            ("add-hook" code nil nil [5403 5450])
+            ("preview-TeX-style-dir" variable (:default-value (expand-file-name "latex" (file-name-directory load-file-name))) nil [5517 5613])
+            ("tex-site" package nil nil [5716 5735]))          
+      :file "tex-site.el"
+      :pointmax 5762
+      :fsize 5761
+      :lastmodtime '(22659 34637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("when" code nil nil [1004 1083])
+            ("custom" include nil nil [1085 1102])
+            ("tex-site" include nil nil [1103 1122])
+            ("cl" include nil nil [1144 1157])
+            ("TeX-file" customgroup (:user-visible-flag t) nil [1160 1226])
+            ("TeX-command" customgroup (:user-visible-flag t) nil [1228 1314])
+            ("LaTeX" customgroup (:user-visible-flag t) nil [1316 1416])
+            ("TeX-misc" customgroup (:user-visible-flag t) nil [1418 1487])
+            ("TeX-command" variable (:default-value "tex") nil [1630 1727])
+            ("TeX-Omega-command" variable (:default-value "omega") nil [1729 1939])
+            ("LaTeX-command" variable (:default-value "latex") nil [1941 2038])
+            ("LaTeX-Omega-command" variable (:default-value "lambda") nil [2040 2251])
+            ("TeX-file-line-error" variable (:default-value t) nil [2253 2395])
+            ("ConTeXt-engine" variable nil nil [2397 2590])
+            ("ConTeXt-Omega-engine" variable (:default-value TeX-Omega-command) nil [2592 2819])
+            ("make-obsolete-variable" code nil nil [2898 2970])
+            ("TeX-mode-hook" variable nil nil [2972 3070])
+            ("AmS-TeX-mode-hook" variable nil nil [3072 3178])
+            ("TeX-command-list" variable (:default-value (quote (("TeX" "%(PDF)%(tex) %(file-line-error) %(extraopts) %`%S%(PDFout)%(mode)%' %t" TeX-run-TeX nil (plain-tex-mode ams-tex-mode texinfo-mode) :help "Run plain TeX") ("LaTeX" "%`%l%(mode)%' %t" TeX-run-TeX nil (latex-mode doctex-mode) :help "Run LaTeX") ("Makeinfo" "makeinfo %(extraopts) %t" TeX-run-compile nil (texinfo-mode) :help "Run Makeinfo with Info output") ("Makeinfo HTML" "makeinfo %(extraopts) --html %t" TeX-run-compile nil (texinfo-mode) :help "Run Makeinfo with HTML output") ("AmSTeX" "amstex %(PDFout) %(extraopts) %`%S%(mode)%' %t" TeX-run-TeX nil (ams-tex-mode) :help "Run AMSTeX") ("ConTeXt" "%(cntxcom) --once --texutil %(extraopts) %(execopts)%t" TeX-run-TeX nil (context-mode) :help "Run ConTeXt once") ("ConTeXt Full" "%(cntxcom) %(extraopts) %(execopts)%t" TeX-run-TeX nil (context-mode) :help "Run ConTeXt until completion") ("BibTeX" "bibtex %s" TeX-run-BibTeX nil t :help "Run BibTeX") ("Biber" "biber %s" TeX-run-Biber nil t :help "Run Biber") ("View" "%V" TeX-run-discard-or-function t t :help "Run Viewer") ("Print" "%p" TeX-run-command t t :help "Print the file") ("Queue" "%q" TeX-run-background nil t :help "View the printer queue" :visible TeX-queue-command) ("File" "%(o?)dvips %d -o %f " TeX-run-dvips t t :help "Generate PostScript file") ("Dvips" "%(o?)dvips %d -o %f " TeX-run-dvips nil t :help "Convert DVI file to PostScript") ("Dvipdfmx" "dvipdfmx %d" TeX-run-dvipdfmx nil t :help "Convert DVI file to PDF with dvipdfmx") ("Ps2pdf" "ps2pdf %f" TeX-run-ps2pdf nil t :help "Convert PostScript file to PDF") ("Index" "makeindex %s" TeX-run-index nil t :help "Run makeindex to create index file") ("Xindy" "texindy %s" TeX-run-command nil t :help "Run xindy to create index file") ("Check" "lacheck %s" TeX-run-compile nil (latex-mode) :help "Check LaTeX file for correctness") ("ChkTeX" "chktex -v6 %s" TeX-run-compile nil (latex-mode) :help "Check LaTeX file for common mistakes") ("Spell" "(TeX-ispell-document \"\")" TeX-run-function nil t :help "Spell-check the document") ("Clean" "TeX-clean" TeX-run-function nil t :help "Delete generated intermediate files") ("Clean All" "(TeX-clean t)" TeX-run-function nil t :help "Delete generated intermediate and output files") ("Other" "" TeX-run-command t t :help "Run an arbitrary command")))) nil [3534 9550])
+            ("TeX-command-output-list" variable (:default-value (quote nil)) nil [9552 10686])
+            ("LaTeX-version" variable (:default-value "2e") nil [10755 11114])
+            ("LaTeX-command-style" variable (:default-value (quote (("" "%(PDF)%(latex) %(file-line-error) %(extraopts) %S%(PDFout)")))) nil [11213 11791])
+            ("TeX-print-command" variable (:default-value "{ test -e %s.dvi && %(o?)dvips -P%p %r %s; } || lpr -P%p %o") nil [12631 13043])
+            ("TeX-queue-command" variable (:default-value "lpq -P%p") nil [13045 13431])
+            ("TeX-printer-list" variable (:default-value (quote (("Default" "{ test -e %s.dvi && %(o?)dvips -f %r %s | lpr; } || lpr %o" "lpq")))) nil [13533 14892])
+            ("TeX-printer-default" variable (:default-value (or (getenv "PRINTER") (and TeX-printer-list (car (car TeX-printer-list))) "lp")) nil [14933 15149])
+            ("TeX-print-style" variable (:default-value (quote (("^landscape$" "-t landscape")))) nil [15151 15627])
+            ("TeX-command-extra-options" variable nil nil [15629 15753])
+            ("make-variable-buffer-local" code nil nil [15754 15809])
+            ("TeX-expand-list-builtin" variable (:default-value (quote (("%q" (lambda nil (TeX-printer-query t))) ("%V" (lambda nil (TeX-source-correlate-start-server-maybe) (TeX-view-command-raw))) ("%vv" (lambda nil (TeX-source-correlate-start-server-maybe) (TeX-output-style-check TeX-output-view-style))) ("%v" (lambda nil (TeX-source-correlate-start-server-maybe) (TeX-style-check TeX-view-style))) ("%r" (lambda nil (TeX-style-check TeX-print-style))) ("%l" (lambda nil (TeX-style-check LaTeX-command-style))) ("%(PDF)" (lambda nil (if (and (eq TeX-engine (quote default)) (if TeX-PDF-mode (not (TeX-PDF-from-DVI)) TeX-DVI-via-PDFTeX)) "pdf" ""))) ("%(PDFout)" (lambda nil (cond ((eq major-mode (quote ams-tex-mode)) (if TeX-PDF-mode " -output-format=pdf" " -output-format=dvi")) ((and (eq TeX-engine (quote xetex)) (not TeX-PDF-mode)) " -no-pdf") ((and (eq TeX-engine (quote luatex)) (not TeX-PDF-mode)) " --output-format=dvi") ((and (eq TeX-engine (quote default)) (not TeX-PDF-mode) TeX-DVI-via-PDFTeX) " \"\\pdfoutput=0 \"") (t "")))) ("%(mode)" (lambda nil (if TeX-interactive-mode "" " -interaction=nonstopmode"))) ("%(file-line-error)" (lambda nil (if TeX-file-line-error " -file-line-error" ""))) ("%(o?)" (lambda nil (if (eq TeX-engine (quote omega)) "o" ""))) ("%(tex)" (lambda nil (eval (nth 2 (assq TeX-engine (TeX-engine-alist)))))) ("%(latex)" (lambda nil (eval (nth 3 (assq TeX-engine (TeX-engine-alist)))))) ("%(cntxcom)" ConTeXt-expand-command) ("%(execopts)" ConTeXt-expand-options) ("%(extraopts)" (lambda nil TeX-command-extra-options)) ("%S" TeX-source-correlate-expand-options) ("%dS" TeX-source-specials-view-expand-options) ("%cS" TeX-source-specials-view-expand-client) ("%(outpage)" (lambda nil (and TeX-source-correlate-mode (null TeX-source-correlate-output-page-function) (eq (TeX-source-correlate-method-active) (quote synctex)) (setq TeX-source-correlate-output-page-function (quote TeX-synctex-output-page))) (or (if TeX-source-correlate-output-page-function (funcall TeX-source-correlate-output-page-function)) "1"))) ("%s" file nil t) ("%t" file t t) ("%`" (lambda nil (setq TeX-command-pos t TeX-command-text ""))) (" \"\\" (lambda nil (if (eq TeX-command-pos t) (setq TeX-command-pos pos pos (+ 3 pos)) (setq pos (1+ pos))))) ("\"" (lambda nil (if (numberp TeX-command-pos) (setq TeX-command-text (concat TeX-command-text (substring command TeX-command-pos (1+ pos))) command (concat (substring command 0 TeX-command-pos) (substring command (1+ pos))) pos TeX-command-pos TeX-command-pos t) (setq pos (1+ pos))))) ("%'" (lambda nil (prog1 (if (stringp TeX-command-text) (progn (setq pos (+ pos (length TeX-command-text) 9) TeX-command-pos (and (string-match " " (funcall file t t)) "\"")) (concat TeX-command-text " \"\\input\"")) (setq TeX-command-pos nil) "") (setq TeX-command-text nil)))) ("%n" TeX-current-line) ("%d" file "dvi" t) ("%f" file "ps" t) ("%o" (lambda nil (funcall file (TeX-output-extension) t))) ("%b" TeX-current-file-name-master-relative) ("%a" (lambda nil (prin1-to-string (expand-file-name (buffer-file-name))))) ("%m" preview-create-subdirectory)))) nil [15959 20318])
+            ("TeX-expand-list" variable nil nil [20320 21189])
+            ("TeX-expand-list" function nil nil [21191 21525])
+            ("TeX-region-create" function (:prototype-flag t) nil [21770 21817])
+            ("TeX-save-document" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [21818 21863])
+            ("TeX-home-buffer" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [21864 21907])
+            ("TeX-pin-region" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [21908 21950])
+            ("TeX-command-region" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [21951 21997])
+            ("TeX-command-buffer" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [21998 22044])
+            ("TeX-command-master" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [22045 22091])
+            ("LaTeX-command-section" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [22092 22141])
+            ("TeX-command-run-all" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [22142 22189])
+            ("TeX-command-run-all-region" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [22190 22244])
+            ("LaTeX-command-run-all-section" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [22245 22302])
+            ("TeX-command" function (:prototype-flag t) nil [22303 22344])
+            ("TeX-kill-job" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [22345 22385])
+            ("TeX-recenter-output-buffer" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [22386 22440])
+            ("TeX-next-error" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [22441 22483])
+            ("TeX-error-overview" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [22484 22530])
+            ("TeX-region-file" function (:prototype-flag t) nil [22531 22576])
+            ("TeX-current-offset" function (:prototype-flag t) nil [22577 22625])
+            ("TeX-process-set-variable" function (:prototype-flag t) nil [22626 22680])
+            ("TeX-view" function
+               (:prototype-flag t
+                :user-visible-flag t)
+                nil [22681 22717])
+            ("TeX--if-macro-fboundp" function (:arguments ("name" "then" "else")) nil [22737 23438])
+            ("easymenu" include nil nil [23486 23505])
+            ("TeX-menu-with-help" function (:arguments ("menu")) nil [24263 24422])
+            ("if" code nil nil [23527 24260])
+            ("defalias" code nil nil [24440 24534])
+            ("eval-after-load" code nil nil [24600 24772])
+            ("hack-one-local-variable" function (:arguments ("after" "TeX-hack-one-local-variable-after" "activate")) nil [24774 25313])
+            ("TeX-overlay-priority-step" variable (:default-value 16) nil [25315 25518])
+            ("when" code nil nil [25553 27764])
+            ("condition-case" code nil nil [28109 28261])
+            ("if" code nil nil [28263 30815])
+            ("if" code nil nil [30817 31318])
+            ("unless" code nil nil [31355 33268])
+            ("TeX-delete-dups-by-car" function (:arguments ("alist" "keep-list")) nil [33270 34007])
+            ("TeX-delete-duplicate-strings" function (:arguments ("list")) nil [34009 34318])
+            ("TeX-sort-strings" function (:arguments ("list")) nil [34320 34438])
+            ("TeX-output" customgroup (:user-visible-flag t) nil [34452 34535])
+            ("TeX-display-help" variable (:default-value t) nil [34537 34931])
+            ("TeX-debug-bad-boxes" variable nil nil [34933 35091])
+            ("TeX-debug-warnings" variable nil nil [35093 35244])
+            ("TeX-ignore-warnings" variable nil nil [35246 35807])
+            ("TeX-suppress-ignored-warnings" variable nil nil [35809 36001])
+            ("TeX-toggle-debug-bad-boxes" function (:user-visible-flag t) nil [36003 36258])
+            ("TeX-toggle-debug-warnings" function (:user-visible-flag t) nil [36260 36505])
+            ("TeX-toggle-suppress-ignored-warnings" function (:user-visible-flag t) nil [36507 36896])
+            ("TeX-base-mode-name" variable nil nil [36915 36969])
+            ("make-variable-buffer-local" code nil nil [36970 37018])
+            ("TeX-set-mode-name" function (:arguments ("changed" "local" "reset")) nil [37020 38568])
+            ("TeX-mode-prefix" function (:arguments ("mode")) nil [38570 38924])
+            ("TeX-view" customgroup (:user-visible-flag t) nil [38939 39017])
+            ("TeX-view-style" variable (:default-value (\` (((\, (concat "^" (regexp-opt (quote ("a4paper" "a4dutch" "a4wide" "sem-a4"))) "$")) "%(o?)xdvi %dS -paper a4 %d") ((\, (concat "^" (regexp-opt (quote ("a5paper" "a5comb"))) "$")) "%(o?)xdvi %dS -paper a5 %d") ("^b5paper$" "%(o?)xdvi %dS -paper b5 %d") ("^letterpaper$" "%(o?)xdvi %dS -paper us %d") ("^legalpaper$" "%(o?)xdvi %dS -paper legal %d") ("^executivepaper$" "%(o?)xdvi %dS -paper 7.25x10.5in %d") ("^landscape$" "%(o?)xdvi %dS -paper a4r -s 0 %d") ("." "%(o?)xdvi %dS %d")))) nil [39019 40528])
+            ("TeX-output-view-style" variable (:default-value (\` (("^dvi$" ("^landscape$" "^pstricks$\\|^pst-\\|^psfrag$") "%(o?)dvips -t landscape %d -o && gv %f") ("^dvi$" "^pstricks$\\|^pst-\\|^psfrag$" "%(o?)dvips %d -o && gv %f") ("^dvi$" ((\, (concat "^" (regexp-opt (quote ("a4paper" "a4dutch" "a4wide" "sem-a4"))) "$")) "^landscape$") "%(o?)xdvi %dS -paper a4r -s 0 %d") ("^dvi$" (\, (concat "^" (regexp-opt (quote ("a4paper" "a4dutch" "a4wide" "sem-a4"))) "$")) "%(o?)xdvi %dS -paper a4 %d") ("^dvi$" ((\, (concat "^" (regexp-opt (quote ("a5paper" "a5comb"))) "$")) "^landscape$") "%(o?)xdvi %dS -paper a5r -s 0 %d") ("^dvi$" (\, (concat "^" (regexp-opt (quote ("a5paper" "a5comb"))) "$")) "%(o?)xdvi %dS -paper a5 %d") ("^dvi$" "^b5paper$" "%(o?)xdvi %dS -paper b5 %d") ("^dvi$" "^letterpaper$" "%(o?)xdvi %dS -paper us %d") ("^dvi$" "^legalpaper$" "%(o?)xdvi %dS -paper legal %d") ("^dvi$" "^executivepaper$" "%(o?)xdvi %dS -paper 7.25x10.5in %d") ("^dvi$" "." "%(o?)xdvi %dS %d") ("^pdf$" "." "xpdf -remote %s -raise %o %(outpage)") ("^html?$" "." "netscape %o")))) nil [40530 42474])
+            ("TeX-view-predicate-list-builtin" variable (:default-value (quote ((output-dvi (string-match "dvi" (TeX-output-extension))) (output-pdf (string-match "pdf" (TeX-output-extension))) (output-html (string-match "html" (TeX-output-extension))) (has-no-display-manager (not (if (< emacs-major-version 23) (or window-system (getenv "DISPLAY")) (display-graphic-p)))) (style-pstricks (TeX-match-style "^pstricks$\\|^pst-\\|^psfrag$")) (engine-omega (eq TeX-engine (quote omega))) (engine-xetex (eq TeX-engine (quote xetex))) (mode-io-correlate TeX-source-correlate-mode) (paper-landscape (TeX-match-style "\\`landscape\\'")) (paper-portrait (not (TeX-match-style "\\`landscape\\'"))) (paper-a4 (TeX-match-style "\\`a4paper\\|a4dutch\\|a4wide\\|sem-a4\\'")) (paper-a5 (TeX-match-style "\\`a5paper\\|a5comb\\'")) (paper-b5 (TeX-match-style "\\`b5paper\\'")) (paper-letter (TeX-match-style "\\`letterpaper\\'")) (paper-legal (TeX-match-style "\\`legalpaper\\'")) (paper-executive (TeX-match-style "\\`executivepaper\\'"))))) nil [42510 43953])
+            ("TeX-view-predicate-list" variable nil nil [43955 45227])
+            ("and" code nil nil [45694 45753])
+            ("TeX-evince-dbus-p" function (:arguments ("de" "app" "options")) nil [45755 47201])
+            ("TeX-pdf-tools-sync-view" function nil nil [47203 48344])
+            ("url-unreserved-chars" variable nil nil [48346 48375])
+            ("TeX-evince-sync-view-1" function (:arguments ("de" "app")) nil [48377 49575])
+            ("TeX-atril-sync-view" function nil nil [49577 49712])
+            ("TeX-evince-sync-view" function nil nil [49714 49853])
+            ("TeX-view-program-select-evince" function (:arguments ("de" "app")) nil [49855 50460])
+            ("TeX-view-program-list-builtin" variable (:default-value (cond ((eq system-type (quote windows-nt)) (quote (("Yap" ("yap -1" (mode-io-correlate " -s %n%b") " %o") "yap") ("dviout" ("dviout -1 " ((paper-a4 paper-portrait) "-y=A4 ") ((paper-a4 paper-landscape) "-y=A4L ") ((paper-a5 paper-portrait) "-y=A5 ") ((paper-a5 paper-landscape) "-y=A5L ") ((paper-b5 paper-portrait) "-y=E5 ") ((paper-b5 paper-landscape) "-y=E5L ") ((paper-b4jis paper-portrait) "-y=B4 ") ((paper-b4jis paper-landscape) "-y=B4L ") ((paper-b5jis paper-portrait) "-y=B5 ") ((paper-b5jis paper-landscape) "-y=B5L ") (paper-legal "-y=Legal ") (paper-letter "-y=Letter ") (paper-executive "-y=Executive ") "%d" (mode-io-correlate " \"# %n '%b'\"")) "dviout") ("SumatraPDF" ("SumatraPDF -reuse-instance" (mode-io-correlate " -forward-search \"%b\" %n") " %o") "SumatraPDF") ("dvips and start" "dvips %d -o && start \"\" %f" "dvips") ("start" "start \"\" %o")))) ((eq system-type (quote darwin)) (quote (("Preview.app" "open -a Preview.app %o" "open") ("Skim" "open -a Skim.app %o" "open") ("displayline" "displayline %n %o %b" "displayline") ("open" "open %o" "open")))) (t (\` (("dvi2tty" ("dvi2tty -q -w 132 %o")) ("xdvi" ("%(o?)xdvi" (mode-io-correlate " -sourceposition \"%n %b\" -editor \"%cS\"") ((paper-a4 paper-portrait) " -paper a4") ((paper-a4 paper-landscape) " -paper a4r") ((paper-a5 paper-portrait) " -paper a5") ((paper-a5 paper-landscape) " -paper a5r") (paper-b5 " -paper b5") (paper-letter " -paper us") (paper-legal " -paper legal") (paper-executive " -paper 7.25x10.5in") " %d") "%(o?)xdvi") ("dvips and gv" "%(o?)dvips %d -o && gv %f" (\, (list "%(o?)dvips" "gv"))) ("gv" "gv %o" "gv") ("xpdf" ("xpdf -remote %s -raise %o" (mode-io-correlate " %(outpage)")) "xpdf") ("Evince" (\, (TeX-view-program-select-evince "gnome" "evince")) "evince") ("Atril" (\, (TeX-view-program-select-evince "mate" "atril")) "atril") ("Okular" ("okular --unique %o" (mode-io-correlate "#src:%n%a")) "okular") ("xdg-open" "xdg-open %o" "xdg-open") ("PDF Tools" TeX-pdf-tools-sync-view) ("Zathura" ("zathura %o" (mode-io-correlate " --synctex-forward %n:0:%b -x \"emacsclient +%{line} %{input}\"")) "zathura")))))) nil [50462 53119])
+            ("TeX-view-program-list" variable nil nil [53121 55983])
+            ("TeX-view-program-selection" variable (:default-value (cond ((eq system-type (quote windows-nt)) (quote (((output-dvi style-pstricks) "dvips and start") (output-dvi "Yap") (output-pdf "start") (output-html "start")))) ((eq system-type (quote darwin)) (quote ((output-dvi "open") (output-pdf "open") (output-html "open")))) (t (quote (((output-dvi has-no-display-manager) "dvi2tty") ((output-dvi style-pstricks) "dvips and gv") (output-dvi "xdvi") (output-pdf "Evince") (output-html "xdg-open")))))) nil [55985 58147])
+            ("TeX-match-style" function (:arguments ("regexp")) nil [58149 58282])
+            ("TeX-view-match-predicate" function (:arguments ("predicate")) nil [58284 58954])
+            ("TeX-view-command-raw" function nil nil [58956 61007])
+            ("TeX-engine-alist-builtin" variable (:default-value (quote ((default "Default" TeX-command LaTeX-command ConTeXt-engine) (xetex "XeTeX" "xetex" "xelatex" "xetex") (luatex "LuaTeX" "luatex" "lualatex --jobname=%s" "luatex") (omega "Omega" TeX-Omega-command LaTeX-Omega-command ConTeXt-Omega-engine)))) nil [61021 61536])
+            ("TeX-engine-alist" variable nil nil [61538 62503])
+            ("TeX-engine-alist" function nil nil [62505 62891])
+            ("TeX-engine" variable (:default-value (quote default)) nil [62893 63227])
+            ("make-variable-buffer-local" code nil nil [63228 63268])
+            ("put" code nil nil [63269 63377])
+            ("TeX-engine-set" function
+               (:user-visible-flag t
+                :arguments ("type"))
+                nil [63379 63870])
+            ("define-minor-mode" code nil nil [63872 64040])
+            ("defalias" code nil nil [64041 64083])
+            ("make-obsolete" code nil nil [64084 64139])
+            ("make-obsolete-variable" code nil nil [64140 64200])
+            ("TeX-source-correlate-method" variable (:default-value (quote ((dvi . source-specials) (pdf . synctex)))) nil [64234 65398])
+            ("TeX-source-correlate-output-page-function" variable nil nil [65400 65608])
+            ("make-variable-buffer-local" code nil nil [65609 65680])
+            ("TeX-source-correlate-start-server" variable (:default-value (quote ask)) nil [65682 65907])
+            ("when" code nil nil [65908 66031])
+            ("TeX-source-correlate-start-server-asked" variable nil nil [66033 66149])
+            ("TeX-source-correlate-start-server-flag" variable nil nil [66151 66373])
+            ("TeX-source-correlate-gnuserv-p" function nil nil [66375 66649])
+            ("TeX-source-correlate-server-enabled-p" function nil nil [66651 66934])
+            ("TeX-source-correlate-start-server-maybe" function nil nil [66936 67855])
+            ("TeX-source-correlate-determine-method" function nil nil [67857 68221])
+            ("TeX-source-correlate-method-active" function nil nil [68223 68636])
+            ("TeX-source-correlate-expand-options" function nil nil [68638 69371])
+            ("TeX-source-correlate-map" variable (:default-value (let ((map (make-sparse-keymap))) map)) nil [69373 69697])
+            ("TeX-source-correlate-handle-TeX-region" function (:arguments ("file" "line" "col")) nil [69699 70566])
+            ("TeX-raise-frame-function" variable (:default-value (function raise-frame)) nil [70568 71460])
+            ("TeX-source-correlate-sync-source" function (:arguments ("file" "linecol" "ignored")) nil [71462 73002])
+            ("define-minor-mode" code nil nil [73004 74408])
+            ("defalias" code nil nil [74410 74473])
+            ("make-obsolete" code nil nil [74474 74550])
+            ("defalias" code nil nil [74551 74615])
+            ("put" code nil nil [74616 74683])
+            ("put" code nil nil [74806 74859])
+            ("setq" code nil nil [74860 74981])
+            ("TeX-source-specials-tex-flags" variable (:default-value "-src-specials") nil [75005 75166])
+            ("TeX-source-specials-places" variable nil nil [75168 75671])
+            ("TeX-source-specials-view-position-flags" variable (:default-value "-sourceposition \"%n %b\"") nil [75673 75866])
+            ("TeX-source-specials-view-editor-flags" variable (:default-value "-editor \"%cS\"") nil [75868 76033])
+            ("TeX-source-specials-view-gnuclient-flags" variable (:default-value "-q +%%l %%f") nil [76035 76189])
+            ("TeX-source-specials-view-emacsclient-flags" variable (:default-value "--no-wait +%%l %%f") nil [76191 76348])
+            ("TeX-source-specials-view-expand-client" function nil nil [76395 77045])
+            ("TeX-source-specials-view-expand-options" function (:arguments ("viewer")) nil [77047 77654])
+            ("TeX-synctex-tex-flags" variable (:default-value "--synctex=1") nil [77669 77772])
+            ("TeX-synctex-output-page-1" function (:arguments ("file")) nil [77774 78359])
+            ("TeX-synctex-output-page" function nil nil [78361 79254])
+            ("TeX-mode-p" variable nil nil [79287 79354])
+            ("make-variable-buffer-local" code nil nil [79355 79395])
+            ("TeX-mode-set" function (:arguments ("var" "value")) nil [79397 79487])
+            ("TeX-PDF-mode" variable (:default-value t) nil [79489 79579])
+            ("put" code nil nil [79580 79634])
+            ("define-minor-mode" code nil nil [79636 80083])
+            ("add-to-list" code nil nil [80084 80134])
+            ("TeX-global-PDF-mode" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [80136 80418])
+            ("defalias" code nil nil [80420 80458])
+            ("TeX-PDF-mode-parsed" variable nil nil [80460 80545])
+            ("make-variable-buffer-local" code nil nil [80547 80596])
+            ("TeX-PDF-mode-parsed" function (:arguments ("arg")) nil [80598 81319])
+            ("TeX-PDF-mode-on" function nil nil [81321 81409])
+            ("TeX-PDF-mode-off" function nil nil [81411 81502])
+            ("TeX-DVI-via-PDFTeX" variable nil nil [81504 81633])
+            ("TeX-PDF-from-DVI" variable nil nil [81635 82446])
+            ("make-variable-buffer-local" code nil nil [82563 82609])
+            ("put" code nil nil [82610 82698])
+            ("TeX-PDF-via-dvips-ps2pdf" variable nil nil [82700 82860])
+            ("make-variable-buffer-local" code nil nil [82861 82915])
+            ("put" code nil nil [82916 82982])
+            ("make-obsolete-variable" code nil nil [82983 83059])
+            ("TeX-PDF-from-DVI" function nil nil [83061 83359])
+            ("define-minor-mode" code nil nil [83361 83529])
+            ("defalias" code nil nil [83530 83584])
+            ("add-to-list" code nil nil [83585 83643])
+            ("TeX-command-name" customgroup (:user-visible-flag t) nil [83659 83755])
+            ("TeX-command-BibTeX" variable
+               (:user-visible-flag t
+                :default-value "BibTeX")
+                nil [83757 83896])
+            ("make-variable-buffer-local" code nil nil [83899 83947])
+            ("TeX-command-Biber" variable
+               (:user-visible-flag t
+                :default-value "Biber")
+                nil [83949 84085])
+            ("make-variable-buffer-local" code nil nil [84088 84135])
+            ("TeX-command-Show" variable
+               (:user-visible-flag t
+                :default-value "View")
+                nil [84137 84327])
+            ("make-variable-buffer-local" code nil nil [84330 84376])
+            ("TeX-command-Print" variable (:default-value "Print") nil [84378 84514])
+            ("TeX-command-Queue" variable (:default-value "Queue") nil [84516 84652])
+            ("TeX-trailer-start" variable nil nil [84654 84750])
+            ("make-variable-buffer-local" code nil nil [84753 84800])
+            ("TeX-header-end" variable nil nil [84802 84892])
+            ("make-variable-buffer-local" code nil nil [84895 84939])
+            ("TeX-command-default" variable nil nil [84941 85042])
+            ("make-variable-buffer-local" code nil nil [85045 85094])
+            ("put" code nil nil [85096 85152])
+            ("TeX-clean-default-intermediate-suffixes" variable (:default-value (quote ("\\.aux" "\\.bbl" "\\.blg" "\\.brf" "\\.fot" "\\.glo" "\\.gls" "\\.idx" "\\.ilg" "\\.ind" "\\.lof" "\\.log" "\\.lot" "\\.nav" "\\.out" "\\.snm" "\\.toc" "\\.url" "\\.synctex\\.gz" "\\.bcf" "\\.run\\.xml" "\\.fls" "-blx\\.bib"))) nil [85154 85560])
+            ("TeX-clean-default-output-suffixes" variable (:default-value (quote ("\\.dvi" "\\.pdf" "\\.ps" "\\.xdv"))) nil [85562 85755])
+            ("TeX-clean-confirm" variable (:default-value t) nil [85757 85870])
+            ("dired-mark-pop-up" function (:prototype-flag t) nil [85872 85909])
+            ("TeX-clean" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [85911 87233])
+            ("TeX-master" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [87252 88224])
+            ("make-variable-buffer-local" code nil nil [88225 88265])
+            ("put" code nil nil [88266 88385])
+            ("TeX-one-master" variable
+               (:user-visible-flag t
+                :default-value "\\.\\(texi?\\|dtx\\)$")
+                nil [88387 88901])
+            ("TeX-transient-master" variable nil nil [89050 89083])
+            ("TeX-dwim-master" function nil nil [89085 89365])
+            ("TeX-master-file-ask" function (:user-visible-flag t) nil [89367 90507])
+            ("TeX-master-file" function
+               (:user-visible-flag t
+                :arguments ("extension" "nondirectory" "ask"))
+                nil [90509 92966])
+            ("TeX-master-directory" function nil nil [92968 93308])
+            ("TeX-add-local-master" function nil nil [93310 94873])
+            ("TeX-local-master-p" function nil nil [94875 95223])
+            ("TeX-style-global" variable
+               (:user-visible-flag t
+                :default-value (expand-file-name "style" TeX-data-directory))
+                nil [95242 95475])
+            ("TeX-auto-local" variable
+               (:user-visible-flag t
+                :default-value "auto")
+                nil [95477 95705])
+            ("TeX-style-local" variable
+               (:user-visible-flag t
+                :default-value "style")
+                nil [95707 95929])
+            ("TeX-split-string" function (:arguments ("regexp" "string")) nil [95931 96604])
+            ("TeX-parse-path" function (:arguments ("env")) nil [96606 97254])
+            ("TeX-tree-expand" function (:arguments ("vars" "program" "subdirs")) nil [97256 98861])
+            ("TeX-macro-global" function nil nil [98863 99149])
+            ("TeX-macro-private" function nil nil [99151 99321])
+            ("TeX-macro-global" variable (:default-value (TeX-macro-global)) nil [99323 99497])
+            ("TeX-macro-private" variable (:default-value (or (append (TeX-parse-path "TEXINPUTS") (TeX-parse-path "BIBINPUTS")) (TeX-macro-private))) nil [99499 99746])
+            ("TeX-auto-private" variable (:default-value (list (expand-file-name TeX-auto-local (or (and (boundp (quote user-emacs-directory)) (concat user-emacs-directory "auctex/")) "~/.emacs.d/auctex/")))) nil [99748 100125])
+            ("if" code nil nil [100127 100235])
+            ("TeX-style-private" variable (:default-value (list (expand-file-name TeX-style-local (or (and (boundp (quote user-emacs-directory)) (concat user-emacs-directory "auctex/")) "~/.emacs.d/auctex/")))) nil [100237 100607])
+            ("if" code nil nil [100609 100720])
+            ("TeX-style-path" variable (:default-value (let ((path)) (mapc (lambda (file) (when (and file (not (member file path))) (setq path (cons file path)))) (append (list TeX-auto-global TeX-style-global) TeX-auto-private TeX-style-private (list TeX-auto-local TeX-style-local))) (nreverse path))) nil [100722 101467])
+            ("TeX-check-path" variable (:default-value (append (list ".") TeX-macro-private TeX-macro-global)) nil [101469 101740])
+            ("TeX-style-hook-list" variable nil nil [101759 102547])
+            ("TeX-style-hook-dialect" variable (:default-value :latex) nil [102549 103090])
+            ("TeX-byte-compile" variable (:user-visible-flag t) nil [103092 103227])
+            ("TeX-bibtex-set-BibTeX-dialect" function nil nil [103229 103404])
+            ("TeX-load-style" function (:arguments ("style")) nil [103406 104511])
+            ("TeX-load-style-file" function (:arguments ("file")) nil [104513 105055])
+            ("TeX-style-hook-dialect-weight-alist" variable
+               (:constant-flag t
+                :default-value (quote ((:latex . 1) (:texinfo . 2) (:bibtex . 4) (:plain-tex . 8) (:context . 16))))
+                nil [105057 105289])
+            ("TeX-shdex-eval" function (:arguments ("dialect-expr")) nil [105291 105833])
+            ("TeX-shdex-or" function (:arguments ("args")) nil [105835 105971])
+            ("TeX-shdex-and" function (:arguments ("args")) nil [105973 106111])
+            ("TeX-shdex-nor" function (:arguments ("args")) nil [106113 106241])
+            ("TeX-shdex-not" function (:arguments ("arg")) nil [106243 106359])
+            ("TeX-shdex-in-p" function (:arguments ("dialect" "dialect-set")) nil [106361 106637])
+            ("TeX-shdex-listify" function (:arguments ("dialect-set")) nil [106639 106915])
+            ("TeX-add-style-hook" function (:arguments ("style" "hook" "dialect-expr")) nil [106917 107950])
+            ("TeX-keep-hooks-in-dialect" function (:arguments ("hooks" "dialect-list")) nil [107952 108432])
+            ("TeX-unload-style" function (:arguments ("style" "dialect-list")) nil [108434 108979])
+            ("TeX-virgin-style" variable (:default-value (if (and TeX-auto-global (file-directory-p TeX-auto-global)) "virtex" "NoVirtexSymbols")) nil [108981 109185])
+            ("TeX-active-styles" variable nil nil [109187 109270])
+            ("make-variable-buffer-local" code nil nil [109272 109319])
+            ("TeX-run-style-hooks" function (:arguments ("styles")) nil [109321 110998])
+            ("TeX-parse-self" variable nil nil [111000 111133])
+            ("TeX-style-hook-applied-p" variable nil nil [111135 111232])
+            ("make-variable-buffer-local" code nil nil [111234 111288])
+            ("TeX-update-style-hook" variable nil nil [111290 111383])
+            ("TeX-update-style" function (:arguments ("force")) nil [111385 112371])
+            ("TeX-remove-style-hook" variable nil nil [112373 112480])
+            ("make-variable-buffer-local" code nil nil [112482 112533])
+            ("TeX-remove-style" function nil nil [112535 112731])
+            ("TeX-style-list" function nil nil [112733 112872])
+            ("TeX-esc" variable (:default-value "\\") nil [112898 112947])
+            ("make-variable-buffer-local" code nil nil [112949 112986])
+            ("TeX-grop" variable (:default-value "{") nil [112988 113044])
+            ("make-variable-buffer-local" code nil nil [113046 113084])
+            ("TeX-grcl" variable (:default-value "}") nil [113086 113142])
+            ("make-variable-buffer-local" code nil nil [113144 113182])
+            ("TeX-macro" customgroup (:user-visible-flag t) nil [113225 113321])
+            ("TeX-complete-word" variable
+               (:user-visible-flag t
+                :default-value (quote ispell-complete-word))
+                nil [113323 113457])
+            ("TeX-complete-expert-commands" variable nil nil [113459 114004])
+            ("TeX-complete-make-expert-command-functions" function (:arguments ("thing" "list-var" "prefix")) nil [114006 115335])
+            ("TeX-complete-make-expert-command-functions" code nil nil [115337 115411])
+            ("TeX-complete-make-expert-command-functions" code nil nil [115412 115501])
+            ("TeX-complete-list" variable nil nil [115503 116054])
+            ("TeX--complete-find-entry" function nil nil [116056 116405])
+            ("TeX-complete-symbol" function (:user-visible-flag t) nil [116407 117975])
+            ("TeX--completion-at-point" function nil nil [117977 118670])
+            ("TeX-default-macro" variable
+               (:user-visible-flag t
+                :default-value "ref")
+                nil [118672 118814])
+            ("make-variable-buffer-local" code nil nil [118816 118863])
+            ("TeX-insert-braces" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [118865 119042])
+            ("TeX-insert-braces-alist" variable nil nil [119044 119610])
+            ("make-variable-buffer-local" code nil nil [119611 119664])
+            ("TeX-insert-macro-default-style" variable (:default-value (quote show-optional-args)) nil [119666 120497])
+            ("TeX-arg-opening-brace" variable nil nil [120499 120662])
+            ("TeX-arg-closing-brace" variable nil nil [120664 120826])
+            ("TeX-after-insert-macro-hook" variable nil nil [120828 120909])
+            ("TeX-macro-history" variable nil nil [120911 120941])
+            ("TeX-insert-macro" function
+               (:user-visible-flag t
+                :arguments ("symbol"))
+                nil [120943 121929])
+            ("TeX-electric-macro-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map minibuffer-local-completion-map) (define-key map " " (quote minibuffer-complete-and-exit)) map)) nil [121931 122122])
+            ("TeX-electric-macro" function (:user-visible-flag t) nil [122124 122668])
+            ("TeX-parse-macro" function (:arguments ("symbol" "args")) nil [122670 125845])
+            ("TeX-arg-string" function (:arguments ("optional" "prompt" "initial-input")) nil [125847 126344])
+            ("TeX-parse-arguments" function (:arguments ("args")) nil [126346 127453])
+            ("TeX-parse-argument" function (:arguments ("optional" "arg")) nil [127455 129390])
+            ("TeX-argument-insert" function (:arguments ("name" "optional" "prefix")) nil [129392 129929])
+            ("TeX-argument-prompt" function (:arguments ("optional" "prompt" "default" "complete")) nil [129931 130331])
+            ("TeX-string-divide-number-unit" function (:arguments ("string")) nil [130333 130703])
+            ("TeX-default-unit-for-image" variable (:default-value "cm") nil [130705 130916])
+            ("TeX-arg-maybe" function (:arguments ("symbol" "list" "form")) nil [130918 131055])
+            ("TeX-arg-free" function (:arguments ("optional" "args")) nil [131057 131346])
+            ("TeX-arg-literal" function (:arguments ("optional" "args")) nil [131348 131556])
+            ("TeX-install-font-lock" variable (:default-value (quote font-latex-setup)) nil [131577 131910])
+            ("TeX-format-list" variable
+               (:user-visible-flag t
+                :default-value (quote (("JLATEX" japanese-latex-mode "\\\\\\(documentstyle\\|documentclass\\)[^%
+]*{u?\\(j[s-]?\\|t\\)\\(article\\|report\\|book\\|slides\\)") ("JTEX" japanese-plain-tex-mode "-- string likely in Japanese TeX --") ("AMSTEX" ams-tex-mode "\\\\document\\b") ("CONTEXT" context-mode "\\\\\\(start\\(text\\|tekst\\|proje[ck]t\\|proiect\\|produ[ck]t\\|produs\\|environment\\|omgeving\\|umgebung\\|prostredi\\|mediu\\|component\\|onderdeel\\|komponent[ea]\\|componenta\\)\\|inizia\\(testo\\|progetto\\|prodotto\\|ambiente\\|componente\\)\\)\\|%.*?interface=") ("LATEX" latex-mode "\\\\\\(begin\\|\\(?:sub\\)\\{0,2\\}section\\|chapter\\|documentstyle\\|documentclass\\)\\b") ("TEX" plain-tex-mode "."))))
+                nil [131926 133107])
+            ("TeX-default-mode" variable
+               (:user-visible-flag t
+                :default-value (quote latex-mode))
+                nil [133109 133344])
+            ("TeX-force-default-mode" variable (:user-visible-flag t) nil [133346 133492])
+            ("TeX-tex-mode" function (:user-visible-flag t) nil [133509 134641])
+            ("when" code nil nil [134643 135019])
+            ("VirTeX-common-initialization" function nil nil [135021 139596])
+            ("if" code nil nil [139615 139984])
+            ("TeX-parse" customgroup (:user-visible-flag t) nil [139999 140075])
+            ("TeX-auto-parser" variable (:default-value (quote ((styles TeX-auto-file TeX-run-style-hooks)))) nil [140077 140147])
+            ("TeX-auto-parser-temporary" variable
+               (:constant-flag t
+                :default-value 1)
+                nil [140490 140528])
+            ("TeX-auto-parser-add" variable
+               (:constant-flag t
+                :default-value 2)
+                nil [140529 140561])
+            ("TeX-auto-parser-local" variable
+               (:constant-flag t
+                :default-value 3)
+                nil [140562 140596])
+            ("TeX-auto-parser-change" variable
+               (:constant-flag t
+                :default-value 4)
+                nil [140597 140632])
+            ("TeX-auto-add-information" function (:arguments ("name" "entries")) nil [140634 141070])
+            ("TeX-auto-list-information" function (:arguments ("name")) nil [141072 142131])
+            ("TeX-auto-add-type" function (:arguments ("name" "prefix" "plural")) nil [142133 143650])
+            ("TeX-auto-add-type" code nil nil [143652 143686])
+            ("TeX-auto-apply-hook" variable nil nil [143688 143789])
+            ("TeX-auto-apply" function nil nil [143791 143978])
+            ("TeX-auto-apply-entry" function (:arguments ("entry")) nil [143980 144216])
+            ("TeX-safe-auto-write" function nil nil [144218 144454])
+            ("TeX-auto-save" variable (:user-visible-flag t) nil [144456 144588])
+            ("TeX-auto-untabify" variable (:user-visible-flag t) nil [144590 144712])
+            ("TeX-auto-write" function nil nil [144714 145440])
+            ("TeX-macro-default" variable
+               (:user-visible-flag t
+                :default-value (car-safe TeX-macro-private))
+                nil [145442 145587])
+            ("TeX-auto-default" variable
+               (:user-visible-flag t
+                :default-value (car-safe TeX-auto-private))
+                nil [145589 145756])
+            ("TeX-ignore-file" variable (:default-value "\\(^\\|[/\\]\\)\\(\\.\\|\\.\\.\\|RCS\\|SCCS\\|CVS\\|babel\\..*\\)$") nil [145758 146042])
+            ("TeX-file-recurse" variable (:default-value t) nil [146044 146370])
+            ("TeX-file-extensions" variable nil nil [146372 146400])
+            ("BibTeX-file-extensions" variable nil nil [146401 146432])
+            ("TeX-Biber-file-extensions" variable nil nil [146433 146467])
+            ("TeX-auto-generate" function
+               (:user-visible-flag t
+                :arguments ("tex" "auto"))
+                nil [146484 148228])
+            ("TeX-auto-generate-global" function (:user-visible-flag t) nil [148245 148693])
+            ("TeX-auto-store" function (:arguments ("file")) nil [148695 151033])
+            ("TeX-auto-entry-clear-p" function (:arguments ("entry")) nil [151035 151260])
+            ("TeX-auto-insert" function (:arguments ("entry" "skip")) nil [151262 151852])
+            ("TeX-auto-ignore" variable (:default-value (quote ("csname" "filedate" "fileversion" "docdate" "next" "labelitemi" "labelitemii" "labelitemiii" "labelitemiv" "labelitemv" "labelenumi" "labelenumii" "labelenumiii" "labelenumiv" "labelenumv" "theenumi" "theenumii" "theenumiii" "theenumiv" "theenumv" "document" "par" "do" "expandafter"))) nil [151854 152245])
+            ("TeX-auto-regexp-list" variable (:default-value (quote TeX-auto-full-regexp-list)) nil [152247 152810])
+            ("make-variable-buffer-local" code nil nil [152813 152863])
+            ("TeX-auto-add-regexp" function (:arguments ("regexp")) nil [152865 153186])
+            ("TeX-auto-empty-regexp-list" variable (:default-value (quote (("<IMPOSSIBLE>\\(\\'\\`\\)" 1 ignore)))) nil [153188 153327])
+            ("TeX-token-char" variable (:default-value (if (featurep (quote mule)) "\\(?:[a-zA-Z]\\|\\cj\\)" "[a-zA-Z]")) nil [153329 153654])
+            ("plain-TeX-auto-regexp-list" variable (:default-value (let ((token TeX-token-char)) (\` (((\, (concat "\\\\def\\\\\\(" token "+\\)[^a-zA-Z@]")) 1 TeX-auto-symbol-check) ((\, (concat "\\\\let\\\\\\(" token "+\\)[^a-zA-Z@]")) 1 TeX-auto-symbol-check) ((\, (concat "\\\\font\\\\\\(" token "+\\)[^a-zA-Z@]")) 1 TeX-auto-symbol) ((\, (concat "\\\\chardef\\\\\\(" token "+\\)[^a-zA-Z@]")) 1 TeX-auto-symbol) ((\, (concat "\\\\new\\(?:count\\|dimen\\|muskip\\|skip\\)\\\\\\(" token "+\\)[^a-zA-Z@]")) 1 TeX-auto-symbol) ((\, (concat "\\\\newfont{?\\\\\\(" token "+\\)}?")) 1 TeX-auto-symbol) ((\, (concat "\\\\typein\\[\\\\\\(" token "+\\)\\]")) 1 TeX-auto-symbol) ("\\\\input +\\(\\.*[^#%\\\\\\.
+]+\\)\\(\\.[^#%\\\\\\.
+]+\\)?" 1 TeX-auto-file) ((\, (concat "\\\\mathchardef\\\\\\(" token "+\\)[^a-zA-Z@]")) 1 TeX-auto-symbol))))) nil [153656 154593])
+            ("TeX-auto-full-regexp-list" variable (:default-value plain-TeX-auto-regexp-list) nil [154595 154724])
+            ("TeX-auto-prepare-hook" variable nil nil [154726 154818])
+            ("TeX-auto-cleanup-hook" variable nil nil [154820 154911])
+            ("TeX-auto-parse-length" variable (:default-value 999999) nil [154913 155058])
+            ("make-variable-buffer-local" code nil nil [155061 155112])
+            ("TeX-auto-x-parse-length" variable nil nil [155114 155353])
+            ("make-variable-buffer-local" code nil nil [155356 155409])
+            ("TeX-auto-x-regexp-list" variable (:default-value (quote LaTeX-auto-label-regexp-list)) nil [155411 156004])
+            ("make-variable-buffer-local" code nil nil [156007 156059])
+            ("TeX-regexp-group-count" function (:arguments ("regexp")) nil [156061 156399])
+            ("TeX-auto-parse-region" function (:arguments ("regexp-list" "beg" "end")) nil [156401 158036])
+            ("TeX-auto-parse" function nil nil [158039 159144])
+            ("TeX-auto-clear-entry" function (:arguments ("entry")) nil [159146 159280])
+            ("LaTeX-auto-end-symbol" variable nil nil [159282 159316])
+            ("TeX-auto-symbol-check" function (:arguments ("match")) nil [159318 159840])
+            ("TeX-file-extension" customgroup (:user-visible-flag t) nil [159864 159958])
+            ("TeX-file-extensions" variable
+               (:user-visible-flag t
+                :default-value (quote ("tex" "sty" "cls" "ltx" "texi" "txi" "texinfo" "dtx")))
+                nil [159960 160175])
+            ("TeX-all-extensions" variable (:default-value (quote ("[^.
+]+"))) nil [160177 160323])
+            ("TeX-default-extension" variable
+               (:user-visible-flag t
+                :default-value "tex")
+                nil [160325 160447])
+            ("make-variable-buffer-local" code nil nil [160451 160502])
+            ("TeX-doc-extensions" variable (:default-value (quote ("dvi" "pdf" "ps" "txt" "html" "dvi.gz" "pdf.gz" "ps.gz" "txt.gz" "html.gz" "dvi.bz2" "pdf.bz2" "ps.bz2" "txt.bz2" "html.bz2"))) nil [160504 160709])
+            ("docTeX-default-extension" variable
+               (:user-visible-flag t
+                :default-value "dtx")
+                nil [160711 160839])
+            ("TeX-output-extension" variable nil nil [160841 161098])
+            ("make-variable-buffer-local" code nil nil [161102 161152])
+            ("TeX-Biber-file-extensions" variable (:default-value (quote ("bib" "ris" "xml"))) nil [161154 161324])
+            ("BibTeX-file-extensions" variable (:default-value (quote ("bib"))) nil [161326 161482])
+            ("BibLaTeX-style-extensions" variable (:default-value (quote ("bbx"))) nil [161484 161646])
+            ("BibTeX-style-extensions" variable (:default-value (quote ("bst"))) nil [161648 161806])
+            ("TeX-match-extension" function (:arguments ("file" "extensions")) nil [161808 162218])
+            ("TeX-strip-extension" function (:arguments ("string" "extensions" "nodir" "nostrip")) nil [162220 163242])
+            ("TeX-tree-roots" function nil nil [163265 163591])
+            ("TeX-tree-roots" variable (:default-value (TeX-tree-roots)) nil [163593 163736])
+            ("TeX-kpathsea-path-delimiter" variable (:default-value t) nil [163738 163992])
+            ("TeX-search-files-kpathsea" function (:arguments ("var" "extensions" "scope" "nodir" "strip")) nil [164196 165800])
+            ("TeX-search-files" function (:arguments ("directories" "extensions" "nodir" "strip")) nil [165802 167394])
+            ("TeX-search-files-type-alist" variable (:default-value (quote ((texinputs "${TEXINPUTS}" ("tex/") TeX-file-extensions) (docs "${TEXDOCS}" ("doc/") TeX-doc-extensions) (graphics "${TEXINPUTS}" ("tex/") LaTeX-includegraphics-extensions) (bibinputs "${BIBINPUTS}" ("bibtex/bib/") BibTeX-file-extensions) (bstinputs "${BSTINPUTS}" ("bibtex/bst/") BibTeX-style-extensions)))) nil [167655 168730])
+            ("TeX-search-files-by-type" function (:arguments ("filetype" "scope" "nodir" "strip")) nil [168732 170866])
+            ("TeX-narrow-to-group" function (:user-visible-flag t) nil [170883 171290])
+            ("put" code nil nil [171291 171329])
+            ("TeX-car-string-lessp" function (:arguments ("s1" "s2")) nil [171477 171668])
+            ("TeX-listify" function (:arguments ("elt")) nil [171670 171817])
+            ("TeX-member" function (:arguments ("elt" "list" "how")) nil [171819 172058])
+            ("TeX-elt-of-list-member" function (:arguments ("elts" "list")) nil [172060 172254])
+            ("TeX-assoc" function (:arguments ("key" "list")) nil [172256 172531])
+            ("TeX-match-buffer" function (:arguments ("n")) nil [172533 172756])
+            ("TeX-booleanp" function (:arguments ("arg")) nil [172758 172845])
+            ("TeX-looking-at-backward" function (:arguments ("regexp" "limit")) nil [172847 173230])
+            ("TeX-current-line" function nil nil [173232 173330])
+            ("TeX-current-file-name-master-relative" function nil nil [173332 173510])
+            ("TeX-near-bobp" function nil nil [173512 173675])
+            ("TeX-deactivate-mark" function nil nil [173677 173969])
+            ("defalias" code nil nil [173971 174061])
+            ("TeX-add-to-alist" function (:arguments ("alist-var" "new-alist")) nil [174063 175077])
+            ("TeX-mode-syntax-table" variable (:default-value (make-syntax-table)) nil [175097 175188])
+            ("make-variable-buffer-local" code nil nil [175191 175242])
+            ("progn" code nil nil [175244 176307])
+            ("TeX-command-current" variable (:default-value (quote TeX-command-master)) nil [176327 176439])
+            ("TeX-command-select-master" function (:user-visible-flag t) nil [176483 176703])
+            ("TeX-command-select-buffer" function (:user-visible-flag t) nil [176705 176914])
+            ("TeX-command-select-region" function (:user-visible-flag t) nil [176916 177125])
+            ("TeX-command-force" variable nil nil [177127 177157])
+            ("TeX-command-menu" function (:arguments ("name")) nil [177263 177412])
+            ("TeX-command-menu-print" function (:arguments ("printer" "command" "name")) nil [177414 177752])
+            ("TeX-command-menu-printer-entry" function (:arguments ("entry" "lookup" "command" "name")) nil [177754 177988])
+            ("TeX-command-menu-entry" function (:arguments ("entry")) nil [177990 178687])
+            ("TeX-command-menu-name" variable
+               (:constant-flag t
+                :default-value "Command")
+                nil [178689 178809])
+            ("TeX-electric-escape" variable nil nil [178823 178957])
+            ("TeX-electric-sub-and-superscript" variable nil nil [178959 179113])
+            ("TeX-newline-function" variable (:default-value (quote newline)) nil [179115 179360])
+            ("TeX-insert-backslash" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [179362 179642])
+            ("TeX-insert-sub-or-superscript" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [179644 180038])
+            ("TeX-newline" function (:user-visible-flag t) nil [180040 180192])
+            ("TeX-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "}" (quote up-list)) (define-key map "#" (quote TeX-normal-mode)) (define-key map "" (quote TeX-normal-mode)) (define-key map "?" (quote TeX-documentation-texdoc)) (define-key map "	" (quote TeX-goto-info-page)) (define-key map "" (quote TeX-newline)) (define-key map "\"" (quote TeX-insert-quote)) (define-key map "$" (quote TeX-insert-dollar)) (define-key map "{" (quote TeX-insert-braces)) (define-key map "" (quote TeX-font)) (define-key map "" (quote TeX-insert-macro)) (define-key map "\\" (quote TeX-insert-backslash)) (define-key map "^" (quote TeX-insert-sub-or-superscript)) (define-key map "_" (quote TeX-insert-sub-or-superscript)) (define-key map "	" (quote TeX-complete-symbol)) (define-key map "'" (quote TeX-comment-or-uncomment-paragraph)) (define-key map ":" (quote TeX-comment-or-uncomment-region)) (define-key map "\"" (quote TeX-uncomment)) (define-key map ";" (quote TeX-comment-or-uncomment-region)) (define-key map "%" (quote TeX-comment-or-uncomment-paragraph)) (define-key map "" (quote TeX-PDF-mode)) (define-key map "	" (quote TeX-interactive-mode)) (define-key map "" (quote TeX-source-correlate-mode)) (define-key map "" (quote TeX-pin-region)) (define-key map "" (quote TeX-toggle-debug-bad-boxes)) (define-key map "" (quote TeX-toggle-debug-bad-boxes)) (define-key map "" (quote TeX-toggle-debug-warnings)) (define-key map "" (quote TeX-toggle-suppress-ignored-warnings)) (define-key map "" (quote TeX-view)) (define-key map "" (quote TeX-save-document)) (define-key map "" (quote TeX-command-region)) (define-key map "" (quote TeX-command-buffer)) (define-key map "" (quote TeX-command-master)) (define-key map "" (quote TeX-command-run-all)) (define-key map "" (quote TeX-kill-job)) (define-key map "" (quote TeX-recenter-output-buffer)) (define-key map "^" (quote TeX-home-buffer)) (define-key map "`" (quote TeX-next-error)) (if (featurep (quote xemacs)) (substitute-key-definition (quote next-error) (quote TeX-next-error) map global-map) (define-key map [remap next-error] (quote TeX-next-error))) (if (featurep (quote xemacs)) (substitute-key-definition (quote previous-error) (quote TeX-previous-error) map global-map) (define-key map [remap previous-error] (quote TeX-previous-error))) (define-key map "" (quote TeX-fold-mode)) (define-key map "_" (quote TeX-master-file-ask)) map)) nil [180194 183369])
+            ("TeX-mode-specific-command-menu" function (:arguments ("mode")) nil [183371 183659])
+            ("TeX-mode-specific-command-menu-entries" function (:arguments ("mode")) nil [183661 187710])
+            ("TeX-mode-specific-command-list" function (:arguments ("mode")) nil [187712 188173])
+            ("TeX-fold-menu" variable (:default-value (TeX-menu-with-help (quote ("Show/Hide" ["Fold Mode" TeX-fold-mode :style toggle :selected (and (boundp (quote TeX-fold-mode)) TeX-fold-mode) :help "Toggle folding mode"] "-" ["Hide All in Current Buffer" TeX-fold-buffer :active (and (boundp (quote TeX-fold-mode)) TeX-fold-mode) :help "Hide all configured TeX constructs in the current buffer"] ["Hide All in Current Region" TeX-fold-region :active (and (boundp (quote TeX-fold-mode)) TeX-fold-mode) :help "Hide all configured TeX constructs in the marked region"] ["Hide All in Current Paragraph" TeX-fold-paragraph :active (and (boundp (quote TeX-fold-mode)) TeX-fold-mode) :help "Hide all configured TeX constructs in the paragraph containing point"] ["Hide Current Macro" TeX-fold-macro :active (and (boundp (quote TeX-fold-mode)) TeX-fold-mode) :help "Hide the macro containing point"] ["Hide Current Environment" TeX-fold-env :visible (not (eq major-mode (quote plain-tex-mode))) :active (and (boundp (quote TeX-fold-mode)) TeX-fold-mode) :help "Hide the environment containing point"] ["Hide Current Comment" TeX-fold-comment :active (and (boundp (quote TeX-fold-mode)) TeX-fold-mode) :help "Hide the comment containing point"] "-" ["Show All in Current Buffer" TeX-fold-clearout-buffer :active (and (boundp (quote TeX-fold-mode)) TeX-fold-mode) :help "Permanently show all folded content again"] ["Show All in Current Region" TeX-fold-clearout-region :active (and (boundp (quote TeX-fold-mode)) TeX-fold-mode) :help "Permanently show all folded content in marked region"] ["Show All in Current Paragraph" TeX-fold-clearout-paragraph :active (and (boundp (quote TeX-fold-mode)) TeX-fold-mode) :help "Permanently show all folded content in paragraph containing point"] ["Show Current Item" TeX-fold-clearout-item :active (and (boundp (quote TeX-fold-mode)) TeX-fold-mode) :help "Permanently show the item containing point"] "-" ["Hide or Show Current Item" TeX-fold-dwim :active (and (boundp (quote TeX-fold-mode)) TeX-fold-mode) :help "Hide or show the item containing point"])))) nil [188175 190425])
+            ("TeX-customization-menu" variable nil nil [190427 190462])
+            ("TeX-common-menu-entries" variable (:default-value (TeX-menu-with-help (\` (("Multifile/Parsing" ["Switch to Master File" TeX-home-buffer :help "Switch to buffer of Master File, or buffer of last TeX command"] ["Save Document" TeX-save-document :help "Save all buffers associated with the current Master File"] ["Set Master File" TeX-master-file-ask :active (not (TeX-local-master-p)) :help "Set the main file to run TeX commands on"] ["Reset Buffer" TeX-normal-mode :help "Save and reparse the current buffer for style information"] ["Reset AUCTeX" (TeX-normal-mode t) :keys "C-u C-c C-n" :help "Reset buffer and reload AUCTeX style files"]) ["Find Documentation..." TeX-documentation-texdoc :help "Get help on commands, packages, or TeX-related topics in general"] ["Read the AUCTeX Manual" TeX-goto-info-page :help "Everything worth reading"] ("Customize AUCTeX" ["Browse Options" (customize-group (quote AUCTeX)) :help "Open the customization buffer for AUCTeX"] ["Extend this Menu" (progn (easy-menu-add-item nil (list (if (eq major-mode (quote doctex-mode)) "LaTeX" TeX-base-mode-name)) (or TeX-customization-menu (setq TeX-customization-menu (customize-menu-create (quote AUCTeX) "Customize AUCTeX"))))) :help "Make this menu a full-blown customization menu"]) ["Report AUCTeX Bug" TeX-submit-bug-report :help (\, (format "Problems with AUCTeX %s? Mail us!" AUCTeX-version))])))) nil [190464 192045])
+            ("TeX-verbatim-p-function" variable nil nil [192073 192170])
+            ("make-variable-buffer-local" code nil nil [192171 192224])
+            ("TeX-verbatim-p" function (:arguments ("pos")) nil [192306 192585])
+            ("TeX-comment-start-regexp" variable (:default-value "%") nil [192602 192820])
+            ("make-variable-buffer-local" code nil nil [192821 192875])
+            ("TeX-comment-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end" "arg"))
+                nil [192877 193680])
+            ("if" code nil nil [194607 195317])
+            ("if" code nil nil [193739 194544])
+            ("TeX-uncomment" function (:user-visible-flag t) nil [195320 195884])
+            ("TeX-comment-or-uncomment-paragraph" function (:user-visible-flag t) nil [195886 196495])
+            ("TeX-in-comment" function nil nil [196497 196872])
+            ("TeX-in-commented-line" function nil nil [196874 197464])
+            ("TeX-in-line-comment" function nil nil [197466 197826])
+            ("TeX-comment-prefix" function nil nil [197828 198173])
+            ("TeX-forward-comment-skip" function (:arguments ("count" "limit")) nil [198175 199711])
+            ("TeX-backward-comment-skip" function (:arguments ("count" "limit")) nil [199713 200214])
+            ("TeX-comment-forward" function (:arguments ("n")) nil [200331 200964])
+            ("TeX-comment-padding-string" function nil nil [200966 201294])
+            ("TeX-indentation" customgroup (:user-visible-flag t) nil [201314 201403])
+            ("TeX-brace-indent-level" variable
+               (:user-visible-flag t
+                :default-value 2)
+                nil [201405 201541])
+            ("TeX-comment-indent" function nil nil [201543 201760])
+            ("TeX-brace-count-line" function nil nil [201762 202323])
+            ("TeX-search-syntax-table" variable (:default-value (let ((table (make-syntax-table (make-char-table (if (featurep (quote xemacs)) (quote syntax) (quote syntax-table)))))) (dolist (elt (quote ((12 . ">") (10 . ">") (34 . " ") (40 . " ") (41 . " ")))) (modify-syntax-entry (car elt) (cdr elt) table)) table)) nil [202341 203042])
+            ("TeX-search-syntax-table" function (:arguments ("args")) nil [203044 204555])
+            ("TeX-find-balanced-brace" function (:arguments ("count" "depth" "limit")) nil [204557 205375])
+            ("TeX-find-closing-brace" function (:arguments ("depth" "limit")) nil [205377 205746])
+            ("TeX-find-opening-brace" function (:arguments ("depth" "limit")) nil [205748 206116])
+            ("TeX-find-macro-boundaries" function (:arguments ("lower-bound")) nil [206118 207812])
+            ("TeX-find-macro-end-helper" function (:arguments ("start")) nil [207814 209281])
+            ("TeX-find-macro-start" function (:arguments ("limit")) nil [209283 209557])
+            ("TeX-find-macro-end" function nil nil [209559 209730])
+            ("TeX-search-forward-unescaped" function (:arguments ("string" "bound" "noerror")) nil [209732 210157])
+            ("TeX-search-backward-unescaped" function (:arguments ("string" "bound" "noerror")) nil [210159 210587])
+            ("TeX-re-search-forward-unescaped" function (:arguments ("regexp" "bound" "noerror")) nil [210589 211034])
+            ("TeX-search-unescaped" function (:arguments ("pattern" "direction" "regexp-flag" "bound" "noerror")) nil [211036 211960])
+            ("TeX-escaped-p" function (:arguments ("pos")) nil [211962 212334])
+            ("TeX-current-macro" function nil nil [212336 212679])
+            ("TeX-search-forward-comment-start-function" variable nil nil [212681 212986])
+            ("make-variable-buffer-local" code nil nil [212987 213058])
+            ("TeX-search-forward-comment-start" function (:arguments ("limit")) nil [213060 213690])
+            ("TeX-font-list" variable (:default-value (quote ((2 "{\\bf " "}") (3 "{\\sc " "}") (5 "{\\em " "\\/}") (9 "{\\it " "\\/}") (18 "{\\rm " "}") (19 "{\\sl " "\\/}") (20 "{\\tt " "}") (4 "" "" t)))) nil [213703 214662])
+            ("TeX-font-replace-function" variable (:default-value (quote TeX-font-replace)) nil [214664 214792])
+            ("TeX-describe-font-entry" function (:arguments ("entry")) nil [214794 215222])
+            ("TeX-font" function
+               (:user-visible-flag t
+                :arguments ("replace" "what"))
+                nil [215224 216393])
+            ("TeX-font-replace" function (:arguments ("start" "end")) nil [216395 216949])
+            ("TeX-font-replace-macro" function (:arguments ("start" "end")) nil [216951 218139])
+            ("TeX-symbol-marker" variable nil nil [218257 218287])
+            ("TeX-symbol-marker-pos" variable nil nil [218289 218321])
+            ("TeX-dollar-sign" variable
+               (:user-visible-flag t
+                :default-value 36)
+                nil [218426 218510])
+            ("TeX-dollar-string" variable
+               (:constant-flag t
+                :default-value (char-to-string TeX-dollar-sign))
+                nil [218511 218572])
+            ("TeX-dollar-regexp" variable
+               (:constant-flag t
+                :default-value (concat "^" (regexp-quote TeX-dollar-string) "\\|[^" TeX-esc "]" (regexp-quote TeX-dollar-string)))
+                nil [218573 218705])
+            ("TeX-math-toggle-off-input-method" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [218707 218866])
+            ("TeX-electric-math" variable nil nil [218868 220040])
+            ("TeX-insert-dollar" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [220042 223734])
+            ("TeX-math-input-method-off-regexp" variable (:default-value (concat "^" (regexp-opt (quote ("chinese" "japanese" "korean" "bulgarian" "russian")) t))) nil [223736 223939])
+            ("TeX-math-input-method-off" function nil nil [223941 224393])
+            ("TeX-normal-mode" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [224416 225179])
+            ("TeX-quote" customgroup (:user-visible-flag t) nil [225181 225245])
+            ("TeX-open-quote" variable (:default-value "``") nil [225247 225386])
+            ("TeX-close-quote" variable (:default-value "''") nil [225388 225529])
+            ("TeX-quote-after-quote" variable nil nil [225531 225743])
+            ("TeX-quote-language-alist" variable nil nil [225745 226855])
+            ("TeX-quote-language" variable nil nil [226857 227276])
+            ("make-variable-buffer-local" code nil nil [227277 227325])
+            ("TeX-insert-quote" function
+               (:user-visible-flag t
+                :arguments ("force"))
+                nil [227327 230154])
+            ("TeX-insert-punctuation" function (:user-visible-flag t) nil [230156 230405])
+            ("TeX-insert-braces" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [230407 231051])
+            ("TeX-submit-bug-report" function (:user-visible-flag t) nil [231068 232623])
+            ("TeX-documentation-texdoc" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [232645 235374])
+            ("TeX-goto-info-page" function (:user-visible-flag t) nil [235376 235493])
+            ("info-lookup->completions" function (:prototype-flag t) nil [235495 235543])
+            ("TeX-doc-backend-alist" variable (:default-value (quote ((texdoc (plain-tex-mode latex-mode doctex-mode ams-tex-mode context-mode) (lambda nil (when (executable-find "texdoc") (TeX-search-files (unless (stringp TeX-kpathsea-path-delimiter) (or (TeX-tree-expand (quote ("$SYSTEXMF" "$TEXMFLOCAL" "$TEXMFMAIN" "$TEXMFDIST")) "latex" (quote ("/doc/"))) (\` ((\,@ TeX-macro-global) (\,@ TeX-macro-private))))) (quote ("dvi" "pdf" "ps" "txt" "html")) t t))) (lambda (doc) (call-process "texdoc" nil 0 nil "--view" doc))) (latex-info (latex-mode) (lambda nil (mapcar (lambda (x) (let ((x (car x))) (if (string-match "\\`\\\\" x) (substring x 1) x))) (info-lookup->completions (quote symbol) (quote latex-mode)))) (lambda (doc) (info-lookup-symbol (concat "\\" doc) (quote latex-mode)))) (texinfo-info (texinfo-mode) (lambda nil (mapcar (lambda (x) (let ((x (car x))) (if (string-match "\\`@" x) (substring x 1) x))) (info-lookup->completions (quote symbol) (quote texinfo-mode)))) (lambda (doc) (info-lookup-symbol (concat "@" doc) (quote texinfo-mode))))))) nil [235545 237431])
+            ("TeX-doc" function
+               (:user-visible-flag t
+                :arguments ("name"))
+                nil [237433 239435])
+            ("ispell-tex-buffer-p" function nil nil [239547 239621])
+            ("setq" code nil nil [239668 239701])
+            ("TeX-run-ispell" function (:arguments ("command" "string" "file")) nil [239703 240088])
+            ("TeX-ispell-document" function
+               (:user-visible-flag t
+                :arguments ("name"))
+                nil [240090 241098])
+            ("ispell-tex-major-modes" variable nil nil [241139 241174])
+            ("setq" code nil nil [241175 241303])
+            ("TeX-ispell-extend-skip-list" variable (:default-value t) nil [241305 241457])
+            ("TeX-ispell-skip-setcar" function (:arguments ("skip")) nil [241557 242091])
+            ("TeX-ispell-skip-setcdr" function (:arguments ("skip")) nil [242093 242627])
+            ("TeX-ispell-tex-arg-end" function (:arguments ("arg1" "arg2" "arg3")) nil [242629 244215])
+            ("TeX-abbrev-mode-setup" function (:arguments ("mode")) nil [244235 244666])
+            ("eval-after-load" code nil nil [244812 245137])
+            ("put" code nil nil [245177 245215])
+            ("put" code nil nil [245216 245259])
+            ("put" code nil nil [245260 245307])
+            ("if" code nil nil [245803 245992])
+            ("TeX-how-many" function (:arguments ("regexp" "rstart" "rend")) nil [245994 247047])
+            ("TeX--list-of-string-p" function (:arguments ("lst")) nil [247049 247377])
+            ("tex" package nil nil [247379 247393]))          
+      :file "tex.el"
+      :pointmax 247467
+      :fsize 247466
+      :lastmodtime '(22659 34637 0 0)
+      :unmatched-syntax '((close-paren 195317 . 195318) (symbol 193683 . 193699) (open-paren 193682 . 193683) (close-paren 45753 . 45754) (symbol 45676 . 45693) (open-paren 45675 . 45676) (close-paren 24422 . 24423) (symbol 23508 . 23524) (open-paren 23507 . 23508) (close-paren 1157 . 1158) (symbol 1124 . 1141) (open-paren 1123 . 1124)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("context" include nil nil [1034 1052])
+            ("ConTeXt-environment-list-en" variable (:default-value (quote ("alignment" "appendices" "background" "backmatter" "bodymatter" "bodypart" "buffer" "code" "color" "columns" "combination" "encoding" "extroductions" "fact" "formula" "framedcode" "framedtext" "frontmatter" "helptext" "hiding" "itemize" "legend" "line" "linecorrection" "linenumbering" "lines" "localenvironment" "localfootnotes" "makeup" "mapping" "marginblock" "marginedge" "marginrule" "mode" "narrower" "notmode" "opposite" "packed" "pagecomment" "pagefigure" "positioning" "postponing" "quotation" "raster" "register" "standardmakeup" "table" "tabulate" "TEXpage" "text" "textbackground" "typing" "unpacked" "component" "environment" "product" "project" "FLOWcell" "FLOWchart" "EIFFEL" "JAVA" "JAVASCRIPT" "MP" "PASCAL" "PERL" "SQL" "TEX" "XML" "MPpositiongraphic" "useMPgraphic" "MPcode" "reusableMPgraphic" "uniqueMPgraphic"))) nil [1089 2252])
+            ("ConTeXt-define-list-en" variable (:default-value (quote ("accent" "background" "blank" "block" "blocks" "bodyfont" "bodyfontenvironment" "buffer" "casemap" "character" "color" "colorgroup" "combinedlist" "command" "description" "enumeration" "float" "font" "fontsynonym" "framedtext" "head" "indenting" "label" "logo" "overlay" "palet" "program" "startstop" "type" "typing"))) nil [2254 2714])
+            ("ConTeXt-setup-list-en" variable (:default-value (quote ("align" "arranging" "background" "backgrounds" "blackrules" "blank" "block" "bodyfont" "bodyfontenvironment" "bottom" "bottomtexts" "buffer" "capitals" "caption" "captions" "color" "colors" "columns" "combinations" "combinedlist" "descriptions" "enumerations" "externalfigures" "fillinlines" "fillinrules" "float" "floats" "footer" "footertexts" "footnodedefinition" "footnotes" "framed" "framedtexts" "head" "header" "headertexts" "headnumber" "heads" "headtext" "hyphenmark" "indentations" "indenting" "inmargin" "interlinespace" "itemize" "items" "labeltext" "language" "layout" "linenumbering" "lines" "list" "makeup" "marginblocks" "marginrules" "marking" "narrower" "oppositeplacing" "pagecomment" "pagenumber" "pagenumbering" "palet" "papersize" "paragraphs" "quote" "referencing" "register" "screens" "section" "sectionblock" "sorting" "spacing" "subpagenumber" "synonyms" "text" "textrules" "texttexts" "thinrules" "tolerance" "top" "toptexts" "type" "typing" "underbar" "whitespace"))) nil [2716 3878])
+            ("ConTeXt-referencing-list-en" variable (:default-value (quote ("in" "at" "about" "pagereference" "textreference" "reference"))) nil [3906 4072])
+            ("ConTeXt-other-macro-list-en" variable (:default-value (quote ("abbreviation" "adaptlayout" "at" "combinepages" "copypages" "externalfigure" "framed" "from" "input" "insertpages" "filterpages" "getbuffer" "goto" "hideblocks" "keepblocks" "leftaligned" "midaligned" "obeyspaces" "page" "placecontent" "placeexternalfigure" "placefigure" "placelogos" "placetable" "processblocks" "protect" "raggedcenter" "rightaligned" "rotate" "scale" "selectblocks" "showexternalfigures" "slicepages" "useexternalfigure" "unprotect" "url" "useblocks" "usemodule" "useURL" "version"))) nil [4149 4823])
+            ("ConTeXt-define-command-en" function (:arguments ("what")) nil [4825 4953])
+            ("ConTeXt-setup-command-en" function (:arguments ("what")) nil [4955 5080])
+            ("ConTeXt-project-structure-list-en" variable (:default-value (quote ("project" "environment" "product" "component"))) nil [5082 5291])
+            ("ConTeXt-section-block-list-en" variable (:default-value (quote ("frontmatter" "bodymatter" "appendices" "backmatter"))) nil [5293 5493])
+            ("ConTeXt-numbered-section-list-en" variable (:default-value (quote (("part" 0) ("chapter" 1) ("section" 2) ("subsection" 3) ("subsubsection" 4)))) nil [5730 5941])
+            ("ConTeXt-unnumbered-section-list-en" variable (:default-value (quote (("title" 1) ("subject" 2) ("subsubject" 3) ("subsubsubject" 4)))) nil [5943 6141])
+            ("ConTeXt-section-list-en" variable (:default-value (append ConTeXt-numbered-section-list-en ConTeXt-unnumbered-section-list-en)) nil [6143 6255])
+            ("ConTeXt-text-en" variable (:default-value "text") nil [6258 6335])
+            ("ConTeXt-item-list-en" variable (:default-value (quote ("item" "its" "mar" "ran" "sub" "sym"))) nil [6337 6459])
+            ("ConTeXt-default-environment-en" variable
+               (:user-visible-flag t
+                :default-value "itemize")
+                nil [6461 6642])
+            ("ConTeXt-extra-paragraph-commands-en" variable (:default-value (quote ("crlf" "par" "place[A-Za-z]+"))) nil [6644 6830])
+            ("ConTeXt-en-mode-initialization" function nil nil [6907 7543])
+            ("context-en-mode" function (:user-visible-flag t) nil [7560 8101])
+            ("context-en" package nil nil [8103 8124]))          
+      :file "context-en.el"
+      :pointmax 8154
+      :fsize 8153
+      :lastmodtime '(22659 34637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("tex-buf" include nil nil [1938 1956])
+            ("tex" include nil nil [1957 1971])
+            ("latex" include nil nil [1972 1988])
+            ("plain-tex" include nil nil [2052 2072])
+            ("ConTeXt-macro" customgroup (:user-visible-flag t) nil [2114 2247])
+            ("done-mark" variable nil nil [2590 2608])
+            ("reference" variable nil nil [2671 2689])
+            ("title" variable nil nil [2752 2766])
+            ("name" variable nil nil [2831 2844])
+            ("level" variable nil nil [2845 2859])
+            ("ConTeXt-known-interfaces" variable (:default-value (quote ("cz" "de" "en" "it" "nl" "ro" "uk"))) nil [2872 2943])
+            ("ConTeXt-default-interface" variable (:default-value "en") nil [2945 3076])
+            ("ConTeXt-current-interface" variable (:default-value "en") nil [3078 3180])
+            ("make-variable-buffer-local" code nil nil [3181 3236])
+            ("ConTeXt-menu-changed" variable nil nil [3238 3271])
+            ("make-variable-buffer-local" code nil nil [3304 3354])
+            ("ConTeXt-largest-level" variable nil nil [3356 3444])
+            ("make-variable-buffer-local" code nil nil [3445 3496])
+            ("ConTeXt-largest-level" function nil nil [3498 3575])
+            ("ConTeXt-optop" variable (:default-value "[") nil [3590 3669])
+            ("ConTeXt-optcl" variable (:default-value "]") nil [3671 3750])
+            ("ConTeXt-define-list" variable nil nil [3780 3879])
+            ("ConTeXt-define-command" function (:arguments ("what")) nil [3881 4046])
+            ("ConTeXt-insert-define" function (:arguments ("define")) nil [4048 4248])
+            ("ConTeXt-setup-list" variable nil nil [4277 4374])
+            ("ConTeXt-setup-command" function (:arguments ("what")) nil [4376 4538])
+            ("ConTeXt-insert-setup" function (:arguments ("setup")) nil [4540 4734])
+            ("ConTeXt-referencing-list" variable nil nil [4769 4878])
+            ("ConTeXt-referencing-command" function (:arguments ("what")) nil [4880 5004])
+            ("ConTeXt-insert-referencing" function (:arguments ("what")) nil [5006 5210])
+            ("ConTeXt-other-macro-list" variable nil nil [5239 5348])
+            ("ConTeXt-other-macro-command" function (:arguments ("what")) nil [5350 5474])
+            ("ConTeXt-insert-other-macro" function (:arguments ("other-macro")) nil [5476 5702])
+            ("ConTeXt-project-structure-list" variable nil nil [5728 5844])
+            ("ConTeXt-project-structure" function (:arguments ("N")) nil [5846 6093])
+            ("ConTeXt-project-project-insert" function nil nil [6095 6754])
+            ("ConTeXt-project-environment-insert" function nil nil [6756 7333])
+            ("ConTeXt-project-product-insert" function nil nil [7335 8110])
+            ("ConTeXt-project-component-insert" function nil nil [8112 8740])
+            ("ConTeXt-section-block-list" variable nil nil [8763 8870])
+            ("ConTeXt-section-block" function (:arguments ("section-block")) nil [8872 9012])
+            ("ConTeXt-section" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [9029 10281])
+            ("ConTeXt-current-section" function nil nil [10413 10752])
+            ("ConTeXt-down-section" function nil nil [10754 11495])
+            ("ConTeXt-up-section" function (:arguments ("arg")) nil [11497 11847])
+            ("ConTeXt-numbered-section-list" variable nil nil [11849 11953])
+            ("ConTeXt-unnumbered-section-list" variable nil nil [11955 12061])
+            ("ConTeXt-section-list" variable (:default-value (append ConTeXt-numbered-section-list ConTeXt-unnumbered-section-list)) nil [12063 12166])
+            ("ConTeXt-numbered-section-name" function (:arguments ("level")) nil [12168 12431])
+            ("ConTeXt-unnumbered-section-name" function (:arguments ("level")) nil [12433 12700])
+            ("ConTeXt-numbered-section-level" function (:arguments ("name")) nil [12702 12975])
+            ("ConTeXt-unnumbered-section-level" function (:arguments ("name")) nil [12977 13252])
+            ("ConTeXt-numbered-section-hook" variable (:default-value (quote (ConTeXt-numbered-section-heading ConTeXt-section-title ConTeXt-section-ref ConTeXt-section-section))) nil [13275 14736])
+            ("ConTeXt-unnumbered-section-hook" variable (:default-value (quote (ConTeXt-unnumbered-section-heading ConTeXt-section-title ConTeXt-section-ref ConTeXt-section-section))) nil [14738 16262])
+            ("ConTeXt-Mark-version" variable (:default-value "II") nil [16292 16418])
+            ("make-variable-buffer-local" code nil nil [16419 16469])
+            ("put" code nil nil [16470 16527])
+            ("ConTeXt-numbered-section-heading" function nil nil [16529 16982])
+            ("ConTeXt-unnumbered-section-heading" function nil nil [16984 17443])
+            ("ConTeXt-section-title" function nil nil [17445 17718])
+            ("ConTeXt-section-section" function nil nil [17720 18527])
+            ("ConTeXt-section-ref" function nil nil [18529 18982])
+            ("TeX-ConTeXt-sentinel" function (:arguments ("process" "name")) nil [18996 20736])
+            ("ConTeXt-environment" customgroup (:user-visible-flag t) nil [20757 20843])
+            ("ConTeXt-default-environment" variable
+               (:user-visible-flag t
+                :default-value "itemize")
+                nil [20874 21049])
+            ("make-variable-buffer-local" code nil nil [21050 21107])
+            ("TeX-auto-add-type" code nil nil [21109 21152])
+            ("ConTeXt-add-environments" function (:arguments ("after" "ConTeXt-invalidate-menu" "&rest" "activate")) nil [21154 21340])
+            ("ConTeXt-environment-history" variable nil nil [21451 21491])
+            ("ConTeXt-environment-start-name" function nil nil [21493 21873])
+            ("ConTeXt-environment-stop-name" function nil nil [21875 22253])
+            ("ConTeXt-environment" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [22255 23128])
+            ("ConTeXt-modify-environment" function (:arguments ("environment")) nil [23130 23849])
+            ("ConTeXt-environment-menu" function (:arguments ("environment")) nil [23852 24714])
+            ("ConTeXt-close-environment" function (:user-visible-flag t) nil [24716 25129])
+            ("ConTeXt-insert-environment" function (:arguments ("environment" "extra")) nil [25131 26186])
+            ("ConTeXt-environment-helper" variable (:default-value (quote (("useMPgraphic" . ConTeXt-mp-region) ("MPpage" . ConTeXt-mp-region)))) nil [27422 27647])
+            ("ConTeXt-mp-region" function nil nil [27649 27901])
+            ("ConTeXt-work-on-environment" function (:user-visible-flag t) nil [27945 28215])
+            ("ConTeXt-current-environment" function nil nil [28217 28587])
+            ("ConTeXt-last-unended-start" function nil nil [28589 28886])
+            ("ConTeXt-mark-environment" function
+               (:user-visible-flag t
+                :arguments ("inner"))
+                nil [28888 29316])
+            ("ConTeXt-find-matching-stop" function
+               (:user-visible-flag t
+                :arguments ("inner"))
+                nil [29318 30502])
+            ("ConTeXt-find-matching-start" function
+               (:user-visible-flag t
+                :arguments ("inner"))
+                nil [30504 32015])
+            ("ConTeXt-insert-item" function (:user-visible-flag t) nil [32028 32217])
+            ("ConTeXt-optional-argument-insert" function (:arguments ("arg" "_prefix")) nil [32246 32421])
+            ("ConTeXt-required-argument-insert" function (:arguments ("arg" "_prefix")) nil [32423 32585])
+            ("ConTeXt-argument-insert" function (:arguments ("arg" "optional" "prefix")) nil [32587 32923])
+            ("ConTeXt-arg-ref" function (:arguments ("optional" "prompt" "definition")) nil [32925 33275])
+            ("ConTeXt-arg-define-ref" function (:arguments ("prompt")) nil [33277 33428])
+            ("ConTeXt-arg-setup" function (:arguments ("optional" "prompt")) nil [33430 33642])
+            ("ConTeXt-item-list" variable nil nil [33675 33742])
+            ("ConTeXt-paragraph-commands-regexp" function nil nil [33744 34339])
+            ("ConTeXt-environment-full-start-name" function (:arguments ("environment")) nil [34362 34556])
+            ("ConTeXt-outline-regexp" function (:arguments ("anywhere")) nil [34558 35238])
+            ("ConTeXt-text" variable (:default-value "Name of ConTeXt macro that begins the text body.") nil [35240 35312])
+            ("ConTeXt-header-end" function nil nil [35314 35488])
+            ("ConTeXt-trailer-start" function nil nil [35490 35669])
+            ("ConTeXt-outline-offset" function nil nil [35671 35809])
+            ("ConTeXt-start-environment-regexp" function (:arguments ("list")) nil [35811 36015])
+            ("ConTeXt-outline-level" function nil nil [36140 36812])
+            ("ConTeXt-font-list" variable (:default-value (quote ((2 "{\\bf " "}") (3 "{\\sc " "}") (5 "{\\em " "}") (9 "{\\it " "}") (18 "{\\rm " "}") (19 "{\\sl " "}") (20 "{\\tt " "}") (4 "" "" t)))) nil [36826 37780])
+            ("ConTeXt-outline-name" function nil nil [37801 38040])
+            ("ConTeXt-imenu-create-index-function" function nil nil [38170 38720])
+            ("ConTeXt-indent-allhanging" variable (:default-value t) nil [38804 38840])
+            ("ConTeXt-indent-arg" variable (:default-value 2) nil [38841 38870])
+            ("ConTeXt-indent-basic" variable (:default-value 2) nil [38871 38902])
+            ("ConTeXt-indent-item" variable (:default-value ConTeXt-indent-basic) nil [38903 38952])
+            ("ConTeXt-indent-item-re" variable (:default-value "\\\\\\(item\\|sym\\)\\>") nil [38953 39010])
+            ("ConTeXt-indent-syntax-table" variable (:default-value (make-syntax-table TeX-mode-syntax-table)) nil [39012 39141])
+            ("progn" code nil nil [39143 39329])
+            ("ConTeXt-indent-line" function (:arguments ("_arg")) nil [39331 39762])
+            ("ConTeXt-find-indent" function (:arguments ("virtual")) nil [39764 42992])
+            ("ConTeXt-last-unended-start-xml" function nil nil [43026 43378])
+            ("ConTeXt-close-xml-tag" function (:user-visible-flag t) nil [43380 43956])
+            ("ConTeXt-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map TeX-mode-map) (define-key map "" (quote ConTeXt-find-matching-start)) (define-key map "" (quote ConTeXt-find-matching-stop)) (define-key map "!" (quote ConTeXt-work-on-environment)) (define-key map "" (quote ConTeXt-environment)) (define-key map "
+" (quote ConTeXt-insert-item)) (or (key-binding "") (define-key map "" (quote ConTeXt-insert-item))) (define-key map "]" (quote ConTeXt-close-environment)) (define-key map "" (quote ConTeXt-section)) (define-key map "/" (quote ConTeXt-close-xml-tag)) map)) nil [43976 44724])
+            ("ConTeXt-environment-menu-name" variable (:default-value "Insert Environment   (C-c C-e)") nil [45291 45362])
+            ("ConTeXt-environment-menu-entry" function (:arguments ("entry")) nil [45364 45526])
+            ("ConTeXt-environment-modify-menu-name" variable (:default-value "Change Environment   (C-u C-c C-e)") nil [45528 45610])
+            ("ConTeXt-environment-modify-menu-entry" function (:arguments ("entry")) nil [45612 45790])
+            ("ConTeXt-define-menu-name" variable (:default-value "Define") nil [45817 45859])
+            ("ConTeXt-define-menu-entry" function (:arguments ("entry")) nil [45861 45994])
+            ("ConTeXt-define-menu" function (:arguments ("define")) nil [45996 46094])
+            ("ConTeXt-setup-menu-name" variable (:default-value "Setup") nil [46120 46160])
+            ("ConTeXt-setup-menu-entry" function (:arguments ("entry")) nil [46162 46292])
+            ("ConTeXt-setup-menu" function (:arguments ("setup")) nil [46294 46387])
+            ("ConTeXt-referencing-menu-name" variable (:default-value "Referencing") nil [46419 46471])
+            ("ConTeXt-referencing-menu-entry" function (:arguments ("entry")) nil [46473 46621])
+            ("ConTeXt-referencing-menu" function (:arguments ("referencing")) nil [46623 46746])
+            ("ConTeXt-other-macro-menu-name" variable (:default-value "Other macro") nil [46772 46824])
+            ("ConTeXt-other-macro-menu-entry" function (:arguments ("entry")) nil [46826 46974])
+            ("ConTeXt-other-macro-menu" function (:arguments ("other-macro")) nil [46976 47099])
+            ("ConTeXt-project-structure-menu-name" variable (:default-value "Project Structure") nil [47152 47216])
+            ("ConTeXt-project-structure-menu" function (:arguments ("project-structure")) nil [47218 47450])
+            ("ConTeXt-project-structure-menu-entry" function (:arguments ("entry")) nil [47452 47618])
+            ("ConTeXt-section-block-menu-name" variable (:default-value "Section Block") nil [47668 47724])
+            ("ConTeXt-section-block-menu" function (:arguments ("section-block")) nil [47726 47852])
+            ("ConTeXt-section-block-menu-entry" function (:arguments ("entry")) nil [47854 48008])
+            ("ConTeXt-numbered-section-menu-name" variable (:default-value "Numbered section  (C-c C-s)") nil [48036 48109])
+            ("ConTeXt-unnumbered-section-menu-name" variable (:default-value "Unnumbered section") nil [48110 48176])
+            ("ConTeXt-section-enable-symbol" function (:arguments ("level")) nil [48178 48351])
+            ("ConTeXt-section-enable" function (:arguments ("entry")) nil [48353 48571])
+            ("ConTeXt-numbered-section-menu" function (:arguments ("level")) nil [48573 48822])
+            ("ConTeXt-unnumbered-section-menu" function (:arguments ("level")) nil [48824 49083])
+            ("ConTeXt-numbered-section-menu-entry" function (:arguments ("entry")) nil [49085 49355])
+            ("ConTeXt-unnumbered-section-menu-entry" function (:arguments ("entry")) nil [49357 49633])
+            ("ConTeXt-etexshow" function (:user-visible-flag t) nil [49657 49960])
+            ("easy-menu-define" code nil nil [49978 50129])
+            ("easy-menu-define" code nil nil [50321 52843])
+            ("ConTeXt-menu-update" function (:arguments ("menu")) nil [52845 55439])
+            ("ConTeXt-texexec-option-nonstop" variable (:default-value "--nonstop ") nil [55462 55570])
+            ("ConTeXt-expand-command" function nil nil [55572 55814])
+            ("ConTeXt-expand-options" function nil nil [55816 56666])
+            ("ConTeXt-language-variable-list" variable (:default-value (quote (ConTeXt-define-list ConTeXt-setup-list ConTeXt-referencing-list ConTeXt-other-macro-list ConTeXt-project-structure-list ConTeXt-section-block-list ConTeXt-numbered-section-list ConTeXt-unnumbered-section-list ConTeXt-section-list ConTeXt-text ConTeXt-item-list ConTeXt-extra-paragraph-commands ConTeXt-environment-list))) nil [56776 57249])
+            ("ConTeXt-dialect" variable
+               (:constant-flag t
+                :default-value :context)
+                nil [57251 57493])
+            ("ConTeXt-clean-intermediate-suffixes" variable (:default-value (quote ("\\.tui" "\\.tup" "\\.ted" "\\.tes" "\\.top" "\\.log" "\\.tmp" "\\.run" "\\.bck" "\\.rlg" "\\.mpt" "\\.mpx" "\\.mpd" "\\.mpo" "\\.tuo" "\\.tub" "\\.top" "-mpgraph\\.mp" "-mpgraph\\.mpd" "-mpgraph\\.mpo" "-mpgraph\\.mpy" "-mprun\\.mp" "-mprun\\.mpd" "-mprun\\.mpo" "-mprun\\.mpy"))) nil [57495 58125])
+            ("ConTeXt-clean-output-suffixes" variable (:default-value (quote ("\\.dvi" "\\.pdf" "\\.ps"))) nil [58127 58452])
+            ("TeX-abbrev-mode-setup" code nil nil [58454 58490])
+            ("ConTeXt-mode-common-initialization" function nil nil [58492 61808])
+            ("context-guess-current-interface" function (:user-visible-flag t) nil [61810 62330])
+            ("defalias" code nil nil [62347 62385])
+            ("context-mode" function (:user-visible-flag t) nil [62402 62849])
+            ("context" package nil nil [62851 62869]))          
+      :file "context.el"
+      :pointmax 62896
+      :fsize 62895
+      :lastmodtime '(22659 34637 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "tex-buf.el"
+      :fsize 144375
+      :lastmodtime '(22659 34637 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "latex.el"
+      :fsize 251884
+      :lastmodtime '(22659 34637 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "plain-tex.el"
+      :fsize 9360
+      :lastmodtime '(22659 34637 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("context" include nil nil [1032 1050])
+            ("ConTeXt-environment-list-nl" variable (:default-value (quote ("achtergrond" "alinea" "bloktekst" "buffer" "citaat" "combinatie" "commentaar" "deelomgeving" "document" "doordefinitie" "doornummering" "figuur" "formule" "gegeven" "interactiemenu" "kadertekst" "kantlijn" "kleur" "kolommen" "legenda" "lokaal" "lokalevoetnoten" "margeblok" "naamopmaak" "naast" "opelkaar" "opmaak" "opsomming" "overlay" "overzicht" "paginafiguur" "positioneren" "profiel" "regel" "regelcorrectie" "regelnummeren" "regels" "smaller" "symboolset" "synchronisatie" "tabel" "tabellen" "tabulatie" "tekstlijn" "typen" "uitlijnen" "uitstellen" "vanelkaar" "verbergen" "versie" "omgeving" "onderdeel" "produkt" "project" "FLOWcell" "FLOWchart" "EIFFEL" "JAVA" "JAVASCRIPT" "MP" "PASCAL" "PERL" "SQL" "TEX" "XML" "MPpositiongraphic" "useMPgraphic" "MPcode" "reusableMPgraphic" "uniqueMPgraphic"))) nil [1077 2185])
+            ("ConTeXt-define-list-nl" variable (:default-value (quote ("achtergrond" "startstop" "typen"))) nil [2187 2318])
+            ("ConTeXt-setup-list-nl" variable (:default-value (quote ("achtergronden" "achtergrond" "alineas" "arrangeren" "blanko" "blok" "blokjes" "blokkopje" "blokkopjes" "boven" "boventeksten" "brieven" "buffer" "buttons" "citeren" "clip" "combinaties" "commentaar" "doordefinieren" "doornummeren" "doorspringen" "dunnelijnen" "externefiguren" "formules" "formulieren" "hoofd" "hoofdteksten" "inmarge" "inspringen" "interactiebalk" "interactie" "interactiemenu" "interactiescherm" "interlinie" "invullijnen" "invulregels" "items" "kaderteksten" "kantlijn" "kapitalen" "kleuren" "kleur" "kolommen" "kop" "kopnummer" "koppelteken" "koppen" "koptekst" "korps" "korpsomgeving" "labeltekst" "layout" "legenda" "lijndikte" "lijn" "lijst" "margeblokken" "markering" "naastplaatsen" "nummeren" "omlijnd" "onder" "onderstrepen" "onderteksten" "opmaak" "opsomming" "paginanummer" "paginanummering" "paginaovergangen" "palet" "papierformaat" "papier" "paragraafnummeren" "plaatsblok" "plaatsblokken" "plaatsblokkensplitsen" "positioneren" "profielen" "programmas" "publicaties" "rasters" "referentielijst" "refereren" "regelnummeren" "regels" "register" "roteren" "samengesteldelijst" "sectieblok" "sectie" "sheets" "smaller" "sorteren" "spatiering" "stickers" "strut" "strut" "subpaginanummer" "symboolset" "synchronisatiebalk" "synchronisatie" "synoniemen" "systeem" "taal" "tabellen" "tab" "tabulatie" "tekst" "tekstlijnen" "tekstpositie" "tekstteksten" "tekstvariabele" "tolerantie" "type" "typen" "uitlijnen" "uitvoer" "url" "velden" "veld" "versies" "voet" "voetnootdefinitie" "voetnoten" "voetteksten" "witruimte"))) nil [2320 4068])
+            ("ConTeXt-referencing-list-nl" variable (:default-value (quote ("in" "op" "over" "paginareferentie" "tekstreferentie" "referentie"))) nil [4096 4267])
+            ("ConTeXt-other-macro-list-nl" variable (:default-value (quote ("regellinks" "regelmidden" "regelrechts" "toonexternefiguren"))) nil [4269 4454])
+            ("ConTeXt-define-command-nl" function (:arguments ("what")) nil [4456 4587])
+            ("ConTeXt-setup-command-nl" function (:arguments ("what")) nil [4589 4718])
+            ("ConTeXt-project-structure-list-nl" variable (:default-value (quote ("project" "omgeving" "produkt" "onderdeel"))) nil [4720 4926])
+            ("ConTeXt-section-block-list-nl" variable (:default-value (quote ("inleidingen" "hoofdteksten" "bijlagen" "uitleidingen"))) nil [4928 5130])
+            ("ConTeXt-numbered-section-list-nl" variable (:default-value (quote (("deel" 0) ("hoofdstuk" 1) ("paragraaf" 2) ("subparagraaf" 3) ("subsubparagraaf" 4)))) nil [5367 5586])
+            ("ConTeXt-unnumbered-section-list-nl" variable (:default-value (quote (("titel" 1) ("onderwerp" 2) ("subonderwerp" 3) ("subsubsubsubject" 4)))) nil [5588 5793])
+            ("ConTeXt-text-nl" variable (:default-value "tekst") nil [5795 5873])
+            ("ConTeXt-item-list-nl" variable (:default-value (quote ("som" "its" "mar" "ran" "sub" "sym"))) nil [5875 5996])
+            ("ConTeXt-default-environment-nl" variable
+               (:user-visible-flag t
+                :default-value "opsomming")
+                nil [5998 6181])
+            ("ConTeXt-extra-paragraph-commands-nl" variable (:default-value (quote ("crlf" "par" "plaats[A-Za-z]+"))) nil [6183 6370])
+            ("ConTeXt-nl-mode-initialization" function nil nil [6447 7080])
+            ("context-nl-mode" function (:user-visible-flag t) nil [7097 7637])
+            ("context-nl" package nil nil [7639 7660]))          
+      :file "context-nl.el"
+      :pointmax 7690
+      :fsize 7689
+      :lastmodtime '(22659 34637 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!auctex-11.90.0!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

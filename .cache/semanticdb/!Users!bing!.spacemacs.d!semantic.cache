@@ -1,0 +1,22 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("dotspacemacs/layers" function nil nil [123 3387])
+            ("dotspacemacs/init" function nil nil [3389 15269])
+            ("dotspacemacs/user-init" function nil nil [15271 15895])
+            ("dotspacemacs/user-config" function nil nil [15897 17131])
+            ("setq" code nil nil [17248 17320])
+            ("load" code nil nil [17321 17361]))          
+      :file "init.el"
+      :pointmax 17362
+      :fsize 17363
+      :lastmodtime '(22677 28679 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.spacemacs.d!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

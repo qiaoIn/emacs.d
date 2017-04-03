@@ -1,0 +1,71 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("vc-git" include nil nil [1121 1138])
+            ("cl-lib" include nil nil [1139 1156])
+            ("git-timemachine-abbreviation-length" variable (:default-value 12) nil [1158 1301])
+            ("git-timemachine-show-minibuffer-details" variable (:default-value t) nil [1303 1503])
+            ("git-timemachine-commit" variable
+               (:default-value (quote ((default :weight bold)))
+                :type "face")
+                nil [1505 1628])
+            ("git-timemachine-minibuffer-detail-face" variable
+               (:default-value (quote ((t (:foreground "yellow"))))
+                :type "face")
+                nil [1630 1774])
+            ("git-timemachine-minibuffer-author-face" variable
+               (:default-value (quote ((t (:foreground "orange"))))
+                :type "face")
+                nil [1776 1923])
+            ("git-timemachine-minibuffer-detail" variable (:default-value (quote subject)) nil [1925 2269])
+            ("git-timemachine-show-author" variable (:default-value t) nil [2271 2395])
+            ("defvar-local" code nil nil [2397 2441])
+            ("defvar-local" code nil nil [2442 2485])
+            ("defvar-local" code nil nil [2486 2525])
+            ("defvar-local" code nil nil [2526 2577])
+            ("git-timemachine-completing-read-fn" function (:arguments ("args")) nil [2579 2840])
+            ("git-timemachine--revisions" function (:arguments ("git-branch")) nil [2842 4726])
+            ("git-timemachine-show-current-revision" function (:user-visible-flag t) nil [4728 4900])
+            ("git-timemachine-show-latest-revision-in-branch" function
+               (:user-visible-flag t
+                :arguments ("git-branch"))
+                nil [4902 5134])
+            ("git-timemachine--next-revision" function (:arguments ("revisions")) nil [5136 5375])
+            ("git-timemachine-show-previous-revision" function (:user-visible-flag t) nil [5377 5960])
+            ("git-timemachine-show-next-revision" function (:user-visible-flag t) nil [5962 6547])
+            ("git-timemachine-show-nth-revision" function
+               (:user-visible-flag t
+                :arguments ("rev-number"))
+                nil [6549 7296])
+            ("git-timemachine-show-revision" function (:arguments ("revision")) nil [7298 8625])
+            ("git-timemachine--show-minibuffer-details" function (:arguments ("revision")) nil [8627 9202])
+            ("git-timemachine--find-new-current-line" function (:arguments ("curr-revision" "new-revision" "current-line")) nil [9204 10982])
+            ("git-timemachine--get-cursor-position" function nil nil [10984 11261])
+            ("git-timemachine--set-cursor-position" function (:arguments ("POS")) nil [11263 11419])
+            ("git-timemachine-abbreviate" function (:arguments ("revision")) nil [11421 11605])
+            ("git-timemachine-quit" function (:user-visible-flag t) nil [11607 11693])
+            ("git-timemachine-kill-revision" function (:user-visible-flag t) nil [11695 11899])
+            ("git-timemachine-kill-abbreviated-revision" function (:user-visible-flag t) nil [11901 12139])
+            ("define-minor-mode" code nil nil [12141 12572])
+            ("git-timemachine-validate" function (:arguments ("file")) nil [12574 12867])
+            ("git-timemachine--start" function (:arguments ("get-revision-fn")) nil [12869 14172])
+            ("git-timemachine-toggle" function (:user-visible-flag t) nil [14189 14360])
+            ("git-timemachine" function (:user-visible-flag t) nil [14377 14538])
+            ("git-timemachine-switch-branch" function
+               (:user-visible-flag t
+                :arguments ("git-branch"))
+                nil [14555 14874])
+            ("git-timemachine" package nil nil [14876 14902]))          
+      :file "git-timemachine.el"
+      :pointmax 14937
+      :fsize 14938
+      :lastmodtime '(22659 32878 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!git-timemachine-20161125.142!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

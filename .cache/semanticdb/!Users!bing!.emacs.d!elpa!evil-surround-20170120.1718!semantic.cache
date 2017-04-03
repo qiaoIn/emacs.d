@@ -1,0 +1,56 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("evil" include nil nil [1271 1286])
+            ("surround" customgroup (:user-visible-flag t) nil [1288 1375])
+            ("evil-surround-pairs-alist" variable (:default-value (quote ((40 "( " . " )") (91 "[ " . " ]") (123 "{ " . " }") (41 "(" . ")") (93 "[" . "]") (125 "{" . "}") (35 "#{" . "}") (98 "(" . ")") (66 "{" . "}") (62 "<" . ">") (116 . evil-surround-read-tag) (60 . evil-surround-read-tag) (102 . evil-surround-function)))) nil [1377 2237])
+            ("make-variable-buffer-local" code nil nil [2238 2293])
+            ("evil-surround-operator-alist" variable (:default-value (quote ((evil-change . change) (evil-delete . delete)))) nil [2295 2623])
+            ("evil-surround-read-tag-map" variable (:default-value (let ((map (copy-keymap minibuffer-local-map))) (define-key map ">" (quote exit-minibuffer)) map)) nil [2625 2806])
+            ("evil-surround-function" function nil nil [2808 3023])
+            ("evil-surround-read-tag" function nil nil [3025 3416])
+            ("evil-surround-valid-char-p" function (:arguments ("char")) nil [3418 3553])
+            ("evil-surround-pair" function (:arguments ("char")) nil [3555 3894])
+            ("evil-surround-outer-overlay" function (:arguments ("char")) nil [3896 4494])
+            ("evil-surround-trim-whitespace-from-range" function (:arguments ("range" "regexp")) nil [4496 5109])
+            ("evil-surround-inner-overlay" function (:arguments ("char")) nil [5111 5754])
+            ("evil-define-motion" code nil nil [5756 6072])
+            ("evil-surround-delete" function
+               (:user-visible-flag t
+                :arguments ("char" "outer" "inner"))
+                nil [6089 7053])
+            ("evil-surround-change" function
+               (:user-visible-flag t
+                :arguments ("char" "outer" "inner"))
+                nil [7070 7937])
+            ("evil-surround-interactive-setup" function nil nil [7939 8116])
+            ("evil-surround-setup-surround-line-operators" function nil nil [8118 8304])
+            ("evil-surround-column-at" function (:arguments ("pos")) nil [8306 8395])
+            ("evil-surround-block" function (:arguments ("beg" "end" "char")) nil [8397 8892])
+            ("evil-surround-call-with-repeat" function (:arguments ("callback")) nil [8894 9274])
+            ("evil-define-command" code nil nil [9441 10051])
+            ("evil-define-command" code nil nil [10053 10485])
+            ("evil-define-operator" code nil nil [10487 12978])
+            ("evil-define-operator" code nil nil [12980 13161])
+            ("define-minor-mode" code nil nil [13178 13327])
+            ("turn-on-evil-surround-mode" function nil nil [13344 13459])
+            ("turn-off-evil-surround-mode" function nil nil [13476 13594])
+            ("define-globalized-minor-mode" code nil nil [13611 13762])
+            ("evil-define-key" code nil nil [13764 13838])
+            ("evil-define-key" code nil nil [13839 13913])
+            ("evil-define-key" code nil nil [13915 13989])
+            ("evil-define-key" code nil nil [13990 14065])
+            ("evil-surround" package nil nil [14067 14091]))          
+      :file "evil-surround.el"
+      :pointmax 14124
+      :fsize 14124
+      :lastmodtime '(22659 32401 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!evil-surround-20170120.1718!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,22 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("setq" code nil nil [27 60])
+            ("with-eval-after-load" code nil nil [62 126])
+            ("zilongshanren/retrieve-chrome-current-tab-url" function (:user-visible-flag t) nil [168 933])
+            ("setq" code nil nil [952 1449])
+            ("global-set-key" code nil nil [1451 1494])
+            ("init-org" package nil nil [1620 1639]))          
+      :file "init-org.el"
+      :pointmax 1640
+      :fsize 1639
+      :lastmodtime '(22674 54642 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.spacemacs.d!lisp!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

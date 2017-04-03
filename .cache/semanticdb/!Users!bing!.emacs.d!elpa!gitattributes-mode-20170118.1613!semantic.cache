@@ -1,0 +1,43 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("easymenu" include nil nil [1256 1275])
+            ("thingatpt" include nil nil [1276 1296])
+            ("gitattributes-mode" customgroup (:user-visible-flag t) nil [1298 1467])
+            ("gitattributes-mode-enable-eldoc" variable (:default-value t) nil [1469 1742])
+            ("gitattributes-mode-man-function" variable (:default-value (function man)) nil [1744 2006])
+            ("gitattributes-mode-help" function (:user-visible-flag t) nil [2008 2197])
+            ("gitattributes-mode-attributes" variable
+               (:constant-flag t
+                :default-value (quote (("text" "This attribute enables and controls end-of-line normalization." (t "auto")) ("eol" "This attribute sets a specific line-ending style to be used in the working directory." ("crlf" "lf")) ("ident" "Handle $Id$." t) ("filter" "A filter attribute can be set to a string value that names a filter driver specified in the configuration." string) ("diff" "The attribute diff affects how Git generates diffs for particular files." (t string "ada" "bibtex" "cpp" "csharp" "fortran" "html" "java" "matlab" "objc" "pascal" "perl" "php" "python" "ruby" "tex")) ("merge" "The attribute merge affects how three versions of a file are merged." (t string "text" "binary" "union")) ("conflict-marker-size" "This attribute controls the length of conflict markers left in the work tree file during a conflicted merge." (number)) ("whitespace" "The core.whitespace configuration variable allows you to define what diff and apply should consider whitespace errors for all paths in the project." (t string)) ("export-ignore" "Files and directories with the attribute export-ignore won’t be added to archive files." t) ("export-subst" "If the attribute export-subst is set for a file then Git will expand several placeholders when adding this file to an archive." t) ("delta" "Delta compression will not be attempted for blobs for paths with the attribute delta set to false." t) ("encoding" "The encoding used for the file in GUI Tools (e.g., gitk(1) and git-gui(1))." string))))
+                nil [2199 4241])
+            ("gitattributes-mode-eldoc" function (:arguments ("no-state")) nil [4243 4926])
+            ("gitattributes-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table))) (modify-syntax-entry 32 " " table) (modify-syntax-entry 9 " " table) (modify-syntax-entry 45 "_." table) (modify-syntax-entry 33 "." table) (modify-syntax-entry 61 "." table) (modify-syntax-entry 35 "<" table) (modify-syntax-entry 10 ">" table) table)) nil [4928 5336])
+            ("gitattributes-mode--highlight-1st-field" function (:arguments ("regexp")) nil [5338 5963])
+            ("gitattributes-mode-font-lock-keywords" variable (:default-value (\` (("^\\[attr]" quote font-lock-function-name-face) ("\\s-+\\(-\\|!\\)[[:word:]]+" (1 (quote font-lock-negation-char-face))) ("\\s-+\\(?:-\\|!\\)?\\(\\sw\\(?:\\sw\\|\\s_\\)*\\)=?" (1 (quote font-lock-variable-name-face))) ((\, (gitattributes-mode--highlight-1st-field "/")) quote font-lock-constant-face) ((\, (gitattributes-mode--highlight-1st-field "[*?]")) quote font-lock-keyword-face) ((\, (gitattributes-mode--highlight-1st-field "\\[.+?]")) quote font-lock-keyword-face)))) nil [5965 6602])
+            ("gitattributes-mode-forward-field" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [6604 6918])
+            ("gitattributes-mode-backward-field" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [6920 7237])
+            ("gitattributes-mode-map" variable (:default-value (make-sparse-keymap)) nil [7239 7328])
+            ("easy-menu-define" code nil nil [7330 7918])
+            ("define-derived-mode" code nil nil [7935 8555])
+            ("dolist" code nil nil [8572 8766])
+            ("gitattributes-mode" package nil nil [8768 8797]))          
+      :file "gitattributes-mode.el"
+      :pointmax 8835
+      :fsize 8837
+      :lastmodtime '(22659 32878 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!gitattributes-mode-20170118.1613!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

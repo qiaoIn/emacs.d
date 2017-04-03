@@ -1,0 +1,24 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [1145 1158])
+            ("org-bullets" customgroup (:user-visible-flag t) nil [1161 1252])
+            ("org-bullets-bullet-list" variable (:default-value (quote ("◉" "○" "✸" "✿"))) nil [1402 1738])
+            ("org-bullets-face-name" variable nil nil [1740 1992])
+            ("org-bullets-bullet-map" variable (:default-value (quote (keymap (mouse-1 . org-cycle) (mouse-2 lambda (e) (interactive "e") (mouse-set-point e) (org-cycle))))) nil [1994 2296])
+            ("org-bullets-level-char" function (:arguments ("level")) nil [2298 2459])
+            ("define-minor-mode" code nil nil [2476 4553])
+            ("org-bullets" package nil nil [4555 4577]))          
+      :file "org-bullets.el"
+      :pointmax 4608
+      :fsize 4653
+      :lastmodtime '(22659 32522 0 0)
+      :unmatched-syntax '((close-paren 1158 . 1159) (symbol 1127 . 1144) (open-paren 1126 . 1127))))
+  :file "!Users!bing!.emacs.d!elpa!org-bullets-20140918.1137!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

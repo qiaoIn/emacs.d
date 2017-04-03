@@ -1,0 +1,20 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("parent-mode--worker" function (:arguments ("mode" "func")) nil [1645 2367])
+            ("parent-mode-list" function (:arguments ("mode")) nil [2369 2655])
+            ("parent-mode-is-derived-p" function (:arguments ("mode" "parent")) nil [2657 3012])
+            ("parent-mode" package nil nil [3014 3036]))          
+      :file "parent-mode.el"
+      :pointmax 3066
+      :fsize 3065
+      :lastmodtime '(22659 32504 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!parent-mode-20150824.1600!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,48 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("sgml-mode" include nil nil [1825 1845])
+            ("cl" include nil nil [1865 1878])
+            ("mmm-vars" include nil nil [1880 1899])
+            ("mmm-region" include nil nil [1900 1921])
+            ("mmm-add-classes" code nil nil [1923 2879])
+            ("mmm-erb-mark-as-special" function nil nil [2881 3023])
+            ("define-derived-mode" code nil nil [3040 3341])
+            ("html-erb-after-syntax-propertize" function (:arguments ("overlay" "mode" "beg" "end")) nil [3343 3537])
+            ("mmm-erb-indent-line" function (:user-visible-flag t) nil [3539 4506])
+            ("mmm-erb-indent-line-submode" function nil nil [4508 5843])
+            ("mmm-erb-indent-to-region-start" function (:arguments ("additional-offset")) nil [5845 6202])
+            ("mmm-erb-indent-line-primary" function nil nil [6204 7721])
+            ("mmm-erb-scan-region" function (:arguments ("region")) nil [7723 8251])
+            ("mmm-erb-ruby-close-re" variable
+               (:constant-flag t
+                :default-value "\\<end\\>\\|}")
+                nil [8253 8346])
+            ("mmm-erb-scan-erb" function (:arguments ("limit")) nil [8348 8987])
+            ("mmm-erb-scan-ejs" function (:arguments ("limit")) nil [8989 9211])
+            ("mmm-erb-orig-indent-function" function (:arguments ("mode")) nil [9213 9295])
+            ("mmm-erb-offset-var-alist" variable (:default-value (quote ((html-erb-mode . sgml-basic-offset) (nxml-web-mode . nxml-child-indent)))) nil [9297 9411])
+            ("mmm-erb-indent-offset" function (:arguments ("mode")) nil [9413 9546])
+            ("define-derived-mode" code nil nil [9563 9696])
+            ("mmm-erb" package nil nil [9698 9716]))          
+      :file "mmm-erb.el"
+      :pointmax 9743
+      :fsize 9742
+      :lastmodtime '(22659 32884 0 0)
+      :unmatched-syntax '((close-paren 1878 . 1879) (symbol 1847 . 1864) (open-paren 1846 . 1847)))
+    (semanticdb-table "semanticdb-table"
+      :file "mmm-vars.el"
+      :fsize 42113
+      :lastmodtime '(22659 32884 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "mmm-region.el"
+      :fsize 35520
+      :lastmodtime '(22659 32884 0 0)))
+  :file "!Users!bing!.emacs.d!elpa!mmm-mode-20150828.1716!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

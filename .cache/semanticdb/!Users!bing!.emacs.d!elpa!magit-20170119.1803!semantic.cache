@@ -1,0 +1,278 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("magit" include nil nil [1207 1223])
+            ("magit-find-file-hook" variable nil nil [1240 1273])
+            ("add-hook" code nil nil [1274 1324])
+            ("magit-find-file" function
+               (:user-visible-flag t
+                :arguments ("rev" "file"))
+                nil [1341 1592])
+            ("magit-find-file-other-window" function
+               (:user-visible-flag t
+                :arguments ("rev" "file"))
+                nil [1609 1915])
+            ("magit-find-file-read-args" function (:arguments ("prompt")) nil [1917 2085])
+            ("magit-find-file-noselect" function (:arguments ("rev" "file")) nil [2087 2314])
+            ("magit-find-file-noselect-1" function (:arguments ("rev" "file" "hookvar" "revert")) nil [2316 3505])
+            ("magit-get-revision-buffer-create" function (:arguments ("rev" "file")) nil [3507 3599])
+            ("magit-get-revision-buffer" function (:arguments ("rev" "file" "create")) nil [3601 3849])
+            ("magit-revert-rev-file-buffer" function (:arguments ("_ignore-auto" "noconfirm")) nil [3851 5099])
+            ("magit-find-index-hook" variable nil nil [5117 5151])
+            ("magit-find-file-index-noselect" function (:arguments ("file" "revert")) nil [5153 5462])
+            ("magit-update-index" function (:user-visible-flag t) nil [5464 7002])
+            ("magit-find-git-config-file" function
+               (:user-visible-flag t
+                :arguments ("filename" "wildcards"))
+                nil [7026 7661])
+            ("magit-find-git-config-file-other-window" function
+               (:user-visible-flag t
+                :arguments ("filename" "wildcards"))
+                nil [7663 8372])
+            ("magit-find-git-config-file-other-frame" function
+               (:user-visible-flag t
+                :arguments ("filename" "wildcards"))
+                nil [8374 9078])
+            ("magit-file-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "g" (quote magit-status)) (define-key map "\347" (quote magit-dispatch-popup)) (define-key map "\347" (quote magit-file-popup)) map)) nil [9095 9352])
+            ("magit-define-popup" code nil nil [9412 10002])
+            ("magit-file-mode-lighter" variable nil nil [10004 10039])
+            ("define-minor-mode" code nil nil [10041 10318])
+            ("magit-file-mode-turn-on" function nil nil [10320 10453])
+            ("define-globalized-minor-mode" code nil nil [10470 10720])
+            ("magit-blob-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (cond ((featurep (quote jkl)) (define-key map "i" (quote magit-blob-previous)) (define-key map "k" (quote magit-blob-next))) (t (define-key map "p" (quote magit-blob-previous)) (define-key map "n" (quote magit-blob-next)))) (define-key map "q" (quote magit-kill-this-buffer)) map)) nil [10737 11140])
+            ("define-minor-mode" code nil nil [11142 11352])
+            ("magit-blob-next" function (:user-visible-flag t) nil [11354 11890])
+            ("magit-blob-previous" function (:user-visible-flag t) nil [11892 12344])
+            ("magit-blob-visit" function (:arguments ("blob-or-file" "line")) nil [12346 12711])
+            ("magit-blob-ancestor" function (:arguments ("rev" "file")) nil [12713 12980])
+            ("magit-blob-successor" function (:arguments ("rev" "file")) nil [12982 13372])
+            ("magit-file-rename" function
+               (:user-visible-flag t
+                :arguments ("file" "newname"))
+                nil [13393 14463])
+            ("magit-file-untrack" function
+               (:user-visible-flag t
+                :arguments ("file"))
+                nil [14465 14694])
+            ("magit-file-delete" function
+               (:user-visible-flag t
+                :arguments ("file" "force"))
+                nil [14696 15129])
+            ("magit-file-checkout" function
+               (:user-visible-flag t
+                :arguments ("rev" "file"))
+                nil [15146 15469])
+            ("magit-read-file-hist" variable nil nil [15486 15519])
+            ("magit-read-file-from-rev" function (:arguments ("rev" "prompt" "default")) nil [15521 15767])
+            ("magit-read-file" function (:arguments ("prompt" "tracked-only")) nil [15769 16264])
+            ("magit-read-tracked-file" function (:arguments ("prompt")) nil [16266 16335])
+            ("magit-read-file-choice" function (:arguments ("prompt" "files" "error" "default")) nil [16337 16928])
+            ("magit-read-changed-file" function (:arguments ("rev-or-range" "prompt" "default")) nil [16930 17134])
+            ("magit-read-files" function (:arguments ("prompt" "initial-contents")) nil [17136 17399])
+            ("magit-files" package nil nil [17401 17423]))          
+      :file "magit-files.el"
+      :pointmax 17453
+      :fsize 17452
+      :lastmodtime '(22659 32871 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "magit.el"
+      :fsize 41578
+      :lastmodtime '(22659 32871 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("dash" include nil nil [2592 2607])
+            ("easymenu" include nil nil [2608 2627])
+            ("server" include nil nil [2628 2645])
+            ("with-editor" include nil nil [2646 2668])
+            ("magit" include nil nil [2669 2685])
+            ("and" code nil nil [2687 2875])
+            ("recentf" include nil nil [2896 2914])
+            ("git-rebase" customgroup (:user-visible-flag t) nil [2945 3072])
+            ("git-rebase-auto-advance" variable (:default-value t) nil [3074 3205])
+            ("git-rebase-show-instructions" variable (:default-value t) nil [3207 3352])
+            ("git-rebase-confirm-cancel" variable (:default-value t) nil [3354 3479])
+            ("git-rebase-faces" customgroup (:user-visible-flag t) nil [3493 3596])
+            ("git-rebase-hash" variable
+               (:default-value (quote ((t (:inherit magit-hash))))
+                :type "face")
+                nil [3598 3707])
+            ("git-rebase-description" variable (:type "face") nil [3709 3806])
+            ("git-rebase-killed-action" variable
+               (:default-value (quote ((t (:inherit font-lock-comment-face :strike-through t))))
+                :type "face")
+                nil [3808 3976])
+            ("git-rebase-comment-hash" variable
+               (:default-value (quote ((t (:inherit git-rebase-hash :weight bold))))
+                :type "face")
+                nil [3978 4142])
+            ("git-rebase-comment-heading" variable
+               (:default-value (quote ((t :inherit font-lock-keyword-face)))
+                :type "face")
+                nil [4144 4298])
+            ("git-rebase-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map special-mode-map) (cond ((featurep (quote jkl)) (define-key map [return] (quote git-rebase-show-commit)) (define-key map (kbd "i") (quote git-rebase-backward-line)) (define-key map (kbd "k") (quote forward-line)) (define-key map (kbd "M-i") (quote git-rebase-move-line-up)) (define-key map (kbd "M-k") (quote git-rebase-move-line-down)) (define-key map (kbd "p") (quote git-rebase-pick)) (define-key map (kbd ",") (quote git-rebase-kill-line))) (t (define-key map (kbd "C-m") (quote git-rebase-show-commit)) (define-key map (kbd "p") (quote git-rebase-backward-line)) (define-key map (kbd "n") (quote forward-line)) (define-key map (kbd "M-p") (quote git-rebase-move-line-up)) (define-key map (kbd "M-n") (quote git-rebase-move-line-down)) (define-key map (kbd "c") (quote git-rebase-pick)) (define-key map (kbd "k") (quote git-rebase-kill-line)) (define-key map (kbd "C-k") (quote git-rebase-kill-line)))) (define-key map (kbd "e") (quote git-rebase-edit)) (define-key map (kbd "m") (quote git-rebase-edit)) (define-key map (kbd "f") (quote git-rebase-fixup)) (define-key map (kbd "q") (quote undefined)) (define-key map (kbd "r") (quote git-rebase-reword)) (define-key map (kbd "w") (quote git-rebase-reword)) (define-key map (kbd "s") (quote git-rebase-squash)) (define-key map (kbd "x") (quote git-rebase-exec)) (define-key map (kbd "y") (quote git-rebase-insert)) (define-key map (kbd "SPC") (quote git-rebase-show-or-scroll-up)) (define-key map (kbd "DEL") (quote git-rebase-show-or-scroll-down)) (define-key map (kbd "C-x C-t") (quote git-rebase-move-line-up)) (define-key map [M-up] (quote git-rebase-move-line-up)) (define-key map [M-down] (quote git-rebase-move-line-down)) (define-key map [remap undo] (quote git-rebase-undo)) map)) nil [4313 6251])
+            ("cond" code nil nil [6253 6675])
+            ("easy-menu-define" code nil nil [6677 7180])
+            ("git-rebase-command-descriptions" variable (:default-value (quote ((with-editor-finish . "tell Git to make it happen") (with-editor-cancel . "tell Git that you changed your mind, i.e. abort") (git-rebase-backward-line . "move point to previous line") (forward-line . "move point to next line") (git-rebase-move-line-up . "move the commit at point up") (git-rebase-move-line-down . "move the commit at point down") (git-rebase-show-or-scroll-up . "show the commit at point in another buffer") (git-rebase-show-commit . "show the commit at point in another buffer and select its window") (undo . "undo last change") (git-rebase-kill-line . "drop the commit at point")))) nil [7182 7947])
+            ("git-rebase-pick" function (:user-visible-flag t) nil [7963 8070])
+            ("git-rebase-reword" function (:user-visible-flag t) nil [8072 8195])
+            ("git-rebase-edit" function (:user-visible-flag t) nil [8197 8316])
+            ("git-rebase-squash" function (:user-visible-flag t) nil [8318 8465])
+            ("git-rebase-fixup" function (:user-visible-flag t) nil [8467 8619])
+            ("defvar-local" code nil nil [8621 8655])
+            ("defvar-local" code nil nil [8656 8696])
+            ("git-rebase-set-action" function (:arguments ("action")) nil [8698 9039])
+            ("git-rebase-line-p" function (:arguments ("pos")) nil [9041 9209])
+            ("git-rebase-region-bounds" function nil nil [9211 9614])
+            ("git-rebase-move-line-down" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [9616 10915])
+            ("git-rebase-move-line-up" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [10917 11204])
+            ("git-rebase-highlight-region" function (:arguments ("start" "end" "window" "rol")) nil [11206 11814])
+            ("git-rebase-unhighlight-region" function (:arguments ("rol")) nil [11816 11989])
+            ("git-rebase-kill-line" function (:user-visible-flag t) nil [11991 12343])
+            ("git-rebase-insert" function
+               (:user-visible-flag t
+                :arguments ("rev"))
+                nil [12345 12675])
+            ("git-rebase-exec" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [12677 13842])
+            ("git-rebase-undo" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [13844 14026])
+            ("git-rebase--show-commit" function (:arguments ("scroll")) nil [14028 14492])
+            ("git-rebase-show-commit" function (:user-visible-flag t) nil [14494 14619])
+            ("git-rebase-show-or-scroll-up" function (:user-visible-flag t) nil [14621 14970])
+            ("git-rebase-show-or-scroll-down" function (:user-visible-flag t) nil [14972 15327])
+            ("git-rebase-backward-line" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [15329 15528])
+            ("define-derived-mode" code nil nil [15555 17012])
+            ("git-rebase-cancel-confirm" function (:arguments ("force")) nil [17014 17156])
+            ("git-rebase-autostash-save" function nil nil [17158 17321])
+            ("git-rebase-autostash-apply" function nil nil [17323 17447])
+            ("git-rebase-match-comment-line" function (:arguments ("limit")) nil [17449 17560])
+            ("git-rebase-match-killed-action" function (:arguments ("limit")) nil [17562 17680])
+            ("git-rebase-mode-font-lock-keywords" function nil nil [17682 18409])
+            ("git-rebase-mode-show-keybindings" function nil nil [18411 19967])
+            ("add-hook" code nil nil [19969 20037])
+            ("git-rebase-mode-disable-before-save-hook" function nil nil [20039 20142])
+            ("add-hook" code nil nil [20144 20218])
+            ("git-rebase-filename-regexp" variable
+               (:constant-flag t
+                :default-value "/git-rebase-todo\\'")
+                nil [20235 20294])
+            ("add-to-list" code nil nil [20310 20404])
+            ("add-to-list" code nil nil [20406 20517])
+            ("eval-after-load" code nil nil [20519 20606])
+            ("add-to-list" code nil nil [20608 20687])
+            ("git-rebase" package nil nil [20689 20710]))          
+      :file "git-rebase.el"
+      :pointmax 20739
+      :fsize 20738
+      :lastmodtime '(22659 32871 0 0)
+      :unmatched-syntax '((close-paren 2914 . 2915) (symbol 2878 . 2895) (open-paren 2877 . 2878)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("magit" include nil nil [1073 1089])
+            ("define-obsolete-variable-alias" code nil nil [1118 1222])
+            ("define-obsolete-variable-alias" code nil nil [1251 1352])
+            ("define-obsolete-function-alias" code nil nil [1381 1484])
+            ("define-obsolete-function-alias" code nil nil [1513 1608])
+            ("define-obsolete-function-alias" code nil nil [1610 1711])
+            ("define-obsolete-function-alias" code nil nil [1713 1814])
+            ("define-obsolete-function-alias" code nil nil [1816 1923])
+            ("define-obsolete-function-alias" code nil nil [1925 2043])
+            ("define-obsolete-function-alias" code nil nil [2045 2181])
+            ("define-obsolete-function-alias" code nil nil [2183 2298])
+            ("make-obsolete-variable" code nil nil [2300 2432])
+            ("make-obsolete-variable" code nil nil [2434 3194])
+            ("define-obsolete-function-alias" code nil nil [3223 3354])
+            ("define-obsolete-function-alias" code nil nil [3356 3485])
+            ("make-obsolete-variable" code nil nil [3514 3642])
+            ("define-obsolete-variable-alias" code nil nil [3671 3757])
+            ("make-obsolete-variable" code nil nil [3759 3921])
+            ("define-obsolete-variable-alias" code nil nil [3923 4035])
+            ("define-obsolete-function-alias" code nil nil [4064 4154])
+            ("magit-obsolete" package nil nil [4156 4181]))          
+      :file "magit-obsolete.el"
+      :pointmax 4214
+      :fsize 4213
+      :lastmodtime '(22659 32871 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1611 1628])
+            ("dash" include nil nil [1629 1644])
+            ("ido" include nil nil [1665 1679])
+            ("declare-function" code nil nil [1681 1742])
+            ("declare-function" code nil nil [1743 1782])
+            ("magit-wip-before-change-mode" variable nil nil [1784 1821])
+            ("magit-completing-read-function" variable (:default-value (quote magit-builtin-completing-read)) nil [1836 2509])
+            ("magit-no-confirm-default" variable nil nil [2511 3519])
+            ("magit--confirm-actions" variable
+               (:constant-flag t
+                :default-value (quote ((const reverse) (const discard) (const rename) (const resurrect) (const trash) (const delete) (const abort-rebase) (const abort-merge) (const merge-dirty) (const drop-stashes) (const resect-bisect) (const kill-process) (const delete-unmerged-branch) (const stage-all-changes) (const unstage-all-changes) (const safe-with-wip))))
+                nil [3521 3966])
+            ("magit-no-confirm" variable nil nil [3968 8043])
+            ("magit-slow-confirm" variable (:default-value (quote (drop-stashes))) nil [8045 8826])
+            ("magit-no-message" variable nil nil [8828 9824])
+            ("magit-ellipsis" variable (:default-value 8230) nil [9826 10108])
+            ("magit-update-other-window-delay" variable (:default-value 0.2) nil [10110 10861])
+            ("magit-view-git-manual-method" variable (:default-value (quote info)) nil [10863 11601])
+            ("magit-completing-read" function (:arguments ("prompt" "collection" "predicate" "require-match" "initial-input" "hist" "def")) nil [11619 13058])
+            ("magit-builtin-completing-read" function (:arguments ("prompt" "choices" "predicate" "require-match" "initial-input" "hist" "def")) nil [13060 13384])
+            ("magit-ido-completing-read" function (:arguments ("prompt" "choices" "predicate" "require-match" "initial-input" "hist" "def")) nil [13386 14262])
+            ("magit-prompt-with-default" function (:arguments ("prompt" "def")) nil [14264 14476])
+            ("magit-minibuffer-local-ns-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map minibuffer-local-map) (define-key map " " (quote magit-whitespace-disallowed)) (define-key map "	" (quote magit-whitespace-disallowed)) map)) nil [14478 14720])
+            ("magit-whitespace-disallowed" function (:user-visible-flag t) nil [14722 14946])
+            ("magit-read-string" function (:arguments ("prompt" "initial-input" "history" "default-value" "inherit-input-method" "no-whitespace")) nil [14948 16200])
+            ("magit-read-string-ns" function (:arguments ("prompt" "initial-input" "history" "default-value" "inherit-input-method")) nil [16202 16508])
+            ("magit-read-char-case" function (:arguments ("prompt" "verbose" "clauses")) nil [16510 16924])
+            ("magit-y-or-n-p" function (:arguments ("prompt" "action")) nil [16926 17288])
+            ("cl-defun" code nil nil [17290 18910])
+            ("magit-confirm-files" function (:arguments ("action" "files" "prompt")) nil [18912 19162])
+            ("magit-confirm-make-prompt" function (:arguments ("action")) nil [19164 19352])
+            ("magit-emacs-Q-command" function nil nil [19390 20252])
+            ("magit-bind-match-strings" function (:arguments ("varlist" "string" "body")) nil [20274 20863])
+            ("magit-delete-line" function nil nil [20865 20985])
+            ("magit-delete-match" function (:arguments ("num")) nil [20987 21217])
+            ("magit-file-line" function (:arguments ("file")) nil [21219 21493])
+            ("magit-file-lines" function (:arguments ("file" "keep-empty-lines")) nil [21495 21846])
+            ("magit-kill-this-buffer" function (:user-visible-flag t) nil [21872 21983])
+            ("magit-file-accessible-directory-p" function (:arguments ("filename")) nil [22013 22322])
+            ("whitespace-mode" variable nil nil [22360 22384])
+            ("whitespace-dont-turn-on-in-magit-mode" function nil nil [22386 22847])
+            ("advice-add" code nil nil [22849 22940])
+            ("magit-custom-initialize-reset" function (:arguments ("symbol" "exp")) nil [22966 23668])
+            ("magit-hook-custom-get" function (:arguments ("symbol")) nil [23670 24685])
+            ("Info-follow-nearest-node--magit-gitman" function (:arguments ("fn" "fork")) nil [24732 25426])
+            ("advice-add" code nil nil [25443 25541])
+            ("org-man-export--magit-gitman" function (:arguments ("fn" "link" "description" "format")) nil [25558 25962])
+            ("advice-add" code nil nil [25979 26057])
+            ("magit-message" function (:arguments ("format-string" "args")) nil [26078 26460])
+            ("magit-utils" package nil nil [26462 26484]))          
+      :file "magit-utils.el"
+      :pointmax 26514
+      :fsize 26515
+      :lastmodtime '(22659 32871 0 0)
+      :unmatched-syntax '((close-paren 1679 . 1680) (symbol 1647 . 1664) (open-paren 1646 . 1647))))
+  :file "!Users!bing!.emacs.d!elpa!magit-20170119.1803!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

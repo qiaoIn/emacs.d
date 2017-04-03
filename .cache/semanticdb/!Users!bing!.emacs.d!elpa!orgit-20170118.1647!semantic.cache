@@ -1,0 +1,40 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [3316 3333])
+            ("dash" include nil nil [3334 3349])
+            ("format-spec" include nil nil [3350 3372])
+            ("magit" include nil nil [3373 3389])
+            ("org" include nil nil [3390 3404])
+            ("orgit-link-set-parameters" function (:arguments ("type" "parameters")) nil [3421 3845])
+            ("orgit" customgroup (:user-visible-flag t) nil [3860 3958])
+            ("orgit-export-alist" variable (:default-value (\` (("github.com[:/]\\(.+?\\)\\(?:\\.git\\)?$" "https://github.com/%n" "https://github.com/%n/commits/%r" "https://github.com/%n/commit/%r") ("gitlab.com[:/]\\(.+?\\)\\(?:\\.git\\)?$" "https://gitlab.com/%n" "https://gitlab.com/%n/commits/%r" "https://gitlab.com/%n/commit/%r") ("bitbucket.org[:/]\\(.+?\\)\\(?:\\.git\\)?$" "https://bitbucket.org/%n" "https://bitbucket.org/%n/commits/branch/%r" "https://bitbucket.org/%n/commits/%r") ("orgmode.org[:/]\\(.+\\)$" "http://orgmode.org/cgit.cgi/%n" "http://orgmode.org/cgit.cgi/%n/log/?h=%r" "http://orgmode.org/cgit.cgi/%n/commit/?id=%r") ("git.kernel.org/pub/scm[:/]\\(.+\\)$" "http://git.kernel.org/cgit/%n" "http://git.kernel.org/cgit/%n/log/?h=%r" "http://git.kernel.org/cgit/%n/commit/?id=%r")))) nil [3960 6075])
+            ("orgit-remote" variable (:default-value "origin") nil [6077 6510])
+            ("orgit-log-save-arguments" variable nil nil [6512 6653])
+            ("eval-after-load" code nil nil [6682 6918])
+            ("orgit-status-store" function nil nil [6935 7224])
+            ("orgit-status-open" function (:arguments ("path")) nil [7241 7348])
+            ("orgit-status-export" function (:arguments ("path" "desc" "format")) nil [7365 7456])
+            ("eval-after-load" code nil nil [7482 7713])
+            ("orgit-log-store" function nil nil [7730 8663])
+            ("orgit-log-open" function (:arguments ("path")) nil [8680 9135])
+            ("orgit-log-export" function (:arguments ("path" "desc" "format")) nil [9152 9237])
+            ("eval-after-load" code nil nil [9268 9499])
+            ("orgit-rev-store" function nil nil [9516 10132])
+            ("orgit-rev-open" function (:arguments ("path")) nil [10149 10393])
+            ("orgit-rev-export" function (:arguments ("path" "desc" "format")) nil [10410 10495])
+            ("orgit-export" function (:arguments ("path" "desc" "format" "gitvar" "idx")) nil [10509 11875])
+            ("orgit" package nil nil [11900 11916]))          
+      :file "orgit.el"
+      :pointmax 11993
+      :fsize 11992
+      :lastmodtime '(22659 33045 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!orgit-20170118.1647!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

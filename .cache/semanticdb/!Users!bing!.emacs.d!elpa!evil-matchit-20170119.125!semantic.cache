@@ -1,0 +1,68 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("evil" include nil nil [1500 1515])
+            ("evilmi-plugins" variable (:default-value (quote (emacs-lisp-mode ((evilmi-simple-get-tag evilmi-simple-jump))))) nil [1517 1662])
+            ("evilmi-may-jump-by-percentage" variable (:default-value t) nil [1664 1828])
+            ("evilmi-always-simple-jump" variable nil nil [1830 1990])
+            ("evilmi-forward-chars" variable (:default-value (string-to-list "[{(")) nil [1992 2044])
+            ("evilmi-backward-chars" variable (:default-value (string-to-list "]})")) nil [2045 2098])
+            ("evilmi-quote-chars" variable (:default-value (string-to-list "'\"/")) nil [2099 2150])
+            ("evilmi-debug" variable nil nil [2151 2176])
+            ("evilmi--char-is-simple" function (:arguments ("ch")) nil [2178 2973])
+            ("evilmi--get-char-at-position" function (:arguments ("pos")) nil [2975 3151])
+            ("evilmi--get-char-under-cursor" function nil nil [3153 3389])
+            ("evilmi--is-jump-forward" function nil nil [3391 4119])
+            ("evilmi--in-comment-p" function (:arguments ("pos")) nil [4121 4602])
+            ("evilmi--scan-sexps" function (:arguments ("is-forward")) nil [4604 6068])
+            ("evilmi--adjust-quote-jumpto" function (:arguments ("is-forward" "pos")) nil [6070 6262])
+            ("evilmi--above-the-other-quote-char" function (:arguments ("ch" "pos" "ff" "delta")) nil [6264 6435])
+            ("evilmi--find-the-other-quote-char" function (:arguments ("ff" "is-forward" "ch")) nil [6437 7083])
+            ("evilmi--adjust-jumpto" function (:arguments ("is-forward" "rlt")) nil [7085 7314])
+            ("evilmi--find-position-to-jump" function (:arguments ("ff" "is-forward" "ch")) nil [7417 7799])
+            ("evilmi--tweak-selected-region" function (:arguments ("ff" "jump-forward")) nil [7801 8100])
+            ("evilmi--simple-jump" function (:user-visible-flag t) nil [8102 8533])
+            ("evilmi--operate-on-item" function (:arguments ("num" "FUNC")) nil [8535 9565])
+            ("evilmi--push-mark" function (:arguments ("rlt")) nil [9567 9630])
+            ("evilmi-init-plugins" function (:user-visible-flag t) nil [9632 14923])
+            ("evilmi--region-to-select-or-delete" function (:arguments ("num" "is-inner")) nil [14925 15991])
+            ("evil-define-text-object" code nil nil [15993 16315])
+            ("evil-define-text-object" code nil nil [16317 16636])
+            ("define-key" code nil nil [16638 16708])
+            ("define-key" code nil nil [16709 16779])
+            ("evilmi-select-items" function
+               (:user-visible-flag t
+                :arguments ("num"))
+                nil [16796 17090])
+            ("evilmi-delete-items" function
+               (:user-visible-flag t
+                :arguments ("num"))
+                nil [17107 17391])
+            ("evilmi-jump-to-percentage" function
+               (:user-visible-flag t
+                :arguments ("num"))
+                nil [17408 17937])
+            ("evilmi-jump-items" function
+               (:user-visible-flag t
+                :arguments ("num"))
+                nil [17954 18170])
+            ("evilmi-version" function nil nil [18187 18247])
+            ("define-minor-mode" code nil nil [18264 18929])
+            ("turn-on-evil-matchit-mode" function nil nil [18946 19058])
+            ("turn-off-evil-matchit-mode" function nil nil [19075 19190])
+            ("define-globalized-minor-mode" code nil nil [19207 19354])
+            ("evilmi-init-plugins" code nil nil [19395 19416])
+            ("evil-matchit" package nil nil [19418 19441]))          
+      :file "evil-matchit.el"
+      :pointmax 19472
+      :fsize 19471
+      :lastmodtime '(22659 32395 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!evil-matchit-20170119.125!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

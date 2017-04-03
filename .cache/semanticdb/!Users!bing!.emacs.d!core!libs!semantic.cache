@@ -1,0 +1,33 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("page-break-lines" customgroup (:user-visible-flag t) nil [2346 2481])
+            ("page-break-lines-char" variable (:default-value 9472) nil [2483 2612])
+            ("page-break-lines-lighter" variable (:default-value " PgLn") nil [2614 2792])
+            ("page-break-lines-modes" variable (:default-value (quote (emacs-lisp-mode lisp-mode scheme-mode compilation-mode outline-mode help-mode))) nil [2794 3017])
+            ("page-break-lines" variable
+               (:default-value (quote ((t :inherit font-lock-comment-face :bold nil :italic nil)))
+                :type "face")
+                nil [3019 3338])
+            ("define-minor-mode" code nil nil [3358 3664])
+            ("turn-on-page-break-lines-mode" function nil nil [3681 3800])
+            ("turn-off-page-break-lines-mode" function nil nil [3817 3939])
+            ("dolist" code nil nil [3942 4092])
+            ("page-break-lines--update-display-table" function (:arguments ("window")) nil [4097 4956])
+            ("page-break-lines--update-display-tables" function nil nil [4958 5139])
+            ("page-break-lines-mode-maybe" function nil nil [5159 5492])
+            ("define-global-minor-mode" code nil nil [5509 5643])
+            ("page-break-lines" package nil nil [5646 5673]))          
+      :file "page-break-lines.el"
+      :pointmax 5826
+      :fsize 5827
+      :lastmodtime '(22659 32197 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!core!libs!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

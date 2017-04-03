@@ -1,0 +1,859 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("easymenu" include nil nil [48207 48226])
+            ("outline" include nil nil [48227 48245])
+            ("thingatpt" include nil nil [48246 48266])
+            ("cl-lib" include nil nil [48267 48284])
+            ("url-parse" include nil nil [48285 48305])
+            ("jit-lock-start" variable nil nil [48307 48330])
+            ("jit-lock-end" variable nil nil [48331 48352])
+            ("declare-function" code nil nil [48354 48392])
+            ("declare-function" code nil nil [48393 48442])
+            ("markdown-mode-version" variable
+               (:constant-flag t
+                :default-value "2.1")
+                nil [48527 48599])
+            ("markdown-output-buffer-name" variable
+               (:constant-flag t
+                :default-value "*markdown-output*")
+                nil [48601 48717])
+            ("markdown-reference-label-history" variable nil nil [48802 48885])
+            ("markdown-live-preview-mode" variable nil nil [48887 48990])
+            ("markdown-gfm-language-history" variable nil nil [48992 49111])
+            ("markdown-mode-hook" variable nil nil [49196 49269])
+            ("markdown-before-export-hook" variable nil nil [49271 49479])
+            ("markdown-after-export-hook" variable nil nil [49481 49634])
+            ("markdown" customgroup (:user-visible-flag t) nil [49636 49818])
+            ("markdown-command" variable (:default-value "markdown") nil [49820 49923])
+            ("markdown-command-needs-filename" variable nil nil [49925 50247])
+            ("markdown-open-command" variable nil nil [50249 50510])
+            ("markdown-hr-strings" variable (:default-value (quote ("-------------------------------------------------------------------------------" "* * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *" "---------------------------------------" "* * * * * * * * * * * * * * * * * * * *" "---------" "* * * * *"))) nil [50512 51154])
+            ("markdown-bold-underscore" variable nil nil [51156 51307])
+            ("markdown-italic-underscore" variable nil nil [51309 51456])
+            ("markdown-asymmetric-header" variable nil nil [51458 51748])
+            ("markdown-indent-function" variable (:default-value (quote markdown-indent-line)) nil [51750 51876])
+            ("markdown-indent-on-enter" variable (:default-value t) nil [51878 52240])
+            ("markdown-enable-wiki-links" variable nil nil [52242 52559])
+            ("markdown-wiki-link-alias-first" variable (:default-value t) nil [52561 52792])
+            ("markdown-wiki-link-search-parent-directories" variable nil nil [52794 53026])
+            ("markdown-wiki-link-fontify-missing" variable nil nil [53028 53415])
+            ("markdown-uri-types" variable (:default-value (quote ("acap" "cid" "data" "dav" "fax" "file" "ftp" "gopher" "http" "https" "imap" "ldap" "mailto" "mid" "modem" "news" "nfs" "nntp" "pop" "prospero" "rtsp" "service" "sip" "tel" "telnet" "tip" "urn" "vemmi" "wais"))) nil [53417 53749])
+            ("markdown-enable-math" variable nil nil [53751 54082])
+            ("markdown-css-paths" variable nil nil [54084 54203])
+            ("markdown-content-type" variable nil nil [54205 54446])
+            ("markdown-coding-system" variable nil nil [54448 54784])
+            ("markdown-xhtml-header-content" variable nil nil [54786 54926])
+            ("markdown-xhtml-standalone-regexp" variable (:default-value "^\\(<\\?xml\\|<!DOCTYPE\\|<html\\)") nil [54928 55123])
+            ("markdown-link-space-sub-char" variable (:default-value "_") nil [55125 55281])
+            ("markdown-reference-location" variable (:default-value (quote header)) nil [55283 55626])
+            ("markdown-footnote-location" variable (:default-value (quote end)) nil [55628 55955])
+            ("markdown-unordered-list-item-prefix" variable (:default-value "  * ") nil [55957 56095])
+            ("markdown-nested-imenu-heading-index" variable nil nil [56097 56369])
+            ("markdown-make-gfm-checkboxes-buttons" variable (:default-value t) nil [56371 56509])
+            ("markdown-use-pandoc-style-yaml-metadata" variable nil nil [56511 56666])
+            ("markdown-live-preview-window-function" variable (:default-value (quote markdown-live-preview-window-eww)) nil [56668 56933])
+            ("markdown-live-preview-delete-export" variable (:default-value (quote delete-on-destroy)) nil [56935 57285])
+            ("markdown-list-indent-width" variable (:default-value 4) nil [57287 57478])
+            ("markdown-gfm-additional-languages" variable nil nil [57480 57821])
+            ("markdown-gfm-use-electric-backquote" variable (:default-value t) nil [57823 57981])
+            ("markdown-gfm-downcase-languages" variable (:default-value t) nil [57983 58178])
+            ("markdown-regex-comment-start" variable
+               (:constant-flag t
+                :default-value "<!--")
+                nil [58263 58364])
+            ("markdown-regex-comment-end" variable
+               (:constant-flag t
+                :default-value "--[ 	]*>")
+                nil [58366 58470])
+            ("markdown-regex-link-inline" variable
+               (:constant-flag t
+                :default-value "\\(!\\)?\\(\\[\\)\\([^]^][^]]*\\|\\)\\(\\]\\)\\((\\)\\([^)]*?\\)\\(?:\\s-+\\(\"[^\"]*\"\\)\\)?\\()\\)")
+                nil [58472 59033])
+            ("markdown-regex-link-reference" variable
+               (:constant-flag t
+                :default-value "\\(!\\)?\\(\\[\\)\\([^]^][^]]*\\|\\)\\(\\]\\)[ ]?\\(\\[\\)\\([^]]*?\\)\\(\\]\\)")
+                nil [59035 59623])
+            ("markdown-regex-reference-definition" variable
+               (:constant-flag t
+                :default-value "^ \\{0,3\\}\\(\\[\\)\\([^]
+]+?\\)\\(\\]\\)\\(:\\)\\s *\\(.*?\\)\\s *\\( \"[^\"]*\"$\\|$\\)")
+                nil [59625 60043])
+            ("markdown-regex-footnote" variable
+               (:constant-flag t
+                :default-value "\\(\\[\\^\\)\\(.+?\\)\\(\\]\\)")
+                nil [60045 60328])
+            ("markdown-regex-header" variable
+               (:constant-flag t
+                :default-value "^\\(?:\\([^
+	 -].*\\)
+\\(?:\\(=+\\)\\|\\(-+\\)\\)\\|\\(#+\\)[ 	]+\\(.*?\\)[ 	]*\\(#*\\)\\)$")
+                nil [60330 60864])
+            ("markdown-regex-header-setext" variable
+               (:constant-flag t
+                :default-value "^\\([^
+	 -].*\\)
+\\(=+\\|-+\\)$")
+                nil [60866 61015])
+            ("markdown-regex-header-atx" variable
+               (:constant-flag t
+                :default-value "^\\(#+\\)[ 	]+\\(.*?\\)[ 	]*\\(#*\\)$")
+                nil [61017 61163])
+            ("markdown-regex-hr" variable
+               (:constant-flag t
+                :default-value "^\\(\\*[ ]?\\*[ ]?\\*[ ]?[\\* ]*\\|-[ ]?-[ ]?-[--- ]*\\)$")
+                nil [61165 61318])
+            ("markdown-regex-code" variable
+               (:constant-flag t
+                :default-value "\\(?:\\`\\|[^\\]\\)\\(\\(`+\\)\\(\\(?:.\\|
+[^
+]\\)*?[^`]\\)\\(\\2\\)\\)\\(?:[^`]\\|\\'\\)")
+                nil [61320 62016])
+            ("markdown-regex-kbd" variable
+               (:constant-flag t
+                :default-value "\\(<kbd>\\)\\(\\(?:.\\|
+[^
+]\\)*?\\)\\(</kbd>\\)")
+                nil [62018 62235])
+            ("markdown-regex-gfm-code-block-open" variable
+               (:constant-flag t
+                :default-value "^[[:blank:]]*\\(```\\)[ ]?\\([^[:space:]]+\\|{[^}]*}\\)?\\([[:space:]]*?\\)$")
+                nil [62237 62518])
+            ("markdown-regex-gfm-code-block-close" variable
+               (:constant-flag t
+                :default-value "^[[:blank:]]*\\(```\\)\\s *?$")
+                nil [62520 62703])
+            ("markdown-regex-pre" variable
+               (:constant-flag t
+                :default-value "^\\(    \\|	\\).*$")
+                nil [62705 62822])
+            ("markdown-regex-list" variable
+               (:constant-flag t
+                :default-value "^\\([ 	]*\\)\\([0-9#]+\\.\\|[\\*\\+-]\\)\\([ 	]+\\)")
+                nil [62824 62960])
+            ("markdown-regex-bold" variable
+               (:constant-flag t
+                :default-value "\\(^\\|[^\\]\\)\\(\\([*_]\\{2\\}\\)\\([^ 
+	\\]\\|[^ 
+	]\\(?:.\\|
+[^
+]\\)*?[^\\ ]\\)\\(\\3\\)\\)")
+                nil [62962 63438])
+            ("markdown-regex-italic" variable
+               (:constant-flag t
+                :default-value "\\(?:^\\|[^\\]\\)\\(\\([*_]\\)\\([^ 
+	\\]\\|[^ 
+	]\\(?:.\\|
+[^
+]\\)*?[^\\ ]\\)\\(\\2\\)\\)")
+                nil [63440 63930])
+            ("markdown-regex-strike-through" variable
+               (:constant-flag t
+                :default-value "\\(^\\|[^\\]\\)\\(\\(~~\\)\\([^ 
+	\\]\\|[^ 
+	]\\(?:.\\|
+[^
+]\\)*?[^\\ ]\\)\\(~~\\)\\)")
+                nil [63932 64401])
+            ("markdown-regex-gfm-italic" variable
+               (:constant-flag t
+                :default-value "\\(?:^\\|\\s-\\)\\(\\([*_]\\)\\([^ \\]\\2\\|[^ ]\\(?:.\\|
+[^
+]\\)*?[^\\ ]\\)\\(\\2\\)\\)")
+                nil [64403 64828])
+            ("markdown-regex-blockquote" variable
+               (:constant-flag t
+                :default-value "^[ 	]*\\(>\\)\\(.*\\)$")
+                nil [64830 65017])
+            ("markdown-regex-line-break" variable
+               (:constant-flag t
+                :default-value "[^ 
+	][ 	]*\\(  \\)$")
+                nil [65019 65132])
+            ("markdown-regex-wiki-link" variable
+               (:constant-flag t
+                :default-value "\\(?:^\\|[^\\]\\)\\(\\(\\[\\[\\)\\([^]|]+\\)\\(?:\\(|\\)\\([^]]+\\)\\)?\\(\\]\\]\\)\\)")
+                nil [65134 65823])
+            ("markdown-regex-uri" variable
+               (:constant-flag t
+                :default-value (concat (regexp-opt markdown-uri-types) ":[^]	
+<>,;() ]+"))
+                nil [65825 65968])
+            ("markdown-regex-angle-uri" variable
+               (:constant-flag t
+                :default-value (concat "\\(<\\)\\(" (regexp-opt markdown-uri-types) ":[^]	
+<>,;()]+\\)\\(>\\)"))
+                nil [65970 66159])
+            ("markdown-regex-email" variable
+               (:constant-flag t
+                :default-value "<\\(\\(\\sw\\|\\s_\\|\\s.\\)+@\\(\\sw\\|\\s_\\|\\s.\\)+\\)>")
+                nil [66161 66316])
+            ("markdown-make-regex-link-generic" function nil nil [66318 66661])
+            ("markdown-regex-gfm-checkbox" variable
+               (:constant-flag t
+                :default-value " \\(\\[[ xX]\\]\\) ")
+                nil [66663 66822])
+            ("markdown-regex-block-separator" variable
+               (:constant-flag t
+                :default-value "\\(\\`\\|\\(
+[ 	]*
+\\)[^
+ 	]\\)")
+                nil [66824 66960])
+            ("markdown-regex-math-inline-single" variable
+               (:constant-flag t
+                :default-value "\\(?:^\\|[^\\]\\)\\(\\$\\)\\(\\(?:[^\\$]\\|\\\\.\\)*\\)\\(\\$\\)")
+                nil [66962 67256])
+            ("markdown-regex-math-inline-double" variable
+               (:constant-flag t
+                :default-value "\\(?:^\\|[^\\]\\)\\(\\$\\$\\)\\(\\(?:[^\\$]\\|\\\\.\\)*\\)\\(\\$\\$\\)")
+                nil [67258 67556])
+            ("markdown-regex-math-display" variable
+               (:constant-flag t
+                :default-value "^\\(\\\\\\[\\)\\(\\(?:.\\|
+\\)*?\\)?\\(\\\\\\]\\)$")
+                nil [67558 67836])
+            ("markdown-make-tilde-fence-regex" function (:arguments ("num-tildes" "end-of-line")) nil [67838 68140])
+            ("markdown-regex-tilde-fence-begin" variable
+               (:constant-flag t
+                :default-value (markdown-make-tilde-fence-regex 3 "[ ]?\\([^[:space:]]+\\|{[^}]*}\\)?\\([[:space:]]*?\\)$"))
+                nil [68142 68334])
+            ("markdown-regex-declarative-metadata" variable
+               (:constant-flag t
+                :default-value "^\\([[:alpha:]][[:alpha:] _-]*?\\)\\([:=][ 	]*\\)\\(.*\\)$")
+                nil [68336 68658])
+            ("markdown-regex-pandoc-metadata" variable
+               (:constant-flag t
+                :default-value "^\\(%\\)\\([ 	]*\\)\\(.*\\(?:
+[ 	]+.*\\)*\\)")
+                nil [68660 68806])
+            ("markdown-regex-yaml-metadata-border" variable
+               (:constant-flag t
+                :default-value "\\(\\-\\{3\\}\\)$")
+                nil [68808 68927])
+            ("markdown-regex-yaml-pandoc-metadata-end-border" variable
+               (:constant-flag t
+                :default-value "^\\(\\.\\{3\\}\\|\\-\\{3\\}\\)$")
+                nil [68929 69085])
+            ("markdown-get-yaml-metadata-start-border" function nil nil [69087 69325])
+            ("markdown-get-yaml-metadata-end-border" function (:arguments ("_")) nil [69327 69594])
+            ("markdown-syntax-propertize-extend-region" function (:arguments ("start" "end")) nil [69679 71050])
+            ("markdown-font-lock-extend-region-function" function (:arguments ("start" "end" "_")) nil [71052 71442])
+            ("markdown-syntax-propertize-pre-blocks" function (:arguments ("start" "end")) nil [71444 73842])
+            ("markdown-fenced-block-pairs" variable
+               (:constant-flag t
+                :default-value (\` ((((\, markdown-regex-tilde-fence-begin) markdown-tilde-fence-begin) (markdown-make-tilde-fence-regex markdown-tilde-fence-end) markdown-fenced-code) ((markdown-get-yaml-metadata-start-border markdown-yaml-metadata-begin) (markdown-get-yaml-metadata-end-border markdown-yaml-metadata-end) markdown-yaml-metadata-section) (((\, markdown-regex-gfm-code-block-open) markdown-gfm-block-begin) ((\, markdown-regex-gfm-code-block-close) markdown-gfm-block-end) markdown-gfm-code))))
+                nil [73844 75853])
+            ("markdown-text-property-at-point" function (:arguments ("prop")) nil [75855 75936])
+            ("markdown-maybe-funcall-regexp" function (:arguments ("object" "arg")) nil [75938 76178])
+            ("markdown-get-start-fence-regexp" function nil nil [76180 76534])
+            ("markdown-get-fenced-block-begin-properties" function nil nil [76536 76665])
+            ("markdown-get-fenced-block-end-properties" function nil nil [76667 76795])
+            ("markdown-get-fenced-block-middle-properties" function nil nil [76797 76904])
+            ("markdown-find-previous-prop" function (:arguments ("prop" "lim")) nil [76906 77497])
+            ("markdown-find-next-prop" function (:arguments ("prop" "lim")) nil [77499 77927])
+            ("markdown-min-of-seq" function (:arguments ("map-fn" "seq")) nil [77929 78339])
+            ("markdown-find-previous-block" function nil nil [78341 79738])
+            ("markdown-get-fenced-block-from-start" function (:arguments ("prop")) nil [79740 81155])
+            ("markdown-get-fenced-block-from-middle" function (:arguments ("prop")) nil [81157 82035])
+            ("markdown-get-fenced-block-from-end" function (:arguments ("prop")) nil [82037 83278])
+            ("markdown-get-enclosing-fenced-block-construct" function (:arguments ("pos")) nil [83280 84464])
+            ("markdown-propertize-end-match" function (:arguments ("reg" "end" "correct-entry" "enclosed-text-start")) nil [84466 85064])
+            ("markdown-syntax-propertize-fenced-block-constructs" function (:arguments ("start" "end")) nil [85066 88211])
+            ("markdown-syntax-propertize-blockquotes" function (:arguments ("start" "end")) nil [88213 88640])
+            ("markdown-syntax-propertize-yaml-metadata" function (:arguments ("start" "end")) nil [88642 89348])
+            ("markdown-syntax-propertize-headings" function (:arguments ("start" "end")) nil [89350 90081])
+            ("markdown-syntax-propertize-comments" function (:arguments ("start" "end")) nil [90083 91144])
+            ("markdown--syntax-properties" variable (:default-value (list (quote markdown-tilde-fence-begin) nil (quote markdown-tilde-fence-end) nil (quote markdown-fenced-code) nil (quote markdown-yaml-metadata-begin) nil (quote markdown-yaml-metadata-end) nil (quote markdown-yaml-metadata-section) nil (quote markdown-gfm-block-begin) nil (quote markdown-gfm-block-end) nil (quote markdown-gfm-code) nil (quote markdown-pre) nil (quote markdown-blockquote) nil (quote markdown-heading) nil (quote markdown-heading-1-setext) nil (quote markdown-heading-2-setext) nil (quote markdown-heading-1-atx) nil (quote markdown-heading-2-atx) nil (quote markdown-heading-3-atx) nil (quote markdown-heading-4-atx) nil (quote markdown-heading-5-atx) nil (quote markdown-heading-6-atx) nil (quote markdown-metadata-key) nil (quote markdown-metadata-value) nil (quote markdown-metadata-markup) nil)) nil [91146 92081])
+            ("markdown-syntax-propertize" function (:arguments ("start" "end")) nil [92083 92614])
+            ("font-lock" include nil nil [92699 92719])
+            ("markdown-italic-face" variable (:default-value (quote markdown-italic-face)) nil [92721 92810])
+            ("markdown-bold-face" variable (:default-value (quote markdown-bold-face)) nil [92812 92895])
+            ("markdown-strike-through-face" variable (:default-value (quote markdown-strike-through-face)) nil [92897 93010])
+            ("markdown-header-delimiter-face" variable (:default-value (quote markdown-header-delimiter-face)) nil [93012 93137])
+            ("markdown-header-rule-face" variable (:default-value (quote markdown-header-rule-face)) nil [93139 93249])
+            ("markdown-header-face" variable (:default-value (quote markdown-header-face)) nil [93251 93346])
+            ("markdown-header-face-1" variable (:default-value (quote markdown-header-face-1)) nil [93348 93445])
+            ("markdown-header-face-2" variable (:default-value (quote markdown-header-face-2)) nil [93447 93544])
+            ("markdown-header-face-3" variable (:default-value (quote markdown-header-face-3)) nil [93546 93643])
+            ("markdown-header-face-4" variable (:default-value (quote markdown-header-face-4)) nil [93645 93742])
+            ("markdown-header-face-5" variable (:default-value (quote markdown-header-face-5)) nil [93744 93841])
+            ("markdown-header-face-6" variable (:default-value (quote markdown-header-face-6)) nil [93843 93940])
+            ("markdown-inline-code-face" variable (:default-value (quote markdown-inline-code-face)) nil [93942 94041])
+            ("markdown-list-face" variable (:default-value (quote markdown-list-face)) nil [94043 94129])
+            ("markdown-blockquote-face" variable (:default-value (quote markdown-blockquote-face)) nil [94131 94227])
+            ("markdown-pre-face" variable (:default-value (quote markdown-pre-face)) nil [94229 94318])
+            ("markdown-language-keyword-face" variable (:default-value (quote markdown-language-keyword-face)) nil [94320 94450])
+            ("markdown-link-face" variable (:default-value (quote markdown-link-face)) nil [94452 94531])
+            ("markdown-missing-link-face" variable (:default-value (quote markdown-missing-link-face)) nil [94533 94665])
+            ("markdown-reference-face" variable (:default-value (quote markdown-reference-face)) nil [94667 94760])
+            ("markdown-footnote-face" variable (:default-value (quote markdown-footnote-face)) nil [94762 94864])
+            ("markdown-url-face" variable (:default-value (quote markdown-url-face)) nil [94866 94942])
+            ("markdown-link-title-face" variable (:default-value (quote markdown-link-title-face)) nil [94944 95051])
+            ("markdown-line-break-face" variable (:default-value (quote markdown-line-break-face)) nil [95053 95155])
+            ("markdown-comment-face" variable (:default-value (quote markdown-comment-face)) nil [95157 95250])
+            ("markdown-math-face" variable (:default-value (quote markdown-math-face)) nil [95252 95343])
+            ("markdown-metadata-key-face" variable (:default-value (quote markdown-metadata-key-face)) nil [95345 95448])
+            ("markdown-metadata-value-face" variable (:default-value (quote markdown-metadata-value-face)) nil [95450 95559])
+            ("markdown-gfm-checkbox-face" variable (:default-value (quote markdown-gfm-checkbox-face)) nil [95561 95665])
+            ("markdown-highlight-face" variable (:default-value (quote markdown-highlight-face)) nil [95667 95769])
+            ("markdown-markup-face" variable (:default-value (quote markdown-markup-face)) nil [95771 95864])
+            ("markdown-faces" customgroup (:user-visible-flag t) nil [95866 95962])
+            ("markdown-italic-face" variable
+               (:default-value (quote ((t (:inherit font-lock-variable-name-face :slant italic :weight normal))))
+                :type "face")
+                nil [95964 96123])
+            ("markdown-bold-face" variable
+               (:default-value (quote ((t (:inherit font-lock-variable-name-face :weight bold :slant normal))))
+                :type "face")
+                nil [96125 96278])
+            ("markdown-strike-through-face" variable
+               (:default-value (quote ((t (:inherit font-lock-variable-name-face :strike-through t))))
+                :type "face")
+                nil [96280 96444])
+            ("markdown-markup-face" variable
+               (:default-value (quote ((t (:inherit shadow :slant normal :weight normal))))
+                :type "face")
+                nil [96446 96587])
+            ("markdown-header-rule-face" variable
+               (:default-value (quote ((t (:inherit markdown-markup-face))))
+                :type "face")
+                nil [96589 96723])
+            ("markdown-header-delimiter-face" variable
+               (:default-value (quote ((t (:inherit markdown-markup-face))))
+                :type "face")
+                nil [96725 96873])
+            ("markdown-inline-code-face" variable
+               (:default-value (quote ((t (:inherit font-lock-constant-face))))
+                :type "face")
+                nil [96875 97005])
+            ("markdown-list-face" variable
+               (:default-value (quote ((t (:inherit markdown-markup-face))))
+                :type "face")
+                nil [97007 97133])
+            ("markdown-blockquote-face" variable
+               (:default-value (quote ((t (:inherit font-lock-doc-face))))
+                :type "face")
+                nil [97135 97267])
+            ("markdown-pre-face" variable
+               (:default-value (quote ((t (:inherit font-lock-constant-face))))
+                :type "face")
+                nil [97269 97397])
+            ("markdown-language-keyword-face" variable
+               (:default-value (quote ((t (:inherit font-lock-type-face))))
+                :type "face")
+                nil [97399 97551])
+            ("markdown-link-face" variable
+               (:default-value (quote ((t (:inherit font-lock-keyword-face))))
+                :type "face")
+                nil [97553 97669])
+            ("markdown-missing-link-face" variable
+               (:default-value (quote ((t (:inherit font-lock-warning-face))))
+                :type "face")
+                nil [97671 97803])
+            ("markdown-reference-face" variable
+               (:default-value (quote ((t (:inherit markdown-markup-face))))
+                :type "face")
+                nil [97805 97934])
+            ("markdown-footnote-face" variable
+               (:default-value (quote ((t (:inherit markdown-markup-face))))
+                :type "face")
+                nil [97936 98065])
+            ("markdown-url-face" variable
+               (:default-value (quote ((t (:inherit font-lock-string-face))))
+                :type "face")
+                nil [98067 98180])
+            ("markdown-link-title-face" variable
+               (:default-value (quote ((t (:inherit font-lock-comment-face))))
+                :type "face")
+                nil [98182 98320])
+            ("markdown-line-break-face" variable
+               (:default-value (quote ((t (:inherit font-lock-constant-face :underline t))))
+                :type "face")
+                nil [98322 98469])
+            ("markdown-comment-face" variable
+               (:default-value (quote ((t (:inherit font-lock-comment-face))))
+                :type "face")
+                nil [98471 98598])
+            ("markdown-math-face" variable
+               (:default-value (quote ((t (:inherit font-lock-string-face))))
+                :type "face")
+                nil [98600 98727])
+            ("markdown-metadata-key-face" variable
+               (:default-value (quote ((t (:inherit font-lock-variable-name-face))))
+                :type "face")
+                nil [98729 98867])
+            ("markdown-metadata-value-face" variable
+               (:default-value (quote ((t (:inherit font-lock-string-face))))
+                :type "face")
+                nil [98869 99004])
+            ("markdown-gfm-checkbox-face" variable
+               (:default-value (quote ((t (:inherit font-lock-builtin-face))))
+                :type "face")
+                nil [99006 99139])
+            ("markdown-highlight-face" variable
+               (:default-value (quote ((t (:inherit highlight))))
+                :type "face")
+                nil [99141 99262])
+            ("markdown-header-scaling" variable nil nil [99264 99751])
+            ("markdown-header-scaling-values" variable (:default-value (quote (1.8 1.4 1.2 1.0 1.0 1.0))) nil [99753 100154])
+            ("markdown-make-header-faces" function nil nil [100156 101120])
+            ("markdown-make-header-faces" code nil nil [101122 101150])
+            ("markdown-update-header-faces" function (:arguments ("scaling" "scaling-values")) nil [101152 101815])
+            ("markdown-syntactic-face" function (:arguments ("state")) nil [101817 102070])
+            ("markdown-mode-font-lock-keywords-basic" variable (:default-value (\` ((markdown-match-yaml-metadata-begin (1 markdown-markup-face)) (markdown-match-yaml-metadata-end (1 markdown-markup-face)) (markdown-match-yaml-metadata-key (1 markdown-metadata-key-face) (2 markdown-markup-face) (3 markdown-metadata-value-face)) (markdown-match-gfm-open-code-blocks (1 markdown-markup-face) (2 markdown-language-keyword-face nil t)) (markdown-match-gfm-close-code-blocks (1 markdown-markup-face)) (markdown-match-gfm-code-blocks (0 markdown-pre-face)) (markdown-match-fenced-start-code-block (1 markdown-markup-face) (2 markdown-language-keyword-face nil t)) (markdown-match-fenced-end-code-block (0 markdown-markup-face)) (markdown-match-fenced-code-blocks (0 markdown-pre-face)) (markdown-match-pre-blocks (0 markdown-pre-face)) (markdown-match-blockquotes (1 markdown-markup-face) (2 markdown-blockquote-face)) (markdown-match-heading-1-setext (1 markdown-header-face-1) (2 markdown-header-rule-face)) (markdown-match-heading-2-setext (1 markdown-header-face-2) (3 markdown-header-rule-face)) (markdown-match-heading-6-atx (4 markdown-header-delimiter-face) (5 markdown-header-face-6) (6 markdown-header-delimiter-face)) (markdown-match-heading-5-atx (4 markdown-header-delimiter-face) (5 markdown-header-face-5) (6 markdown-header-delimiter-face)) (markdown-match-heading-4-atx (4 markdown-header-delimiter-face) (5 markdown-header-face-4) (6 markdown-header-delimiter-face)) (markdown-match-heading-3-atx (4 markdown-header-delimiter-face) (5 markdown-header-face-3) (6 markdown-header-delimiter-face)) (markdown-match-heading-2-atx (4 markdown-header-delimiter-face) (5 markdown-header-face-2) (6 markdown-header-delimiter-face)) (markdown-match-heading-1-atx (4 markdown-header-delimiter-face) (5 markdown-header-face-1) (6 markdown-header-delimiter-face)) (markdown-match-declarative-metadata (1 markdown-metadata-key-face) (2 markdown-markup-face) (3 markdown-metadata-value-face)) (markdown-match-pandoc-metadata (1 markdown-markup-face) (2 markdown-markup-face) (3 markdown-metadata-value-face)) (markdown-match-hr . markdown-header-delimiter-face) (markdown-match-code (1 markdown-markup-face) (2 markdown-inline-code-face) (3 markdown-markup-face)) ((\, markdown-regex-kbd) (1 markdown-markup-face) (2 markdown-inline-code-face) (3 markdown-markup-face)) ((\, markdown-regex-angle-uri) (1 markdown-markup-face) (2 markdown-link-face) (3 markdown-markup-face)) ((\, markdown-regex-list) 2 markdown-list-face) ((\, markdown-regex-footnote) (1 markdown-markup-face) (2 markdown-footnote-face) (3 markdown-markup-face)) ((\, markdown-regex-link-inline) (1 markdown-markup-face nil t) (2 markdown-markup-face) (3 markdown-link-face) (4 markdown-markup-face) (5 markdown-markup-face) (6 markdown-url-face) (7 markdown-link-title-face nil t) (8 markdown-markup-face)) ((\, markdown-regex-link-reference) (1 markdown-markup-face nil t) (2 markdown-markup-face) (3 markdown-link-face) (4 markdown-markup-face) (5 markdown-markup-face) (6 markdown-reference-face) (7 markdown-markup-face)) ((\, markdown-regex-reference-definition) (1 markdown-markup-face) (2 markdown-reference-face) (3 markdown-markup-face) (4 markdown-markup-face) (5 markdown-url-face) (6 markdown-link-title-face)) (markdown-match-math-single (1 markdown-markup-face prepend) (2 markdown-math-face append) (3 markdown-markup-face prepend)) (markdown-match-math-double (1 markdown-markup-face prepend) (2 markdown-math-face append) (3 markdown-markup-face prepend)) (markdown-match-bold (1 markdown-markup-face prepend) (2 markdown-bold-face append) (3 markdown-markup-face prepend)) (markdown-match-italic (1 markdown-markup-face prepend) (2 markdown-italic-face append) (3 markdown-markup-face prepend)) ((\, markdown-regex-uri) . markdown-link-face) ((\, markdown-regex-email) . markdown-link-face) ((\, markdown-regex-line-break) 1 markdown-line-break-face prepend)))) nil [102072 108717])
+            ("markdown-mode-font-lock-keywords" variable nil nil [108719 108903])
+            ("markdown-footnote-counter" variable nil nil [108918 108988])
+            ("make-variable-buffer-local" code nil nil [108989 109044])
+            ("markdown-footnote-chars" variable
+               (:constant-flag t
+                :default-value "[[:alnum:]-]")
+                nil [109046 109185])
+            ("markdown-regex-footnote-definition" variable
+               (:constant-flag t
+                :default-value (concat "^\\[\\(\\^" markdown-footnote-chars "*?\\)\\]:\\(?:[ 	]+\\|$\\)"))
+                nil [109187 109386])
+            ("markdown-replace-regexp-in-string" function (:arguments ("regexp" "rep" "string")) nil [109471 109788])
+            ("cond" code nil nil [109948 110160])
+            ("markdown-use-buttons-p" function nil nil [110163 110299])
+            ("defalias" code nil nil [111007 111131])
+            ("defalias" code nil nil [110880 111004])
+            ("defalias" code nil nil [110749 110877])
+            ("defalias" code nil nil [110634 110746])
+            ("defalias" code nil nil [110523 110631])
+            ("defalias" code nil nil [110388 110520])
+            ("markdown-cur-line-blank-p" function nil nil [111217 111386])
+            ("markdown-prev-line-blank-p" function nil nil [111388 111695])
+            ("markdown-next-line-blank-p" function nil nil [111697 111988])
+            ("markdown-prev-line-indent" function nil nil [111990 112297])
+            ("markdown-next-line-indent" function nil nil [112299 112582])
+            ("markdown-cur-non-list-indent" function nil nil [112584 112939])
+            ("markdown-prev-non-list-indent" function nil nil [112941 113128])
+            ("markdown-new-baseline-p" function nil nil [113130 113492])
+            ("markdown-search-backward-baseline" function nil nil [113494 113980])
+            ("markdown-update-list-levels" function (:arguments ("marker" "indent" "levels")) nil [113982 115282])
+            ("markdown-calculate-list-levels" function nil nil [115284 116636])
+            ("markdown-prev-list-item" function (:arguments ("level")) nil [116638 118226])
+            ("markdown-next-list-item" function (:arguments ("level")) nil [118228 119877])
+            ("markdown-cur-list-item-end" function (:arguments ("level")) nil [119879 121248])
+            ("markdown-cur-list-item-bounds" function nil nil [121250 122305])
+            ("markdown-bounds-of-thing-at-point" function (:arguments ("thing")) nil [122307 123043])
+            ("markdown-reference-definition" function (:arguments ("reference")) nil [123045 123885])
+            ("markdown-get-defined-references" function nil nil [123887 124278])
+            ("markdown-code-at-point-p" function (:user-visible-flag t) nil [124280 125342])
+            ("markdown-code-block-at-pos" function (:arguments ("pos")) nil [125344 125927])
+            ("markdown-code-block-at-point" function nil nil [125929 126183])
+            ("markdown-range-property-any" function (:arguments ("begin" "end" "prop" "prop-values")) nil [126268 127023])
+            ("markdown-range-properties-exist" function (:arguments ("begin" "end" "props")) nil [127025 127298])
+            ("markdown-match-inline-generic" function (:arguments ("regex" "last")) nil [127300 127818])
+            ("markdown-match-code" function (:arguments ("last")) nil [127820 128289])
+            ("markdown-match-bold" function (:arguments ("last")) nil [128291 129027])
+            ("markdown-match-italic" function (:arguments ("last")) nil [129029 130275])
+            ("markdown-match-math-generic" function (:arguments ("regex" "last")) nil [130277 131076])
+            ("markdown-match-math-single" function (:arguments ("last")) nil [131078 131244])
+            ("markdown-match-math-double" function (:arguments ("last")) nil [131246 131414])
+            ("markdown-match-propertized-text" function (:arguments ("property" "last")) nil [131416 132051])
+            ("markdown-match-pre-blocks" function (:arguments ("last")) nil [132053 132269])
+            ("markdown-match-gfm-code-blocks" function (:arguments ("last")) nil [132271 132505])
+            ("markdown-match-gfm-open-code-blocks" function (:arguments ("last")) nil [132507 132624])
+            ("markdown-match-gfm-close-code-blocks" function (:arguments ("last")) nil [132626 132742])
+            ("markdown-match-fenced-code-blocks" function (:arguments ("last")) nil [132744 132908])
+            ("markdown-match-fenced-start-code-block" function (:arguments ("last")) nil [132910 133032])
+            ("markdown-match-fenced-end-code-block" function (:arguments ("last")) nil [133034 133152])
+            ("markdown-match-blockquotes" function (:arguments ("last")) nil [133154 133377])
+            ("markdown-match-heading-1-setext" function (:arguments ("last")) nil [133379 133547])
+            ("markdown-match-heading-2-setext" function (:arguments ("last")) nil [133549 133717])
+            ("markdown-match-heading-1-atx" function (:arguments ("last")) nil [133719 133878])
+            ("markdown-match-heading-2-atx" function (:arguments ("last")) nil [133880 134039])
+            ("markdown-match-heading-3-atx" function (:arguments ("last")) nil [134041 134200])
+            ("markdown-match-heading-4-atx" function (:arguments ("last")) nil [134202 134361])
+            ("markdown-match-heading-5-atx" function (:arguments ("last")) nil [134363 134522])
+            ("markdown-match-heading-6-atx" function (:arguments ("last")) nil [134524 134683])
+            ("markdown-match-hr" function (:arguments ("last")) nil [134685 135103])
+            ("markdown-match-comments" function (:arguments ("last")) nil [135105 135409])
+            ("markdown-get-match-boundaries" function (:arguments ("start-header" "end-header" "last" "pos")) nil [135411 135941])
+            ("markdown-conditional-search-function" variable (:default-value (function re-search-forward)) nil [135943 136138])
+            ("markdown-search-until-condition" function (:arguments ("condition" "args")) nil [136140 136339])
+            ("markdown-match-generic-metadata" function (:arguments ("regexp" "last" "start-header" "end-header")) nil [136341 138140])
+            ("markdown-match-declarative-metadata" function (:arguments ("last")) nil [138142 138324])
+            ("markdown-match-pandoc-metadata" function (:arguments ("last")) nil [138326 138493])
+            ("markdown-match-yaml-metadata-begin" function (:arguments ("last")) nil [138495 138615])
+            ("markdown-match-yaml-metadata-end" function (:arguments ("last")) nil [138617 138733])
+            ("markdown-match-yaml-metadata-key" function (:arguments ("last")) nil [138735 138846])
+            ("markdown-mode-syntax-table" variable (:default-value (let ((tab (make-syntax-table text-mode-syntax-table))) (modify-syntax-entry 34 "." tab) tab)) nil [138931 139109])
+            ("markdown-ensure-blank-line-before" function nil nil [139194 139415])
+            ("markdown-ensure-blank-line-after" function nil nil [139417 139698])
+            ("markdown-wrap-or-insert" function (:arguments ("s1" "s2" "thing" "beg" "end")) nil [139700 141125])
+            ("markdown-point-after-unwrap" function (:arguments ("cur" "prefix" "suffix")) nil [141127 141704])
+            ("markdown-unwrap-thing-at-point" function (:arguments ("regexp" "all" "text")) nil [141706 142769])
+            ("markdown-unwrap-things-in-region" function (:arguments ("beg" "end" "regexp" "all" "text")) nil [142771 143496])
+            ("markdown-insert-hr" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [143498 144423])
+            ("markdown-insert-bold" function (:user-visible-flag t) nil [144425 145379])
+            ("markdown-insert-italic" function (:user-visible-flag t) nil [145381 146360])
+            ("markdown-insert-strike-through" function (:user-visible-flag t) nil [146362 147374])
+            ("markdown-insert-code" function (:user-visible-flag t) nil [147376 148206])
+            ("markdown-insert-kbd" function (:user-visible-flag t) nil [148208 148997])
+            ("markdown-insert-link" function (:user-visible-flag t) nil [148999 149571])
+            ("markdown-insert-reference-link" function (:arguments ("text" "label" "url" "title")) nil [149573 150303])
+            ("markdown-insert-reference-definition" function (:arguments ("label" "url" "title")) nil [150305 151374])
+            ("markdown-insert-reference-link-dwim" function (:user-visible-flag t) nil [151376 153647])
+            ("markdown-insert-uri" function (:user-visible-flag t) nil [153649 154484])
+            ("markdown-insert-wiki-link" function (:user-visible-flag t) nil [154486 155296])
+            ("markdown-insert-image" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [155298 156055])
+            ("markdown-insert-reference-image" function (:user-visible-flag t) nil [156057 156269])
+            ("markdown-remove-header" function (:user-visible-flag t) nil [156271 156598])
+            ("markdown-insert-header" function
+               (:user-visible-flag t
+                :arguments ("level" "text" "setext"))
+                nil [156600 158581])
+            ("markdown-insert-header-dwim" function
+               (:user-visible-flag t
+                :arguments ("arg" "setext"))
+                nil [158583 160569])
+            ("markdown-insert-header-setext-dwim" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [160571 160830])
+            ("markdown-insert-header-atx-1" function (:user-visible-flag t) nil [160832 161013])
+            ("markdown-insert-header-atx-2" function (:user-visible-flag t) nil [161015 161194])
+            ("markdown-insert-header-atx-3" function (:user-visible-flag t) nil [161196 161377])
+            ("markdown-insert-header-atx-4" function (:user-visible-flag t) nil [161379 161559])
+            ("markdown-insert-header-atx-5" function (:user-visible-flag t) nil [161561 161741])
+            ("markdown-insert-header-atx-6" function (:user-visible-flag t) nil [161743 161924])
+            ("markdown-insert-header-setext-1" function (:user-visible-flag t) nil [161926 162112])
+            ("markdown-insert-header-setext-2" function (:user-visible-flag t) nil [162114 162301])
+            ("markdown-blockquote-indentation" function (:arguments ("loc")) nil [162303 162674])
+            ("markdown-insert-blockquote" function (:user-visible-flag t) nil [162676 163113])
+            ("markdown-block-region" function (:arguments ("beg" "end" "prefix")) nil [163115 164098])
+            ("markdown-blockquote-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [164100 164391])
+            ("markdown-pre-indentation" function (:arguments ("loc")) nil [164393 164762])
+            ("markdown-insert-pre" function (:user-visible-flag t) nil [164764 165175])
+            ("markdown-pre-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [165177 165462])
+            ("markdown-electric-backquote" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [165464 165943])
+            ("markdown-gfm-recognized-languages" variable
+               (:constant-flag t
+                :default-value (quote ("ABAP" "AGS-Script" "AMPL" "ANTLR" "API-Blueprint" "APL" "ASP" "ATS" "ActionScript" "Ada" "Agda" "Alloy" "Ant-Build-System" "ApacheConf" "Apex" "AppleScript" "Arc" "Arduino" "AsciiDoc" "AspectJ" "Assembly" "Augeas" "AutoHotkey" "AutoIt" "Awk" "Batchfile" "Befunge" "Bison" "BitBake" "BlitzBasic" "BlitzMax" "Bluespec" "Boo" "Brainfuck" "Brightscript" "Bro" "C#" "C++" "C-ObjDump" "C2hs-Haskell" "CLIPS" "CMake" "COBOL" "CSS" "Cap'n-Proto" "CartoCSS" "Ceylon" "Chapel" "Charity" "ChucK" "Cirru" "Clarion" "Clean" "Click" "Clojure" "CoffeeScript" "ColdFusion" "ColdFusion-CFC" "Common-Lisp" "Component-Pascal" "Cool" "Coq" "Cpp-ObjDump" "Creole" "Crystal" "Cucumber" "Cuda" "Cycript" "Cython" "D-ObjDump" "DIGITAL-Command-Language" "DM" "DNS-Zone" "DTrace" "Darcs-Patch" "Dart" "Diff" "Dockerfile" "Dogescript" "Dylan" "ECL" "ECLiPSe" "Eagle" "Ecere-Projects" "Eiffel" "Elixir" "Elm" "Emacs-Lisp" "EmberScript" "Erlang" "F#" "FLUX" "FORTRAN" "Factor" "Fancy" "Fantom" "Filterscript" "Formatted" "Forth" "FreeMarker" "Frege" "G-code" "GAMS" "GAP" "GAS" "GDScript" "GLSL" "Game-Maker-Language" "Genshi" "Gentoo-Ebuild" "Gentoo-Eclass" "Gettext-Catalog" "Glyph" "Gnuplot" "Go" "Golo" "Gosu" "Grace" "Gradle" "Grammatical-Framework" "Graph-Modeling-Language" "Graphviz-(DOT)" "Groff" "Groovy" "Groovy-Server-Pages" "HCL" "HTML" "HTML+Django" "HTML+EEX" "HTML+ERB" "HTML+PHP" "HTTP" "Hack" "Haml" "Handlebars" "Harbour" "Haskell" "Haxe" "Hy" "HyPhy" "IDL" "IGOR-Pro" "INI" "IRC-log" "Idris" "Inform-7" "Inno-Setup" "Io" "Ioke" "Isabelle" "Isabelle-ROOT" "JFlex" "JSON" "JSON5" "JSONLD" "JSONiq" "JSX" "Jade" "Jasmin" "Java" "Java-Server-Pages" "JavaScript" "Julia" "Jupyter-Notebook" "KRL" "KiCad" "Kit" "Kotlin" "LFE" "LLVM" "LOLCODE" "LSL" "LabVIEW" "Lasso" "Latte" "Lean" "Less" "Lex" "LilyPond" "Limbo" "Linker-Script" "Linux-Kernel-Module" "Liquid" "Literate-Agda" "Literate-CoffeeScript" "Literate-Haskell" "LiveScript" "Logos" "Logtalk" "LookML" "LoomScript" "Lua" "MAXScript" "MTML" "MUF" "Makefile" "Mako" "Markdown" "Mask" "Mathematica" "Matlab" "Maven-POM" "Max" "MediaWiki" "Mercury" "Metal" "MiniD" "Mirah" "Modelica" "Modula-2" "Module-Management-System" "Monkey" "Moocode" "MoonScript" "Myghty" "NCL" "NL" "NSIS" "Nemerle" "NetLinx" "NetLinx+ERB" "NetLogo" "NewLisp" "Nginx" "Nimrod" "Ninja" "Nit" "Nix" "Nu" "NumPy" "OCaml" "ObjDump" "Objective-C" "Objective-C++" "Objective-J" "Omgrofl" "Opa" "Opal" "OpenCL" "OpenEdge-ABL" "OpenSCAD" "Org" "Ox" "Oxygene" "Oz" "PAWN" "PHP" "PLSQL" "PLpgSQL" "Pan" "Papyrus" "Parrot" "Parrot-Assembly" "Parrot-Internal-Representation" "Pascal" "Perl" "Perl6" "Pickle" "PicoLisp" "PigLatin" "Pike" "Pod" "PogoScript" "Pony" "PostScript" "PowerShell" "Processing" "Prolog" "Propeller-Spin" "Protocol-Buffer" "Public-Key" "Puppet" "Pure-Data" "PureBasic" "PureScript" "Python" "Python-traceback" "QML" "QMake" "RAML" "RDoc" "REALbasic" "RHTML" "RMarkdown" "Racket" "Ragel-in-Ruby-Host" "Raw-token-data" "Rebol" "Red" "Redcode" "Ren'Py" "RenderScript" "RobotFramework" "Rouge" "Ruby" "Rust" "SAS" "SCSS" "SMT" "SPARQL" "SQF" "SQL" "SQLPL" "STON" "SVG" "Sage" "SaltStack" "Sass" "Scala" "Scaml" "Scheme" "Scilab" "Self" "Shell" "ShellSession" "Shen" "Slash" "Slim" "Smali" "Smalltalk" "Smarty" "SourcePawn" "Squirrel" "Stan" "Standard-ML" "Stata" "Stylus" "SuperCollider" "Swift" "SystemVerilog" "TOML" "TXL" "Tcl" "Tcsh" "TeX" "Tea" "Text" "Textile" "Thrift" "Turing" "Turtle" "Twig" "TypeScript" "Unified-Parallel-C" "Unity3D-Asset" "UnrealScript" "UrWeb" "VCL" "VHDL" "Vala" "Verilog" "VimL" "Visual-Basic" "Volt" "Vue" "Web-Ontology-Language" "WebIDL" "X10" "XC" "XML" "XPages" "XProc" "XQuery" "XS" "XSLT" "Xojo" "Xtend" "YAML" "Yacc" "Zephir" "Zimpl" "desktop" "eC" "edn" "fish" "mupad" "nesC" "ooc" "reStructuredText" "wisp" "xBase")))
+                nil [165945 170290])
+            ("markdown-gfm-used-languages" variable nil nil [170292 170376])
+            ("make-variable-buffer-local" code nil nil [170377 170434])
+            ("markdown-trim-whitespace" function (:arguments ("str")) nil [170436 170574])
+            ("markdown-clean-language-string" function (:arguments ("str")) nil [170576 170707])
+            ("markdown-validate-language-string" function (:arguments ("widget")) nil [170709 170950])
+            ("markdown-gfm-get-corpus" function nil nil [170952 171341])
+            ("markdown-gfm-add-used-language" function (:arguments ("lang")) nil [171343 171536])
+            ("markdown-insert-gfm-code-block" function
+               (:user-visible-flag t
+                :arguments ("lang"))
+                nil [171538 173213])
+            ("markdown-gfm-parse-buffer-for-languages" function (:arguments ("buffer")) nil [173215 174029])
+            ("markdown-footnote-counter-inc" function nil nil [174115 174688])
+            ("markdown-insert-footnote" function (:user-visible-flag t) nil [174690 175120])
+            ("markdown-footnote-text-find-new-location" function nil nil [175122 175463])
+            ("markdown-footnote-kill" function (:user-visible-flag t) nil [175465 177164])
+            ("markdown-footnote-delete-marker" function nil nil [177166 177573])
+            ("markdown-footnote-kill-text" function nil nil [177575 178312])
+            ("markdown-footnote-goto-text" function (:user-visible-flag t) nil [178314 178693])
+            ("markdown-footnote-return" function (:user-visible-flag t) nil [178695 179109])
+            ("markdown-footnote-find-marker" function (:arguments ("id")) nil [179111 179520])
+            ("markdown-footnote-find-text" function (:arguments ("id")) nil [179522 179940])
+            ("markdown-footnote-marker-positions" function nil nil [179942 180685])
+            ("markdown-footnote-text-positions" function nil nil [180687 182321])
+            ("markdown-kill-thing-at-point" function (:user-visible-flag t) nil [182406 185882])
+            ("markdown-indent-find-next-position" function (:arguments ("cur-pos" "positions")) nil [185972 186293])
+            ("markdown-exdent-find-next-position" function (:arguments ("cur-pos" "positions")) nil [186295 186602])
+            ("markdown-indent-line" function (:user-visible-flag t) nil [186604 187717])
+            ("markdown-calc-indents" function nil nil [187719 189156])
+            ("markdown-enter-key" function (:user-visible-flag t) nil [189158 189348])
+            ("markdown-exdent-or-delete" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [189350 190155])
+            ("markdown-find-leftmost-column" function (:arguments ("beg" "end")) nil [190157 190532])
+            ("markdown-indent-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end" "arg"))
+                nil [190534 191176])
+            ("markdown-exdent-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [191178 191349])
+            ("markdown-complete-alist" variable
+               (:constant-flag t
+                :default-value (quote ((markdown-regex-header-atx . markdown-complete-atx) (markdown-regex-header-setext . markdown-complete-setext) (markdown-regex-hr . markdown-complete-hr))))
+                nil [191434 191706])
+            ("markdown-incomplete-atx-p" function nil nil [191708 192740])
+            ("markdown-complete-atx" function nil nil [192742 193806])
+            ("markdown-incomplete-setext-p" function nil nil [193808 194212])
+            ("markdown-complete-setext" function nil nil [194214 194909])
+            ("markdown-incomplete-hr-p" function nil nil [194911 195133])
+            ("markdown-complete-hr" function nil nil [195135 195548])
+            ("markdown-complete" function (:user-visible-flag t) nil [195550 195918])
+            ("markdown-complete-at-point" function (:user-visible-flag t) nil [195920 196522])
+            ("markdown-complete-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [196524 197572])
+            ("markdown-complete-buffer" function (:user-visible-flag t) nil [197574 197741])
+            ("markdown-cycle-atx" function (:arguments ("arg" "remove")) nil [197826 198830])
+            ("markdown-cycle-setext" function (:arguments ("arg" "remove")) nil [198832 199729])
+            ("markdown-cycle-hr" function (:arguments ("arg" "remove")) nil [199731 200487])
+            ("markdown-cycle-bold" function nil nil [200489 200848])
+            ("markdown-cycle-italic" function nil nil [200850 201212])
+            ("markdown-mode-map" variable (:default-value (let ((map (make-keymap))) (define-key map "l" (quote markdown-insert-link)) (define-key map "L" (quote markdown-insert-reference-link-dwim)) (define-key map "u" (quote markdown-insert-uri)) (define-key map "f" (quote markdown-insert-footnote)) (define-key map "w" (quote markdown-insert-wiki-link)) (define-key map "	i" (quote markdown-insert-image)) (define-key map "	I" (quote markdown-insert-reference-image)) (define-key map "	" (quote markdown-toggle-inline-images)) (define-key map "h" (quote markdown-insert-header-dwim)) (define-key map "H" (quote markdown-insert-header-setext-dwim)) (define-key map "1" (quote markdown-insert-header-atx-1)) (define-key map "2" (quote markdown-insert-header-atx-2)) (define-key map "3" (quote markdown-insert-header-atx-3)) (define-key map "4" (quote markdown-insert-header-atx-4)) (define-key map "5" (quote markdown-insert-header-atx-5)) (define-key map "6" (quote markdown-insert-header-atx-6)) (define-key map "!" (quote markdown-insert-header-setext-1)) (define-key map "@" (quote markdown-insert-header-setext-2)) (define-key map "s" (quote markdown-insert-bold)) (define-key map "e" (quote markdown-insert-italic)) (define-key map "c" (quote markdown-insert-code)) (define-key map "b" (quote markdown-insert-blockquote)) (define-key map "k" (quote markdown-insert-kbd)) (define-key map "" (quote markdown-blockquote-region)) (define-key map "p" (quote markdown-insert-pre)) (define-key map "" (quote markdown-pre-region)) (define-key map "P" (quote markdown-insert-gfm-code-block)) (define-key map "-" (quote markdown-insert-hr)) (define-key map "r" (quote markdown-insert-reference-link-dwim)) (define-key map "t" (quote markdown-insert-header-setext-1)) (define-key map "s" (quote markdown-insert-header-setext-2)) (define-key map (kbd "C-c C-k") (quote markdown-kill-thing-at-point)) (define-key map (kbd "C-c C--") (quote markdown-promote)) (define-key map (kbd "C-c C-=") (quote markdown-demote)) (define-key map (kbd "C-c C-]") (quote markdown-complete)) (define-key map (kbd "C-c C-o") (quote markdown-follow-thing-at-point)) (define-key map (kbd "C-c C-l") (quote markdown-jump)) (define-key map (kbd "C-m") (quote markdown-enter-key)) (define-key map (kbd "DEL") (quote markdown-exdent-or-delete)) (define-key map (kbd "C-c >") (quote markdown-indent-region)) (define-key map (kbd "C-c <") (quote markdown-exdent-region)) (define-key map (kbd "TAB") (quote markdown-cycle)) (define-key map (kbd "<S-iso-lefttab>") (quote markdown-shifttab)) (define-key map (kbd "<S-tab>") (quote markdown-shifttab)) (define-key map (kbd "<backtab>") (quote markdown-shifttab)) (define-key map (kbd "C-c C-n") (quote markdown-next-visible-heading)) (define-key map (kbd "C-c C-p") (quote markdown-previous-visible-heading)) (define-key map (kbd "C-c C-f") (quote markdown-forward-same-level)) (define-key map (kbd "C-c C-b") (quote markdown-backward-same-level)) (define-key map (kbd "C-c C-u") (quote markdown-up-heading)) (define-key map (kbd "C-c C-c m") (quote markdown-other-window)) (define-key map (kbd "C-c C-c p") (quote markdown-preview)) (define-key map (kbd "C-c C-c e") (quote markdown-export)) (define-key map (kbd "C-c C-c v") (quote markdown-export-and-preview)) (define-key map (kbd "C-c C-c o") (quote markdown-open)) (define-key map (kbd "C-c C-c l") (quote markdown-live-preview-mode)) (define-key map (kbd "C-c C-c w") (quote markdown-kill-ring-save)) (define-key map (kbd "C-c C-c c") (quote markdown-check-refs)) (define-key map (kbd "C-c C-c n") (quote markdown-cleanup-list-numbers)) (define-key map (kbd "C-c C-c ]") (quote markdown-complete-buffer)) (define-key map (kbd "M-<up>") (quote markdown-move-up)) (define-key map (kbd "M-<down>") (quote markdown-move-down)) (define-key map (kbd "M-<left>") (quote markdown-promote)) (define-key map (kbd "M-<right>") (quote markdown-demote)) (define-key map (kbd "M-<return>") (quote markdown-insert-list-item)) (define-key map (kbd "C-c C-j") (quote markdown-insert-list-item)) (define-key map (kbd "M-S-<up>") (quote markdown-move-subtree-up)) (define-key map (kbd "M-S-<down>") (quote markdown-move-subtree-down)) (define-key map (kbd "M-S-<left>") (quote markdown-promote-subtree)) (define-key map (kbd "M-S-<right>") (quote markdown-demote-subtree)) (define-key map (kbd "M-{") (quote markdown-backward-paragraph)) (define-key map (kbd "M-}") (quote markdown-forward-paragraph)) (define-key map (kbd "M-n") (quote markdown-next-link)) (define-key map (kbd "M-p") (quote markdown-previous-link)) (define-key map (kbd "C-c C-x u") (quote markdown-move-up)) (define-key map (kbd "C-c C-x d") (quote markdown-move-down)) (define-key map (kbd "C-c C-x l") (quote markdown-promote)) (define-key map (kbd "C-c C-x r") (quote markdown-demote)) (define-key map (kbd "C-c C-x m") (quote markdown-insert-list-item)) map)) nil [201297 206601])
+            ("gfm-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (set-keymap-parent map markdown-mode-map) (define-key map (kbd "C-c C-s d") (quote markdown-insert-strike-through)) (define-key map "`" (quote markdown-electric-backquote)) map)) nil [206603 206897])
+            ("easy-menu-define" code nil nil [206978 209933])
+            ("markdown-imenu-create-nested-index" function nil nil [210018 212212])
+            ("markdown-imenu-create-flat-index" function nil nil [212214 213095])
+            ("markdown-reference-goto-definition" function (:user-visible-flag t) nil [213180 213752])
+            ("markdown-reference-find-links" function (:arguments ("reference")) nil [213754 214691])
+            ("markdown-get-undefined-refs" function nil nil [214693 215926])
+            ("markdown-reference-check-buffer" variable
+               (:constant-flag t
+                :default-value "*Undefined references for %buffer%*")
+                nil [215928 216162])
+            ("markdown-reference-check-buffer" function (:arguments ("buffer-name")) nil [216164 216747])
+            ("markdown-reference-links-buffer" variable
+               (:constant-flag t
+                :default-value "*Reference links for %buffer%*")
+                nil [216749 216952])
+            ("markdown-reference-links-buffer" function (:arguments ("buffer-name")) nil [216954 217547])
+            ("when" code nil nil [217549 219403])
+            ("markdown-insert-undefined-reference-button" function (:arguments ("reference" "oldbuf")) nil [219405 220596])
+            ("markdown-insert-link-button" function (:arguments ("link" "oldbuf")) nil [220598 221267])
+            ("markdown-reference-goto-link" function
+               (:user-visible-flag t
+                :arguments ("reference"))
+                nil [221269 222275])
+            ("markdown-check-refs" function
+               (:user-visible-flag t
+                :arguments ("silent"))
+                nil [222277 223243])
+            ("markdown-insert-list-item" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [223328 227786])
+            ("markdown-move-list-item-up" function (:user-visible-flag t) nil [227788 228524])
+            ("markdown-move-list-item-down" function (:user-visible-flag t) nil [228526 229238])
+            ("markdown-demote-list-item" function
+               (:user-visible-flag t
+                :arguments ("bounds"))
+                nil [229240 229796])
+            ("markdown-promote-list-item" function
+               (:user-visible-flag t
+                :arguments ("bounds"))
+                nil [229798 230654])
+            ("markdown-cleanup-list-numbers-level" function (:arguments ("pfx")) nil [230656 231978])
+            ("markdown-cleanup-list-numbers" function (:user-visible-flag t) nil [231980 232171])
+            ("markdown-beginning-of-defun" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [232256 232689])
+            ("markdown-end-of-defun" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [232691 233249])
+            ("markdown-beginning-of-block" function (:user-visible-flag t) nil [233251 233509])
+            ("markdown-end-of-block" function (:user-visible-flag t) nil [233511 233906])
+            ("markdown-forward-paragraph" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [233908 234320])
+            ("markdown-backward-paragraph" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [234322 234750])
+            ("markdown-end-of-block-element" function (:user-visible-flag t) nil [234752 235270])
+            ("markdown-next-link" function (:user-visible-flag t) nil [235272 236219])
+            ("markdown-previous-link" function (:user-visible-flag t) nil [236221 236807])
+            ("markdown-next-heading" function nil nil [236809 237076])
+            ("markdown-previous-heading" function nil nil [237078 237361])
+            ("markdown-move-heading-common" function (:arguments ("move-fn" "arg")) nil [237446 237907])
+            ("markdown-next-visible-heading" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [237909 238201])
+            ("markdown-previous-visible-heading" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [238203 238511])
+            ("markdown-forward-same-level" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [238513 238764])
+            ("markdown-back-to-heading-over-code-block" function (:arguments ("invisible-ok")) nil [238766 239532])
+            ("markdown-backward-same-level" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [239534 240060])
+            ("markdown-up-heading" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [240062 240287])
+            ("markdown-back-to-heading" function (:arguments ("invisible-ok")) nil [240289 240566])
+            ("defalias" code nil nil [240568 240627])
+            ("markdown-on-heading-p" function nil nil [240629 240763])
+            ("markdown-end-of-subtree" function (:arguments ("invisible-OK")) nil [240765 241499])
+            ("markdown-outline-fix-visibility" function nil nil [241501 242754])
+            ("markdown-cycle-global-status" variable (:default-value 1) nil [242756 242795])
+            ("markdown-cycle-subtree-status" variable nil nil [242796 242838])
+            ("markdown-next-preface" function nil nil [242840 243236])
+            ("markdown-show-entry" function nil nil [243238 243613])
+            ("markdown-cycle" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [243615 246333])
+            ("markdown-shifttab" function (:user-visible-flag t) nil [246335 246471])
+            ("markdown-outline-level" function nil nil [246473 246706])
+            ("markdown-promote-subtree" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [246708 247791])
+            ("markdown-demote-subtree" function (:user-visible-flag t) nil [247793 247922])
+            ("markdown-move-subtree-up" function (:user-visible-flag t) nil [247924 248054])
+            ("markdown-move-subtree-down" function (:user-visible-flag t) nil [248056 248192])
+            ("markdown-move-up" function (:user-visible-flag t) nil [248277 248410])
+            ("markdown-move-down" function (:user-visible-flag t) nil [248412 248553])
+            ("markdown-promote" function (:user-visible-flag t) nil [248555 249522])
+            ("markdown-demote" function (:user-visible-flag t) nil [249524 250487])
+            ("markdown" function
+               (:user-visible-flag t
+                :arguments ("output-buffer-name"))
+                nil [250572 252010])
+            ("markdown-standalone" function
+               (:user-visible-flag t
+                :arguments ("output-buffer-name"))
+                nil [252012 252510])
+            ("markdown-other-window" function
+               (:user-visible-flag t
+                :arguments ("output-buffer-name"))
+                nil [252512 252829])
+            ("markdown-output-standalone-p" function nil nil [252831 253254])
+            ("markdown-stylesheet-link-string" function (:arguments ("stylesheet-path")) nil [253256 253436])
+            ("markdown-add-xhtml-header-and-footer" function (:arguments ("title")) nil [253438 254823])
+            ("markdown-preview" function
+               (:user-visible-flag t
+                :arguments ("output-buffer-name"))
+                nil [254825 255157])
+            ("markdown-export-file-name" function (:arguments ("extension")) nil [255159 255880])
+            ("markdown-export" function
+               (:user-visible-flag t
+                :arguments ("output-file"))
+                nil [255882 257017])
+            ("markdown-export-and-preview" function (:user-visible-flag t) nil [257019 257189])
+            ("markdown-live-preview-buffer" variable nil nil [257191 257310])
+            ("make-variable-buffer-local" code nil nil [257311 257369])
+            ("markdown-live-preview-source-buffer" variable nil nil [257371 257533])
+            ("make-variable-buffer-local" code nil nil [257534 257599])
+            ("markdown-live-preview-currently-exporting" variable nil nil [257601 257655])
+            ("markdown-live-preview-get-filename" function nil nil [257657 257813])
+            ("markdown-live-preview-window-eww" function (:arguments ("file")) nil [257815 258118])
+            ("markdown-visual-lines-between-points" function (:arguments ("beg" "end")) nil [258120 258427])
+            ("markdown-live-preview-window-serialize" function (:arguments ("buf")) nil [258429 259102])
+            ("markdown-get-point-back-lines" function (:arguments ("pt" "num-lines")) nil [259104 259508])
+            ("markdown-live-preview-window-deserialize" function (:arguments ("window-posns")) nil [259510 260254])
+            ("markdown-live-preview-export" function (:user-visible-flag t) nil [260256 261835])
+            ("markdown-live-preview-remove" function nil nil [261837 262299])
+            ("markdown-display-buffer-other-window" function (:arguments ("buf")) nil [262301 262453])
+            ("markdown-live-preview-if-markdown" function nil nil [262455 262825])
+            ("markdown-live-preview-remove-on-kill" function nil nil [262827 263224])
+            ("markdown-live-preview-switch-to-output" function (:user-visible-flag t) nil [263226 263574])
+            ("markdown-live-preview-re-export" function (:user-visible-flag t) nil [263576 263990])
+            ("markdown-open" function (:user-visible-flag t) nil [263992 264361])
+            ("markdown-kill-ring-save" function (:user-visible-flag t) nil [264363 264615])
+            ("markdown-link-p" function nil nil [264700 265214])
+            ("markdown-link-link" function nil nil [265216 266026])
+            ("markdown-follow-link-at-point" function (:user-visible-flag t) nil [266028 266997])
+            ("markdown-wiki-link-p" function nil nil [267082 267852])
+            ("markdown-wiki-link-link" function nil nil [267854 268195])
+            ("markdown-wiki-link-alias" function nil nil [268197 268549])
+            ("markdown-convert-wiki-link-to-filename" function (:arguments ("name")) nil [268551 269895])
+            ("markdown-follow-wiki-link" function (:arguments ("name" "other")) nil [269897 270431])
+            ("markdown-follow-wiki-link-at-point" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [270433 270793])
+            ("markdown-highlight-wiki-link" function (:arguments ("from" "to" "face")) nil [270795 270971])
+            ("markdown-unfontify-region-wiki-links" function
+               (:user-visible-flag t
+                :arguments ("from" "to"))
+                nil [270973 271479])
+            ("markdown-fontify-region-wiki-links" function (:arguments ("from" "to")) nil [271481 272377])
+            ("markdown-extend-changed-region" function (:arguments ("from" "to")) nil [272379 273018])
+            ("markdown-check-change-for-wiki-link" function
+               (:user-visible-flag t
+                :arguments ("from" "to"))
+                nil [273020 274574])
+            ("markdown-check-change-for-wiki-link-after-change" function (:arguments ("from" "to" "_")) nil [274576 274832])
+            ("markdown-fontify-buffer-wiki-links" function (:user-visible-flag t) nil [274834 275003])
+            ("markdown-follow-thing-at-point" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [275088 275663])
+            ("markdown-jump" function (:user-visible-flag t) nil [275665 276351])
+            ("markdown-compress-whitespace-string" function (:arguments ("str")) nil [276436 276816])
+            ("markdown-line-number-at-pos" function (:arguments ("pos")) nil [276818 277244])
+            ("markdown-inside-link-p" function nil nil [277246 277384])
+            ("markdown-line-is-reference-definition-p" function nil nil [277386 277666])
+            ("markdown-adaptive-fill-function" function nil nil [277668 278272])
+            ("markdown-fill-forward-paragraph-function" function (:arguments ("arg")) nil [278274 278785])
+            ("markdown-reload-extensions" function (:user-visible-flag t) nil [278870 279712])
+            ("markdown-handle-local-variables" function nil nil [279714 280178])
+            ("markdown-toggle-wiki-links" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [280261 280834])
+            ("markdown-setup-wiki-link-hooks" function nil nil [280836 281969])
+            ("markdown-mode-font-lock-keywords-wiki-links" function nil nil [281971 282394])
+            ("make-obsolete" code nil nil [282477 282543])
+            ("markdown-toggle-math" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [282545 283171])
+            ("markdown-mode-font-lock-keywords-math" function nil nil [283173 284164])
+            ("button" include nil nil [284249 284266])
+            ("define-button-type" code nil nil [284268 284451])
+            ("markdown-toggle-gfm-checkbox" function (:arguments ("button")) nil [284453 284780])
+            ("markdown-make-gfm-checkboxes-buttons" function (:arguments ("start" "end")) nil [284782 285187])
+            ("markdown-gfm-checkbox-after-change-function" function (:arguments ("beg" "end" "_")) nil [285245 285707])
+            ("markdown-inline-image-overlays" variable nil nil [285787 285830])
+            ("make-variable-buffer-local" code nil nil [285831 285891])
+            ("markdown-remove-inline-images" function (:user-visible-flag t) nil [285893 286209])
+            ("markdown-display-inline-images" function (:user-visible-flag t) nil [286211 287261])
+            ("markdown-toggle-inline-images" function (:user-visible-flag t) nil [287263 287480])
+            ("markdown-show-version" function (:user-visible-flag t) nil [287565 287722])
+            ("define-derived-mode" code nil nil [287739 292621])
+            ("add-to-list" code nil nil [292638 292706])
+            ("add-to-list" code nil nil [292722 292784])
+            ("gfm-mode-hook" variable nil nil [292869 292932])
+            ("gfm-font-lock-keywords" variable (:default-value (append (list (cons markdown-regex-strike-through (quote ((3 markdown-markup-face) (4 markdown-strike-through-face) (5 markdown-markup-face))))) markdown-mode-font-lock-keywords-basic)) nil [292934 293412])
+            ("define-derived-mode" code nil nil [293429 293746])
+            ("define-minor-mode" code nil nil [293818 294101])
+            ("markdown-mode" package nil nil [294105 294129]))          
+      :file "markdown-mode.el"
+      :pointmax 294214
+      :fsize 294218
+      :lastmodtime '(22659 32882 0 0)
+      :unmatched-syntax '((close-paren 111131 . 111132) (symbol 110369 . 110385) (open-paren 110368 . 110369) (close-paren 110160 . 110161) (symbol 109929 . 109945) (open-paren 109928 . 109929))))
+  :file "!Users!bing!.emacs.d!elpa!markdown-mode-20161222.1416!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

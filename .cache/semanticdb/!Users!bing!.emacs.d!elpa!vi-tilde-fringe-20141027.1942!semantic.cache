@@ -1,0 +1,26 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("vi-tilde-fringe" customgroup (:user-visible-flag t) nil [1638 1753])
+            ("vi-tilde-fringe-face" variable
+               (:default-value (quote ((t (:inherit (quote default)))))
+                :type "face")
+                nil [1755 1909])
+            ("vi-tilde-fringe-bitmap-array" variable (:default-value [0 0 0 113 219 142 0 0]) nil [1911 2116])
+            ("define-minor-mode" code nil nil [2133 2626])
+            ("define-globalized-minor-mode" code nil nil [2643 2780])
+            ("vi-tilde-fringe-mode--turn-on" function nil nil [2782 2877])
+            ("vi-tilde-fringe" package nil nil [2879 2905]))          
+      :file "vi-tilde-fringe.el"
+      :pointmax 2941
+      :fsize 2940
+      :lastmodtime '(22659 33055 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!vi-tilde-fringe-20141027.1942!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

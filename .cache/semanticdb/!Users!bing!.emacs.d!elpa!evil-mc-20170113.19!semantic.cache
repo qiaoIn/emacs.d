@@ -1,0 +1,75 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("evil" include nil nil [795 810])
+            ("evil-mc-common" include nil nil [812 837])
+            ("evil-mc-vars" include nil nil [838 861])
+            ("evil-mc-undo" include nil nil [862 885])
+            ("evil-mc-cursor-state" include nil nil [886 917])
+            ("evil-mc-cursor-make" include nil nil [918 948])
+            ("evil-mc-command-record" include nil nil [949 982])
+            ("evil-mc-command-execute" include nil nil [983 1017])
+            ("evil-mc-region" include nil nil [1018 1043])
+            ("evil-mc-mode-line" variable (:default-value (\` (:eval (if (> (evil-mc-get-cursor-count) 1) (format (\, (propertize " %s:%d" (quote face) (quote cursor))) evil-mc-mode-line-prefix (evil-mc-get-cursor-count)) (format (\, (propertize " %s")) evil-mc-mode-line-prefix))))) nil [1045 1403])
+            ("put" code nil nil [1405 1453])
+            ("evil-mc-key-map" variable (:default-value (let ((map (make-sparse-keymap)) (keys (quote (("grm" . evil-mc-make-all-cursors) ("gru" . evil-mc-undo-all-cursors) ("grs" . evil-mc-pause-cursors) ("grr" . evil-mc-resume-cursors) ("grf" . evil-mc-make-and-goto-first-cursor) ("grl" . evil-mc-make-and-goto-last-cursor) ("grh" . evil-mc-make-cursor-here) ("grj" . evil-mc-make-cursor-move-next-line) ("grk" . evil-mc-make-cursor-move-prev-line) ("M-n" . evil-mc-make-and-goto-next-cursor) ("grN" . evil-mc-skip-and-goto-next-cursor) ("M-p" . evil-mc-make-and-goto-prev-cursor) ("grP" . evil-mc-skip-and-goto-prev-cursor) ("C-n" . evil-mc-make-and-goto-next-match) ("grn" . evil-mc-skip-and-goto-next-match) ("C-t" . evil-mc-skip-and-goto-next-match) ("C-p" . evil-mc-make-and-goto-prev-match) ("grp" . evil-mc-skip-and-goto-prev-match))))) (dolist (key-data keys) (evil-define-key (quote normal) map (kbd (car key-data)) (cdr key-data)) (evil-define-key (quote visual) map (kbd (car key-data)) (cdr key-data))) map)) nil [1455 2727])
+            ("define-minor-mode" code nil nil [2744 3119])
+            ("put" code nil nil [3121 3159])
+            ("define-globalized-minor-mode" code nil nil [3176 3260])
+            ("evil-mc-initialize" function nil nil [3277 3374])
+            ("turn-on-evil-mc-mode" function (:user-visible-flag t) nil [3391 3505])
+            ("turn-off-evil-mc-mode" function (:user-visible-flag t) nil [3522 3639])
+            ("evil-mc-define-vars" function nil nil [3641 4457])
+            ("evil-mc-initialize-vars" function nil nil [4459 4790])
+            ("evil-mc-pause-incompatible-modes" function nil nil [4792 5042])
+            ("evil-mc-resume-incompatible-modes" function nil nil [5044 5215])
+            ("evil-mc-initialize-hooks" function nil nil [5217 5623])
+            ("evil-mc-teardown-hooks" function nil nil [5625 6031])
+            ("evil-mc-initialize-active-state" function nil nil [6033 6833])
+            ("evil-mc-teardown-active-state" function nil nil [6835 7410])
+            ("evil-mc" package nil nil [7412 7430]))          
+      :file "evil-mc.el"
+      :pointmax 7457
+      :fsize 7457
+      :lastmodtime '(22659 32397 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "evil-mc-common.el"
+      :fsize 2058
+      :lastmodtime '(22659 32397 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "evil-mc-vars.el"
+      :fsize 9324
+      :lastmodtime '(22659 32397 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "evil-mc-undo.el"
+      :fsize 1944
+      :lastmodtime '(22659 32397 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "evil-mc-cursor-state.el"
+      :fsize 6038
+      :lastmodtime '(22659 32397 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "evil-mc-cursor-make.el"
+      :fsize 18878
+      :lastmodtime '(22659 32397 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "evil-mc-command-record.el"
+      :fsize 10604
+      :lastmodtime '(22659 32397 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "evil-mc-command-execute.el"
+      :fsize 24991
+      :lastmodtime '(22659 32397 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "evil-mc-region.el"
+      :fsize 6874
+      :lastmodtime '(22659 32397 0 0)))
+  :file "!Users!bing!.emacs.d!elpa!evil-mc-20170113.19!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

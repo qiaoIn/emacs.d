@@ -1,0 +1,81 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("package-build" include nil nil [1396 1420])
+            ("cl-lib" include nil nil [1421 1438])
+            ("help-fns" include nil nil [1439 1458])
+            ("url-parse" include nil nil [1459 1479])
+            ("quelpa" customgroup (:user-visible-flag t) nil [1561 1648])
+            ("quelpa-upgrade-p" variable nil nil [1650 1863])
+            ("quelpa-stable-p" variable nil nil [1865 1994])
+            ("quelpa-verbose" variable (:default-value t) nil [1996 2106])
+            ("quelpa-before-hook" variable nil nil [2108 2223])
+            ("quelpa-after-hook" variable nil nil [2225 2338])
+            ("quelpa-dir" variable (:default-value (expand-file-name "quelpa" user-emacs-directory)) nil [2340 2489])
+            ("quelpa-melpa-dir" variable (:default-value (expand-file-name "melpa" quelpa-dir)) nil [2491 2626])
+            ("quelpa-build-dir" variable (:default-value (expand-file-name "build" quelpa-dir)) nil [2628 2761])
+            ("quelpa-packages-dir" variable (:default-value (expand-file-name "packages" quelpa-dir)) nil [2763 2906])
+            ("quelpa-melpa-recipe-stores" variable (:default-value (list (expand-file-name "recipes" quelpa-melpa-dir))) nil [2908 3501])
+            ("quelpa-persistent-cache-file" variable (:default-value (expand-file-name "cache" quelpa-dir)) nil [3503 3657])
+            ("quelpa-persistent-cache-p" variable (:default-value t) nil [3659 3796])
+            ("quelpa-checkout-melpa-p" variable (:default-value t) nil [3798 3941])
+            ("quelpa-update-melpa-p" variable (:default-value t) nil [3943 4190])
+            ("quelpa-melpa-repo-url" variable (:default-value "https://github.com/melpa/melpa.git") nil [4192 4329])
+            ("quelpa-initialized-p" variable nil nil [4331 4410])
+            ("quelpa-cache" variable nil nil [4412 4506])
+            ("quelpa-recipe" variable (:default-value (quote (quelpa :repo "quelpa/quelpa" :fetcher github))) nil [4508 4605])
+            ("quelpa-setup-package-structs" function nil nil [4688 5648])
+            ("quelpa-package-type" function (:arguments ("file")) nil [5730 6045])
+            ("quelpa-get-package-desc" function (:arguments ("file")) nil [6047 6967])
+            ("quelpa-archive-file-name" function (:arguments ("archive-entry")) nil [6969 7397])
+            ("quelpa-version>-p" function (:arguments ("name" "version")) nil [7399 8020])
+            ("quelpa-checkout" function (:arguments ("rcp" "dir")) nil [8022 8930])
+            ("quelpa-build-package" function (:arguments ("rcp")) nil [8932 9770])
+            ("quelpa-file-version" function (:arguments ("file-path" "type" "version" "time-stamp")) nil [9852 10617])
+            ("quelpa-directory-files" function (:arguments ("path")) nil [10619 11251])
+            ("quelpa-expand-source-file-list" function (:arguments ("file-path" "config")) nil [11253 11963])
+            ("quelpa-slurp-file" function (:arguments ("file")) nil [11965 12319])
+            ("quelpa-check-hash" function (:arguments ("name" "config" "file-path" "dir" "fetcher")) nil [12321 14308])
+            ("package-build--checkout-file" function (:arguments ("name" "config" "dir")) nil [14310 14853])
+            ("package-build--checkout-url" function (:arguments ("name" "config" "dir")) nil [14855 15885])
+            ("quelpa-message" function (:arguments ("wait" "format-string" "args")) nil [15967 16476])
+            ("quelpa-read-cache" function nil nil [16478 16862])
+            ("quelpa-save-cache" function nil nil [16864 17124])
+            ("quelpa-update-cache" function (:arguments ("cache-item")) nil [17126 17475])
+            ("quelpa-parse-stable" function (:arguments ("cache-item")) nil [17477 17841])
+            ("quelpa-checkout-melpa" function nil nil [17843 18561])
+            ("quelpa-get-melpa-recipe" function (:arguments ("name")) nil [18563 19170])
+            ("quelpa-setup-p" function nil nil [19172 19660])
+            ("quelpa-shutdown" function nil nil [19662 19895])
+            ("quelpa-arg-rcp" function (:arguments ("arg")) nil [19897 20175])
+            ("quelpa-parse-plist" function (:arguments ("plist")) nil [20177 20631])
+            ("quelpa-package-install-file" function (:arguments ("file")) nil [20633 21451])
+            ("quelpa-package-install" function (:arguments ("arg")) nil [21453 22084])
+            ("quelpa-interactive-candidate" function nil nil [22086 22520])
+            ("quelpa-expand-recipe" function
+               (:user-visible-flag t
+                :arguments ("recipe-name"))
+                nil [22617 23076])
+            ("quelpa-self-upgrade" function
+               (:user-visible-flag t
+                :arguments ("args"))
+                nil [23093 23309])
+            ("quelpa-upgrade" function (:user-visible-flag t) nil [23326 23890])
+            ("quelpa" function
+               (:user-visible-flag t
+                :arguments ("arg" "plist"))
+                nil [23907 24943])
+            ("quelpa" package nil nil [24945 24962]))          
+      :file "quelpa.el"
+      :pointmax 24988
+      :fsize 24987
+      :lastmodtime '(22659 32313 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!quelpa-20160818.2249!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

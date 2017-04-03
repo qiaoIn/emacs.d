@@ -1,0 +1,799 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("org" include nil nil [2114 2128])
+            ("org-annotate-file" customgroup (:user-visible-flag t) nil [2130 2193])
+            ("org-annotate-file-storage-file" variable (:default-value "~/.org-annotate-file.org") nil [2195 2345])
+            ("org-annotate-file-add-search" variable nil nil [2347 2510])
+            ("org-annotate-file-always-open" variable (:default-value t) nil [2512 2679])
+            ("org-annotate-file-ellipsify-desc" function (:arguments ("string" "after")) nil [2681 3373])
+            ("org-annotate-file" function (:user-visible-flag t) nil [3390 3780])
+            ("org-annotate-file-show-section" function (:arguments ("storage-file" "annotated-buffer")) nil [3797 4397])
+            ("org-annotate-file-annotate" function (:arguments ("filename" "line")) nil [4399 5306])
+            ("org-annotate-file-add-upper-level" function (:arguments ("link")) nil [5308 5475])
+            ("org-annotate-file-add-second-level" function (:arguments ("link")) nil [5477 5654])
+            ("org-annotate-file" package nil nil [5656 5684]))          
+      :file "org-annotate-file.el"
+      :pointmax 5721
+      :fsize 5720
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "org.el"
+      :fsize 974507
+      :lastmodtime '(22659 32996 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("org" include nil nil [1308 1322])
+            ("ob-core" include nil nil [1323 1341])
+            ("eldoc" include nil nil [1342 1358])
+            ("declare-function" code nil nil [1360 1416])
+            ("declare-function" code nil nil [1417 1489])
+            ("declare-function" code nil nil [1490 1549])
+            ("org-eldoc" customgroup (:user-visible-flag t) nil [1551 1590])
+            ("org-eldoc-breadcrumb-separator" variable (:default-value "/") nil [1592 1700])
+            ("org-eldoc-test-buffer-name" variable (:default-value " *Org-eldoc test buffer*") nil [1702 1877])
+            ("org-eldoc-get-breadcrumb" function nil nil [1879 2309])
+            ("org-eldoc-get-src-header" function nil nil [2311 3208])
+            ("org-eldoc-get-src-lang" function nil nil [3210 3736])
+            ("org-eldoc-local-functions-cache" variable (:default-value (make-hash-table :size 40 :test (quote equal))) nil [3738 3937])
+            ("org-eldoc-get-mode-local-documentation-function" function (:arguments ("lang")) nil [3939 4607])
+            ("declare-function" code nil nil [4609 4674])
+            ("declare-function" code nil nil [4675 4727])
+            ("declare-function" code nil nil [4728 4780])
+            ("declare-function" code nil nil [4781 4846])
+            ("org-eldoc-documentation-function" function nil nil [4848 6448])
+            ("org-eldoc-load" function (:user-visible-flag t) nil [6465 6630])
+            ("add-hook" code nil nil [6647 6689])
+            ("org-eldoc" package nil nil [6691 6711]))          
+      :file "org-eldoc.el"
+      :pointmax 6773
+      :fsize 6774
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "ob-core.el"
+      :fsize 121050
+      :lastmodtime '(22659 32996 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("url-parse" include nil nil [1784 1804])
+            ("url-handlers" include nil nil [1805 1828])
+            ("url-file-local-copy" function (:prototype-flag t) nil [1829 1875])
+            ("url-generic-parse-url" function (:prototype-flag t) nil [1876 1921])
+            ("org-track" customgroup (:user-visible-flag t) nil [1942 2378])
+            ("org-track-directory" variable (:default-value (concat user-emacs-directory "org/lisp")) nil [2380 2577])
+            ("org-track-compile-sources" variable (:default-value t) nil [2579 2853])
+            ("org-track-org-url" variable (:default-value "http://orgmode.org/") nil [2855 3001])
+            ("org-track-org-package" variable (:default-value "org-latest.tar.gz") nil [3003 3245])
+            ("org-track-remove-package" variable nil nil [3247 3348])
+            ("org-track-update" function (:user-visible-flag t) nil [3367 4236])
+            ("org-track-fetch-package" function
+               (:user-visible-flag t
+                :arguments ("directory"))
+                nil [4500 5837])
+            ("org-track-compile-org" function
+               (:user-visible-flag t
+                :arguments ("directory"))
+                nil [5888 7222])
+            ("org-track" package nil nil [7224 7244]))          
+      :file "org-track.el"
+      :pointmax 7273
+      :fsize 7272
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("ox-latex" include nil nil [5133 5152])
+            ("unless" code nil nil [5189 5347])
+            ("org-export-koma-letter" customgroup (:user-visible-flag t) nil [5384 5533])
+            ("org-koma-letter-class-option-file" variable (:default-value "NF") nil [5535 5714])
+            ("org-koma-letter-author" variable (:default-value (quote user-full-name)) nil [5716 6197])
+            ("org-koma-letter-email" variable (:default-value (quote org-koma-letter-email)) nil [6199 6675])
+            ("org-koma-letter-from-address" variable nil nil [6677 6872])
+            ("org-koma-letter-phone-number" variable nil nil [6874 7065])
+            ("org-koma-letter-place" variable nil nil [7067 7258])
+            ("org-koma-letter-location" variable nil nil [7260 7886])
+            ("org-koma-letter-opening" variable nil nil [7888 8410])
+            ("org-koma-letter-closing" variable nil nil [8412 8929])
+            ("org-koma-letter-signature" variable nil nil [8931 9535])
+            ("org-koma-letter-prefer-special-headings" variable nil nil [9537 9792])
+            ("org-koma-letter-subject-format" variable (:default-value t) nil [9794 11166])
+            ("org-koma-letter-use-backaddress" variable nil nil [11168 11404])
+            ("org-koma-letter-use-foldmarks" variable (:default-value t) nil [11406 13726])
+            ("org-koma-letter-use-phone" variable nil nil [13728 13934])
+            ("org-koma-letter-use-email" variable nil nil [13936 14143])
+            ("org-koma-letter-use-place" variable (:default-value t) nil [14145 14365])
+            ("org-koma-letter-default-class" variable (:default-value "default-koma-letter") nil [14367 14571])
+            ("org-koma-letter-headline-is-opening-maybe" variable (:default-value t) nil [14573 14812])
+            ("org-koma-letter-prefer-subject" variable nil nil [14814 15074])
+            ("org-koma-letter-special-tags-in-letter" variable
+               (:constant-flag t
+                :default-value (quote (to from closing location)))
+                nil [15076 15199])
+            ("org-koma-letter-special-tags-after-closing" variable
+               (:constant-flag t
+                :default-value (quote (after_closing ps encl cc)))
+                nil [15201 15342])
+            ("org-koma-letter-special-tags-as-macro" variable
+               (:constant-flag t
+                :default-value (quote (ps encl cc)))
+                nil [15344 15447])
+            ("org-koma-letter-special-tags-after-letter" variable
+               (:constant-flag t
+                :default-value (quote (after_letter)))
+                nil [15449 15566])
+            ("org-koma-letter-special-contents" variable nil nil [15568 15652])
+            ("make-obsolete-variable" code nil nil [15654 15746])
+            ("org-export-define-derived-backend" code nil nil [15771 19204])
+            ("org-koma-letter-email" function nil nil [19231 19327])
+            ("org-koma-letter--get-tagged-contents" function (:arguments ("key")) nil [19401 19726])
+            ("org-koma-letter--get-value" function (:arguments ("value")) nil [19728 20050])
+            ("org-koma-letter--special-contents-inline" function (:arguments ("keywords" "info")) nil [20052 20690])
+            ("org-koma-letter--add-latex-newlines" function (:arguments ("string")) nil [20693 20930])
+            ("org-koma-letter-export-block" function (:arguments ("export-block" "contents" "info")) nil [20979 21331])
+            ("org-koma-letter-export-snippet" function (:arguments ("export-snippet" "contents" "info")) nil [21354 21684])
+            ("org-koma-letter-keyword" function (:arguments ("keyword" "contents" "info")) nil [21700 22178])
+            ("org-koma-letter-headline" function (:arguments ("headline" "contents" "info")) nil [22193 22780])
+            ("org-koma-letter--special-tag" function (:arguments ("headline" "info")) nil [22782 23310])
+            ("org-koma-letter--keyword-or-headline" function (:arguments ("plist-key" "pred" "info")) nil [23312 24219])
+            ("org-koma-letter-template" function (:arguments ("contents" "info")) nil [24236 27736])
+            ("org-koma-letter--build-settings" function (:arguments ("scope" "info")) nil [27738 31495])
+            ("org-koma-letter-export-as-latex" function
+               (:user-visible-flag t
+                :arguments ("async" "subtreep" "visible-only" "body-only" "ext-plist"))
+                nil [31529 32812])
+            ("org-koma-letter-export-to-latex" function
+               (:user-visible-flag t
+                :arguments ("async" "subtreep" "visible-only" "body-only" "ext-plist"))
+                nil [32829 34084])
+            ("org-koma-letter-export-to-pdf" function
+               (:user-visible-flag t
+                :arguments ("async" "subtreep" "visible-only" "body-only" "ext-plist"))
+                nil [34101 35316])
+            ("ox-koma-letter" package nil nil [35319 35344]))          
+      :file "ox-koma-letter.el"
+      :pointmax 35377
+      :fsize 35376
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "ox-latex.el"
+      :fsize 131014
+      :lastmodtime '(22659 32996 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("org" include nil nil [2314 2328])
+            ("org-element" include nil nil [2329 2351])
+            ("cl-lib" include nil nil [2352 2369])
+            ("org-link-edit--get-link-data" function nil nil [2371 3749])
+            ("org-link-edit--forward-blob" function (:arguments ("n" "no-punctuation")) nil [3751 4845])
+            ("org-link-edit-forward-slurp" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [4862 6352])
+            ("org-link-edit-backward-slurp" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [6369 7756])
+            ("org-link-edit--split-first-blobs" function (:arguments ("string" "n")) nil [7758 8471])
+            ("org-link-edit--split-last-blobs" function (:arguments ("string" "n")) nil [8473 9191])
+            ("org-link-edit-forward-barf" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [9208 10627])
+            ("org-link-edit-backward-barf" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [10644 11856])
+            ("org-link-edit" package nil nil [11858 11882]))          
+      :file "org-link-edit.el"
+      :pointmax 11914
+      :fsize 11913
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "org-element.el"
+      :fsize 223532
+      :lastmodtime '(22659 32996 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("org" include nil nil [3534 3548])
+            ("define-derived-mode" code nil nil [3565 3674])
+            ("org-passwords" customgroup (:user-visible-flag t) nil [3676 3755])
+            ("org-passwords-password-property" variable (:default-value "PASSWORD") nil [3757 3896])
+            ("org-passwords-username-property" variable (:default-value "USERNAME") nil [3898 4038])
+            ("org-passwords-url-property" variable (:default-value "URL") nil [4040 4164])
+            ("org-passwords-file" variable nil nil [4166 4302])
+            ("org-passwords-time-opened" variable (:default-value "1 min") nil [4304 4487])
+            ("org-passwords-default-password-size" variable (:default-value "20") nil [4489 4677])
+            ("org-passwords-random-words-dictionary" variable nil nil [4679 4929])
+            ("org-passwords-default-random-words-number" variable (:default-value "5") nil [4931 5114])
+            ("org-passwords-random-words-separator" variable (:default-value "-") nil [5116 5229])
+            ("org-passwords-random-words-substitutions" variable (:default-value (quote (("a" . "@") ("e" . "3") ("o" . "0")))) nil [5231 5504])
+            ("org-passwords-copy-password" function (:user-visible-flag t) nil [5506 5944])
+            ("org-passwords-copy-username" function (:user-visible-flag t) nil [5946 6391])
+            ("org-passwords-open-url" function (:user-visible-flag t) nil [6393 6600])
+            ("org-passwords" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [6617 7712])
+            ("org-passwords-set-up-kill-password-buffer" function nil nil [7714 7955])
+            ("random" code nil nil [8106 8116])
+            ("org-passwords-generate-password" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [8118 8745])
+            ("org-passwords-generate-password-with-symbols" function (:arguments ("previous-string" "nums-of-chars")) nil [8747 9179])
+            ("org-passwords-generate-password-without-symbols" function (:arguments ("previous-string" "nums-of-chars")) nil [9181 10462])
+            ("org-passwords-random-words" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [10482 11733])
+            ("org-passwords-random-words-attach-number-of-words" function (:arguments ("previous-string" "number-of-words" "list-of-words" "separator")) nil [11735 12295])
+            ("org-passwords-substitute" function (:arguments ("string-to-change" "list-of-substitutions")) nil [12297 13078])
+            ("org-passwords-concat-this-with-string" function (:arguments ("this" "list-of-strings")) nil [13080 13547])
+            ("org-passwords" package nil nil [13549 13573]))          
+      :file "org-passwords.el"
+      :pointmax 13606
+      :fsize 13605
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("ox-html" include nil nil [2704 2722])
+            ("declare-function" code nil nil [2723 2773])
+            ("org-export-rss" customgroup (:user-visible-flag t) nil [2802 2966])
+            ("org-rss-image-url" variable (:default-value "http://orgmode.org/img/org-mode-unicorn-logo.png") nil [2968 3135])
+            ("org-rss-extension" variable (:default-value "xml") nil [3137 3254])
+            ("org-rss-categories" variable (:default-value (quote from-tags)) nil [3256 3652])
+            ("org-rss-use-entry-url-as-guid" variable (:default-value t) nil [3654 3843])
+            ("org-export-define-derived-backend" code nil nil [3865 4998])
+            ("org-rss-export-as-rss" function
+               (:user-visible-flag t
+                :arguments ("async" "subtreep" "visible-only"))
+                nil [5037 6071])
+            ("org-rss-export-to-rss" function
+               (:user-visible-flag t
+                :arguments ("async" "subtreep" "visible-only"))
+                nil [6088 7054])
+            ("org-rss-publish-to-rss" function (:arguments ("plist" "filename" "pub-dir")) nil [7071 7773])
+            ("org-rss-headline" function (:arguments ("headline" "contents" "info")) nil [7807 10236])
+            ("org-rss-build-categories" function (:arguments ("headline" "info")) nil [10238 10638])
+            ("org-rss-template" function (:arguments ("contents" "info")) nil [10640 11548])
+            ("org-rss-build-channel-info" function (:arguments ("info")) nil [11550 13147])
+            ("org-rss-section" function (:arguments ("section" "contents" "info")) nil [13149 13338])
+            ("org-rss-timestamp" function (:arguments ("timestamp" "contents" "info")) nil [13340 13577])
+            ("org-rss-plain-text" function (:arguments ("contents" "info")) nil [13579 13807])
+            ("org-rss-final-function" function (:arguments ("contents" "backend" "info")) nil [13822 14068])
+            ("org-rss-add-pubdate-property" function nil nil [14089 14675])
+            ("ox-rss" package nil nil [14677 14694]))          
+      :file "ox-rss.el"
+      :pointmax 14720
+      :fsize 14719
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "ox-html.el"
+      :fsize 140203
+      :lastmodtime '(22659 32996 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [5946 5959])
+            ("ox" include nil nil [5962 5975])
+            ("org-export-taskjuggler" customgroup (:user-visible-flag t) nil [6000 6144])
+            ("org-taskjuggler-extension" variable (:default-value ".tjp") nil [6146 6275])
+            ("org-taskjuggler-project-tag" variable (:default-value "taskjuggler_project") nil [6277 6496])
+            ("org-taskjuggler-resource-tag" variable (:default-value "taskjuggler_resource") nil [6498 6727])
+            ("org-taskjuggler-report-tag" variable (:default-value "taskjuggler_report") nil [6729 6950])
+            ("org-taskjuggler-target-version" variable (:default-value 3.0) nil [6952 7470])
+            ("org-taskjuggler-default-project-version" variable (:default-value "1.0") nil [7472 7730])
+            ("org-taskjuggler-default-project-duration" variable (:default-value 280) nil [7732 8039])
+            ("org-taskjuggler-default-reports" variable (:default-value (quote ("textreport report \"Plan\" {
+  formats html
+  header '== %title =='
+
+  center -8<-
+    [#Plan Plan] | [#Resource_Allocation Resource Allocation]
+    ----
+    === Plan ===
+    <[report id=\"plan\"]>
+    ----
+    === Resource Allocation ===
+    <[report id=\"resourceGraph\"]>
+  ->8-
+}
+
+# A traditional Gantt chart with a project overview.
+taskreport plan \"\" {
+  headline \"Project Plan\"
+  columns bsi, name, start, end, effort, chart
+  loadunit shortauto
+  hideresource 1
+}
+
+# A graph showing resource allocation. It identifies whether each
+# resource is under- or over-allocated for.
+resourcereport resourceGraph \"\" {
+  headline \"Resource Allocation Graph\"
+  columns no, name, effort, weekly
+  loadunit shortauto
+  hidetask ~(isleaf() & isleaf_())
+  sorttasks plan.start.up
+}"))) nil [8041 9946])
+            ("org-taskjuggler-default-global-header" variable nil nil [9948 10186])
+            ("org-taskjuggler-default-global-properties" variable (:default-value "shift s40 \"Part time shift\" {
+  workinghours wed, thu, fri off
+}
+") nil [10188 10778])
+            ("org-taskjuggler-valid-task-attributes" variable (:default-value (quote (account start note duration endbuffer endcredit end flags journalentry length limits maxend maxstart minend minstart period reference responsible scheduling startbuffer startcredit statusnote chargeset charge))) nil [10780 11358])
+            ("org-taskjuggler-valid-project-attributes" variable (:default-value (quote (timingresolution timezone alertlevels currency currencyformat dailyworkinghours extend includejournalentry now numberformat outputdir scenario shorttimeformat timeformat trackingscenario weekstartsmonday weekstartssunday workinghours yearlyworkingdays))) nil [11360 11950])
+            ("org-taskjuggler-valid-resource-attributes" variable (:default-value (quote (limits vacation shift booking efficiency journalentry rate workinghours flags))) nil [11952 12280])
+            ("org-taskjuggler-valid-report-attributes" variable (:default-value (quote (headline columns definitions timeformat hideresource hidetask loadunit sorttasks formats period))) nil [12282 12624])
+            ("org-taskjuggler-process-command" variable (:default-value "tj3 --silent --no-color --output-dir %o %f") nil [12626 13115])
+            ("org-taskjuggler-reports-directory" variable (:default-value "reports") nil [13117 13636])
+            ("org-taskjuggler-keep-project-as-task" variable (:default-value t) nil [13638 13935])
+            ("org-taskjuggler-final-hook" variable nil nil [13951 14101])
+            ("org-export-define-backend" code nil nil [14131 14836])
+            ("org-taskjuggler-assign-task-ids" function (:arguments ("tasks" "info")) nil [14857 15684])
+            ("org-taskjuggler-assign-resource-ids" function (:arguments ("resources" "info")) nil [15686 16172])
+            ("org-taskjuggler-get-project" function (:arguments ("info")) nil [16192 16760])
+            ("org-taskjuggler-get-id" function (:arguments ("item" "info")) nil [16762 17003])
+            ("org-taskjuggler-get-name" function (:arguments ("item")) nil [17005 17255])
+            ("org-taskjuggler-get-start" function (:arguments ("item")) nil [17257 17684])
+            ("org-taskjuggler-get-end" function (:arguments ("item")) nil [17686 17992])
+            ("org-taskjuggler--indent-string" function (:arguments ("s")) nil [18021 18222])
+            ("org-taskjuggler--build-attributes" function (:arguments ("item" "attributes")) nil [18224 18699])
+            ("org-taskjuggler--build-unique-id" function (:arguments ("item" "unique-ids")) nil [18701 19743])
+            ("org-taskjuggler--clean-id" function (:arguments ("id")) nil [19745 20048])
+            ("org-taskjuggler-resolve-dependencies" function (:arguments ("task" "info")) nil [20071 22011])
+            ("org-taskjuggler-format-dependencies" function (:arguments ("dependencies" "task" "info")) nil [22013 23579])
+            ("org-taskjuggler-project-plan" function (:arguments ("contents" "info")) nil [23610 28314])
+            ("org-taskjuggler--build-project" function (:arguments ("project" "info")) nil [28316 29419])
+            ("org-taskjuggler--build-resource" function (:arguments ("resource" "info")) nil [29421 30600])
+            ("org-taskjuggler--build-report" function (:arguments ("report" "info")) nil [30602 31367])
+            ("org-taskjuggler--build-task" function (:arguments ("task" "info")) nil [31369 34290])
+            ("org-taskjuggler-export" function
+               (:user-visible-flag t
+                :arguments ("async" "subtreep" "visible-only"))
+                nil [34337 35836])
+            ("org-taskjuggler-export-and-process" function
+               (:user-visible-flag t
+                :arguments ("subtreep" "visible-only"))
+                nil [35853 37046])
+            ("org-taskjuggler-export-process-and-open" function
+               (:user-visible-flag t
+                :arguments ("subtreep" "visible-only"))
+                nil [37063 37869])
+            ("org-taskjuggler-compile" function (:arguments ("file")) nil [37871 39013])
+            ("org-taskjuggler--collect-errors" function (:arguments ("buffer")) nil [39015 39531])
+            ("ox-taskjuggler" package nil nil [39534 39559]))          
+      :file "ox-taskjuggler.el"
+      :pointmax 39654
+      :fsize 39653
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax '((close-paren 5959 . 5960) (symbol 5928 . 5945) (open-paren 5927 . 5928)))
+    (semanticdb-table "semanticdb-table"
+      :file "ox.el"
+      :fsize 263261
+      :lastmodtime '(22659 32996 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("org-toc" package nil nil [1140 1158])
+            ("cl" include nil nil [1180 1193])
+            ("org-toc-base-buffer" variable nil nil [1218 1250])
+            ("org-toc-columns-shown" variable nil nil [1251 1285])
+            ("org-toc-odd-levels-only" variable nil nil [1286 1322])
+            ("org-toc-config-alist" variable nil nil [1323 1356])
+            ("org-toc-cycle-global-status" variable nil nil [1357 1397])
+            ("defalias" code nil nil [1398 1450])
+            ("org-toc" customgroup (:user-visible-flag t) nil [1452 1573])
+            ("org-toc-default-depth" variable (:default-value 1) nil [1575 1779])
+            ("org-toc-follow-mode" variable nil nil [1781 1961])
+            ("org-toc-info-mode" variable nil nil [1963 2158])
+            ("org-toc-show-subtree-mode" variable nil nil [2160 2411])
+            ("org-toc-recenter-mode" variable (:default-value t) nil [2413 2573])
+            ("org-toc-recenter" variable nil nil [2575 2825])
+            ("org-toc-info-exclude" variable (:default-value (quote ("ALLTAGS"))) nil [2827 3017])
+            ("org-toc-mode-map" variable (:default-value (make-sparse-keymap)) nil [3037 3114])
+            ("org-toc-mode" function (:user-visible-flag t) nil [3116 3374])
+            ("define-key" code nil nil [3392 3446])
+            ("define-key" code nil nil [3447 3507])
+            ("define-key" code nil nil [3508 3563])
+            ("define-key" code nil nil [3564 3621])
+            ("define-key" code nil nil [3622 3674])
+            ("define-key" code nil nil [3675 3731])
+            ("define-key" code nil nil [3752 3803])
+            ("define-key" code nil nil [3804 3851])
+            ("define-key" code nil nil [3852 3902])
+            ("define-key" code nil nil [3903 3950])
+            ("define-key" code nil nil [3951 4003])
+            ("define-key" code nil nil [4004 4060])
+            ("define-key" code nil nil [4061 4115])
+            ("define-key" code nil nil [4116 4168])
+            ("define-key" code nil nil [4169 4252])
+            ("define-key" code nil nil [4253 4336])
+            ("define-key" code nil nil [4337 4420])
+            ("define-key" code nil nil [4421 4504])
+            ("define-key" code nil nil [4505 4552])
+            ("define-key" code nil nil [4553 4600])
+            ("define-key" code nil nil [4601 4648])
+            ("define-key" code nil nil [4699 4750])
+            ("define-key" code nil nil [4751 4798])
+            ("define-key" code nil nil [4846 4930])
+            ("define-key" code nil nil [4948 4998])
+            ("define-key" code nil nil [4999 5046])
+            ("define-key" code nil nil [5047 5103])
+            ("define-key" code nil nil [5104 5163])
+            ("define-key" code nil nil [5201 5285])
+            ("define-key" code nil nil [5324 5417])
+            ("org-toc-follow-mode" function (:user-visible-flag t) nil [5441 5665])
+            ("org-toc-info-mode" function (:user-visible-flag t) nil [5667 5879])
+            ("org-toc-show-subtree-mode" function (:user-visible-flag t) nil [5881 6141])
+            ("org-toc-recenter-mode" function
+               (:user-visible-flag t
+                :arguments ("line"))
+                nil [6143 6599])
+            ("org-toc-cycle-subtree" function (:user-visible-flag t) nil [6601 7309])
+            ("org-toc-before-first-heading-p" function nil nil [7382 7529])
+            ("org-toc-show" function
+               (:user-visible-flag t
+                :arguments ("depth" "position"))
+                nil [7546 9845])
+            ("org-toc-goto" function
+               (:user-visible-flag t
+                :arguments ("jump" "cycle"))
+                nil [9873 10700])
+            ("org-toc-cycle-base-buffer" function (:user-visible-flag t) nil [10702 10907])
+            ("org-toc-jump" function
+               (:user-visible-flag t
+                :arguments ("delete"))
+                nil [10909 11166])
+            ("org-toc-previous" function (:user-visible-flag t) nil [11168 11498])
+            ("org-toc-next" function (:user-visible-flag t) nil [11500 11696])
+            ("org-toc-forward" function (:user-visible-flag t) nil [11698 11995])
+            ("org-toc-back" function (:user-visible-flag t) nil [11997 12300])
+            ("org-toc-quit" function (:user-visible-flag t) nil [12302 12443])
+            ("org-toc-columns" function (:user-visible-flag t) nil [12468 12901])
+            ("org-toc-info" function (:user-visible-flag t) nil [12903 13662])
+            ("org-toc-store-config" function (:user-visible-flag t) nil [13705 14374])
+            ("org-toc-restore-config" function (:user-visible-flag t) nil [14376 15709])
+            ("org-toc-get-headlines-status" function nil nil [15711 16284])
+            ("org-toc-help" function (:user-visible-flag t) nil [16346 17714]))          
+      :file "org-toc.el"
+      :pointmax 17932
+      :fsize 17931
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax '((close-paren 1193 . 1194) (symbol 1160 . 1177) (open-paren 1159 . 1160)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("org" include nil nil [3102 3116])
+            ("dired" include nil nil [3117 3133])
+            ("org-screenshot" customgroup (:user-visible-flag t) nil [3135 3232])
+            ("org-screenshot-image-directory" variable (:default-value "./images/") nil [3234 3447])
+            ("org-screenshot-file-name-format" variable (:default-value "screenshot-%2.2d.png") nil [3449 3878])
+            ("org-screenshot-max-tries" variable (:default-value 200) nil [3880 4198])
+            ("org-screenshot-map" variable (:default-value (make-sparse-keymap)) nil [4200 4296])
+            ("org-defkey" code nil nil [4308 4368])
+            ("org-defkey" code nil nil [4420 4484])
+            ("org-defkey" code nil nil [4485 4549])
+            ("org-defkey" code nil nil [4610 4666])
+            ("org-defkey" code nil nil [4667 4723])
+            ("org-defkey" code nil nil [4852 4923])
+            ("org-defkey" code nil nil [4924 4995])
+            ("org-defkey" code nil nil [4996 5067])
+            ("org-defkey" code nil nil [5068 5139])
+            ("org-defkey" code nil nil [5177 5248])
+            ("org-defkey" code nil nil [5249 5318])
+            ("random" code nil nil [5321 5331])
+            ("org-screenshot-random-string" function (:arguments ("length")) nil [5333 5685])
+            ("org-screenshot-process" variable nil nil [5687 5763])
+            ("org-screenshot-directory-seq-numbers" variable (:default-value (make-hash-table :test (quote equal))) nil [5765 5841])
+            ("org-screenshot-update-seq-number" function (:arguments ("directory" "reset")) nil [5843 6593])
+            ("org-screenshot-generate-file-name" function (:arguments ("directory")) nil [6595 8120])
+            ("org-screenshot-image-directory" function nil nil [8122 8417])
+            ("org-screenshot-last-file" variable nil nil [8419 8534])
+            ("org-screenshot-process-done" function (:arguments ("process" "event" "file" "orig-buffer" "orig-delay" "orig-event")) nil [8536 10021])
+            ("org-screenshot-take" function
+               (:user-visible-flag t
+                :arguments ("delay"))
+                nil [10039 12567])
+            ("org-screenshot-file-list" variable nil nil [12569 12730])
+            ("org-screenshot-rotation-index" variable (:default-value -1) nil [12732 12773])
+            ("make-variable-buffer-local" code nil nil [12775 12829])
+            ("make-variable-buffer-local" code nil nil [12830 12889])
+            ("org-screenshot-rotation-init" function (:arguments ("lastfile")) nil [12891 13981])
+            ("org-screenshot-do-rotate" function (:arguments ("dir" "from-continue-rotating")) nil [13983 16533])
+            ("org-screenshot-rotate-prev" function
+               (:user-visible-flag t
+                :arguments ("dir"))
+                nil [16550 16874])
+            ("org-screenshot-rotate-next" function
+               (:user-visible-flag t
+                :arguments ("dir"))
+                nil [16891 17219])
+            ("org-screenshot-prefer-same-modifiers" function (:arguments ("list" "event")) nil [17221 17659])
+            ("org-screenshot-rotate-continue" function (:arguments ("from-take-screenshot" "orig-event")) nil [17661 19664])
+            ("org-screenshot-show-unused" function (:user-visible-flag t) nil [19681 20930])
+            ("org-screenshot" package nil nil [20932 20957]))          
+      :file "org-screenshot.el"
+      :pointmax 20958
+      :fsize 20957
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [2367 2380])
+            ("org-registry" customgroup (:user-visible-flag t) nil [2383 2448])
+            ("org-registry-file" variable (:default-value (concat (getenv "HOME") "/.org-registry.el")) nil [2450 2590])
+            ("org-registry-find-file" variable (:default-value (quote find-file-other-window)) nil [2592 2720])
+            ("org-registry-alist" variable nil nil [2722 2795])
+            ("org-registry-show" function
+               (:user-visible-flag t
+                :arguments ("visit"))
+                nil [2812 4478])
+            ("org-registry-display-files" function (:arguments ("files" "link")) nil [4480 4915])
+            ("org-registry-assoc-all" function (:arguments ("link" "registry")) nil [4917 5117])
+            ("org-registry-find-all" function (:arguments ("test" "registry")) nil [5119 5351])
+            ("org-registry-visit" function (:user-visible-flag t) nil [5368 5514])
+            ("org-registry-initialize" function
+               (:user-visible-flag t
+                :arguments ("from-scratch"))
+                nil [5531 6358])
+            ("org-registry-insinuate" function (:user-visible-flag t) nil [6375 6636])
+            ("org-registry-get-entries" function (:arguments ("file")) nil [6638 7442])
+            ("org-registry-update" function (:user-visible-flag t) nil [7459 8467])
+            ("org-registry-create" function (:arguments ("entries")) nil [8469 9074])
+            ("org-registry" package nil nil [9076 9099]))          
+      :file "org-registry.el"
+      :pointmax 9161
+      :fsize 9160
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax '((close-paren 2380 . 2381) (symbol 2347 . 2364) (open-paren 2346 . 2347)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("ox-html" include nil nil [1203 1221])
+            ("org-export-define-derived-backend" code nil nil [1247 1965])
+            ("org-export-freemind" customgroup (:user-visible-flag t) nil [2004 2158])
+            ("org-freemind-styles" variable (:default-value (quote ((default . "<node>
+</node>") (0 . "<node COLOR=\"#000000\">
+<font NAME=\"SansSerif\" SIZE=\"20\"/>
+</node>") (1 . "<node COLOR=\"#0033ff\">
+<edge STYLE=\"sharp_bezier\" WIDTH=\"8\"/>
+<font NAME=\"SansSerif\" SIZE=\"18\"/>
+</node>") (2 . "<node COLOR=\"#00b439\">
+<edge STYLE=\"bezier\" WIDTH=\"thin\"/>
+<font NAME=\"SansSerif\" SIZE=\"16\"/>
+</node>") (3 . "<node COLOR=\"#990000\" FOLDED=\"true\">
+<font NAME=\"SansSerif\" SIZE=\"14\"/>
+</node>") (4 . "<node COLOR=\"#111111\">
+</node>")))) nil [2160 3249])
+            ("org-freemind-style-map-function" variable (:default-value (quote org-freemind-style-map--automatic)) nil [3251 3947])
+            ("org-freemind-section-format" variable (:default-value (quote note)) nil [3949 4578])
+            ("org-freemind-pretty-output" variable nil nil [4596 4738])
+            ("org-freemind--serialize" function (:arguments ("parsed-xml" "contents")) nil [4789 6016])
+            ("org-freemind--parse-xml" function (:arguments ("xml-string")) nil [6018 6355])
+            ("org-freemind-style-map--automatic" function (:arguments ("element" "info")) nil [6410 7106])
+            ("org-freemind-style-map--default" function (:arguments ("element" "info")) nil [7108 7427])
+            ("org-freemind--get-node-style" function (:arguments ("element" "info")) nil [7479 8567])
+            ("org-freemind--build-stylized-node" function (:arguments ("style-1" "style-2" "contents")) nil [8569 10944])
+            ("org-freemind--richcontent" function (:arguments ("type" "contents" "css-style")) nil [10978 11411])
+            ("org-freemind--build-node-contents" function (:arguments ("element" "contents" "info")) nil [11413 13018])
+            ("org-freemind-template" function (:arguments ("contents" "info")) nil [13037 13533])
+            ("org-freemind-inner-template" function (:arguments ("contents" "info")) nil [13535 13752])
+            ("org-freemind--tags" function (:arguments ("tags")) nil [13765 13909])
+            ("org-freemind-entity" function (:arguments ("entity" "contents" "info")) nil [13952 14187])
+            ("org-freemind-headline" function (:arguments ("headline" "contents" "info")) nil [14204 16699])
+            ("org-freemind-section" function (:arguments ("section" "contents" "info")) nil [16716 17059])
+            ("org-freemind-final-function" function (:arguments ("contents" "backend" "info")) nil [17086 17425])
+            ("org-freemind-options-function" function (:arguments ("info" "backend")) nil [17427 17888])
+            ("org-freemind-export-to-freemind" function
+               (:user-visible-flag t
+                :arguments ("async" "subtreep" "visible-only" "body-only" "ext-plist"))
+                nil [17932 19121])
+            ("ox-freemind" package nil nil [19123 19145]))          
+      :file "ox-freemind.el"
+      :pointmax 19176
+      :fsize 19175
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1672 1689])
+            ("org" include nil nil [1690 1704])
+            ("gnus-util" include nil nil [1705 1725])
+            ("gnus-art" include nil nil [1726 1745])
+            ("mail-utils" include nil nil [1746 1767])
+            ("org-agenda" include nil nil [1768 1789])
+            ("org-capture" include nil nil [1790 1812])
+            ("org-contacts" customgroup (:user-visible-flag t) nil [1814 1894])
+            ("org-contacts-files" variable nil nil [1896 2075])
+            ("org-contacts-email-property" variable (:default-value "EMAIL") nil [2077 2215])
+            ("org-contacts-tel-property" variable (:default-value "PHONE") nil [2217 2352])
+            ("org-contacts-address-property" variable (:default-value "ADDRESS") nil [2354 2490])
+            ("org-contacts-birthday-property" variable (:default-value "BIRTHDAY") nil [2492 2636])
+            ("org-contacts-note-property" variable (:default-value "NOTE") nil [2638 2765])
+            ("org-contacts-alias-property" variable (:default-value "ALIAS") nil [2767 2902])
+            ("org-contacts-ignore-property" variable (:default-value "IGNORE") nil [2904 3086])
+            ("org-contacts-birthday-format" variable (:default-value "Birthday: %l (%Y)") nil [3089 3376])
+            ("org-contacts-last-read-mail-property" variable (:default-value "LAST_READ_MAIL") nil [3378 3549])
+            ("org-contacts-icon-property" variable (:default-value "ICON") nil [3551 3678])
+            ("org-contacts-nickname-property" variable (:default-value "NICKNAME") nil [3680 3821])
+            ("org-contacts-icon-size" variable (:default-value 32) nil [3823 3931])
+            ("org-contacts-icon-use-gravatar" variable (:default-value (fboundp (quote gravatar-retrieve))) nil [3933 4093])
+            ("org-contacts-completion-ignore-case" variable (:default-value t) nil [4095 4226])
+            ("org-contacts-group-prefix" variable (:default-value "+") nil [4228 4326])
+            ("org-contacts-tags-props-prefix" variable (:default-value "#") nil [4328 4445])
+            ("org-contacts-matcher" variable (:default-value (mapconcat (function identity) (mapcar (lambda (x) (concat x "<>\"\"")) (list org-contacts-email-property org-contacts-alias-property org-contacts-tel-property org-contacts-address-property org-contacts-birthday-property)) "|")) nil [4447 4884])
+            ("org-contacts-email-link-description-format" variable (:default-value "%s (%d)") nil [4886 5089])
+            ("org-contacts-vcard-file" variable (:default-value "contacts.vcf") nil [5091 5213])
+            ("org-contacts-enable-completion" variable (:default-value t) nil [5215 5371])
+            ("org-contacts-complete-functions" variable (:default-value (quote (org-contacts-complete-group org-contacts-complete-tags-props org-contacts-complete-name))) nil [5373 5613])
+            ("declare-function" code nil nil [5659 5702])
+            ("declare-function" code nil nil [5703 5758])
+            ("declare-function" code nil nil [5759 5820])
+            ("declare-function" code nil nil [5821 5890])
+            ("declare-function" code nil nil [5891 5961])
+            ("declare-function" code nil nil [5962 6006])
+            ("declare-function" code nil nil [6007 6061])
+            ("declare-function" code nil nil [6062 6129])
+            ("declare-function" code nil nil [6130 6183])
+            ("declare-function" code nil nil [6184 6237])
+            ("declare-function" code nil nil [6238 6286])
+            ("org-contacts-property-values-separators" variable
+               (:constant-flag t
+                :default-value "[,; 	
+]+")
+                nil [6288 6483])
+            ("org-contacts-keymap" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "M" (quote org-contacts-view-send-email)) (define-key map "i" (quote org-contacts-view-switch-to-irc-buffer)) map)) nil [6485 6729])
+            ("org-contacts-db" variable nil nil [6731 6786])
+            ("org-contacts-last-update" variable nil nil [6788 6883])
+            ("org-contacts-files" function nil nil [6885 7029])
+            ("org-contacts-db-need-update-p" function nil nil [7031 7385])
+            ("org-contacts-db-has-dead-markers-p" function (:arguments ("org-contacts-db")) nil [7387 7895])
+            ("org-contacts-db" function nil nil [7897 10207])
+            ("org-contacts-at-point" function (:arguments ("pom")) nil [10209 10479])
+            ("org-contacts-filter" function (:arguments ("name-match" "tags-match" "prop-match")) nil [10481 11429])
+            ("when" code nil nil [11431 11725])
+            ("org-contacts-try-completion-prefix" function (:arguments ("to-match" "collection" "predicate")) nil [11727 12727])
+            ("org-contacts-compare-strings" function (:arguments ("s1" "start1" "end1" "s2" "start2" "end2" "ignore-case")) nil [12729 13255])
+            ("org-contacts-common-substring" function (:arguments ("s1" "start1" "end1" "s2" "start2" "end2")) nil [13257 14727])
+            ("org-contacts-all-completions-prefix" function (:arguments ("to-match" "collection" "predicate")) nil [14729 15650])
+            ("org-contacts-make-collection-prefix" function (:arguments ("collection")) nil [15652 16538])
+            ("org-contacts-display-sort-function" function (:arguments ("completions")) nil [16540 17148])
+            ("org-contacts-test-completion-prefix" function (:arguments ("string" "collection" "predicate")) nil [17150 17350])
+            ("org-contacts-boundaries-prefix" function (:arguments ("string" "collection" "predicate" "suffix")) nil [17352 17508])
+            ("org-contacts-metadata-prefix" function (:arguments ("string" "collection" "predicate")) nil [17510 17727])
+            ("org-contacts-complete-group" function (:arguments ("start" "end" "string")) nil [17729 19521])
+            ("org-contacts-complete-tags-props" function (:arguments ("start" "end" "string")) nil [19523 21013])
+            ("org-contacts-remove-ignored-property-values" function (:arguments ("ignore-list" "list")) nil [21015 21309])
+            ("org-contacts-complete-name" function (:arguments ("start" "end" "string")) nil [21311 22662])
+            ("org-contacts-message-complete-function" function (:arguments ("start")) nil [22664 23487])
+            ("org-contacts-gnus-get-name-email" function nil nil [23489 23723])
+            ("org-contacts-gnus-article-from-get-marker" function nil nil [23725 24159])
+            ("org-contacts-gnus-article-from-goto" function (:user-visible-flag t) nil [24161 24519])
+            ("with-no-warnings" code nil nil [24521 24553])
+            ("org-contacts-anniversaries" function (:arguments ("field" "format")) nil [24586 25833])
+            ("org-completing-read-date" function (:arguments ("prompt" "collection" "predicate" "require-match" "initial-input" "hist" "def" "inherit-input-method")) nil [25835 26172])
+            ("add-to-list" code nil nil [26174 26296])
+            ("org-contacts-template-name" function (:arguments ("return-value")) nil [26298 26563])
+            ("org-contacts-template-email" function (:arguments ("return-value")) nil [26565 26870])
+            ("org-contacts-gnus-store-last-mail" function nil nil [26872 27551])
+            ("org-contacts-icon-as-string" function nil nil [27553 27909])
+            ("org-contacts" function
+               (:user-visible-flag t
+                :arguments ("name"))
+                nil [27926 28724])
+            ("org-contacts-completing-read" function (:arguments ("prompt" "predicate" "initial-input" "hist" "def" "inherit-input-method")) nil [28726 29082])
+            ("org-contacts-format-name" function (:arguments ("name")) nil [29084 29274])
+            ("org-contacts-format-email" function (:arguments ("name" "email")) nil [29276 29510])
+            ("org-contacts-check-mail-address" function (:arguments ("mail")) nil [29512 29930])
+            ("org-contacts-gnus-check-mail-address" function nil nil [29932 30299])
+            ("org-contacts-gnus-insinuate" function nil nil [30301 30864])
+            ("org-contacts-setup-completion-at-point" function nil nil [30866 31109])
+            ("org-contacts-unload-hook" function nil nil [31111 31221])
+            ("when" code nil nil [31223 31382])
+            ("org-contacts-wl-get-from-header-content" function nil nil [31384 32175])
+            ("org-contacts-wl-get-name-email" function nil nil [32177 32511])
+            ("org-contacts-template-wl-name" function (:arguments ("return-value")) nil [32513 32788])
+            ("org-contacts-template-wl-email" function (:arguments ("return-value")) nil [32790 33112])
+            ("org-contacts-view-send-email" function
+               (:user-visible-flag t
+                :arguments ("ask"))
+                nil [33114 34152])
+            ("org-contacts-get-icon" function (:arguments ("pom")) nil [34154 35301])
+            ("org-contacts-irc-buffer" function (:arguments ("pom")) nil [35303 35689])
+            ("org-contacts-irc-number-of-unread-messages" function (:arguments ("pom")) nil [35691 36091])
+            ("org-contacts-view-switch-to-irc-buffer" function (:user-visible-flag t) nil [36093 36371])
+            ("org-contacts-completing-read-nickname" function (:arguments ("prompt" "collection" "predicate" "require-match" "initial-input" "hist" "def" "inherit-input-method")) nil [36373 36834])
+            ("erc-nicknames-list" function nil nil [36836 37091])
+            ("add-to-list" code nil nil [37093 37228])
+            ("org-contacts-vcard-escape" function (:arguments ("str")) nil [37230 37557])
+            ("org-contacts-vcard-encode-name" function (:arguments ("name")) nil [37559 37892])
+            ("org-contacts-vcard-format" function (:arguments ("contact")) nil [37894 40008])
+            ("org-contacts-export-as-vcard" function
+               (:user-visible-flag t
+                :arguments ("name" "file" "to-buffer"))
+                nil [40010 41041])
+            ("org-contacts-export-as-vcard-internal" function (:arguments ("name" "file" "to-buffer")) nil [41043 41921])
+            ("org-contacts-show-map" function
+               (:user-visible-flag t
+                :arguments ("name"))
+                nil [41923 42417])
+            ("org-contacts-strip-link" function (:arguments ("link")) nil [42419 43078])
+            ("org-link-set-parameters" code nil nil [43192 43223])
+            ("org-contacts-split-property" function (:arguments ("string" "separators" "omit-nulls")) nil [43225 44897])
+            ("org-contacts" package nil nil [44899 44922]))          
+      :file "org-contacts.el"
+      :pointmax 44954
+      :fsize 44957
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :file "org-agenda.el"
+      :fsize 405631
+      :lastmodtime '(22659 32996 0 0))
+    (semanticdb-table "semanticdb-table"
+      :file "org-capture.el"
+      :fsize 73196
+      :lastmodtime '(22659 32996 0 0))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [1929 1942])
+            ("declare-function" code nil nil [1944 2039])
+            ("declare-function" code nil nil [2040 2097])
+            ("org-mime-use-property-inheritance" variable nil nil [2099 2248])
+            ("org-mime-default-header" variable (:default-value "#+OPTIONS: latex:t
+") nil [2250 2454])
+            ("org-mime-library" variable (:default-value (quote mml)) nil [2456 2590])
+            ("org-mime-preserve-breaks" variable (:default-value t) nil [2592 2750])
+            ("org-mime-fixedwith-wrap" variable (:default-value "<pre style=\"font-family: courier, monospace;\">
+%s</pre>
+") nil [2752 2943])
+            ("org-mime-html-hook" variable nil nil [2945 3141])
+            ("mapc" code nil nil [3143 3433])
+            ("org-mime-send-subtree-hook" variable nil nil [3435 3544])
+            ("org-mime-send-buffer-hook" variable nil nil [3546 3639])
+            ("org-mime-change-element-style" function (:arguments ("element" "style")) nil [3738 3987])
+            ("org-mime-change-class-style" function (:arguments ("class" "style")) nil [3989 4252])
+            ("org-mime-file" function (:arguments ("ext" "path" "id")) nil [4691 5266])
+            ("org-mime-multipart" function (:arguments ("plain" "html" "images")) nil [5268 6134])
+            ("org-mime-replace-images" function (:arguments ("str")) nil [6136 6888])
+            ("org-mime-htmlize" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [6890 8652])
+            ("org-mime-apply-html-hook" function (:arguments ("html")) nil [8654 8871])
+            ("org-mime-try" function (:arguments ("body")) nil [8873 8952])
+            ("org-mime-send-subtree" function (:arguments ("fmt")) nil [8954 9732])
+            ("org-mime-send-buffer" function (:arguments ("fmt")) nil [9734 10392])
+            ("org-mime-compose" function (:arguments ("body" "fmt" "file" "to" "subject" "headers")) nil [10394 11900])
+            ("org-mime-org-buffer-htmlize" function (:user-visible-flag t) nil [11902 12138])
+            ("org-mime-subtree" function (:user-visible-flag t) nil [12140 12451])
+            ("org-mime" package nil nil [12453 12472]))          
+      :file "org-mime.el"
+      :pointmax 12473
+      :fsize 12472
+      :lastmodtime '(22659 32996 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!org-plus-contrib-20161224!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

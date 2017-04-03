@@ -1,0 +1,184 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [923 940])
+            ("eieio" include nil nil [941 957])
+            ("org" include nil nil [958 972])
+            ("org-capture" include nil nil [973 995])
+            ("dired" include nil nil [1032 1048])
+            ("occ-strategy" type (:type "class") nil [1050 1081])
+            ("occ-get-categories" function
+               (:parent "occ-strategy"
+                :arguments ("strategy"))
+                nil [1083 1139])
+            ("occ-get-todo-files" function
+               (:parent "occ-strategy"
+                :arguments ("strategy"))
+                nil [1141 1197])
+            ("occ-get-capture-file" function
+               (:parent "occ-strategy"
+                :arguments ("strategy" "category"))
+                nil [1199 1266])
+            ("occ-get-capture-marker" function
+               (:parent "occ-strategy"
+                :arguments ("strategy" "context"))
+                nil [1268 1597])
+            ("occ-target-entry-p" function
+               (:parent "occ-strategy"
+                :arguments ("strategy" "context"))
+                nil [1599 1667])
+            ("occ-context" type
+               (:members 
+                  ( ("category" variable nil nil nil)
+                    ("template" variable nil nil nil)
+                    ("options" variable nil nil nil)
+                    ("strategy" variable nil nil nil))                  
+                :type "class")
+                nil [1669 1825])
+            ("occ-build-capture-template" function
+               (:parent "occ-context"
+                :arguments ("context" "args"))
+                nil [1827 1967])
+            ("cl-defun" code nil nil [2034 2357])
+            ("occ-capture" function
+               (:parent "occ-context"
+                :arguments ("context"))
+                nil [2359 4329])
+            ("occ-capture-goto-marker" function (:arguments ("context")) nil [4331 4511])
+            ("occ-get-capture-marker" function
+               (:parent "occ-context"
+                :arguments ("context"))
+                nil [4513 4630])
+            ("org-category-capture" package nil nil [4632 4663]))          
+      :file "org-category-capture.el"
+      :pointmax 4702
+      :fsize 4701
+      :lastmodtime '(22659 33045 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1138 1155])
+            ("eieio" include nil nil [1156 1172])
+            ("org-category-capture" include nil nil [1173 1204])
+            ("projectile" include nil nil [1205 1226])
+            ("dash" include nil nil [1227 1242])
+            ("org-projectile" customgroup (:user-visible-flag t) nil [1244 1353])
+            ("org-projectile:projects-file" variable (:default-value "~/org/projects.org") nil [1355 1526])
+            ("org-projectile:per-repo-filename" variable (:default-value "TODO.org") nil [1528 1694])
+            ("org-projectile:capture-template" variable (:default-value "* TODO %?
+") nil [1696 1862])
+            ("org-projectile:linked-capture-template" variable (:default-value "* TODO %? %A
+") nil [1864 2047])
+            ("org-projectile:force-linked" variable (:default-value t) nil [2049 2205])
+            ("org-projectile:counts-in-heading" variable (:default-value t) nil [2207 2369])
+            ("org-projectile:subheading-selection" variable (:default-value t) nil [2371 2533])
+            ("org-projectile:allow-tramp-projects" variable nil nil [2535 2701])
+            ("org-projectile:target-entry" variable (:default-value t) nil [2706 2744])
+            ("org-projectile:migration-strategy" type
+               (:superclasses "occ-strategy"
+                :type "class")
+                nil [2746 2809])
+            ("occ-get-categories" function
+               (:parent "org-projectile:migration-strategy"
+                :arguments ("strategy"))
+                nil [2811 2922])
+            ("occ-get-todo-files" function
+               (:parent "org-projectile:migration-strategy"
+                :arguments ("strategy"))
+                nil [2924 3031])
+            ("occ-get-capture-file" function
+               (:parent "org-projectile:migration-strategy"
+                :arguments ("strategy" "context"))
+                nil [3033 3219])
+            ("occ-get-capture-marker" function
+               (:parent "org-projectile:migration-strategy"
+                :arguments ("strategy" "context"))
+                nil [3221 3648])
+            ("occ-target-entry-p" function
+               (:parent "org-projectile:migration-strategy"
+                :arguments ("strategy" "context"))
+                nil [3650 3765])
+            ("org-projectile:capture-strategy" variable (:default-value (make-instance (quote org-projectile:migration-strategy))) nil [3767 3860])
+            ("org-projectile:project-name-to-org-file" variable (:default-value (quote org-projectile:project-name-to-org-file-one-file)) nil [3865 3965])
+            ("org-projectile:project-name-to-location" variable (:default-value (quote org-projectile:project-name-to-location-one-file)) nil [3967 4067])
+            ("org-projectile:todo-files" variable (:default-value (quote org-projectile:default-todo-files)) nil [4069 4138])
+            ("org-projectile:project-name-to-org-file-one-file" function (:arguments ("_project-name")) nil [4170 4273])
+            ("org-projectile:project-name-to-location-one-file" function (:arguments ("project-name")) nil [4275 4493])
+            ("org-projectile:one-file" function (:user-visible-flag t) nil [4495 4909])
+            ("org-projectile:project-name-to-org-file-per-repo" function (:arguments ("project-name")) nil [4960 5142])
+            ("org-projectile:project-name-to-location-per-repo" function (:arguments ("_project-name")) nil [5144 5248])
+            ("org-projectile:per-repo" function (:user-visible-flag t) nil [5250 5666])
+            ("org-projectile:project-to-approach" variable nil nil [5716 5763])
+            ("org-projectile:default-approach" variable (:default-value (quote one-file)) nil [5764 5814])
+            ("org-projectile:get-approach-for-project" function (:arguments ("project-name")) nil [5816 5985])
+            ("org-projectile:project-name-to-org-file-hybrid" function (:arguments ("project-name")) nil [5987 6352])
+            ("org-projectile:project-name-to-location-hybrid" function (:arguments ("project-name")) nil [6354 6718])
+            ("org-projectile:hybrid" function (:user-visible-flag t) nil [6720 7087])
+            ("org-projectile:find-org-file-for-project-function" variable nil nil [7144 7206])
+            ("org-projectile:keep-project-to-org-filepath-in-memory" variable nil nil [7207 7273])
+            ("org-projectile:project-to-org-filepath" variable (:default-value (quote not-yet-read)) nil [7274 7335])
+            ("org-projectile:project-to-org-filepath-filepath" variable (:default-value (concat (file-name-as-directory user-emacs-directory) "project-to-org-filepath")) nil [7336 7475])
+            ("org-projectile:write-project-to-org-filepath" function (:arguments ("project-to-org-filepath" "project-to-org-filepath-filepath")) nil [7477 7904])
+            ("org-projectile:read-project-to-org-filepath" function (:arguments ("project-to-org-filepath-filepath")) nil [7906 8324])
+            ("org-projectile:update-project-to-org-filepath" function (:arguments ("project-name" "org-file" "project-to-org-filepath-filepath")) nil [8326 9162])
+            ("org-projectile:get-project-to-org-filepath" function (:arguments ("project-to-org-filepath-filepath")) nil [9164 9720])
+            ("org-projectile:project-name-to-org-file-prompt" function (:arguments ("project-name" "project-to-org-filepath-filepath")) nil [9722 10356])
+            ("org-projectile:no-org-file-for-project" function (:arguments ("project-name" "project-to-org-filepath-filepath")) nil [10358 10877])
+            ("org-projectile:prompt-for-project-name" function (:arguments ("project-name" "_project-to-org-filepath-filepath")) nil [10879 11124])
+            ("org-projectile:set-project-file-default" function
+               (:user-visible-flag t
+                :arguments ("project-to-org-filepath-filepath"))
+                nil [11126 11795])
+            ("org-projectile:find-project-in-known-files" function (:arguments ("project-name")) nil [11797 12392])
+            ("fset" code nil nil [12394 12504])
+            ("org-projectile:todo-files-project-to-org-filepath" function nil nil [12506 12683])
+            ("org-projectile:set-org-file-for-project" function (:user-visible-flag t) nil [12685 13084])
+            ("org-projectile:prompt" function (:user-visible-flag t) nil [13086 13561])
+            ("org-projectile:location-for-project" function (:arguments ("project-name")) nil [13563 13826])
+            ("org-projectile:file-truename" function (:arguments ("filepath")) nil [13828 14045])
+            ("org-projectile:project-root-of-filepath" function (:arguments ("filepath")) nil [14047 14801])
+            ("org-projectile:project-todo-entry" function (:arguments ("capture-character" "capture-template" "capture-heading" "additional-options")) nil [14803 15538])
+            ("org-projectile:project-heading-from-file" function (:arguments ("filename")) nil [15540 15772])
+            ("org-projectile:get-link-description" function (:arguments ("heading")) nil [15774 15995])
+            ("org-projectile:known-projects" function nil nil [15997 16534])
+            ("org-projectile:todo-files" function nil nil [16536 16610])
+            ("org-projectile:default-todo-files" function nil nil [16612 16984])
+            ("org-projectile:project-name-to-location-alist" function nil nil [16986 17257])
+            ("org-projectile:project-location-from-name" function (:arguments ("name")) nil [17259 17384])
+            ("org-projectile:cleanup-subheading" function (:arguments ("marker")) nil [17386 17563])
+            ("org-projectile:open-project" function (:arguments ("name")) nil [17565 17803])
+            ("org-projectile:insert-or-goto-heading" function (:arguments ("heading")) nil [17805 19064])
+            ("org-projectile:linked-heading" function (:arguments ("heading")) nil [19066 19211])
+            ("org-projectile:project-heading" function (:arguments ("heading")) nil [19213 19440])
+            ("org-projectile:end-of-properties" function nil nil [19442 19709])
+            ("org-projectile:prompt-for-subheadings" function (:arguments ("recursive")) nil [19711 20198])
+            ("when" code nil nil [20260 21485])
+            ("org-projectile:get-subheadings" function (:arguments ("scope")) nil [21487 21928])
+            ("org-projectile:toggle-subheading" function (:user-visible-flag t) nil [21945 22360])
+            ("org-projectile:template-or-project" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [22377 22986])
+            ("org-projectile:project-todo-completing-read" function
+               (:user-visible-flag t
+                :arguments ("capture-template" "additional-options"))
+                nil [23003 23694])
+            ("org-projectile:capture-for-current-project" function
+               (:user-visible-flag t
+                :arguments ("capture-template" "additional-options"))
+                nil [23711 24452])
+            ("org-projectile" package nil nil [24454 24479]))          
+      :file "org-projectile.el"
+      :pointmax 24512
+      :fsize 24511
+      :lastmodtime '(22659 33045 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!org-projectile-20161205.1508!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

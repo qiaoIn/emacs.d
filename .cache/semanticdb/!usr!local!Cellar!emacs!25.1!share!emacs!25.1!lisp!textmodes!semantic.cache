@@ -1,0 +1,254 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("forward-page" function
+               (:user-visible-flag t
+                :arguments ("count"))
+                nil [1002 2073])
+            ("backward-page" function
+               (:user-visible-flag t
+                :arguments ("count"))
+                nil [2075 2348])
+            ("mark-page" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [2350 2791])
+            ("narrow-to-page" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [2793 4442])
+            ("put" code nil nil [4443 4476])
+            ("count-lines-page" function (:user-visible-flag t) nil [4478 5037])
+            ("what-page" function (:user-visible-flag t) nil [5039 5469])
+            ("page" package nil nil [5510 5525]))          
+      :file "page.el.gz"
+      :pointmax 5549
+      :fsize 1969
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("nroff" customgroup (:user-visible-flag t) nil [1366 1508])
+            ("nroff-electric-mode" variable nil nil [1511 1653])
+            ("nroff-mode-map" variable (:default-value (let ((map (make-sparse-keymap)) (menu-map (make-sparse-keymap))) (define-key map "	" (quote tab-to-tab-stop)) (define-key map "s" (quote center-line)) (define-key map "?" (quote nroff-count-text-lines)) (define-key map "
+" (quote nroff-electric-newline)) (define-key map "n" (quote nroff-forward-text-line)) (define-key map "p" (quote nroff-backward-text-line)) (define-key map "" (quote nroff-view)) (define-key map [menu-bar nroff-mode] (cons "Nroff" menu-map)) (define-key menu-map [nn] (quote (menu-item "Newline" nroff-electric-newline :help "Insert newline for nroff mode; special if nroff-electric mode"))) (define-key menu-map [nc] (quote (menu-item "Count text lines" nroff-count-text-lines :help "Count lines in region, except for nroff request lines."))) (define-key menu-map [nf] (quote (menu-item "Forward text line" nroff-forward-text-line :help "Go forward one nroff text line, skipping lines of nroff requests"))) (define-key menu-map [nb] (quote (menu-item "Backward text line" nroff-backward-text-line :help "Go backward one nroff text line, skipping lines of nroff requests"))) (define-key menu-map [ne] (quote (menu-item "Electric newline mode" nroff-electric-mode :help "Auto insert closing requests if necessary" :button (:toggle . nroff-electric-mode)))) (define-key menu-map [npm] (quote (menu-item "Preview as man page" nroff-view :help "Run man on this file."))) map)) nil [1655 3173])
+            ("nroff-mode-syntax-table" variable (:default-value (let ((st (copy-syntax-table text-mode-syntax-table))) (modify-syntax-entry 34 "\"  2" st) (modify-syntax-entry 35 ".  2" st) (modify-syntax-entry 92 "\\  1" st) (modify-syntax-entry 10 ">" st) st)) nil [3175 3722])
+            ("nroff-imenu-expression" variable (:default-value (quote ((nil "^\\.SH \"?\\([^\"
+]*\\)\"?$" 1)))) nil [3724 3817])
+            ("nroff-font-lock-keywords" variable (:default-value (list "^[.']\\s-*\\sw+" (concat "\\\\" "\\(" (mapconcat (quote identity) (quote ("[f*n]*\\[.+?]" "(.." "[^(\"#]")) "\\|") "\\)"))) nil [3819 4760])
+            ("nroff-mode-hook" variable nil nil [4762 4862])
+            ("define-derived-mode" code nil nil [4879 6886])
+            ("nroff-outline-level" function nil nil [6888 7064])
+            ("nroff-comment-indent" function nil nil [7159 7697])
+            ("nroff-insert-comment-function" function nil nil [7770 7940])
+            ("nroff-count-text-lines" function
+               (:user-visible-flag t
+                :arguments ("start" "end" "print"))
+                nil [7942 8500])
+            ("nroff-forward-text-line" function
+               (:user-visible-flag t
+                :arguments ("cnt"))
+                nil [8502 9058])
+            ("nroff-backward-text-line" function
+               (:user-visible-flag t
+                :arguments ("cnt"))
+                nil [9060 9295])
+            ("nroff-brace-table" variable
+               (:constant-flag t
+                :default-value (quote ((".(b" . ".)b") (".(l" . ".)l") (".(q" . ".)q") (".(c" . ".)c") (".(x" . ".)x") (".(z" . ".)z") (".(d" . ".)d") (".(f" . ".)f") (".LG" . ".NL") (".SM" . ".NL") (".LD" . ".DE") (".CD" . ".DE") (".BD" . ".DE") (".DS" . ".DE") (".DF" . ".DE") (".FS" . ".FE") (".KS" . ".KE") (".KF" . ".KE") (".LB" . ".LE") (".AL" . ".LE") (".BL" . ".LE") (".DL" . ".LE") (".ML" . ".LE") (".RL" . ".LE") (".VL" . ".LE") (".RS" . ".RE") (".TS" . ".TE") (".EQ" . ".EN") (".PS" . ".PE") (".BS" . ".BE") (".G1" . ".G2") (".na" . ".ad b") (".nf" . ".fi") (".de" . ".."))))
+                nil [9297 10016])
+            ("nroff-electric-newline" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [10018 10748])
+            ("define-minor-mode" code nil nil [10750 11440])
+            ("declare-function" code nil nil [11442 11500])
+            ("nroff-view" function (:user-visible-flag t) nil [11502 11927])
+            ("define-obsolete-function-alias" code nil nil [11973 12054])
+            ("define-obsolete-function-alias" code nil nil [12055 12138])
+            ("define-obsolete-function-alias" code nil nil [12139 12224])
+            ("define-obsolete-function-alias" code nil nil [12225 12312])
+            ("define-obsolete-function-alias" code nil nil [12313 12394])
+            ("nroff-mode" package nil nil [12396 12417]))          
+      :file "nroff-mode.el.gz"
+      :pointmax 12447
+      :fsize 4527
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("newcomment" include nil nil [1149 1170])
+            ("outline-heading-end-regexp" variable nil nil [1172 1207])
+            ("conf" customgroup (:user-visible-flag t) nil [1224 1301])
+            ("conf-assignment-column" variable (:default-value 24) nil [1303 1597])
+            ("conf-javaprop-assignment-column" variable (:default-value 32) nil [1599 1744])
+            ("conf-colon-assignment-column" variable (:default-value (- (abs conf-assignment-column))) nil [1746 1918])
+            ("conf-assignment-space" variable (:default-value t) nil [1920 2048])
+            ("conf-colon-assignment-space" variable nil nil [2050 2197])
+            ("conf-mode-map" variable (:default-value (let ((map (make-sparse-keymap)) (menu-map (make-sparse-keymap))) (define-key map "" (quote conf-unix-mode)) (define-key map "" (quote conf-windows-mode)) (define-key map "
+" (quote conf-javaprop-mode)) (define-key map "" (quote conf-space-keywords)) (define-key map " " (quote conf-space-keywords)) (define-key map "" (quote conf-colon-mode)) (define-key map ":" (quote conf-colon-mode)) (define-key map "" (quote conf-xdefaults-mode)) (define-key map "" (quote conf-ppd-mode)) (define-key map "" (quote conf-quote-normal)) (define-key map "\"" (quote conf-quote-normal)) (define-key map "'" (quote conf-quote-normal)) (define-key map "" (quote conf-align-assignments)) (define-key map [menu-bar sh-script] (cons "Conf" menu-map)) (define-key menu-map [conf-windows-mode] (quote (menu-item "Windows mode" conf-windows-mode :help "Conf Mode starter for Windows style Conf files" :button (:radio eq major-mode (quote conf-windows-mode))))) (define-key menu-map [conf-javaprop-mode] (quote (menu-item "Java properties mode" conf-javaprop-mode :help "Conf Mode starter for Java properties files" :button (:radio eq major-mode (quote conf-javaprop-mode))))) (define-key menu-map [conf-space-keywords] (quote (menu-item "Space keywords mode..." conf-space-keywords :help "Enter Conf Space mode using regexp KEYWORDS to match the keywords" :button (:radio eq major-mode (quote conf-space-keywords))))) (define-key menu-map [conf-ppd-mode] (quote (menu-item "PPD mode" conf-ppd-mode :help "Conf Mode starter for Adobe/CUPS PPD files" :button (:radio eq major-mode (quote conf-ppd-mode))))) (define-key menu-map [conf-colon-mode] (quote (menu-item "Colon mode" conf-colon-mode :help "Conf Mode starter for Colon files" :button (:radio eq major-mode (quote conf-colon-mode))))) (define-key menu-map [conf-unix-mode] (quote (menu-item "Unix mode" conf-unix-mode :help "Conf Mode starter for Unix style Conf files" :button (:radio eq major-mode (quote conf-unix-mode))))) (define-key menu-map [conf-xdefaults-mode] (quote (menu-item "Xdefaults mode" conf-xdefaults-mode :help "Conf Mode starter for Xdefaults files" :button (:radio eq major-mode (quote conf-xdefaults-mode))))) (define-key menu-map [c-s0] (quote ("--"))) (define-key menu-map [conf-quote-normal] (quote (menu-item "Set quote syntax normal" conf-quote-normal :help "Set the syntax of \\=' and \" to punctuation"))) (define-key menu-map [conf-align-assignments] (quote (menu-item "Align assignments" conf-align-assignments :help "Align assignments"))) map)) nil [2199 4928])
+            ("conf-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table))) (modify-syntax-entry 61 "." table) (modify-syntax-entry 95 "_" table) (modify-syntax-entry 45 "_" table) (modify-syntax-entry 46 "_" table) (modify-syntax-entry 39 "\"" table) (modify-syntax-entry 59 "<" table) (modify-syntax-entry 10 ">" table) (modify-syntax-entry 13 ">" table) table)) nil [4930 5392])
+            ("conf-unix-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table conf-mode-syntax-table))) (modify-syntax-entry 35 "<" table) (modify-syntax-entry 59 "." table) table)) nil [5394 5656])
+            ("conf-javaprop-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table conf-unix-mode-syntax-table))) (modify-syntax-entry 47 ". 124" table) (modify-syntax-entry 42 ". 23b" table) table)) nil [5658 5914])
+            ("conf-ppd-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table conf-mode-syntax-table))) (modify-syntax-entry 42 ". 1" table) (modify-syntax-entry 37 ". 2" table) (modify-syntax-entry 39 "." table) (modify-syntax-entry 59 "." table) table)) nil [5916 6254])
+            ("conf-xdefaults-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table conf-mode-syntax-table))) (modify-syntax-entry 33 "<" table) (modify-syntax-entry 59 "." table) table)) nil [6256 6528])
+            ("conf-font-lock-keywords" variable (:default-value (quote (("^[ 	]*\\[\\(.+\\)\\]" 1 (quote font-lock-type-face)) ("^[ 	]*\\(.+?\\)\\(?:\\[\\(.*?\\)\\]\\)?[ 	]*=" (1 (quote font-lock-variable-name-face)) (2 (quote font-lock-constant-face) nil t)) ("^[ 	]*\\([^=:
+]+?\\)[ 	
+]*{[^{}]*?$" 1 (quote font-lock-type-face) prepend)))) nil [6531 7040])
+            ("conf-javaprop-font-lock-keywords" variable (:default-value (quote (("^[ 	]*\\(.+?\\)\\(?:\\.\\([0-9]+\\)\\(?:\\.\\(.+?\\)\\(?:\\.\\([0-9]+\\)\\(?:\\.\\(.+?\\)\\(?:\\.\\([0-9]+\\)\\(\\..+?\\)?\\)?\\)?\\)?\\)?\\)?\\([:= 	]\\|$\\)" (1 (quote font-lock-variable-name-face)) (2 (quote font-lock-constant-face) nil t) (3 (quote font-lock-variable-name-face) nil t) (4 (quote font-lock-constant-face) nil t) (5 (quote font-lock-variable-name-face) nil t) (6 (quote font-lock-constant-face) nil t) (7 (quote font-lock-variable-name-face) nil t))))) nil [7042 7618])
+            ("conf-space-keywords-alist" variable (:default-value (quote (("\\`/etc/gpm/" . "key\\|name\\|foreground\\|background\\|border\\|head") ("\\`/etc/magic\\'" . "[^ 	]+[ 	]+\\(?:[bl]?e?\\(?:short\\|long\\)\\|byte\\|string\\)[^ 	]*") ("/mod\\(?:ules\\|probe\\)\\.conf" . "alias\\|in\\(?:clude\\|stall\\)\\|options\\|remove") ("/manpath\\.config" . "MAN\\(?:DATORY_MANPATH\\|PATH_MAP\\|DB_MAP\\)") ("/sensors\\.conf" . "chip\\|bus\\|label\\|compute\\|set\\|ignore") ("/sane\\(\\.d\\)?/" . "option\\|device\\|port\\|usb\\|sc\\(?:si\\|anner\\)") ("/resmgr\\.conf" . "class\\|add\\|allow\\|deny") ("/dictionary\\.lst\\'" . "DICT\\|HYPH\\|THES") ("/tuxracer/options" . "set")))) nil [7620 8368])
+            ("conf-space-keywords" variable nil nil [8370 8613])
+            ("put" code nil nil [8614 8670])
+            ("conf-space-font-lock-keywords" variable (:default-value (\` (("^[ 	]*\\[\\(.+\\)\\]" 1 (quote font-lock-type-face)) ("^[ 	]*\\(.+?\\)[ 	
+]*{[^{}]*?$" 1 (quote font-lock-type-face)) (eval if conf-space-keywords (list (concat "^[ 	]*\\(" conf-space-keywords "\\)[ 	]+\\([^ - ]+\\)") (quote (1 (quote font-lock-keyword-face))) (quote (2 (quote font-lock-variable-name-face)))) (quote ("^[ 	]*\\([^ - ]+\\)" 1 (quote font-lock-variable-name-face))))))) nil [8672 9279])
+            ("conf-colon-font-lock-keywords" variable (:default-value (\` (("^[ 	]*\\[\\(.+\\)\\]" 1 (quote font-lock-type-face)) ("^[ 	]*\\(.+?\\)[ 	]*:" (1 (quote font-lock-variable-name-face))) ("^[ 	]*\\([^:
+]+\\)[ 	
+]*{[^{}]*?$" 1 (quote font-lock-type-face) prepend)))) nil [9281 9719])
+            ("conf-assignment-sign" variable (:default-value 61) nil [9721 9801])
+            ("conf-assignment-regexp" variable (:default-value ".+?\\([ 	]*=[ 	]*\\)") nil [9803 10037])
+            ("conf-align-assignments" function (:arguments ("arg")) nil [10144 11555])
+            ("conf-quote-normal" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [11558 12367])
+            ("conf-outline-level" function nil nil [12370 12553])
+            ("conf-mode" function (:user-visible-flag t) nil [12573 16352])
+            ("conf-mode-initialize" function (:arguments ("comment" "font-lock")) nil [16354 16853])
+            ("define-derived-mode" code nil nil [16870 17227])
+            ("define-derived-mode" code nil nil [17244 17753])
+            ("define-derived-mode" code nil nil [18019 18843])
+            ("define-derived-mode" code nil nil [18860 20377])
+            ("conf-space-keywords" function
+               (:user-visible-flag t
+                :arguments ("keywords"))
+                nil [20394 20762])
+            ("conf-space-mode-internal" function nil nil [20764 21854])
+            ("define-derived-mode" code nil nil [21871 22714])
+            ("define-derived-mode" code nil nil [22731 23226])
+            ("define-derived-mode" code nil nil [23243 23608])
+            ("conf-mode" package nil nil [23610 23630]))          
+      :file "conf-mode.el.gz"
+      :pointmax 23659
+      :fsize 7053
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("paragraphs" customgroup (:user-visible-flag t) nil [1006 1085])
+            ("put" code nil nil [1087 1130])
+            ("define-minor-mode" code nil nil [1131 3125])
+            ("paragraph-start" variable (:default-value "\\|[ 	]*$") nil [3127 3927])
+            ("put" code nil nil [3928 3980])
+            ("paragraph-separate" variable (:default-value "[ 	]*$") nil [4315 4785])
+            ("put" code nil nil [4786 4841])
+            ("sentence-end-double-space" variable (:default-value t) nil [4843 5273])
+            ("put" code nil nil [5274 5337])
+            ("sentence-end-without-period" variable nil nil [5339 5757])
+            ("put" code nil nil [5758 5823])
+            ("sentence-end-without-space" variable (:default-value "。．？！") nil [5825 6183])
+            ("put" code nil nil [6184 6247])
+            ("sentence-end" variable nil nil [6249 6681])
+            ("put" code nil nil [6682 6740])
+            ("sentence-end-base" variable (:default-value "[.?!…‽][]\"'”’)}]*") nil [6742 6927])
+            ("put" code nil nil [6928 6982])
+            ("sentence-end" function nil nil [6984 8001])
+            ("page-delimiter" variable (:default-value "^") nil [8003 8133])
+            ("put" code nil nil [8134 8185])
+            ("paragraph-ignore-fill-prefix" variable nil nil [8187 8420])
+            ("put" code nil nil [8421 8487])
+            ("forward-paragraph" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [8489 13712])
+            ("backward-paragraph" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [13714 14278])
+            ("mark-paragraph" function
+               (:user-visible-flag t
+                :arguments ("arg" "allow-extend"))
+                nil [14280 15307])
+            ("kill-paragraph" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [15309 15572])
+            ("backward-kill-paragraph" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [15574 15842])
+            ("transpose-paragraphs" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [15844 16315])
+            ("start-of-paragraph-text" function nil nil [16317 16839])
+            ("end-of-paragraph-text" function nil nil [16841 17100])
+            ("forward-sentence" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [17102 18518])
+            ("repunctuate-sentences" function (:user-visible-flag t) nil [18520 18769])
+            ("backward-sentence" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [18772 19000])
+            ("kill-sentence" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [19002 19238])
+            ("backward-kill-sentence" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [19240 19494])
+            ("mark-end-of-sentence" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [19496 19873])
+            ("transpose-sentences" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [19875 20338]))          
+      :file "paragraphs.el.gz"
+      :pointmax 20368
+      :fsize 6064
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("text-mode-hook" variable (:default-value (quote (text-mode-hook-identify))) nil [1154 1351])
+            ("text-mode-variant" variable nil nil [1353 1494])
+            ("text-mode-syntax-table" variable (:default-value (let ((st (make-syntax-table))) (modify-syntax-entry 34 ".   " st) (modify-syntax-entry 92 ".   " st) (modify-syntax-entry 39 "w p" st) (modify-syntax-entry 1523 "w   ") (modify-syntax-entry 1524 "w   ") (modify-syntax-entry 183 "w   ") (modify-syntax-entry 8231 "w   ") (modify-syntax-entry 65306 "w   ") st)) nil [1496 2780])
+            ("text-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "	" (quote ispell-complete-word)) (define-key map [menu-bar text] (cons "Text" (make-sparse-keymap "Text"))) (bindings--define-key map [menu-bar text toggle-text-mode-auto-fill] (quote (menu-item "Auto Fill" toggle-text-mode-auto-fill :button (:toggle memq (quote turn-on-auto-fill) text-mode-hook) :help "Automatically fill text while typing in text modes (Auto Fill mode)"))) (bindings--define-key map [menu-bar text paragraph-indent-minor-mode] (quote (menu-item "Paragraph Indent" paragraph-indent-minor-mode :button (:toggle bound-and-true-p paragraph-indent-minor-mode) :help "Toggle paragraph indent minor mode"))) (bindings--define-key map [menu-bar text sep] menu-bar-separator) (bindings--define-key map [menu-bar text center-region] (quote (menu-item "Center Region" center-region :help "Center the marked region" :enable (region-active-p)))) (bindings--define-key map [menu-bar text center-paragraph] (quote (menu-item "Center Paragraph" center-paragraph :help "Center the current paragraph"))) (bindings--define-key map [menu-bar text center-line] (quote (menu-item "Center Line" center-line :help "Center the current line"))) map)) nil [2782 4333])
+            ("define-derived-mode" code nil nil [4337 4889])
+            ("define-derived-mode" code nil nil [4891 5465])
+            ("define-minor-mode" code nil nil [5467 6650])
+            ("defalias" code nil nil [6652 6693])
+            ("text-mode-hook-identify" function nil nil [6909 7120])
+            ("toggle-text-mode-auto-fill" function (:user-visible-flag t) nil [7122 7829])
+            ("define-key" code nil nil [7833 7885])
+            ("center-paragraph" function (:user-visible-flag t) nil [7887 8187])
+            ("center-region" function
+               (:user-visible-flag t
+                :arguments ("from" "to"))
+                nil [8189 8613])
+            ("define-key" code nil nil [8615 8662])
+            ("center-line" function
+               (:user-visible-flag t
+                :arguments ("nlines"))
+                nil [8664 9561]))          
+      :file "text-mode.el.gz"
+      :pointmax 9590
+      :fsize 3379
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!local!Cellar!emacs!25.1!share!emacs!25.1!lisp!textmodes!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

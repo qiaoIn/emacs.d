@@ -1,0 +1,208 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("gomoku" customgroup (:user-visible-flag t) nil [2606 2702])
+            ("gomoku-mode-hook" variable nil nil [2739 2939])
+            ("gomoku-buffer-name" variable
+               (:constant-flag t
+                :default-value "*Gomoku*")
+                nil [2974 3045])
+            ("gomoku-square-width" variable
+               (:constant-flag t
+                :default-value 4)
+                nil [3201 3293])
+            ("gomoku-square-height" variable
+               (:constant-flag t
+                :default-value 2)
+                nil [3295 3386])
+            ("gomoku-x-offset" variable
+               (:constant-flag t
+                :default-value 3)
+                nil [3388 3491])
+            ("gomoku-y-offset" variable
+               (:constant-flag t
+                :default-value 1)
+                nil [3493 3593])
+            ("gomoku-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map "y" (quote gomoku-move-nw)) (define-key map "u" (quote gomoku-move-ne)) (define-key map "b" (quote gomoku-move-sw)) (define-key map "n" (quote gomoku-move-se)) (define-key map "h" (quote backward-char)) (define-key map "l" (quote forward-char)) (define-key map "j" (quote gomoku-move-down)) (define-key map "k" (quote gomoku-move-up)) (define-key map [kp-7] (quote gomoku-move-nw)) (define-key map [kp-9] (quote gomoku-move-ne)) (define-key map [kp-1] (quote gomoku-move-sw)) (define-key map [kp-3] (quote gomoku-move-se)) (define-key map [kp-4] (quote backward-char)) (define-key map [kp-6] (quote forward-char)) (define-key map [kp-2] (quote gomoku-move-down)) (define-key map [kp-8] (quote gomoku-move-up)) (define-key map "" (quote gomoku-move-down)) (define-key map "" (quote gomoku-move-up)) (define-key map "X" (quote gomoku-human-plays)) (define-key map "x" (quote gomoku-human-plays)) (define-key map " " (quote gomoku-human-plays)) (define-key map "" (quote gomoku-human-plays)) (define-key map "" (quote gomoku-human-plays)) (define-key map "" (quote gomoku-human-takes-back)) (define-key map "" (quote gomoku-human-resigns)) (define-key map "" (quote gomoku-emacs-plays)) (define-key map [kp-enter] (quote gomoku-human-plays)) (define-key map [insert] (quote gomoku-human-plays)) (define-key map [down-mouse-1] (quote gomoku-click)) (define-key map [drag-mouse-1] (quote gomoku-click)) (define-key map [mouse-1] (quote gomoku-click)) (define-key map [down-mouse-2] (quote gomoku-click)) (define-key map [mouse-2] (quote gomoku-mouse-play)) (define-key map [drag-mouse-2] (quote gomoku-mouse-play)) (define-key map [remap previous-line] (quote gomoku-move-up)) (define-key map [remap next-line] (quote gomoku-move-down)) (define-key map [remap move-beginning-of-line] (quote gomoku-beginning-of-line)) (define-key map [remap move-end-of-line] (quote gomoku-end-of-line)) (define-key map [remap undo] (quote gomoku-human-takes-back)) (define-key map [remap advertised-undo] (quote gomoku-human-takes-back)) map)) nil [3596 5945])
+            ("gomoku-emacs-won" variable nil nil [5948 6037])
+            ("gomoku-O" variable
+               (:default-value (quote ((((class color)) (:foreground "red" :weight bold))))
+                :type "face")
+                nil [6039 6163])
+            ("gomoku-X" variable
+               (:default-value (quote ((((class color)) (:foreground "green" :weight bold))))
+                :type "face")
+                nil [6165 6288])
+            ("gomoku-font-lock-keywords" variable (:default-value (quote (("O" quote gomoku-O) ("X" quote gomoku-X) ("[-|/\\]" 0 (if gomoku-emacs-won (quote gomoku-O) (quote gomoku-X)))))) nil [6290 6461])
+            ("define-derived-mode" code nil nil [6581 7251])
+            ("gomoku-board-width" variable nil nil [7863 7937])
+            ("gomoku-board-height" variable nil nil [7939 8012])
+            ("gomoku-board" variable nil nil [8014 8098])
+            ("gomoku-vector-length" variable nil nil [8100 8170])
+            ("gomoku-draw-limit" variable nil nil [8172 8310])
+            ("gomoku-xy-to-index" function (:arguments ("x" "y")) nil [8313 8452])
+            ("gomoku-index-to-x" function (:arguments ("index")) nil [8454 8572])
+            ("gomoku-index-to-y" function (:arguments ("index")) nil [8574 8692])
+            ("gomoku-init-board" function nil nil [8694 9356])
+            ("gomoku-score-table" variable nil nil [9557 9647])
+            ("gomoku-nil-score" variable
+               (:constant-flag t
+                :default-value 7)
+                nil [11471 11531])
+            ("gomoku-Xscore" variable
+               (:constant-flag t
+                :default-value 15)
+                nil [11532 11599])
+            ("gomoku-XXscore" variable
+               (:constant-flag t
+                :default-value 400)
+                nil [11600 11670])
+            ("gomoku-XXXscore" variable
+               (:constant-flag t
+                :default-value 1800)
+                nil [11671 11749])
+            ("gomoku-XXXXscore" variable
+               (:constant-flag t
+                :default-value 100000)
+                nil [11750 11827])
+            ("gomoku-Oscore" variable
+               (:constant-flag t
+                :default-value 35)
+                nil [11828 11895])
+            ("gomoku-OOscore" variable
+               (:constant-flag t
+                :default-value 800)
+                nil [11896 11966])
+            ("gomoku-OOOscore" variable
+               (:constant-flag t
+                :default-value 15000)
+                nil [11967 12045])
+            ("gomoku-OOOOscore" variable
+               (:constant-flag t
+                :default-value 800000)
+                nil [12046 12123])
+            ("gomoku-score-trans-table" variable
+               (:constant-flag t
+                :default-value (vector gomoku-nil-score gomoku-Xscore gomoku-XXscore gomoku-XXXscore gomoku-XXXXscore 0 gomoku-Oscore 0 0 0 0 0 gomoku-OOscore 0 0 0 0 0 gomoku-OOOscore 0 0 0 0 0 gomoku-OOOOscore 0 0 0 0 0 0))
+                nil [13027 13398])
+            ("gomoku-winning-threshold" variable
+               (:constant-flag t
+                :default-value gomoku-OOOOscore)
+                nil [13822 13933])
+            ("gomoku-losing-threshold" variable
+               (:constant-flag t
+                :default-value gomoku-XXXXscore)
+                nil [13935 14044])
+            ("gomoku-strongest-square" function nil nil [14047 15513])
+            ("gomoku-saved-score-table" variable nil nil [16225 16314])
+            ("gomoku-saved-board-width" variable nil nil [16316 16397])
+            ("gomoku-saved-board-height" variable nil nil [16399 16482])
+            ("gomoku-init-score-table" function nil nil [16485 17896])
+            ("gomoku-nb-qtuples" function (:arguments ("i" "j")) nil [17898 18516])
+            ("gomoku-init-square-score" function (:arguments ("i" "j")) nil [18518 19007])
+            ("gomoku-update-score-table" function (:arguments ("square" "dval")) nil [19380 20541])
+            ("gomoku-update-score-in-direction" function (:arguments ("left" "right" "square" "dx" "dy" "dval")) nil [20543 22263])
+            ("gomoku-game-in-progress" variable nil nil [22556 22630])
+            ("gomoku-game-history" variable nil nil [22632 22733])
+            ("gomoku-number-of-moves" variable nil nil [22735 22822])
+            ("gomoku-number-of-human-moves" variable nil nil [22824 22926])
+            ("gomoku-emacs-played-first" variable nil nil [22928 23001])
+            ("gomoku-human-took-back" variable nil nil [23003 23093])
+            ("gomoku-human-refused-draw" variable nil nil [23095 23185])
+            ("gomoku-emacs-is-computing" variable nil nil [23187 23360])
+            ("gomoku-start-game" function (:arguments ("n" "m")) nil [23363 24120])
+            ("gomoku-play-move" function (:arguments ("square" "val" "dont-update-score")) nil [24122 24943])
+            ("gomoku-take-back" function nil nil [24945 25610])
+            ("gomoku-number-of-emacs-wins" variable nil nil [25643 25728])
+            ("gomoku-number-of-human-wins" variable nil nil [25730 25813])
+            ("gomoku-number-of-draws" variable nil nil [25815 25899])
+            ("gomoku-terminate-game" function (:arguments ("result")) nil [25902 27967])
+            ("gomoku-crash-game" function nil nil [27969 28207])
+            ("gomoku" function
+               (:user-visible-flag t
+                :arguments ("n" "m"))
+                nil [28260 30569])
+            ("gomoku-emacs-plays" function (:user-visible-flag t) nil [30571 31544])
+            ("gomoku-click" function
+               (:user-visible-flag t
+                :arguments ("click"))
+                nil [31684 32485])
+            ("gomoku-mouse-play" function
+               (:user-visible-flag t
+                :arguments ("click"))
+                nil [32487 32635])
+            ("gomoku-human-plays" function (:user-visible-flag t) nil [32637 33728])
+            ("gomoku-human-takes-back" function (:user-visible-flag t) nil [33730 34602])
+            ("gomoku-human-resigns" function (:user-visible-flag t) nil [34604 35092])
+            ("gomoku-prompt-for-move" function nil nil [35152 35372])
+            ("gomoku-prompt-for-other-game" function nil nil [35374 35565])
+            ("gomoku-offer-a-draw" function nil nil [35567 35756])
+            ("gomoku-max-width" function nil nil [35794 35969])
+            ("gomoku-max-height" function nil nil [35971 36217])
+            ("gomoku-point-y" function nil nil [36219 36408])
+            ("gomoku-point-square" function nil nil [36410 36645])
+            ("gomoku-goto-square" function (:arguments ("index")) nil [36647 36791])
+            ("gomoku-goto-xy" function (:arguments ("x" "y")) nil [36793 37027])
+            ("gomoku-plot-square" function (:arguments ("square" "value")) nil [37029 37520])
+            ("gomoku-init-display" function (:arguments ("n" "m")) nil [37536 38971])
+            ("gomoku-display-statistics" function nil nil [39017 39633])
+            ("gomoku-switch-to-window" function (:user-visible-flag t) nil [39635 40057])
+            ("gomoku-find-filled-qtuple" function (:arguments ("square" "value")) nil [40404 40725])
+            ("gomoku-check-filled-qtuple" function (:arguments ("square" "value" "dx" "dy")) nil [40727 41347])
+            ("gomoku-cross-qtuple" function (:arguments ("square1" "square2" "dx" "dy")) nil [41349 42513])
+            ("defvar-local" code nil nil [42561 42594])
+            ("gomoku--intangible-chars" variable
+               (:constant-flag t
+                :default-value "- 	
+|/\\\\")
+                nil [42596 42646])
+            ("gomoku--intangible" function nil nil [42648 43231])
+            ("gomoku-move-down" function (:user-visible-flag t) nil [43306 43558])
+            ("gomoku-move-up" function (:user-visible-flag t) nil [43560 43794])
+            ("gomoku-move-ne" function (:user-visible-flag t) nil [43796 43920])
+            ("gomoku-move-se" function (:user-visible-flag t) nil [43922 44048])
+            ("gomoku-move-nw" function (:user-visible-flag t) nil [44050 44175])
+            ("gomoku-move-sw" function (:user-visible-flag t) nil [44177 44304])
+            ("gomoku-beginning-of-line" function (:user-visible-flag t) nil [44306 44448])
+            ("gomoku-end-of-line" function (:user-visible-flag t) nil [44450 44644])
+            ("gomoku" package nil nil [44646 44663]))          
+      :file "gomoku.el.gz"
+      :pointmax 44689
+      :fsize 13063
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("morse-code" variable (:default-value (quote (("a" . ".-") ("b" . "-...") ("c" . "-.-.") ("d" . "-..") ("e" . ".") ("f" . "..-.") ("g" . "--.") ("h" . "....") ("i" . "..") ("j" . ".---") ("k" . "-.-") ("l" . ".-..") ("m" . "--") ("n" . "-.") ("o" . "---") ("p" . ".--.") ("q" . "--.-") ("r" . ".-.") ("s" . "...") ("t" . "-") ("u" . "..-") ("v" . "...-") ("w" . ".--") ("x" . "-..-") ("y" . "-.--") ("z" . "--..") ("=" . "-...-") ("?" . "..--..") ("/" . "-..-.") ("," . "--..--") ("." . ".-.-.-") (":" . "---...") ("'" . ".----.") ("-" . "-....-") ("(" . "-.--.-") (")" . "-.--.-") ("0" . "-----") ("1" . ".----") ("2" . "..---") ("3" . "...--") ("4" . "....-") ("5" . ".....") ("6" . "-....") ("7" . "--...") ("8" . "---..") ("9" . "----.") ("Ä" . ".-.-") ("Æ" . ".-.-") ("Á" . ".--.-") ("Å" . ".--.-") ("ß" . ".../...") ("É" . "..-..") ("Ñ" . "--.--") ("Ö" . "---.") ("Ø" . "---.") ("Ü" . "..--") ("@" . ".--.-.")))) nil [1127 2580])
+            ("nato-alphabet" variable (:default-value (quote (("a" . "Alfa") ("b" . "Bravo") ("c" . "Charlie") ("d" . "Delta") ("e" . "Echo") ("f" . "Foxtrot") ("g" . "Golf") ("h" . "Hotel") ("i" . "India") ("j" . "Juliett") ("k" . "Kilo") ("l" . "Lima") ("m" . "Mike") ("n" . "November") ("o" . "Oscar") ("p" . "Papa") ("q" . "Quebec") ("r" . "Romeo") ("s" . "Sierra") ("t" . "Tango") ("u" . "Uniform") ("v" . "Victor") ("w" . "Whiskey") ("x" . "Xray") ("y" . "Yankee") ("z" . "Zulu") ("0" . "Zero") ("1" . "One") ("2" . "Two") ("3" . "Three") ("4" . "Four") ("5" . "Five") ("6" . "Six") ("7" . "Seven") ("8" . "Eight") ("9" . "Niner") ("=" . "Equals") ("?" . "Query") ("/" . "Slash") ("," . "Comma") ("." . "Stop") (":" . "Colon") ("'" . "Apostrophe") ("-" . "Dash") ("(" . "Open") (")" . "Close") ("@" . "At")))) nil [2582 3762])
+            ("morse-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [3779 4379])
+            ("unmorse-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [4396 5049])
+            ("nato-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [5066 5731])
+            ("denato-region" function
+               (:user-visible-flag t
+                :arguments ("beg" "end"))
+                nil [5748 6475])
+            ("morse" package nil nil [6477 6493]))          
+      :file "morse.el.gz"
+      :pointmax 6518
+      :fsize 2110
+      :lastmodtime '(22387 39328 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!local!Cellar!emacs!25.1!share!emacs!25.1!lisp!play!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

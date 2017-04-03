@@ -1,0 +1,369 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("leptjson.h" include nil nil [1 22])
+            ("assert.h" include (:system-flag t) nil [23 42])
+            ("stdlib.h" include (:system-flag t) nil [70 89])
+            ("EXPECT" variable (:constant-flag t) nil [132 138])
+            ("lept_context" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("json" variable
+                             (:pointer 1
+                              :constant-flag t
+                              :type "char")
+                              (reparse-symbol classsubparts) [219 236]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [200 252])
+            ("lept_parse_whitespace" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("lept_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [288 304]))                  
+                :type "void")
+                nil [254 427])
+            ("lept_parse_null" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("lept_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [456 472])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("lept_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [473 487]))                  
+                :type "int")
+                nil [429 682])
+            ("lept_parse_true" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("lept_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [711 727])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("lept_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [728 742]))                  
+                :type "int")
+                nil [684 937])
+            ("lept_parse_false" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("lept_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [967 983])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("lept_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [984 998]))                  
+                :type "int")
+                nil [939 1215])
+            ("lept_parse_literal" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("lept_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1286 1302])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("lept_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1303 1317]))                  
+                :type "int")
+                nil [1256 1384])
+            ("lept_parse_number" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("lept_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1415 1431])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("lept_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1432 1446]))                  
+                :type "int")
+                nil [1386 1669])
+            ("lept_parse_value" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("c" variable
+                       (:pointer 1
+                        :type ("lept_context" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1699 1715])
+                    ("v" variable
+                       (:pointer 1
+                        :type ("lept_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [1716 1730]))                  
+                :type "int")
+                nil [1671 1995])
+            ("lept_parse" function
+               (:arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("lept_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2012 2026])
+                    ("json" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [2027 2044]))                  
+                :type "int")
+                nil [1997 2349])
+            ("lept_get_type" function
+               (:arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lept_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2375 2395]))                  
+                :type ("lept_type" type (:type "class") nil nil))
+                nil [2351 2438])
+            ("lept_get_number" function
+               (:arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lept_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [2463 2483]))                  
+                :type "double")
+                nil [2440 2549]))          
+      :file "leptjson.c"
+      :pointmax 2550
+      :fsize 2597
+      :lastmodtime '(22677 27263 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EXPECT" (spp-arg-list ("c" "ch") 138 . 145) . 
+              ((DO "do" 146 . 148) (semantic-list "{ assert(*c->json == (ch)); c->json++; }" 149 . 189) (WHILE "while" 190 . 195) (semantic-list "(0)" 195 . 198)))
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("LEPTJSON_H__" variable (:constant-flag t) nil [30 42])
+            ("lept_type" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("LEPT_NULL" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [111 121])
+                          ("LEPT_FALSE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [124 135])
+                          ("LEPT_TRUE" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [138 148])
+                          ("LEPT_NUMBER" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [151 163])
+                          ("LEPT_STRING" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [166 178])
+                          ("LEPT_ARRAY" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [181 192])
+                          ("LEPT_OBJECT" variable
+                             (:constant-flag t
+                              :type "int")
+                              (reparse-symbol enumsubparts) [195 208]))                        
+                      :type "enum")
+                      nil nil)
+                :type "typedef")
+                nil [94 219])
+            ("" type
+               (:members 
+                  ( ("LEPT_PARSE_OK" variable
+                       (:constant-flag t
+                        :default-value (246 247)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [230 247])
+                    ("LEPT_PARSE_EXPECT_VALUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [251 275])
+                    ("LEPT_PARSE_INVALID_VALUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [278 303])
+                    ("LEPT_PARSE_ROOT_NOT_SINGULAR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [306 335])
+                    ("LEPT_PARSE_NUMBER_TOO_BIG" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [338 365]))                  
+                :type "enum")
+                nil [221 366])
+            ("lept_value" type
+               (:typedef ("" type
+                     (:members 
+                        ( ("n" variable (:type "double") (reparse-symbol classsubparts) [404 413])
+                          ("type" variable (:type ("lept_type" type (:type "class") nil nil)) (reparse-symbol classsubparts) [416 431]))                        
+                      :type "struct")
+                      nil nil)
+                :type "typedef")
+                nil [385 445])
+            ("lept_parse" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :type ("lept_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [462 476])
+                    ("json" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type "char")
+                        (reparse-symbol arg-sub-list) [477 494]))                  
+                :type "int")
+                nil [447 495])
+            ("lept_get_type" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lept_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [521 541]))                  
+                :type ("lept_type" type (:type "class") nil nil))
+                nil [497 542])
+            ("lept_get_number" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("v" variable
+                       (:pointer 1
+                        :constant-flag t
+                        :type ("lept_value" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [567 587]))                  
+                :type "double")
+                nil [544 588]))          
+      :file "leptjson.h"
+      :pointmax 617
+      :fsize 664
+      :lastmodtime '(22677 25390 0 0)
+      :unmatched-syntax '((symbol 522 . 530) (DOUBLE 515 . 521) (DOUBLE 515 . 521))
+      :lexical-table 
+        '(("LEPTJSON_H__")
+          )
+)
+    (semanticdb-table "semanticdb-table"
+      :major-mode c-mode
+      :tags 
+        '( ("stdio.h" include (:system-flag t) nil [1 19])
+            ("stdlib.h" include (:system-flag t) nil [20 39])
+            ("string.h" include (:system-flag t) nil [40 59])
+            ("leptjson.h" include nil nil [60 81])
+            ("main_ret" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [83 107])
+            ("test_count" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [108 134])
+            ("test_pass" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [135 160])
+            ("EXPECT_EQ_BASE" variable (:constant-flag t) nil [170 184])
+            ("EXPECT_EQ_INT" variable (:constant-flag t) nil [887 900])
+            ("EXPECT_EQ_DOUBLE" variable (:constant-flag t) nil [984 1000])
+            ("TEST_ERROR" variable (:constant-flag t) nil [1088 1098])
+            ("TEST_NUMBER" variable (:constant-flag t) nil [1414 1425])
+            ("test_parse_null" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1768 1943])
+            ("test_parse_true" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [1945 2120])
+            ("test_parse_false" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [2122 2299])
+            ("test_parse_number" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [2301 2935])
+            ("test_parse_expect_value" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [2937 3065])
+            ("test_parse_invalid_value" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [3067 3685])
+            ("test_parse_root_not_singular" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [3687 4022])
+            ("test_parse_number_too_big" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [4024 4181])
+            ("test_parse" function
+               (:typemodifiers ("static")
+                :type "void")
+                nil [4183 4422])
+            ("main" function (:type "int") nil [4424 4566]))          
+      :file "test.c"
+      :pointmax 4567
+      :fsize 4566
+      :lastmodtime '(22677 28054 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("EXPECT_EQ_BASE" (spp-arg-list ("equality" "expect" "actual" "format") 184 . 218) . 
+              ((DO "do" 238 . 240) (semantic-list "{                                                                  \\
+    test_count++;                                                       \\
+    if (equality)                                                       \\
+      test_pass++;                                                      \\
+    else {                                                              \\
+      fprintf(stderr, \"%s:%d: expect: \" format \" actual: \" format \"\\n\", __FILE__, __LINE__, expect, actual); \\
+      main_ret = 1;                                                     \\
+    }                                                                   \\
+  }" 241 . 868) (WHILE "while" 869 . 874) (semantic-list "(0)" 874 . 877)))
+          ("TEST_ERROR" (spp-arg-list ("error" "json") 1098 . 1111) . 
+              ((DO "do" 1134 . 1136) (semantic-list "{                                            \\
+    lept_value v;                                 \\
+    v.type = LEPT_FALSE;                          \\
+    EXPECT_EQ_INT(error, lept_parse(&v, json));   \\
+    EXPECT_EQ_INT(LEPT_NULL, lept_get_type(&v));  \\
+  }" 1137 . 1395) (WHILE "while" 1396 . 1401) (semantic-list "(0)" 1401 . 1404)))
+          ("TEST_NUMBER" (spp-arg-list ("expect" "json") 1425 . 1439) . 
+              ((DO "do" 1466 . 1468) (semantic-list "{                                                  \\
+    lept_value v;                                       \\
+    EXPECT_EQ_INT(LEPT_PARSE_OK, lept_parse(&v, json)); \\
+    EXPECT_EQ_INT(LEPT_NUMBER, lept_get_type(&v));      \\
+    EXPECT_EQ_DOUBLE(expect, lept_get_number(&v));      \\
+  }" 1469 . 1757) (WHILE "while" 1758 . 1763) (semantic-list "(0)" 1763 . 1766)))
+          ("EXPECT_EQ_DOUBLE" (spp-arg-list ("expect" "actual") 1000 . 1016) . ((symbol "EXPECT_EQ_BASE" 1017 . 1031) (semantic-list "((expect) == (actual), expect, actual, \"%.17g\")" 1031 . 1078)))
+          ("EXPECT_EQ_INT" (spp-arg-list ("expect" "actual") 900 . 916) . ((symbol "EXPECT_EQ_BASE" 917 . 931) (semantic-list "((expect) == (actual), expect, actual, \"%d\")" 931 . 975)))
+          )
+))
+  :file "!Users!bing!Desktop!json-tutorial!leptjson!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

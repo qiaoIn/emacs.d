@@ -1,0 +1,27 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("rx" include nil nil [1152 1165])
+            ("conf-mode" include nil nil [1166 1186])
+            ("gitconfig-line-indented-p" function nil nil [1188 1801])
+            ("gitconfig-point-in-indentation-p" function nil nil [1803 2009])
+            ("gitconfig-indent-line" function (:user-visible-flag t) nil [2011 2585])
+            ("gitconfig-indentation-string" function nil nil [2587 2683])
+            ("gitconfig-mode-syntax-table" variable (:default-value (let ((table (make-syntax-table conf-unix-mode-syntax-table))) (modify-syntax-entry 59 "<" table) (modify-syntax-entry 39 "." table) table)) nil [2685 3000])
+            ("gitconfig-mode-font-lock-keywords" variable (:default-value (\` (((\, (rx line-start (zero-or-more (syntax whitespace)) "[" symbol-start (group (one-or-more (or (syntax word) (syntax symbol)))) symbol-end (optional (one-or-more (syntax whitespace)) (group (syntax string-quote) (minimal-match (one-or-more not-newline)) (syntax string-quote))) "]" (zero-or-more (syntax whitespace)) line-end)) (1 (quote font-lock-type-face) t nil) (2 (quote font-lock-function-name-face) t t)) ((\, (rx line-start (zero-or-more (syntax whitespace)) symbol-start (group alphanumeric (zero-or-more (or (syntax word) (syntax symbol)))) symbol-end (zero-or-more (syntax whitespace)) (optional "=" (zero-or-more not-newline)) line-end)) (1 (quote font-lock-variable-name-face))) ((\, (rx "=" (zero-or-more (syntax whitespace)) word-start (group (or "yes" "no" "true" "false" "on" "off")) word-end (zero-or-more (syntax whitespace)) line-end)) (1 (quote font-lock-keyword-face))) ((\, (rx "=" (zero-or-more (syntax whitespace)) word-start (group (one-or-more digit)) word-end (zero-or-more (syntax whitespace)) line-end)) (1 (quote font-lock-constant-face)))))) nil [3002 4494])
+            ("define-derived-mode" code nil nil [4511 4837])
+            ("dolist" code nil nil [4854 5106])
+            ("gitconfig-mode" package nil nil [5108 5133]))          
+      :file "gitconfig-mode.el"
+      :pointmax 5219
+      :fsize 5218
+      :lastmodtime '(22659 32879 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!gitconfig-mode-20160710.1913!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

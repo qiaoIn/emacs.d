@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("advice" include nil nil [1714 1731])
+            ("highlight" include nil nil [1732 1752])
+            ("evil-search" include nil nil [1753 1775])
+            ("evil-search-highlight-regex-flag" variable (:default-value t) nil [1777 1820])
+            ("hlt-+/--highlight-regexp-region" function (:arguments ("unhighlightp" "start" "end" "regexp" "face" "msgp" "mousep" "nth" "buffers")) nil [1821 6562])
+            ("evil-search-highlight-persist" customgroup (:user-visible-flag t) nil [6565 6737])
+            ("evil-search-highlight-persist-highlight-face" variable
+               (:default-value (quote ((((class color)) (:background "yellow1"))))
+                :type "face")
+                nil [6740 6921])
+            ("evil-search-highlight-persist-remove-all" function nil nil [6924 7053])
+            ("evil-search-highlight-string-min-len" variable (:default-value 1) nil [7055 7114])
+            ("evil-search-highlight-persist-mark" function nil nil [7115 7726])
+            ("make-variable-buffer-local" code nil nil [7728 7795])
+            ("isearch-exit" function (:arguments ("after" "isearch--highlight-persist")) nil [7797 7991])
+            ("evil-flash-search-pattern" function (:arguments ("after" "evil-flash-search--highlight-persist")) nil [7993 8210])
+            ("ad-activate" code nil nil [8212 8239])
+            ("ad-activate" code nil nil [8240 8280])
+            ("define-minor-mode" code nil nil [8297 8731])
+            ("turn-on-search-highlight-persist" function nil nil [8748 8931])
+            ("turn-off-search-highlight-persist" function nil nil [8948 9094])
+            ("define-globalized-minor-mode" code nil nil [9112 9244])
+            ("evil-search-highlight-persist" package nil nil [9259 9299]))          
+      :file "evil-search-highlight-persist.el"
+      :pointmax 9347
+      :fsize 9346
+      :lastmodtime '(22659 32400 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!evil-search-highlight-persist-20160912.807!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

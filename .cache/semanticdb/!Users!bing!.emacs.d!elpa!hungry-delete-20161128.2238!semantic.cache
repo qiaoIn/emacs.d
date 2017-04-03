@@ -1,0 +1,43 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("hungry-delete-mode-map" variable (:default-value (make-keymap)) nil [1522 1608])
+            ("if" code nil nil [1610 1736])
+            ("if" code nil nil [1738 1848])
+            ("define-key" code nil nil [1850 1938])
+            ("define-key" code nil nil [1939 2036])
+            ("define-key" code nil nil [2037 2125])
+            ("define-key" code nil nil [2126 2218])
+            ("hungry-delete-chars-to-skip" variable (:default-value " 	
+") nil [2220 2304])
+            ("hungry-delete-except-modes" variable (:default-value (quote (help-mode minibuffer-inactive-mode))) nil [2306 2437])
+            ("hungry-delete-skip-ws-forward" function nil nil [2439 2876])
+            ("hungry-delete-skip-ws-backward" function nil nil [2878 3432])
+            ("hungry-delete-forward" function
+               (:user-visible-flag t
+                :arguments ("n" "killflag"))
+                nil [3449 4638])
+            ("hungry-delete-backward" function
+               (:user-visible-flag t
+                :arguments ("n" "killflag"))
+                nil [4658 6496])
+            ("hungry-delete-impl" function (:arguments ("fn" "n")) nil [6498 7007])
+            ("hungry-delete-forward-impl" function nil nil [7009 7158])
+            ("hungry-delete-backward-impl" function nil nil [7160 7313])
+            ("define-minor-mode" code nil nil [7330 7562])
+            ("turn-on-hungry-delete-mode" function (:user-visible-flag t) nil [7579 7778])
+            ("define-globalized-minor-mode" code nil nil [7795 7897])
+            ("hungry-delete" package nil nil [7899 7923]))          
+      :file "hungry-delete.el"
+      :pointmax 7955
+      :fsize 7954
+      :lastmodtime '(22659 32508 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!hungry-delete-20161128.2238!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

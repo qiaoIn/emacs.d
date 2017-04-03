@@ -1,0 +1,32 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [1390 1407])
+            ("parse-time-elt" variable nil nil [1435 1458])
+            ("parse-time-val" variable nil nil [1459 1482])
+            ("parse-time-string-chars" function (:arguments ("char")) nil [1484 1661])
+            ("parse-time-tokenize" function (:arguments ("string")) nil [1663 2382])
+            ("parse-time-months" variable (:default-value (quote (("jan" . 1) ("feb" . 2) ("mar" . 3) ("apr" . 4) ("may" . 5) ("jun" . 6) ("jul" . 7) ("aug" . 8) ("sep" . 9) ("oct" . 10) ("nov" . 11) ("dec" . 12) ("january" . 1) ("february" . 2) ("march" . 3) ("april" . 4) ("june" . 6) ("july" . 7) ("august" . 8) ("september" . 9) ("october" . 10) ("november" . 11) ("december" . 12)))) nil [2384 2789])
+            ("parse-time-weekdays" variable (:default-value (quote (("sun" . 0) ("mon" . 1) ("tue" . 2) ("wed" . 3) ("thu" . 4) ("fri" . 5) ("sat" . 6) ("sunday" . 0) ("monday" . 1) ("tuesday" . 2) ("wednesday" . 3) ("thursday" . 4) ("friday" . 5) ("saturday" . 6)))) nil [2790 3063])
+            ("parse-time-zoneinfo" variable (:default-value (\` (("z" 0) ("ut" 0) ("gmt" 0) ("pst" (\, (* -8 3600))) ("pdt" (\, (* -7 3600)) t) ("mst" (\, (* -7 3600))) ("mdt" (\, (* -6 3600)) t) ("cst" (\, (* -6 3600))) ("cdt" (\, (* -5 3600)) t) ("est" (\, (* -5 3600))) ("edt" (\, (* -4 3600)) t)))) nil [3064 3385])
+            ("parse-time-rules" variable (:default-value (\` (((6) parse-time-weekdays) ((3) (1 31)) ((4) parse-time-months) ((5) (100 (\, most-positive-fixnum))) ((2 1 0) (\, (function (lambda nil (and (stringp parse-time-elt) (= (length parse-time-elt) 8) (= (aref parse-time-elt 2) 58) (= (aref parse-time-elt 5) 58))))) [0 2] [3 5] [6 8]) ((8 7) parse-time-zoneinfo (\, (function (lambda nil (car parse-time-val)))) (\, (function (lambda nil (cadr parse-time-val))))) ((8) (\, (function (lambda nil (and (stringp parse-time-elt) (= 5 (length parse-time-elt)) (or (= (aref parse-time-elt 0) 43) (= (aref parse-time-elt 0) 45)))))) (\, (function (lambda nil (* 60 (+ (cl-parse-integer parse-time-elt :start 3 :end 5) (* 60 (cl-parse-integer parse-time-elt :start 1 :end 3))) (if (= (aref parse-time-elt 0) 45) -1 1)))))) ((5 4 3) (\, (function (lambda nil (and (stringp parse-time-elt) (= (length parse-time-elt) 10) (= (aref parse-time-elt 4) 45) (= (aref parse-time-elt 7) 45))))) [0 4] [5 7] [8 10]) ((2 1 0) (\, (function (lambda nil (and (stringp parse-time-elt) (= (length parse-time-elt) 5) (= (aref parse-time-elt 2) 58))))) [0 2] [3 5] (\, (function (lambda nil 0)))) ((2 1 0) (\, (function (lambda nil (and (stringp parse-time-elt) (= (length parse-time-elt) 4) (= (aref parse-time-elt 1) 58))))) [0 1] [2 4] (\, (function (lambda nil 0)))) ((2 1 0) (\, (function (lambda nil (and (stringp parse-time-elt) (= (length parse-time-elt) 7) (= (aref parse-time-elt 1) 58))))) [0 1] [2 4] [5 7]) ((5) (50 110) (\, (function (lambda nil (+ 1900 parse-time-elt))))) ((5) (0 49) (\, (function (lambda nil (+ 2000 parse-time-elt)))))))) nil [3387 5033])
+            ("parse-time-string" function (:arguments ("string")) nil [5112 6466])
+            ("parse-time-iso8601-regexp" variable
+               (:constant-flag t
+                :default-value (let* ((dash "-?") (colon ":?") (4digit "\\([0-9][0-9][0-9][0-9]\\)") (2digit "\\([0-9][0-9]\\)") (date-fullyear 4digit) (date-month 2digit) (date-mday 2digit) (time-hour 2digit) (time-minute 2digit) (time-second 2digit) (time-secfrac "\\(\\.[0-9]+\\)?") (time-numoffset (concat "[-+]\\(" time-hour "\\):" time-minute)) (time-offset (concat "Z" time-numoffset)) (partial-time (concat time-hour colon time-minute colon time-second time-secfrac)) (full-date (concat date-fullyear dash date-month dash date-mday)) (full-time (concat partial-time time-offset)) (date-time (concat full-date "T" full-time))) (list (concat "^" full-date) (concat "T" partial-time) (concat "Z" time-numoffset))))
+                nil [6468 7455])
+            ("parse-iso8601-time-string" function (:arguments ("date-string")) nil [7457 8961])
+            ("parse-time" package nil nil [8963 8984]))          
+      :file "parse-time.el.gz"
+      :pointmax 9014
+      :fsize 3024
+      :lastmodtime '(22387 39327 0 0)
+      :unmatched-syntax nil))
+  :file "!usr!local!Cellar!emacs!25.1!share!emacs!25.1!lisp!calendar!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

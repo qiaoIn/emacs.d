@@ -1,0 +1,21 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("conf-mode" include nil nil [1151 1171])
+            ("gitignore-mode-font-lock-keywords" variable (:default-value (quote (("^\\s<.*$" . font-lock-comment-face) ("^!" . font-lock-negation-char-face) ("/" . font-lock-constant-face) ("[*?]" . font-lock-keyword-face) ("\\[.+?\\]" . font-lock-keyword-face)))) nil [1173 1512])
+            ("define-derived-mode" code nil nil [1556 1916])
+            ("dolist" code nil nil [1933 2123])
+            ("gitignore-mode" package nil nil [2125 2150]))          
+      :file "gitignore-mode.el"
+      :pointmax 2236
+      :fsize 2235
+      :lastmodtime '(22659 32879 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!gitignore-mode-20160319.302!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

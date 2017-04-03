@@ -1,0 +1,65 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [2791 2808])
+            ("aggressive-indent" customgroup (:user-visible-flag t) nil [2810 2959])
+            ("aggressive-indent-bug-report" function (:user-visible-flag t) nil [2961 3505])
+            ("aggressive-indent-mode" variable nil nil [3507 3538])
+            ("aggressive-indent-dont-electric-modes" variable nil nil [3568 3904])
+            ("aggressive-indent-excluded-modes" variable (:default-value (quote (bibtex-mode cider-repl-mode coffee-mode comint-mode conf-mode Custom-mode diff-mode doc-view-mode dos-mode erc-mode feature-mode fortran-mode f90-mode jabber-chat-mode haml-mode haskell-mode haskell-interactive-mode image-mode inf-ruby-mode makefile-mode makefile-gmake-mode minibuffer-inactive-mode netcmd-mode python-mode sass-mode scala-mode slim-mode special-mode shell-mode snippet-mode eshell-mode tabulated-list-mode term-mode TeX-output-mode text-mode yaml-mode))) nil [3906 4900])
+            ("aggressive-indent-protected-commands" variable (:default-value (quote (undo undo-tree-undo undo-tree-redo whitespace-cleanup))) nil [4902 5313])
+            ("aggressive-indent-comments-too" variable nil nil [5315 5483])
+            ("aggressive-indent-modes-to-prefer-defun" variable (:default-value (quote (emacs-lisp-mode lisp-mode scheme-mode clojure-mode))) nil [5485 6133])
+            ("aggressive-indent--internal-dont-indent-if" variable
+               (:constant-flag t
+                :default-value (quote ((memq last-command aggressive-indent-protected-commands) (region-active-p) buffer-read-only undo-in-progress (null (buffer-modified-p)) (and (boundp (quote smerge-mode)) smerge-mode) (let ((line (thing-at-point (quote line)))) (and (stringp line) (stringp comment-start) (string-match (concat "\\`[[:blank:]]*" (substring comment-start 0 1) "[[:blank:]]*$") line))) (let ((sp (syntax-ppss))) (or (and (not aggressive-indent-comments-too) (elt sp 4)) (elt sp 3))))))
+                nil [6162 7109])
+            ("eval-after-load" code nil nil [7111 7416])
+            ("eval-after-load" code nil nil [7417 7583])
+            ("eval-after-load" code nil nil [7584 7746])
+            ("eval-after-load" code nil nil [7747 7933])
+            ("eval-after-load" code nil nil [7934 8082])
+            ("eval-after-load" code nil nil [8083 8230])
+            ("eval-after-load" code nil nil [8231 8490])
+            ("eval-after-load" code nil nil [8491 8827])
+            ("aggressive-indent-dont-indent-if" variable (:default-value (quote nil)) nil [8829 9452])
+            ("aggressive-indent-stop-here-hook" variable nil nil [9454 10141])
+            ("aggressive-indent--error-message" variable (:default-value "One of the forms in `aggressive-indent-dont-indent-if' had the following error, I've disabled it until you fix it: %S") nil [10143 10368])
+            ("aggressive-indent--has-errored" variable nil nil [10370 10547])
+            ("aggressive-indent--run-user-hooks" function nil nil [10549 11106])
+            ("aggressive-indent-indent-defun" function
+               (:user-visible-flag t
+                :arguments ("l" "r"))
+                nil [11143 11636])
+            ("aggressive-indent--softly-indent-defun" function (:arguments ("l" "r")) nil [11638 11974])
+            ("aggressive-indent--indent-current-balanced-line" function (:arguments ("column")) nil [11997 12994])
+            ("aggressive-indent-indent-region-and-on" function
+               (:user-visible-flag t
+                :arguments ("l" "r"))
+                nil [13011 14161])
+            ("aggressive-indent--softly-indent-region-and-on" function (:arguments ("l" "r" "_")) nil [14163 14478])
+            ("aggressive-indent--changed-list" variable nil nil [14501 14621])
+            ("make-variable-buffer-local" code nil nil [14622 14683])
+            ("aggressive-indent--proccess-changed-list-and-indent" function nil nil [14685 15541])
+            ("aggressive-indent-sit-for-time" variable (:default-value 0.05) nil [15543 15748])
+            ("defvar-local" code nil nil [15750 15834])
+            ("aggressive-indent--indent-if-changed" function nil nil [15836 16406])
+            ("aggressive-indent--keep-track-of-changes" function (:arguments ("l" "r" "_")) nil [16408 16863])
+            ("define-minor-mode" code nil nil [16896 18676])
+            ("aggressive-indent--local-electric" function (:arguments ("on")) nil [18678 18953])
+            ("define-globalized-minor-mode" code nil nil [18970 19078])
+            ("defalias" code nil nil [19095 19170])
+            ("aggressive-indent" package nil nil [19172 19200]))          
+      :file "aggressive-indent.el"
+      :pointmax 19236
+      :fsize 19235
+      :lastmodtime '(22659 32318 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!aggressive-indent-20161201.1001!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

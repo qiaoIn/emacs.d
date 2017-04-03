@@ -1,0 +1,59 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("centered-cursor" customgroup (:user-visible-flag t) nil [3502 3870])
+            ("ccm-step-size" variable (:default-value 2) nil [3872 4012])
+            ("ccm-step-delay" variable (:default-value 0.02) nil [4014 4193])
+            ("ccm-ignored-commands" variable (:default-value (quote (mouse-drag-region mouse-set-point widget-button-click scroll-bar-toolkit-scroll))) nil [4195 4765])
+            ("ccm-vpos-init" variable (:default-value (quote (round (window-text-height) 2))) nil [4767 5169])
+            ("make-variable-buffer-local" code nil nil [5170 5213])
+            ("ccm-vpos-inverted" variable (:default-value 1) nil [5215 5544])
+            ("make-variable-buffer-local" code nil nil [5545 5592])
+            ("ccm-recenter-at-end-of-file" variable nil nil [5594 5971])
+            ("make-variable-buffer-local" code nil nil [5972 6026])
+            ("ccm-vpos" variable nil nil [6028 6110])
+            ("make-variable-buffer-local" code nil nil [6111 6149])
+            ("animate-first-start-p" variable nil nil [6151 6302])
+            ("make-variable-buffer-local" code nil nil [6303 6354])
+            ("recenter-sequence" variable nil nil [6356 6487])
+            ("make-variable-buffer-local" code nil nil [6488 6535])
+            ("ccm-map" variable (:default-value (let ((ccm-map (make-sparse-keymap))) (define-key ccm-map [(control meta -)] (quote ccm-vpos-up)) (define-key ccm-map [(control meta +)] (quote ccm-vpos-down)) (define-key ccm-map [(control meta =)] (quote ccm-vpos-down)) (define-key ccm-map [(control meta 48)] (quote ccm-vpos-recenter)) (when (bound-and-true-p mouse-wheel-mode) (mapc (lambda (key) (define-key ccm-map key (quote ccm-mwheel-scroll))) (list (vector mouse-wheel-up-event) (vector mouse-wheel-down-event) (vector (list (quote control) mouse-wheel-up-event)) (vector (list (quote control) mouse-wheel-down-event)) (vector (list (quote shift) mouse-wheel-up-event)) (vector (list (quote shift) mouse-wheel-down-event))))) (define-key ccm-map [(meta v)] (quote ccm-scroll-down)) (define-key ccm-map [(control v)] (quote ccm-scroll-up)) (define-key ccm-map [prior] (quote ccm-scroll-down)) (define-key ccm-map [next] (quote ccm-scroll-up)) ccm-map)) nil [6537 7580])
+            ("ccm-mwheel-scroll" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [7584 8992])
+            ("ccm-scroll-down" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [8994 9462])
+            ("ccm-scroll-up" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [9464 9870])
+            ("ccm-vpos-down" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [9874 10645])
+            ("ccm-vpos-up" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [10647 10767])
+            ("ccm-vpos-recenter" function (:user-visible-flag t) nil [10769 11093])
+            ("ccm-position-cursor" function nil nil [11095 15749])
+            ("ccm-first-start" function (:arguments ("animate")) nil [15751 15987])
+            ("define-minor-mode" code nil nil [16029 16561])
+            ("define-global-minor-mode" code nil nil [16564 16662])
+            ("centered-cursor-mode" package nil nil [16664 16695]))          
+      :file "centered-cursor-mode.el"
+      :pointmax 16958
+      :fsize 16961
+      :lastmodtime '(22659 32197 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!layers!+spacemacs!spacemacs-ui!local!centered-cursor!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

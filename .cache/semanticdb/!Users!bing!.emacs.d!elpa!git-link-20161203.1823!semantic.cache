@@ -1,0 +1,67 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("thingatpt" include nil nil [3485 3505])
+            ("url-util" include nil nil [3506 3525])
+            ("git-link-default-remote" variable nil nil [3527 3598])
+            ("git-link-default-branch" variable nil nil [3600 3671])
+            ("git-link-open-in-browser" variable nil nil [3673 3769])
+            ("git-link-use-commit" variable nil nil [3771 3887])
+            ("git-link-remote-alist" variable (:default-value (quote (("github.com" git-link-github) ("bitbucket.org" git-link-bitbucket) ("gitorious.org" git-link-gitorious) ("gitlab.com" git-link-gitlab)))) nil [3889 4163])
+            ("git-link-commit-remote-alist" variable (:default-value (quote (("github.com" git-link-commit-github) ("bitbucket.org" git-link-commit-bitbucket) ("gitorious.org" git-link-commit-gitorious) ("gitlab.com" git-link-commit-github)))) nil [4165 4476])
+            ("git-link-remote-regex" variable
+               (:constant-flag t
+                :default-value "\\([-.[:word:]]+\\)\\(?:/\\|:[0-9]*/?\\)\\([^/]+/[^/]+?\\)\\(?:\\.git\\)?$")
+                nil [4770 4879])
+            ("git-link--exec" function (:arguments ("args")) nil [4881 4984])
+            ("git-link--get-config" function (:arguments ("name")) nil [4986 5068])
+            ("git-link--remotes" function nil nil [5070 5126])
+            ("git-link--last-commit" function nil nil [5128 5231])
+            ("git-link--commit" function nil nil [5233 5366])
+            ("git-link--current-branch" function nil nil [5368 5460])
+            ("git-link--repo-root" function nil nil [5462 5547])
+            ("git-link--remote-url" function (:arguments ("name")) nil [5549 5639])
+            ("git-link--branch-remote" function (:arguments ("branch")) nil [5641 5741])
+            ("git-link--branch" function nil nil [5743 5881])
+            ("git-link--remote" function nil nil [5883 6430])
+            ("git-link--relative-filename" function nil nil [6432 6635])
+            ("git-link--remote-host" function (:arguments ("remote-name")) nil [6637 6813])
+            ("git-link--remote-dir" function (:arguments ("remote-name")) nil [6815 6997])
+            ("git-link--using-git-timemachine" function nil nil [6999 7116])
+            ("git-link--read-remote" function nil nil [7118 7381])
+            ("git-link--get-region" function nil nil [7383 8382])
+            ("git-link--new" function (:arguments ("link")) nil [8384 8636])
+            ("git-link-gitlab" function (:arguments ("hostname" "dirname" "filename" "branch" "commit" "start" "end")) nil [8638 8884])
+            ("git-link-github" function (:arguments ("hostname" "dirname" "filename" "branch" "commit" "start" "end")) nil [8886 9133])
+            ("git-link-commit-github" function (:arguments ("hostname" "dirname" "commit")) nil [9135 9261])
+            ("git-link-gitorious" function (:arguments ("hostname" "dirname" "filename" "branch" "commit" "start" "end")) nil [9263 9439])
+            ("git-link-commit-gitorious" function (:arguments ("hostname" "dirname" "commit")) nil [9441 9570])
+            ("git-link-bitbucket" function (:arguments ("hostname" "dirname" "filename" "branch" "commit" "start" "end")) nil [9572 9853])
+            ("git-link-commit-bitbucket" function (:arguments ("hostname" "dirname" "commit")) nil [9855 10006])
+            ("git-link--select-remote" function nil nil [10008 10121])
+            ("git-link" function
+               (:user-visible-flag t
+                :arguments ("remote" "start" "end"))
+                nil [10138 11480])
+            ("git-link-commit" function
+               (:user-visible-flag t
+                :arguments ("remote"))
+                nil [11497 12414])
+            ("git-link-homepage" function
+               (:user-visible-flag t
+                :arguments ("remote"))
+                nil [12431 13017])
+            ("git-link" package nil nil [13019 13038]))          
+      :file "git-link.el"
+      :pointmax 13065
+      :fsize 13064
+      :lastmodtime '(22659 32878 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!git-link-20161203.1823!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

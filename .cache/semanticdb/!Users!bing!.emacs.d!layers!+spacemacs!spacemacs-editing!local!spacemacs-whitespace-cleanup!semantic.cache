@@ -1,0 +1,23 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("spacemacs-whitespace-cleanup-globally" variable nil nil [1140 1267])
+            ("define-minor-mode" code nil nil [1284 1773])
+            ("define-global-minor-mode" code nil nil [1775 2054])
+            ("spacemacs-whitespace-cleanup/on-message" function (:arguments ("global")) nil [2056 2575])
+            ("spacemacs-whitespace-cleanup//turn-on" function (:arguments ("global")) nil [2577 3022])
+            ("spacemacs-whitespace-cleanup//turn-off" function (:arguments ("global")) nil [3024 3475])
+            ("spacemacs-whitespace-cleanup" package nil nil [3477 3516]))          
+      :file "spacemacs-whitespace-cleanup.el"
+      :pointmax 3564
+      :fsize 3563
+      :lastmodtime '(22659 32197 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!layers!+spacemacs!spacemacs-editing!local!spacemacs-whitespace-cleanup!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,36 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [1407 1420])
+            ("highlight-parentheses" customgroup (:user-visible-flag t) nil [1423 1532])
+            ("hl-paren-set" function (:arguments ("variable" "value")) nil [1534 1664])
+            ("hl-paren-colors" variable (:default-value (quote ("firebrick1" "IndianRed1" "IndianRed3" "IndianRed4"))) nil [1666 1947])
+            ("hl-paren-background-colors" variable nil nil [1949 2199])
+            ("hl-paren-face" variable (:type "face") nil [2201 2395])
+            ("hl-paren-overlays" variable nil nil [2479 2553])
+            ("make-variable-buffer-local" code nil nil [2554 2601])
+            ("hl-paren-last-point" variable nil nil [2603 2758])
+            ("make-variable-buffer-local" code nil nil [2759 2808])
+            ("hl-paren-timer" variable nil nil [2810 2901])
+            ("make-variable-buffer-local" code nil nil [2902 2946])
+            ("hl-paren-highlight" function nil nil [2948 3601])
+            ("hl-paren-delay" variable (:default-value 0.137) nil [3603 3992])
+            ("hl-paren-initiate-highlight" function nil nil [3994 4232])
+            ("define-minor-mode" code nil nil [4249 4948])
+            ("define-globalized-minor-mode" code nil nil [4965 5103])
+            ("hl-paren-create-overlays" function nil nil [5187 5839])
+            ("hl-paren-color-update" function nil nil [5841 6180])
+            ("highlight-parentheses" package nil nil [6182 6214]))          
+      :file "highlight-parentheses.el"
+      :pointmax 6255
+      :fsize 6254
+      :lastmodtime '(22659 32506 0 0)
+      :unmatched-syntax '((close-paren 1420 . 1421) (symbol 1389 . 1406) (open-paren 1388 . 1389))))
+  :file "!Users!bing!.emacs.d!elpa!highlight-parentheses-20151107.2316!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

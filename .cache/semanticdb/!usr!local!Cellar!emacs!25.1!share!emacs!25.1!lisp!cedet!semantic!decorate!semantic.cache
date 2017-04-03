@@ -1,0 +1,172 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [1372 1385])
+            ("semantic" include nil nil [1387 1406])
+            ("semantic/decorate" include nil nil [1407 1435])
+            ("semantic/tag-ls" include nil nil [1436 1462])
+            ("semantic/util-modes" include nil nil [1463 1493])
+            ("semantic-decoration-styles" variable nil nil [1514 1915])
+            ("semantic-decorate-style-predicate" function (:arguments ("style")) nil [1930 2058])
+            ("semantic-decorate-style-highlighter" function (:arguments ("style")) nil [2060 2200])
+            ("semantic-decorate-style-predicate-default" function (:arguments ("style")) nil [2202 2346])
+            ("semantic-decorate-style-highlighter-default" function (:arguments ("style")) nil [2348 2504])
+            ("semantic-decoration-p" function (:arguments ("object")) nil [2533 2718])
+            ("semantic-decoration-set-property" function (:arguments ("deco" "property" "value")) nil [2720 2939])
+            ("semantic-decoration-get-property" function (:arguments ("deco" "property")) nil [2941 3128])
+            ("semantic-decoration-set-face" function (:arguments ("deco" "face")) nil [3130 3296])
+            ("semantic-decoration-face" function (:arguments ("deco")) nil [3298 3432])
+            ("semantic-decoration-set-priority" function (:arguments ("deco" "priority")) nil [3434 3654])
+            ("semantic-decoration-priority" function (:arguments ("deco")) nil [3656 3802])
+            ("semantic-decoration-move" function (:arguments ("deco" "begin" "end")) nil [3804 4023])
+            ("semantic-decorate-tag" function (:arguments ("tag" "begin" "end" "face")) nil [4048 4638])
+            ("semantic-decorate-clear-tag" function (:arguments ("tag" "deco")) nil [4640 5169])
+            ("semantic-decorate-tag-decoration" function (:arguments ("tag")) nil [5171 5317])
+            ("semantic-decorate-flush-decorations" function (:arguments ("buffer")) nil [5362 5806])
+            ("semantic-decorate-clear-decorations" function (:arguments ("tag-list")) nil [5808 6096])
+            ("semantic-decorate-add-decorations" function (:arguments ("tag-list")) nil [6098 7223])
+            ("semantic-decorate-pending-decoration-hook" variable nil nil [7515 7628])
+            ("semantic-varalias-obsolete" code nil nil [7630 7759])
+            ("semantic-decorate-add-pending-decoration" function (:arguments ("fcn" "buffer")) nil [7761 8177])
+            ("semantic-decorate-flush-pending-decorations" function (:arguments ("buffer")) nil [8179 8564])
+            ("define-minor-mode" code nil nil [8675 9130])
+            ("semantic-decoration-mode-hook" variable nil nil [9132 9274])
+            ("define-minor-mode" code nil nil [9276 11413])
+            ("semantic-add-minor-mode" code nil nil [11415 11494])
+            ("semantic-decorate-tags-after-full-reparse" function (:arguments ("tag-list")) nil [11496 11952])
+            ("semantic-decorate-tags-after-partial-reparse" function (:arguments ("tag-list")) nil [11954 12294])
+            ("semantic-decoration-style-enabled-p" function (:arguments ("style")) nil [12329 12570])
+            ("semantic-toggle-decoration-style" function
+               (:user-visible-flag t
+                :arguments ("name" "arg"))
+                nil [12572 13796])
+            ("semantic-decoration-menu-cache" variable nil nil [13798 13875])
+            ("semantic-decoration-build-style-menu" function (:arguments ("style")) nil [13877 14197])
+            ("semantic-build-decoration-mode-menu" function (:arguments ("ignore")) nil [14199 14534])
+            ("define-semantic-decoration-style" function (:arguments ("name" "doc" "flags")) nil [14572 17475])
+            ("define-semantic-decoration-style" code nil nil [17550 17698])
+            ("semantic-tag-boundary-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((class color) (background dark)) (:overline "cyan")) (((class color) (background light)) (:overline "blue"))))
+                :type "face")
+                nil [17700 17979])
+            ("semantic-tag-boundary-p-default" function (:arguments ("tag")) nil [17981 18559])
+            ("semantic-tag-boundary-highlight-default" function (:arguments ("tag")) nil [18561 18983])
+            ("define-semantic-decoration-style" code nil nil [19020 19175])
+            ("semantic-decoration-on-private-members-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((class color) (background dark)) (:background "#200000")) (((class color) (background light)) (:background "#8fffff"))))
+                :type "face")
+                nil [19177 19516])
+            ("semantic-decoration-on-private-members-highlight-default" function (:arguments ("tag")) nil [19518 19748])
+            ("semantic-decoration-on-private-members-p-default" function (:arguments ("tag")) nil [19750 19972])
+            ("semantic-decoration-on-protected-members-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((class color) (background dark)) (:background "#000020")) (((class color) (background light)) (:background "#fffff8"))))
+                :type "face")
+                nil [20011 20354])
+            ("define-semantic-decoration-style" code nil nil [20356 20515])
+            ("semantic-decoration-on-protected-members-p-default" function (:arguments ("tag")) nil [20517 20745])
+            ("semantic-decoration-on-protected-members-highlight-default" function (:arguments ("tag")) nil [20747 20983])
+            ("declare-function" code nil nil [21024 21116])
+            ("declare-function" code nil nil [21117 21217])
+            ("define-semantic-decoration-style" code nil nil [21218 21446])
+            ("semantic/decorate/mode" package nil nil [21450 21483]))          
+      :file "mode.el.gz"
+      :pointmax 21657
+      :fsize 6154
+      :lastmodtime '(22387 39327 0 0)
+      :unmatched-syntax '((close-paren 1385 . 1386) (symbol 1354 . 1371) (open-paren 1353 . 1354)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("semantic/decorate/mode" include nil nil [1158 1191])
+            ("semantic/db" include nil nil [1192 1214])
+            ("semantic/db-ref" include nil nil [1215 1241])
+            ("semantic/db-find" include nil nil [1242 1269])
+            ("semantic/find" include nil nil [1292 1316])
+            ("semantic-dependency-system-include-path" variable nil nil [1319 1367])
+            ("declare-function" code nil nil [1368 1421])
+            ("declare-function" code nil nil [1422 1479])
+            ("semantic-decoration-mouse-3" variable (:default-value (if (featurep (quote xemacs)) [button3] [mouse-3])) nil [1514 1672])
+            ("semantic-decoration-on-includes" variable
+               (:user-visible-flag t
+                :type "face")
+                nil [1717 1923])
+            ("semantic-decoration-on-include-map" variable (:default-value (let ((km (make-sparse-keymap))) (define-key km semantic-decoration-mouse-3 (quote semantic-decoration-include-menu)) km)) nil [1925 2122])
+            ("semantic-decoration-on-include-menu" variable nil nil [2125 2208])
+            ("easy-menu-define" code nil nil [2210 4092])
+            ("semantic-decoration-on-unknown-includes" variable
+               (:user-visible-flag t
+                :default-value (quote ((((class color) (background dark)) (:background "#900000")) (((class color) (background light)) (:background "#fff0f0"))))
+                :type "face")
+                nil [4119 4460])
+            ("semantic-decoration-on-unknown-include-map" variable (:default-value (let ((km (make-sparse-keymap))) (define-key km semantic-decoration-mouse-3 (quote semantic-decoration-unknown-include-menu)) km)) nil [4462 4763])
+            ("semantic-decoration-on-unknown-include-menu" variable nil nil [4765 4865])
+            ("easy-menu-define" code nil nil [4867 6579])
+            ("semantic-decoration-on-fileless-includes" variable
+               (:user-visible-flag t
+                :default-value (quote ((((class color) (background dark)) (:background "#009000")) (((class color) (background light)) (:background "#f0fdf0"))))
+                :type "face")
+                nil [6623 6987])
+            ("semantic-decoration-on-fileless-include-map" variable (:default-value (let ((km (make-sparse-keymap))) (define-key km semantic-decoration-mouse-3 (quote semantic-decoration-fileless-include-menu)) km)) nil [6989 7293])
+            ("semantic-decoration-on-fileless-include-menu" variable nil nil [7295 7396])
+            ("easy-menu-define" code nil nil [7398 9115])
+            ("semantic-decoration-on-unparsed-includes" variable
+               (:user-visible-flag t
+                :default-value (quote ((((class color) (background dark)) (:background "#555500")) (((class color) (background light)) (:background "#ffff55"))))
+                :type "face")
+                nil [9157 9509])
+            ("semantic-decoration-on-unparsed-include-map" variable (:default-value (let ((km (make-sparse-keymap))) (define-key km semantic-decoration-mouse-3 (quote semantic-decoration-unparsed-include-menu)) km)) nil [9511 9735])
+            ("semantic-decoration-on-unparsed-include-menu" variable nil nil [9738 9839])
+            ("easy-menu-define" code nil nil [9841 12199])
+            ("define-semantic-decoration-style" code nil nil [12319 12511])
+            ("semantic-decoration-on-includes-p-default" function (:arguments ("tag")) nil [12513 12675])
+            ("semantic-decoration-on-includes-highlight-default" function (:arguments ("tag")) nil [12677 14606])
+            ("semantic-decoration-include-describe" function (:user-visible-flag t) nil [14641 16884])
+            ("semantic-decoration-include-visit" function (:user-visible-flag t) nil [16901 17455])
+            ("semantic-decoration-include-menu" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [17457 17982])
+            ("semantic-decoration-unknown-include-describe" function (:user-visible-flag t) nil [18019 20286])
+            ("semantic-decoration-unknown-include-menu" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [20288 20867])
+            ("semantic-decoration-fileless-include-describe" function (:user-visible-flag t) nil [20905 21914])
+            ("semantic-decoration-fileless-include-menu" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [21916 22498])
+            ("semantic-decoration-unparsed-include-describe" function (:user-visible-flag t) nil [22548 24054])
+            ("semantic-decoration-unparsed-include-menu" function
+               (:user-visible-flag t
+                :arguments ("event"))
+                nil [24057 24600])
+            ("semantic-decoration-unparsed-include-parse-include" function (:user-visible-flag t) nil [24602 24899])
+            ("semantic-decoration-unparsed-include-parse-all-includes" function (:user-visible-flag t) nil [24902 25086])
+            ("semantic-decoration-all-include-summary" function (:user-visible-flag t) nil [25126 29106])
+            ("semantic-decoration-unparsed-include-cache" type
+               (:superclasses "semanticdb-abstract-cache"
+                :type "class")
+                nil [29259 29489])
+            ("cl-defmethod" code nil nil [29492 29839])
+            ("cl-defmethod" code nil nil [29841 30082])
+            ("cl-defmethod" code nil nil [30084 30259])
+            ("semantic-decoration-unparsed-include-refrence-reset" function (:arguments ("table")) nil [30261 30897])
+            ("semantic-decoration-unparsed-include-do-reset" function nil nil [30914 31383])
+            ("semantic/decorate/include" package nil nil [31386 31422]))          
+      :file "include.el.gz"
+      :pointmax 31602
+      :fsize 6705
+      :lastmodtime '(22387 39327 0 0)
+      :unmatched-syntax '((close-paren 1316 . 1317) (symbol 1272 . 1289) (open-paren 1271 . 1272))))
+  :file "!usr!local!Cellar!emacs!25.1!share!emacs!25.1!lisp!cedet!semantic!decorate!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

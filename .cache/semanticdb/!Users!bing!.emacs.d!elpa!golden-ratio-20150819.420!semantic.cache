@@ -1,0 +1,51 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [492 505])
+            ("golden-ratio--value" variable
+               (:constant-flag t
+                :default-value 1.618)
+                nil [508 579])
+            ("golden-ratio" customgroup (:user-visible-flag t) nil [581 662])
+            ("golden-ratio-exclude-modes" variable nil nil [810 1094])
+            ("golden-ratio-exclude-buffer-names" variable nil nil [1262 1527])
+            ("golden-ratio-inhibit-functions" variable nil nil [1529 1798])
+            ("golden-ratio-extra-commands" variable (:default-value (quote (windmove-left windmove-right windmove-down windmove-up))) nil [1800 2004])
+            ("golden-ratio-recenter" variable nil nil [2006 2146])
+            ("golden-ratio-adjust-factor" variable (:default-value 1.0) nil [2148 2357])
+            ("golden-ratio-wide-adjust-factor" variable (:default-value 0.8) nil [2359 2549])
+            ("golden-ratio-auto-scale" variable nil nil [2551 2747])
+            ("golden-ratio-exclude-buffer-regexp" variable nil nil [2749 3019])
+            ("unless" code nil nil [3042 3134])
+            ("golden-ratio-toggle-widescreen" function nil nil [3136 3362])
+            ("golden-ratio-adjust" function
+               (:user-visible-flag t
+                :arguments ("a"))
+                nil [3364 3598])
+            ("golden-ratio--scale-factor" function nil nil [3600 3756])
+            ("golden-ratio--dimensions" function nil nil [3758 3957])
+            ("golden-ratio--resize-window" function (:arguments ("dimensions" "window")) nil [3959 4390])
+            ("golden-ratio-exclude-major-mode-p" function nil nil [4392 4634])
+            ("golden-ratio" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [4651 5697])
+            ("other-window" function (:arguments ("after" "golden-ratio-resize-window")) nil [5720 5804])
+            ("pop-to-buffer" function (:arguments ("around" "golden-ratio-resize-window")) nil [5834 5933])
+            ("golden-ratio--post-command-hook" function nil nil [5935 6553])
+            ("golden-ratio--mouse-leave-buffer-hook" function nil nil [6555 6658])
+            ("define-minor-mode" code nil nil [6675 7433])
+            ("golden-ratio" package nil nil [7436 7459]))          
+      :file "golden-ratio.el"
+      :pointmax 7491
+      :fsize 7490
+      :lastmodtime '(22659 32480 0 0)
+      :unmatched-syntax '((close-paren 505 . 506) (symbol 474 . 491) (open-paren 473 . 474))))
+  :file "!Users!bing!.emacs.d!elpa!golden-ratio-20150819.420!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

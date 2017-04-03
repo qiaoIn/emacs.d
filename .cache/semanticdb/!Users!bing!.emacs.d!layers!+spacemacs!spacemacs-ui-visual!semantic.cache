@@ -1,0 +1,37 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("spacemacs/no-golden-ratio-for-buffers" function (:arguments ("bufname")) nil [305 495])
+            ("spacemacs/no-golden-ratio-guide-key" function nil nil [497 723])
+            ("spacemacs/neotree-expand-or-open" function (:user-visible-flag t) nil [739 1188])
+            ("spacemacs/neotree-collapse" function (:user-visible-flag t) nil [1190 1523])
+            ("spacemacs/neotree-collapse-or-up" function (:user-visible-flag t) nil [1525 1921])
+            ("neotree-find-project-root" function nil nil [1923 2182])
+            ("spacemacs//neotree-maybe-attach-window" function nil nil [2184 2312])
+            ("spacemacs/remove-popwin-display-config" function (:arguments ("str")) nil [2327 2669])
+            ("spacemacs/enable-smooth-scrolling" function (:user-visible-flag t) nil [2694 2818])
+            ("spacemacs/disable-smooth-scrolling" function (:user-visible-flag t) nil [2820 2944])
+            ("spacemacs/customize-powerline-faces" function nil nil [2962 3215])
+            ("spacemacs//evil-state-face" function nil nil [3217 3382])
+            ("spacemacs//restore-powerline" function (:arguments ("buffer")) nil [3384 3622])
+            ("spacemacs//set-powerline-for-startup-buffers" function nil nil [3624 3949])
+            ("spacemacs//prepare-diminish" function nil nil [3951 4622])
+            ("spacemacs//zoom-frm-powerline-reset" function nil nil [4635 4812])
+            ("spacemacs//zoom-frm-do" function (:arguments ("arg")) nil [4814 5417])
+            ("spacemacs/zoom-frm-in" function (:user-visible-flag t) nil [5419 5584])
+            ("spacemacs/zoom-frm-out" function (:user-visible-flag t) nil [5586 5754])
+            ("spacemacs/zoom-frm-unzoom" function (:user-visible-flag t) nil [5756 5931])
+            ("spacemacs-ui-visual//compilation-buffer-apply-ansi-colors" function nil nil [5951 6121]))          
+      :file "funcs.el"
+      :pointmax 6122
+      :fsize 6121
+      :lastmodtime '(22659 32197 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!layers!+spacemacs!spacemacs-ui-visual!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

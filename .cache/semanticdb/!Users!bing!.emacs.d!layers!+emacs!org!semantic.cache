@@ -1,0 +1,63 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("setq" code nil nil [286 1114])
+            ("org/post-init-company" function nil nil [1116 1237])
+            ("org/post-init-company-emoji" function nil nil [1239 1327])
+            ("org/post-init-emoji-cheat-sheet-plus" function nil nil [1329 1444])
+            ("org/init-evil-org" function nil nil [1446 1858])
+            ("org/post-init-evil-surround" function nil nil [1860 2138])
+            ("org/init-gnuplot" function nil nil [2140 2302])
+            ("org/init-htmlize" function nil nil [2304 2368])
+            ("org/pre-init-mu4e" function nil nil [2370 2536])
+            ("org/init-ob" function nil nil [2538 3091])
+            ("org/init-org" function nil nil [3093 12448])
+            ("org/init-org-agenda" function nil nil [12450 17179])
+            ("org/init-org-download" function nil nil [17181 17554])
+            ("org/init-org-mime" function nil nil [17556 17898])
+            ("org/init-org-pomodoro" function nil nil [17900 18271])
+            ("org/init-org-present" function nil nil [18273 19144])
+            ("org/init-org-projectile" function nil nil [19146 19852])
+            ("org/init-ox-twbs" function nil nil [19854 19952])
+            ("org/init-ox-gfm" function nil nil [19954 20050])
+            ("org/init-ox-reveal" function nil nil [20052 20154])
+            ("org/post-init-persp-mode" function nil nil [20156 20451]))          
+      :file "packages.el"
+      :pointmax 20452
+      :fsize 20457
+      :lastmodtime '(22659 32197 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("org-projectile/capture" function (:arguments ("arg")) nil [284 500])
+            ("org-projectile/goto-todos" function nil nil [502 620])
+            ("spacemacs/ob-fix-inline-images" function nil nil [625 801])
+            ("spacemacs//surround-drawer" function nil nil [806 948])
+            ("spacemacs//surround-code" function nil nil [950 1095]))          
+      :file "funcs.el"
+      :pointmax 1096
+      :fsize 1095
+      :lastmodtime '(22659 32197 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("org-enable-bootstrap-support" variable nil nil [297 404])
+            ("org-enable-github-support" variable nil nil [406 499])
+            ("org-enable-reveal-js-support" variable nil nil [501 586])
+            ("org-projectile-file" variable (:default-value "TODOs.org") nil [588 822])
+            ("spacemacs|defvar-company-backends" code nil nil [824 868]))          
+      :file "config.el"
+      :pointmax 869
+      :fsize 868
+      :lastmodtime '(22659 32197 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!layers!+emacs!org!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

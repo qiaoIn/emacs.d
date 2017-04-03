@@ -1,0 +1,42 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("setq" code nil nil [286 755])
+            ("git/init-evil-magit" function nil nil [757 948])
+            ("git/post-init-fill-column-indicator" function nil nil [950 1041])
+            ("git/init-helm-gitignore" function nil nil [1043 1180])
+            ("git/init-git-commit" function nil nil [1182 1252])
+            ("git/init-git-link" function nil nil [1254 1687])
+            ("git/init-git-messenger" function nil nil [1689 1916])
+            ("git/init-git-timemachine" function nil nil [1918 3035])
+            ("git/init-gitattributes-mode" function nil nil [3037 3123])
+            ("git/init-gitconfig-mode" function nil nil [3125 3203])
+            ("git/init-gitignore-mode" function nil nil [3205 3283])
+            ("git/init-magit" function nil nil [3285 14813])
+            ("git/init-magit-gitflow" function nil nil [14815 15163])
+            ("git/init-magit-svn" function nil nil [15165 15460])
+            ("git/init-orgit" function nil nil [15462 15487])
+            ("git/init-smeargle" function nil nil [15489 16267]))          
+      :file "packages.el"
+      :pointmax 16268
+      :fsize 16267
+      :lastmodtime '(22659 32197 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("git-enable-magit-svn-plugin" variable nil nil [303 389])
+            ("git-magit-status-fullscreen" variable nil nil [391 494]))          
+      :file "config.el"
+      :pointmax 495
+      :fsize 494
+      :lastmodtime '(22659 32197 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!layers!+source-control!git!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

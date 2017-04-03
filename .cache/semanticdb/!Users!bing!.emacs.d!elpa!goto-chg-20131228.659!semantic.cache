@@ -1,0 +1,39 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("glc-default-span" variable
+               (:user-visible-flag t
+                :default-value 8)
+                nil [3691 3846])
+            ("glc-current-span" variable (:default-value 8) nil [3847 3974])
+            ("glc-probe-depth" variable nil nil [3975 4087])
+            ("glc-center-ellipsis" function (:arguments ("str" "maxlen" "ellipsis")) nil [4148 4594])
+            ("glc-adjust-pos2" function (:arguments ("pos" "p1" "p2" "adj")) nil [4596 5020])
+            ("glc-adjust-pos" function (:arguments ("pos" "e")) nil [5022 5898])
+            ("glc-adjust-list" function (:arguments ("r")) nil [6010 6579])
+            ("glc-get-pos" function (:arguments ("e")) nil [6581 7127])
+            ("glc-get-descript" function (:arguments ("e" "n")) nil [7160 8172])
+            ("glc-is-positionable" function (:arguments ("e")) nil [8205 8394])
+            ("glc-is-filetime" function (:arguments ("e")) nil [8396 8576])
+            ("goto-last-change" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [8593 12868])
+            ("goto-last-change-reverse" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [12885 13501])
+            ("goto-chg" package nil nil [13503 13522]))          
+      :file "goto-chg.el"
+      :pointmax 13550
+      :fsize 13549
+      :lastmodtime '(22659 32358 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!goto-chg-20131228.659!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

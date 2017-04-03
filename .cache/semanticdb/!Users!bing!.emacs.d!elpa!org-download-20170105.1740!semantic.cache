@@ -1,0 +1,68 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl" include nil nil [2985 2998])
+            ("async" include nil nil [3000 3016])
+            ("url-parse" include nil nil [3017 3037])
+            ("url-http" include nil nil [3038 3057])
+            ("org" include nil nil [3058 3072])
+            ("org-download" customgroup (:user-visible-flag t) nil [3074 3179])
+            ("org-download-method" variable (:default-value (quote directory)) nil [3181 3389])
+            ("org-download-image-dir" variable nil nil [3391 3654])
+            ("make-variable-buffer-local" code nil nil [3655 3707])
+            ("org-download-heading-lvl" variable nil nil [3709 3825])
+            ("make-variable-buffer-local" code nil nil [3826 3880])
+            ("org-download-backend" variable (:default-value t) nil [3882 4140])
+            ("org-download-timestamp" variable (:default-value "_%Y-%m-%d_%H-%M-%S") nil [4142 4362])
+            ("org-download-img-regex-list" variable (:default-value (quote ("<img +src=\"" "<img +\\(class=\"[^\"]+\"\\)? *src=\""))) nil [4364 4691])
+            ("org-download-screenshot-method" variable (:default-value "gnome-screenshot -a -f %s") nil [4693 5225])
+            ("org-download-image-html-width" variable nil nil [5227 5370])
+            ("org-download-image-latex-width" variable nil nil [5372 5517])
+            ("org-download-get-heading" function (:arguments ("lvl")) nil [5519 5878])
+            ("org-download--dir-1" function nil nil [5880 6083])
+            ("org-download--dir-2" function nil nil [6085 6426])
+            ("org-download--dir" function nil nil [6428 6878])
+            ("org-download--fullname" function (:arguments ("link" "ext")) nil [6880 7503])
+            ("org-download--fullname-format" function (:arguments ("filename" "ext")) nil [7505 7855])
+            ("org-download--image" function (:arguments ("link" "filename")) nil [7857 8443])
+            ("org-download--image/command" function (:arguments ("command" "link" "filename")) nil [8445 8895])
+            ("org-download--image/url-retrieve" function (:arguments ("link" "filename")) nil [8897 9687])
+            ("org-download-yank" function (:user-visible-flag t) nil [9689 9822])
+            ("org-download-screenshot" function (:user-visible-flag t) nil [9824 10133])
+            ("declare-function" code nil nil [10135 10181])
+            ("declare-function" code nil nil [10182 10231])
+            ("declare-function" code nil nil [10232 10279])
+            ("org-download-annotate-default" function (:arguments ("link")) nil [10281 10471])
+            ("org-download-annotate-function" variable (:default-value (function org-download-annotate-default)) nil [10473 10661])
+            ("org-download-link-format" variable (:default-value "[[file:%s]]") nil [10663 10751])
+            ("org-download-image" function
+               (:user-visible-flag t
+                :arguments ("link"))
+                nil [10753 12288])
+            ("org-download-insert-link" function (:arguments ("link" "filename")) nil [12290 12945])
+            ("org-download--at-comment-p" function nil nil [12947 13123])
+            ("org-download-delete" function (:user-visible-flag t) nil [13125 13893])
+            ("org-download-edit-cmd" variable (:default-value "gimp %s") nil [13895 13977])
+            ("org-download-edit" function (:user-visible-flag t) nil [13979 14430])
+            ("org-download--delete" function (:arguments ("beg" "end" "times")) nil [14432 14992])
+            ("org-download-dnd-fallback" function (:arguments ("uri" "action")) nil [14994 15209])
+            ("org-download-dnd" function (:arguments ("uri" "action")) nil [15211 15705])
+            ("org-download-dired" function (:arguments ("uri")) nil [15707 16454])
+            ("org-download-dnd-base64" function (:arguments ("uri" "action")) nil [16456 16944])
+            ("org-download-enable" function nil nil [16961 17315])
+            ("org-download-disable" function nil nil [17317 17432])
+            ("org-download-enable" code nil nil [17434 17455])
+            ("org-download" package nil nil [17457 17480]))          
+      :file "org-download.el"
+      :pointmax 17512
+      :fsize 17511
+      :lastmodtime '(22659 32885 0 0)
+      :unmatched-syntax '((close-paren 2998 . 2999) (symbol 2965 . 2982) (open-paren 2964 . 2965))))
+  :file "!Users!bing!.emacs.d!elpa!org-download-20170105.1740!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

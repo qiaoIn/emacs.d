@@ -1,0 +1,393 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("package" include nil nil [4165 4183])
+            ("cl-lib" include nil nil [4184 4201])
+            ("paradox-core" include nil nil [4203 4226])
+            ("paradox-execute" include nil nil [4227 4253])
+            ("paradox-menu" include nil nil [4254 4277])
+            ("paradox-version" variable
+               (:constant-flag t
+                :default-value "2.5.1")
+                nil [4279 4350])
+            ("paradox-bug-report" function (:user-visible-flag t) nil [4351 4736])
+            ("paradox-customize" function (:user-visible-flag t) nil [4737 4868])
+            ("paradox" customgroup (:user-visible-flag t) nil [4869 5003])
+            ("paradox-list-packages" function
+               (:user-visible-flag t
+                :arguments ("no-fetch"))
+                nil [5044 6151])
+            ("paradox-upgrade-packages" function
+               (:user-visible-flag t
+                :arguments ("no-fetch"))
+                nil [6168 6936])
+            ("paradox-enable" function (:user-visible-flag t) nil [6938 7752])
+            ("paradox-require" function (:arguments ("feature" "filename" "noerror" "package" "refresh")) nil [7769 8890])
+            ("paradox" package nil nil [8892 8910]))          
+      :file "paradox.el"
+      :pointmax 8936
+      :fsize 8935
+      :lastmodtime '(22659 33046 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("subr-x" include nil nil [805 822])
+            ("paradox-comment-face" variable
+               (:default-value (quote ((((background light)) :foreground "Grey30") (((background dark)) :foreground "Grey60")))
+                :type "face")
+                nil [845 1058])
+            ("paradox-highlight-face" variable
+               (:default-value (quote ((t :weight bold :inherit font-lock-variable-name-face)))
+                :type "face")
+                nil [1059 1240])
+            ("paradox--star-count" variable (:default-value (make-hash-table)) nil [1267 1313])
+            ("paradox--download-count" variable (:default-value (make-hash-table)) nil [1314 1364])
+            ("paradox--package-repo-list" variable (:default-value (make-hash-table)) nil [1365 1418])
+            ("paradox--wiki-packages" variable (:default-value (make-hash-table)) nil [1419 1468])
+            ("paradox--data-url" variable
+               (:constant-flag t
+                :default-value "https://raw.githubusercontent.com/Malabarba/paradox/data/")
+                nil [1470 1601])
+            ("paradox--star-count-url" variable
+               (:constant-flag t
+                :default-value (concat paradox--data-url "data-hashtables"))
+                nil [1603 1722])
+            ("make-obsolete-variable" code nil nil [1723 1797])
+            ("paradox--package-count" variable
+               (:constant-flag t
+                :default-value (quote (("total" . 0) ("built-in" . 0) ("obsolete" . 0) ("deleted" . 0) ("available" . 0) ("new" . 0) ("held" . 0) ("disabled" . 0) ("dependency" . 0) ("avail-obso" . 0) ("incompat" . 0) ("external" . 0) ("installed" . 0) ("unsigned" . 0))))
+                nil [1799 2093])
+            ("paradox--cas" function (:arguments ("string")) nil [2095 2247])
+            ("paradox--truncate-string-to-width-filter" function (:arguments ("args")) nil [2249 2628])
+            ("paradox--backups" variable nil nil [2659 2688])
+            ("paradox--core-enable" function nil nil [2690 3033])
+            ("paradox-disable" function (:user-visible-flag t) nil [3035 3348])
+            ("paradox--override-definition" function (:arguments ("sym" "newdef")) nil [3350 3769])
+            ("declare-function" code nil nil [3794 3865])
+            ("if" code nil nil [3866 4118])
+            ("define-obsolete-function-alias" code nil nil [4119 4240])
+            ("paradox--spinner" variable nil nil [4256 4285])
+            ("spinner" include nil nil [4305 4323])
+            ("paradox-spinner-type" variable (:default-value (quote horizontal-moving)) nil [4325 5181])
+            ("paradox--start-spinner" function nil nil [5183 5400])
+            ("paradox--stop-spinner" function nil nil [5402 5538])
+            ("paradox-core" package nil nil [5540 5563]))          
+      :file "paradox-core.el"
+      :pointmax 5595
+      :fsize 5600
+      :lastmodtime '(22659 33046 0 0)
+      :unmatched-syntax '((close-paren 4323 . 4324) (symbol 4288 . 4304) (open-paren 4287 . 4288)))
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [962 979])
+            ("seq" include nil nil [980 994])
+            ("package" include nil nil [996 1014])
+            ("paradox-core" include nil nil [1015 1038])
+            ("paradox-github" include nil nil [1039 1064])
+            ("paradox-execute" customgroup (:user-visible-flag t) nil [1066 1215])
+            ("paradox--current-filter" variable nil nil [1217 1249])
+            ("paradox-execute-asynchronously" variable (:default-value (quote ask)) nil [1280 1694])
+            ("paradox-async-display-buffer-function" variable (:default-value (function display-buffer)) nil [1696 2234])
+            ("paradox-after-execute-functions" variable nil nil [2257 2981])
+            ("put" code nil nil [2982 3046])
+            ("mapc" code nil nil [3047 3325])
+            ("paradox--refresh-package-buffer" function (:arguments ("_")) nil [3327 3548])
+            ("paradox--activate-if-asynchronous" function (:arguments ("alist")) nil [3550 3895])
+            ("paradox--print-package-list" function (:arguments ("list")) nil [3897 4459])
+            ("paradox--report-buffer-print" function (:arguments ("alist")) nil [4461 5521])
+            ("paradox--report-buffer-display-if-noquery" function (:arguments ("alist")) nil [5523 6585])
+            ("paradox--report-message" function (:arguments ("alist")) nil [6587 7206])
+            ("paradox-menu-execute" function
+               (:user-visible-flag t
+                :arguments ("noquery"))
+                nil [7224 8433])
+            ("paradox--perform-package-transaction" function (:arguments ("install" "delete")) nil [8435 9895])
+            ("paradox--current-filter" variable nil nil [9897 9929])
+            ("declare-function" code nil nil [9931 9980])
+            ("paradox--menu-execute-1" function (:arguments ("noquery")) nil [9981 13952])
+            ("paradox--repo-alist" function nil nil [13974 14173])
+            ("paradox--format-message" function (:arguments ("question-p" "install-list" "delete-list")) nil [14175 15044])
+            ("paradox--post-execute-star-unstar" function (:arguments ("before" "after")) nil [15046 15423])
+            ("paradox-execute" package nil nil [15425 15451]))          
+      :file "paradox-execute.el"
+      :pointmax 15485
+      :fsize 15484
+      :lastmodtime '(22659 33046 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [815 832])
+            ("package" include nil nil [833 851])
+            ("subr-x" include nil nil [852 869])
+            ("hydra" include nil nil [870 886])
+            ("paradox-core" include nil nil [888 911])
+            ("paradox-github" include nil nil [912 937])
+            ("paradox-commit-list" include nil nil [938 968])
+            ("paradox-execute" include nil nil [969 995])
+            ("paradox-menu" customgroup (:user-visible-flag t) nil [997 1143])
+            ("paradox-column-width-package" variable (:default-value 18) nil [1175 1334])
+            ("paradox-column-width-version" variable (:default-value 9) nil [1336 1494])
+            ("paradox-column-width-status" variable (:default-value 10) nil [1496 1653])
+            ("paradox-column-width-star" variable (:default-value 4) nil [1655 1806])
+            ("paradox-column-width-download" variable (:default-value 4) nil [1808 1973])
+            ("paradox-display-star-count" variable (:default-value t) nil [1975 2153])
+            ("paradox-display-download-count" variable nil nil [2155 2345])
+            ("paradox-mode-line-face" variable
+               (:default-value (quote ((t :inherit (font-lock-keyword-face mode-line-buffer-id) :weight normal)))
+                :type "face")
+                nil [2347 2519])
+            ("paradox-name-face" variable
+               (:default-value (quote ((t :inherit link)))
+                :type "face")
+                nil [2520 2625])
+            ("paradox-homepage-button-face" variable
+               (:default-value (quote ((t :underline t :inherit font-lock-comment-face)))
+                :type "face")
+                nil [2626 2774])
+            ("paradox-archive-face" variable
+               (:default-value (quote ((t :inherit paradox-comment-face)))
+                :type "face")
+                nil [2899 3023])
+            ("paradox-star-face" variable
+               (:default-value (quote ((t :inherit font-lock-string-face)))
+                :type "face")
+                nil [3024 3177])
+            ("paradox-starred-face" variable
+               (:default-value (quote ((t :inherit font-lock-variable-name-face)))
+                :type "face")
+                nil [3178 3338])
+            ("paradox-download-face" variable
+               (:default-value (quote ((t :inherit font-lock-keyword-face)))
+                :type "face")
+                nil [3339 3468])
+            ("paradox-description-face" variable
+               (:default-value (quote ((t :inherit default)))
+                :type "face")
+                nil [3469 3685])
+            ("paradox-description-face-multiline" variable
+               (:default-value (quote ((t :inherit font-lock-doc-face)))
+                :type "face")
+                nil [3686 3948])
+            ("paradox-status-face-alist" variable (:default-value (quote (("built-in" . font-lock-builtin-face) ("available" . default) ("new" . bold) ("held" . font-lock-constant-face) ("disabled" . font-lock-warning-face) ("avail-obso" . font-lock-comment-face) ("installed" . font-lock-comment-face) ("dependency" . font-lock-comment-face) ("incompat" . font-lock-comment-face) ("deleted" . font-lock-comment-face) ("unsigned" . font-lock-warning-face)))) nil [3950 4719])
+            ("paradox-homepage-button-string" variable (:default-value "h") nil [4721 4917])
+            ("paradox-use-homepage-buttons" variable (:default-value t) nil [4919 5159])
+            ("paradox-lines-per-entry" variable (:default-value 1) nil [5161 5490])
+            ("defvar-local" code nil nil [5507 5549])
+            ("paradox--column-name-star" variable (:default-value (if (char-displayable-p 9733) "★" "*")) nil [5551 5634])
+            ("paradox--column-name-download" variable (:default-value (if (char-displayable-p 8595) "↓" "DC")) nil [5636 5724])
+            ("paradox--upgradeable-packages" variable nil nil [5726 5768])
+            ("paradox--upgradeable-packages-number" variable nil nil [5769 5818])
+            ("paradox--upgradeable-packages-any?" variable nil nil [5819 5866])
+            ("paradox--column-index-star" variable nil nil [5868 5907])
+            ("paradox--column-index-download" variable nil nil [5908 5951])
+            ("paradox--desc-suffix" variable nil nil [5953 5986])
+            ("paradox--desc-prefix" variable nil nil [5987 6020])
+            ("paradox--commit-list-buffer" variable (:default-value "*Package Commit List*") nil [6022 6082])
+            ("paradox-refresh-upgradeable-packages" function (:user-visible-flag t) nil [6120 6486])
+            ("paradox--print-info" function (:arguments ("pkg")) nil [6488 9469])
+            ("paradox--count-print" function (:arguments ("pkg")) nil [9471 9825])
+            ("paradox--package-download-count" function (:arguments ("pkg")) nil [9827 10178])
+            ("paradox--package-homepage" function (:arguments ("pkg")) nil [10180 10702])
+            ("paradox--get-or-return-package" function (:arguments ("pkg")) nil [10704 10997])
+            ("paradox--incf" function (:arguments ("status")) nil [10999 11262])
+            ("paradox--inc-count" function (:arguments ("string")) nil [11264 11466])
+            ("paradox--entry-star-count" function (:arguments ("entry")) nil [11468 11807])
+            ("paradox--handle-failed-download" function (:arguments ("_")) nil [11809 12439])
+            ("paradox--with-work-buffer" function (:arguments ("location" "file" "body")) nil [12441 13125])
+            ("paradox--refresh-remote-data" function (:user-visible-flag t) nil [13127 13760])
+            ("paradox--package-star-count" function (:arguments ("package")) nil [13762 14147])
+            ("paradox--star-predicate" function (:arguments ("A" "B")) nil [14149 14370])
+            ("paradox--download-predicate" function (:arguments ("A" "B")) nil [14371 14628])
+            ("paradox--generate-menu" function (:arguments ("remember-pos" "packages" "keywords")) nil [14630 15503])
+            ("paradox-hide-wiki-packages" variable nil nil [15505 15623])
+            ("paradox--maybe-remove-wiki-packages" function (:arguments ("pkgs")) nil [15625 16124])
+            ("paradox-menu--refresh" function (:arguments ("packages" "keywords")) nil [16126 17386])
+            ("paradox--column-index" function (:arguments ("regexp")) nil [17388 17634])
+            ("paradox--count-format" function nil nil [17636 18088])
+            ("paradox--archive-format" function nil nil [18090 18371])
+            ("add-hook" code nil nil [18373 18445])
+            ("define-derived-mode" code nil nil [18469 20780])
+            ("put" code nil nil [20782 20846])
+            ("paradox--define-sort" function (:arguments ("name" "key")) nil [20848 21568])
+            ("paradox--define-sort" code nil nil [21570 21602])
+            ("paradox--define-sort" code nil nil [21603 21634])
+            ("paradox--define-sort" code nil nil [21635 21687])
+            ("declare-function" code nil nil [21688 21745])
+            ("defalias" code nil nil [21747 21920])
+            ("paradox--apply-filter" function (:arguments ("name" "packages" "nil-message")) nil [21922 22687])
+            ("paradox-filter-upgrades" function (:user-visible-flag t) nil [22689 22877])
+            ("paradox-filter-stars" function (:user-visible-flag t) nil [22879 23176])
+            ("paradox-filter-regexp" function
+               (:user-visible-flag t
+                :arguments ("regexp"))
+                nil [23178 23702])
+            ("set-keymap-parent" code nil nil [23704 23767])
+            ("define-key" code nil nil [23768 23831])
+            ("define-key" code nil nil [23832 23895])
+            ("define-key" code nil nil [23896 23955])
+            ("define-key" code nil nil [23956 24022])
+            ("define-key" code nil nil [24023 24085])
+            ("define-key" code nil nil [24086 24156])
+            ("define-key" code nil nil [24157 24221])
+            ("define-key" code nil nil [24222 24290])
+            ("define-key" code nil nil [24291 24361])
+            ("define-key" code nil nil [24362 24423])
+            ("define-key" code nil nil [24424 24485])
+            ("define-key" code nil nil [24486 24545])
+            ("if" code nil nil [24546 25876])
+            ("define-key" code nil nil [25877 25943])
+            ("paradox--filter-map" variable nil nil [25982 26010])
+            ("define-prefix-command" code nil nil [26011 26055])
+            ("define-key" code nil nil [26056 26114])
+            ("define-key" code nil nil [26115 26173])
+            ("define-key" code nil nil [26174 26234])
+            ("define-key" code nil nil [26235 26297])
+            ("define-key" code nil nil [26298 26357])
+            ("define-key" code nil nil [26358 26417])
+            ("easy-menu-define" code nil nil [26419 29452])
+            ("paradox-previous-entry" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [29479 29726])
+            ("paradox-next-entry" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [29728 30043])
+            ("paradox-next-describe" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [30045 30287])
+            ("paradox-previous-describe" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [30289 30547])
+            ("paradox-push-button" function (:user-visible-flag t) nil [30549 30784])
+            ("paradox--key-descriptors" variable (:default-value (quote (("next," "previous," "install," "delete," ("execute," . 1) "refresh," "help") ("star," "visit homepage," "unmark," ("mark Upgrades," . 5) "~delete obsolete") ("list commits") ("filter by" "+" "upgrades" "regexp" "keyword" "starred" "clear") ("Sort by" "+" "Package name" "Status" "*(star)")))) nil [30786 31131])
+            ("paradox-menu-quick-help" function (:user-visible-flag t) nil [31133 31410])
+            ("paradox-quit-and-close" function
+               (:user-visible-flag t
+                :arguments ("kill"))
+                nil [31412 31713])
+            ("paradox-menu-visit-homepage" function
+               (:user-visible-flag t
+                :arguments ("pkg"))
+                nil [31715 32179])
+            ("paradox-menu-mark-star-unstar" function (:user-visible-flag t) nil [32181 33071])
+            ("paradox-menu-view-commit-list" function
+               (:user-visible-flag t
+                :arguments ("pkg"))
+                nil [33073 33946])
+            ("paradox-local-variables" variable (:default-value (quote (mode-line-mule-info mode-line-client mode-line-remote mode-line-position column-number-mode size-indication-mode))) nil [33977 34490])
+            ("paradox-display-buffer-name" variable nil nil [34492 34685])
+            ("paradox--build-buffer-id" function (:arguments ("st" "n")) nil [34687 34936])
+            ("paradox--update-mode-line" function nil nil [34938 35259])
+            ("paradox--update-mode-line-buffer-identification" function (:arguments ("_total-lines")) nil [35261 36353])
+            ("sml/col-number" variable nil nil [36355 36378])
+            ("sml/numbers-separator" variable nil nil [36379 36409])
+            ("sml/col-number-format" variable nil nil [36410 36440])
+            ("sml/line-number-format" variable nil nil [36441 36472])
+            ("sml/position-construct" variable nil nil [36473 36504])
+            ("declare-function" code nil nil [36505 36560])
+            ("sml/post-id-separator" variable nil nil [36561 36591])
+            ("paradox--update-mode-line-front-space" function (:arguments ("total-lines")) nil [36592 37620])
+            ("paradox--set-local-value" function (:arguments ("x")) nil [37622 37814])
+            ("paradox--prettify-key-descriptor" function (:arguments ("desc")) nil [37816 38313])
+            ("paradox-menu" package nil nil [38315 38338]))          
+      :file "paradox-menu.el"
+      :pointmax 38369
+      :fsize 38374
+      :lastmodtime '(22659 33046 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("cl-lib" include nil nil [824 841])
+            ("package" include nil nil [842 860])
+            ("paradox-core" include nil nil [861 884])
+            ("paradox-github" customgroup (:user-visible-flag t) nil [886 1027])
+            ("paradox--user-starred-list" variable nil nil [1029 1068])
+            ("make-obsolete-variable" code nil nil [1069 1157])
+            ("paradox--user-starred-repos" variable (:default-value (make-hash-table)) nil [1158 1212])
+            ("paradox-github-token" variable nil nil [1233 2499])
+            ("paradox-automatically-star" variable (:default-value (quote unconfigured)) nil [2501 3316])
+            ("paradox--enforce-github-token" function (:arguments ("forms")) nil [3318 3594])
+            ("paradox--check-github-token" function nil nil [3596 4575])
+            ("paradox-star-all-installed-packages" function (:user-visible-flag t) nil [4592 4838])
+            ("paradox--starred-repo-p" function (:arguments ("repo")) nil [4840 4967])
+            ("paradox--star-package-safe" function (:arguments ("pkg" "delete" "query")) nil [4969 5306])
+            ("paradox--star-repo" function (:arguments ("repo" "delete" "query")) nil [5308 5849])
+            ("paradox--unstar-repo" function (:arguments ("repo" "delete" "query")) nil [5851 6025])
+            ("paradox--full-name-reader" function nil nil [6027 6340])
+            ("paradox--refresh-user-starred-list" function (:arguments ("async")) nil [6342 6866])
+            ("paradox--github-action-star" function (:arguments ("repo" "delete")) nil [6868 7191])
+            ("paradox--github-report" function (:arguments ("text")) nil [7227 7491])
+            ("paradox--github-error" function (:arguments ("format" "args")) nil [7493 7818])
+            ("paradox--github-errors-to-ignore" variable nil nil [7820 8112])
+            ("paradox--github-parse-response-code" function nil nil [8114 9968])
+            ("paradox--github-next-page" variable nil nil [9970 10008])
+            ("paradox--with-github-buffer" function (:arguments ("method" "action" "async" "unwind-form" "body")) nil [10010 12688])
+            ("cl-defun" code nil nil [12690 15354])
+            ("paradox-github" package nil nil [15356 15381]))          
+      :file "paradox-github.el"
+      :pointmax 15414
+      :fsize 15413
+      :lastmodtime '(22659 33046 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("subr-x" include nil nil [840 857])
+            ("cl-lib" include nil nil [858 875])
+            ("package" include nil nil [876 894])
+            ("paradox-github" include nil nil [896 921])
+            ("paradox-commit-list" customgroup (:user-visible-flag t) nil [923 1092])
+            ("paradox-commit-list-query-max-pages" variable (:default-value 1) nil [1110 1545])
+            ("paradox-date-format" variable (:default-value "%Y-%m-%d") nil [1547 1833])
+            ("paradox-commit-tag-face" variable
+               (:default-value (quote ((t :foreground "goldenrod4" :background "LemonChiffon1" :box 1)))
+                :type "face")
+                nil [1835 2024])
+            ("paradox--commit-message-face" variable nil nil [2042 2223])
+            ("defvar-local" code nil nil [2225 2314])
+            ("defvar-local" code nil nil [2315 2404])
+            ("defvar-local" code nil nil [2405 2510])
+            ("defvar-local" code nil nil [2511 2620])
+            ("paradox--get-tag-commit-alist" function (:arguments ("repo")) nil [2638 3070])
+            ("paradox--get-installed-version" function (:arguments ("pkg")) nil [3072 3780])
+            ("paradox--commit-tabulated-list" function (:arguments ("repo")) nil [3782 4242])
+            ("paradox--commit-print-info" function (:arguments ("x")) nil [4244 6237])
+            ("paradox--version<=" function (:arguments ("date" "version")) nil [6239 6668])
+            ("paradox--commit-list-update-entries" function nil nil [6670 6854])
+            ("paradox-commit-list-visit-commit" function
+               (:user-visible-flag t
+                :arguments ("_"))
+                nil [6871 7110])
+            ("paradox-previous-commit" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [7112 7323])
+            ("paradox-next-commit" function
+               (:user-visible-flag t
+                :arguments ("n"))
+                nil [7325 7625])
+            ("define-derived-mode" code nil nil [7649 8268])
+            ("define-key" code nil nil [8270 8350])
+            ("define-key" code nil nil [8351 8422])
+            ("define-key" code nil nil [8423 8490])
+            ("paradox-commit-list" package nil nil [8493 8523]))          
+      :file "paradox-commit-list.el"
+      :pointmax 8562
+      :fsize 8561
+      :lastmodtime '(22659 33046 0 0)
+      :unmatched-syntax nil))
+  :file "!Users!bing!.emacs.d!elpa!paradox-20161117.502!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

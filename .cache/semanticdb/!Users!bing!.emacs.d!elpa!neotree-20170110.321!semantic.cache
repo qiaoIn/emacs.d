@@ -1,0 +1,390 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode emacs-lisp-mode
+      :tags 
+        '( ("neo-buffer-name" variable
+               (:constant-flag t
+                :default-value " *NeoTree*")
+                nil [1175 1277])
+            ("neo-dir" variable
+               (:constant-flag t
+                :default-value (expand-file-name (if load-file-name (file-name-directory load-file-name) default-directory)))
+                nil [1279 1439])
+            ("neo-header-height" variable
+               (:constant-flag t
+                :default-value 5)
+                nil [1441 1471])
+            ("unless" code nil nil [1884 2314])
+            ("unless" code nil nil [1638 1829])
+            ("unless" code nil nil [1519 1583])
+            ("vc-responsible-backend" function (:prototype-flag t) nil [2357 2399])
+            ("neo-util--to-bool" function (:arguments ("obj")) nil [2418 2518])
+            ("neo-global--with-buffer" function (:arguments ("body")) nil [2520 2807])
+            ("neo-global--with-window" function (:arguments ("body")) nil [2809 3018])
+            ("neo-global--when-window" function (:arguments ("body")) nil [3020 3234])
+            ("neo-global--switch-to-buffer" function nil nil [3236 3438])
+            ("neo-buffer--with-editing-buffer" function (:arguments ("body")) nil [3440 3717])
+            ("neo-buffer--with-resizable-window" function (:arguments ("body")) nil [3719 4035])
+            ("neotree-make-executor" function (:arguments ("fn-form")) nil [4037 4484])
+            ("neotree" customgroup (:user-visible-flag t) nil [4511 4591])
+            ("neotree-vc-options" customgroup (:user-visible-flag t) nil [4593 4741])
+            ("neotree-confirmations" customgroup (:user-visible-flag t) nil [4743 4863])
+            ("neo-window-position" variable
+               (:user-visible-flag t
+                :default-value (quote left))
+                nil [4865 5019])
+            ("neo-display-action" variable
+               (:user-visible-flag t
+                :default-value (quote (neo-default-display-fn)))
+                nil [5021 5327])
+            ("neo-create-file-auto-open" variable (:user-visible-flag t) nil [5329 5460])
+            ("neo-banner-message" variable (:user-visible-flag t) nil [5462 5573])
+            ("neo-show-updir-line" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [5575 5686])
+            ("neo-theme" variable
+               (:user-visible-flag t
+                :default-value (quote classic))
+                nil [5688 6169])
+            ("neo-mode-line-type" variable
+               (:user-visible-flag t
+                :default-value (quote neotree))
+                nil [6171 6665])
+            ("neo-mode-line-custom-format" variable (:user-visible-flag t) nil [6667 6838])
+            ("neo-smart-open" variable (:user-visible-flag t) nil [6840 7019])
+            ("neo-show-hidden-files" variable (:user-visible-flag t) nil [7021 7149])
+            ("neo-window-width" variable
+               (:user-visible-flag t
+                :default-value 25)
+                nil [7151 7265])
+            ("neo-window-fixed-size" variable
+               (:user-visible-flag t
+                :default-value t)
+                nil [7267 7418])
+            ("neo-keymap-style" variable
+               (:user-visible-flag t
+                :default-value (quote default))
+                nil [7420 7593])
+            ("neo-cwd-line-style" variable
+               (:user-visible-flag t
+                :default-value (quote text))
+                nil [7595 7743])
+            ("neo-help-echo-style" variable (:default-value (quote default)) nil [7745 8104])
+            ("neo-click-changes-root" variable (:user-visible-flag t) nil [8106 8267])
+            ("neo-auto-indent-point" variable (:user-visible-flag t) nil [8269 8418])
+            ("neo-hidden-regexp-list" variable
+               (:user-visible-flag t
+                :default-value (quote ("^\\." "\\.pyc$" "~$" "^#.*#$" "\\.elc$")))
+                nil [8420 8597])
+            ("neo-enter-hook" variable nil nil [8599 8705])
+            ("neo-after-create-hook" variable nil nil [8707 8828])
+            ("neo-vc-integration" variable nil nil [8830 9031])
+            ("neo-vc-state-char-alist" variable (:default-value (quote ((up-to-date . 32) (edited . 69) (added . 43) (removed . 45) (missing . 33) (needs-merge . 77) (conflict . 33) (unlocked-changes . 33) (needs-update . 85) (ignored . 32) (user . 85) (unregistered . 32) (nil . 32)))) nil [9033 9664])
+            ("neo-confirm-change-root" variable (:default-value (quote yes-or-no-p)) nil [9666 10005])
+            ("neo-confirm-create-file" variable (:default-value (quote yes-or-no-p)) nil [10007 10320])
+            ("neo-confirm-create-directory" variable (:default-value (quote yes-or-no-p)) nil [10322 10645])
+            ("neo-confirm-delete-file" variable (:default-value (quote yes-or-no-p)) nil [10647 10962])
+            ("neo-confirm-delete-directory-recursively" variable (:default-value (quote yes-or-no-p)) nil [10964 11307])
+            ("neo-confirm-kill-buffers-for-files-in-directory" variable (:default-value (quote yes-or-no-p)) nil [11309 11675])
+            ("neo-toggle-window-keep-p" variable nil nil [11677 11832])
+            ("neo-force-change-root" variable nil nil [11834 11957])
+            ("neo-banner-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "lightblue" :weight bold)) (t (:foreground "DarkMagenta"))))
+                :type "face")
+                nil [11975 12224])
+            ("neo-banner-face" variable (:default-value (quote neo-banner-face)) nil [12225 12266])
+            ("neo-header-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "White")) (t (:foreground "DarkMagenta"))))
+                :type "face")
+                nil [12268 12500])
+            ("neo-header-face" variable (:default-value (quote neo-header-face)) nil [12501 12542])
+            ("neo-root-dir-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "lightblue" :weight bold)) (t (:foreground "DarkMagenta"))))
+                :type "face")
+                nil [12544 12797])
+            ("neo-root-dir-face" variable (:default-value (quote neo-root-dir-face)) nil [12798 12843])
+            ("neo-dir-link-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "DeepSkyBlue")) (t (:foreground "MediumBlue"))))
+                :type "face")
+                nil [12845 13089])
+            ("neo-dir-link-face" variable (:default-value (quote neo-dir-link-face)) nil [13090 13135])
+            ("neo-file-link-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "White")) (t (:foreground "Black"))))
+                :type "face")
+                nil [13137 13369])
+            ("neo-file-link-face" variable (:default-value (quote neo-file-link-face)) nil [13370 13417])
+            ("neo-button-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((t (:underline nil))))
+                :type "face")
+                nil [13419 13577])
+            ("neo-button-face" variable (:default-value (quote neo-button-face)) nil [13578 13619])
+            ("neo-expand-btn-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "SkyBlue")) (t (:foreground "DarkCyan"))))
+                :type "face")
+                nil [13621 13859])
+            ("neo-expand-btn-face" variable (:default-value (quote neo-expand-btn-face)) nil [13860 13909])
+            ("neo-vc-default-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "White")) (t (:foreground "Black"))))
+                :type "face")
+                nil [13911 14197])
+            ("neo-vc-default-face" variable (:default-value (quote neo-vc-default-face)) nil [14198 14248])
+            ("neo-vc-user-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((t (:foreground "Red" :slant italic))))
+                :type "face")
+                nil [14250 14455])
+            ("neo-vc-user-face" variable (:default-value (quote neo-vc-user-face)) nil [14456 14500])
+            ("neo-vc-up-to-date-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "LightGray")) (t (:foreground "DarkGray"))))
+                :type "face")
+                nil [14502 14758])
+            ("neo-vc-up-to-date-face" variable (:default-value (quote neo-vc-up-to-date-face)) nil [14759 14815])
+            ("neo-vc-edited-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "Magenta")) (t (:foreground "DarkMagenta"))))
+                :type "face")
+                nil [14817 15066])
+            ("neo-vc-edited-face" variable (:default-value (quote neo-vc-edited-face)) nil [15067 15115])
+            ("neo-vc-needs-update-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((t (:underline t))))
+                :type "face")
+                nil [15117 15315])
+            ("neo-vc-needs-update-face" variable (:default-value (quote neo-vc-needs-update-face)) nil [15316 15376])
+            ("neo-vc-needs-merge-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "Red1")) (t (:foreground "Red3"))))
+                :type "face")
+                nil [15378 15627])
+            ("neo-vc-needs-merge-face" variable (:default-value (quote neo-vc-needs-merge-face)) nil [15628 15686])
+            ("neo-vc-unlocked-changes-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((t (:foreground "Red" :background "Blue"))))
+                :type "face")
+                nil [15688 15918])
+            ("neo-vc-unlocked-changes-face" variable (:default-value (quote neo-vc-unlocked-changes-face)) nil [15919 15987])
+            ("neo-vc-added-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "LightGreen")) (t (:foreground "DarkGreen"))))
+                :type "face")
+                nil [15989 16237])
+            ("neo-vc-added-face" variable (:default-value (quote neo-vc-added-face)) nil [16238 16284])
+            ("neo-vc-removed-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((t (:strike-through t))))
+                :type "face")
+                nil [16286 16480])
+            ("neo-vc-removed-face" variable (:default-value (quote neo-vc-removed-face)) nil [16481 16531])
+            ("neo-vc-conflict-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "Red1")) (t (:foreground "Red3"))))
+                :type "face")
+                nil [16533 16776])
+            ("neo-vc-conflict-face" variable (:default-value (quote neo-vc-conflict-face)) nil [16777 16829])
+            ("neo-vc-missing-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "Red1")) (t (:foreground "Red3"))))
+                :type "face")
+                nil [16831 17072])
+            ("neo-vc-missing-face" variable (:default-value (quote neo-vc-missing-face)) nil [17073 17123])
+            ("neo-vc-ignored-face" variable
+               (:user-visible-flag t
+                :default-value (quote ((((background dark)) (:foreground "DarkGrey")) (t (:foreground "LightGray"))))
+                :type "face")
+                nil [17125 17375])
+            ("neo-vc-ignored-face" variable (:default-value (quote neo-vc-ignored-face)) nil [17376 17426])
+            ("neo-vc-unregistered-face" variable
+               (:user-visible-flag t
+                :type "face")
+                nil [17428 17590])
+            ("neo-vc-unregistered-face" variable (:default-value (quote neo-vc-unregistered-face)) nil [17591 17651])
+            ("neo-global--buffer" variable nil nil [17673 17704])
+            ("neo-global--window" variable nil nil [17706 17737])
+            ("neo-mode-line-format" variable (:default-value (list (quote (:eval (let* ((fname (neo-buffer--get-filename-current-line)) (current (if fname fname neo-buffer--start-node)) (parent (if fname (file-name-directory current) current)) (nodes (neo-buffer--get-nodes parent)) (dirs (car nodes)) (files (cdr nodes)) (ndirs (length dirs)) (nfiles (length files)) (index (when fname (1+ (if (file-directory-p current) (neo-buffer--get-node-index current dirs) (+ ndirs (neo-buffer--get-node-index current files))))))) (neo-mode-line--compute-format parent index ndirs nfiles)))))) nil [17739 18609])
+            ("defvar-local" code nil nil [18611 18699])
+            ("defvar-local" code nil nil [18701 18783])
+            ("defvar-local" code nil nil [18785 18941])
+            ("defvar-local" code nil nil [18943 19050])
+            ("defvar-local" code nil nil [19052 19132])
+            ("defvar-local" code nil nil [19134 19217])
+            ("defvar-local" code nil nil [19219 19300])
+            ("defvar-local" code nil nil [19302 19392])
+            ("neotree-file-button-keymap" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map [mouse-2] (neotree-make-executor :file-fn (quote neo-open-file))) map)) nil [19427 19632])
+            ("neotree-dir-button-keymap" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map [mouse-2] (neotree-make-executor :dir-fn (quote neo-open-dir))) map)) nil [19634 19829])
+            ("neotree-mode-map" variable (:default-value (let ((map (make-sparse-keymap))) (define-key map (kbd "TAB") (neotree-make-executor :dir-fn (quote neo-open-dir))) (define-key map (kbd "RET") (neotree-make-executor :file-fn (quote neo-open-file) :dir-fn (quote neo-open-dir))) (define-key map (kbd "|") (neotree-make-executor :file-fn (quote neo-open-file-vertical-split))) (define-key map (kbd "-") (neotree-make-executor :file-fn (quote neo-open-file-horizontal-split))) (define-key map (kbd "a") (neotree-make-executor :file-fn (quote neo-open-file-ace-window))) (define-key map (kbd "d") (neotree-make-executor :dir-fn (quote neo-open-dired))) (define-key map (kbd "SPC") (quote neotree-quick-look)) (define-key map (kbd "g") (quote neotree-refresh)) (define-key map (kbd "q") (quote neotree-hide)) (define-key map (kbd "p") (quote neotree-previous-line)) (define-key map (kbd "C-p") (quote neotree-previous-line)) (define-key map (kbd "n") (quote neotree-next-line)) (define-key map (kbd "C-n") (quote neotree-next-line)) (define-key map (kbd "A") (quote neotree-stretch-toggle)) (define-key map (kbd "U") (quote neotree-select-up-node)) (define-key map (kbd "D") (quote neotree-select-down-node)) (define-key map (kbd "H") (quote neotree-hidden-file-toggle)) (define-key map (kbd "S") (quote neotree-select-previous-sibling-node)) (define-key map (kbd "s") (quote neotree-select-next-sibling-node)) (define-key map (kbd "C-x C-f") (quote find-file-other-window)) (define-key map (kbd "C-x 1") (quote neotree-empty-fn)) (define-key map (kbd "C-x 2") (quote neotree-empty-fn)) (define-key map (kbd "C-x 3") (quote neotree-empty-fn)) (define-key map (kbd "C-c C-f") (quote find-file-other-window)) (define-key map (kbd "C-c C-c") (quote neotree-change-root)) (define-key map (kbd "C-c c") (quote neotree-dir)) (cond ((eq neo-keymap-style (quote default)) (define-key map (kbd "C-c C-n") (quote neotree-create-node)) (define-key map (kbd "C-c C-d") (quote neotree-delete-node)) (define-key map (kbd "C-c C-r") (quote neotree-rename-node)) (define-key map (kbd "C-c C-p") (quote neotree-copy-node))) ((eq neo-keymap-style (quote concise)) (define-key map (kbd "C") (quote neotree-change-root)) (define-key map (kbd "c") (quote neotree-create-node)) (define-key map (kbd "+") (quote neotree-create-node)) (define-key map (kbd "d") (quote neotree-delete-node)) (define-key map (kbd "r") (quote neotree-rename-node)) (define-key map (kbd "p") (quote neotree-create-node)) (define-key map (kbd "e") (quote neotree-enter)))) map)) nil [19831 22648])
+            ("define-derived-mode" code nil nil [22650 23691])
+            ("neo-global--window-exists-p" function nil nil [23718 23930])
+            ("neo-global--select-window" function (:user-visible-flag t) nil [23932 24088])
+            ("neo-global--get-window" function (:arguments ("auto-create-p")) nil [24090 24561])
+            ("neo-default-display-fn" function (:arguments ("buffer" "_alist")) nil [24563 24941])
+            ("neo-global--create-window" function nil nil [24943 25281])
+            ("neo-global--get-buffer" function (:arguments ("init-p")) nil [25283 25752])
+            ("neo-global--file-in-root-p" function (:arguments ("path")) nil [25754 25978])
+            ("neo-global--alone-p" function nil nil [25980 26211])
+            ("neo-global--open" function nil nil [26213 26525])
+            ("neo-global--open-dir" function (:arguments ("path")) nil [26527 26708])
+            ("neo-global--open-and-find" function (:arguments ("path")) nil [26710 27246])
+            ("neo-global--select-mru-window" function (:arguments ("arg")) nil [27248 28558])
+            ("neo-global--detach" function nil nil [28560 28750])
+            ("neo-global--attach" function nil nil [28752 29083])
+            ("neo-global--set-window-width" function (:arguments ("width")) nil [29085 29294])
+            ("neo-global--reset-width" function nil nil [29296 29432])
+            ("mouse-drag-vertical-line" function (:arguments ("around" "neotree-drag-vertical-line" "start-event" "activate")) nil [29452 29648])
+            ("balance-windows" function (:arguments ("around" "neotree-balance-windows" "activate")) nil [29650 30062])
+            ("eval-after-load" code nil nil [30064 30778])
+            ("neo-hook--node-first-letter" function nil nil [30796 31006])
+            ("neo-util--filter" function (:arguments ("condp" "lst")) nil [31031 31352])
+            ("neo-util--find" function (:arguments ("where" "which")) nil [31354 31561])
+            ("neo-util--make-printable-string" function (:arguments ("string")) nil [31563 31711])
+            ("neo-util--walk-dir" function (:arguments ("path")) nil [31713 32044])
+            ("neo-util--hidden-path-filter" function (:arguments ("node")) nil [32046 32443])
+            ("neo-str--trim-left" function (:arguments ("s")) nil [32445 32597])
+            ("neo-str--trim-right" function (:arguments ("s")) nil [32599 32746])
+            ("neo-str--trim" function (:arguments ("s")) nil [32748 32873])
+            ("neo-path--expand-name" function (:arguments ("path" "current-dir")) nil [32875 33136])
+            ("neo-path--shorten" function (:arguments ("path" "len")) nil [33138 33584])
+            ("neo-path--insert-chroot-button" function (:arguments ("label" "path" "face")) nil [33586 33771])
+            ("neo-path--insert-header-buttonized" function (:arguments ("path")) nil [33773 34827])
+            ("neo-path--updir" function (:arguments ("path")) nil [34829 35155])
+            ("neo-path--join" function (:arguments ("root" "dirs")) nil [35157 35696])
+            ("neo-path--file-short-name" function (:arguments ("file")) nil [35698 35982])
+            ("neo-path--file-truename" function (:arguments ("path")) nil [35984 36305])
+            ("neo-path--has-subfile-p" function (:arguments ("dir")) nil [36307 36500])
+            ("neo-path--match-path-directory" function (:arguments ("path")) nil [36502 37018])
+            ("neo-path--get-working-dir" function nil nil [37020 37168])
+            ("neo-path--strip" function (:arguments ("path")) nil [37170 37451])
+            ("neo-path--path-equal-p" function (:arguments ("path1" "path2")) nil [37453 37642])
+            ("neo-path--file-equal-p" function (:arguments ("file1" "file2")) nil [37644 37998])
+            ("neo-path--file-in-directory-p" function (:arguments ("file" "dir")) nil [38000 38355])
+            ("neo-util--kill-buffers-for-path" function (:arguments ("path")) nil [38357 38879])
+            ("neo-util--set-window-width" function (:arguments ("window" "n")) nil [38881 39214])
+            ("neo-point-auto-indent" function nil nil [39216 39462])
+            ("off-p" function (:arguments ("msg")) nil [39464 39549])
+            ("neo-buffer--newline-and-begin" function nil nil [39576 39671])
+            ("neo-buffer--get-icon" function (:arguments ("name")) nil [39673 39970])
+            ("neo-buffer--insert-fold-symbol" function (:arguments ("name" "node-name")) nil [39972 41803])
+            ("neo-buffer--save-cursor-pos" function (:arguments ("node-path" "line-pos")) nil [41805 42497])
+            ("neo-buffer--goto-cursor-pos" function nil nil [42499 43405])
+            ("neo-buffer--node-list-clear" function nil nil [43407 43501])
+            ("neo-buffer--node-list-set" function (:arguments ("line-num" "path")) nil [43503 44066])
+            ("neo-buffer--insert-with-face" function (:arguments ("content" "face")) nil [44068 44282])
+            ("neo-buffer--valid-start-node-p" function nil nil [44284 44429])
+            ("neo-buffer--create" function nil nil [44431 44721])
+            ("neo-buffer--insert-banner" function nil nil [44723 44960])
+            ("neo-buffer--insert-root-entry" function (:arguments ("node")) nil [44962 45722])
+            ("neo-buffer--help-echo-message" function (:arguments ("node-name")) nil [45724 45949])
+            ("neo-buffer--insert-dir-entry" function (:arguments ("node" "depth" "expanded")) nil [45951 46635])
+            ("neo-buffer--insert-file-entry" function (:arguments ("node" "depth")) nil [46637 47478])
+            ("neo-vc-for-node" function (:arguments ("node")) nil [47480 48427])
+            ("neo-buffer--get-nodes" function (:arguments ("path")) nil [48429 48805])
+            ("neo-buffer--get-node-index" function (:arguments ("node" "nodes")) nil [48807 49224])
+            ("neo-buffer--expanded-node-p" function (:arguments ("node")) nil [49226 49419])
+            ("neo-buffer--set-expand" function (:arguments ("node" "do-expand")) nil [49421 49845])
+            ("neo-buffer--toggle-expand" function (:arguments ("node")) nil [49847 49960])
+            ("neo-buffer--insert-tree" function (:arguments ("path" "depth")) nil [49962 50525])
+            ("neo-buffer--refresh" function (:arguments ("save-pos-p" "non-neotree-buffer")) nil [50527 51274])
+            ("neo-buffer--post-move" function nil nil [51276 51568])
+            ("neo-buffer--get-button-current-line" function nil nil [51570 52596])
+            ("neo-buffer--get-filename-current-line" function (:arguments ("default")) nil [52598 52911])
+            ("neo-buffer--lock-width" function nil nil [52913 53057])
+            ("neo-buffer--unlock-width" function nil nil [53059 53171])
+            ("neo-buffer--rename-node" function (:user-visible-flag t) nil [53173 53827])
+            ("neo-buffer--copy-node" function (:user-visible-flag t) nil [53829 54459])
+            ("neo-buffer--select-file-node" function (:arguments ("file" "recursive-p")) nil [54461 55442])
+            ("neo-buffer--change-root" function (:arguments ("root-dir")) nil [55444 55918])
+            ("neo-buffer--get-nodes-for-select-down-node" function (:arguments ("path")) nil [55920 56308])
+            ("neo-buffer--get-nodes-for-sibling" function (:arguments ("path")) nil [56310 56700])
+            ("neo-buffer--sibling" function (:arguments ("path" "previous")) nil [56702 57080])
+            ("neo-buffer--execute" function
+               (:user-visible-flag t
+                :arguments ("arg" "file-fn" "dir-fn"))
+                nil [57082 57829])
+            ("neo-buffer--set-show-hidden-file-p" function (:arguments ("show-p")) nil [57831 58008])
+            ("neo-buffer--forward-line" function (:arguments ("n")) nil [58010 58142])
+            ("neo-mode-line--compute-format" function (:arguments ("parent" "index" "ndirs" "nfiles")) nil [58172 59414])
+            ("neo-window--init" function (:arguments ("window" "buffer")) nil [59441 59654])
+            ("neo-window--zoom" function (:arguments ("method")) nil [59656 60131])
+            ("neo-window--minimize-p" function nil nil [60133 60261])
+            ("neotree-next-line" function
+               (:user-visible-flag t
+                :arguments ("count"))
+                nil [60296 60488])
+            ("neotree-previous-line" function
+               (:user-visible-flag t
+                :arguments ("count"))
+                nil [60490 60692])
+            ("neotree-find" function
+               (:user-visible-flag t
+                :arguments ("path" "default-path"))
+                nil [60709 61555])
+            ("neotree-click-changes-root-toggle" function (:user-visible-flag t) nil [61557 61848])
+            ("neo-open-dir" function (:arguments ("full-path" "arg")) nil [61850 62268])
+            ("neo-open-dired" function (:arguments ("full-path" "arg")) nil [62270 62489])
+            ("neo-open-file" function (:arguments ("full-path" "arg")) nil [62491 62956])
+            ("neo-open-file-vertical-split" function (:arguments ("full-path" "arg")) nil [62958 63149])
+            ("neo-open-file-horizontal-split" function (:arguments ("full-path" "arg")) nil [63151 63344])
+            ("neo-open-file-ace-window" function (:arguments ("full-path" "arg")) nil [63346 63537])
+            ("neotree-change-root" function (:user-visible-flag t) nil [63539 63964])
+            ("neotree-select-up-node" function (:user-visible-flag t) nil [63966 64603])
+            ("neotree-select-down-node" function (:user-visible-flag t) nil [64605 66387])
+            ("neotree-select-next-sibling-node" function (:user-visible-flag t) nil [66389 66687])
+            ("neotree-select-previous-sibling-node" function (:user-visible-flag t) nil [66689 66997])
+            ("neotree-create-node" function
+               (:user-visible-flag t
+                :arguments ("filename"))
+                nil [66999 68615])
+            ("neotree-delete-node" function (:user-visible-flag t) nil [68617 70181])
+            ("neotree-rename-node" function (:user-visible-flag t) nil [70183 70282])
+            ("neotree-copy-node" function (:user-visible-flag t) nil [70284 70377])
+            ("neotree-hidden-file-toggle" function (:user-visible-flag t) nil [70379 70538])
+            ("neotree-empty-fn" function (:user-visible-flag t) nil [70540 70636])
+            ("neotree-refresh" function (:user-visible-flag t) nil [70638 70981])
+            ("neotree-stretch-toggle" function (:user-visible-flag t) nil [70983 71220])
+            ("neotree-projectile-action" function (:user-visible-flag t) nil [71237 71641])
+            ("neotree-toggle" function (:user-visible-flag t) nil [71658 71812])
+            ("neotree-show" function (:user-visible-flag t) nil [71829 72119])
+            ("neotree-hide" function (:user-visible-flag t) nil [72136 72283])
+            ("neotree-dir" function
+               (:user-visible-flag t
+                :arguments ("path"))
+                nil [72300 72471])
+            ("defalias" code nil nil [72488 72548])
+            ("neo-bc--make-obsolete-message" function (:arguments ("from" "to")) nil [72580 72694])
+            ("neo-buffer--enter-file" function (:arguments ("path")) nil [72696 72806])
+            ("neo-buffer--enter-dir" function (:arguments ("path")) nil [72808 72915])
+            ("neotree-enter" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [72917 73100])
+            ("neotree-quick-look" function
+               (:user-visible-flag t
+                :arguments ("arg"))
+                nil [73102 73293])
+            ("neotree-enter-vertical-split" function (:user-visible-flag t) nil [73295 73500])
+            ("neotree-enter-horizontal-split" function (:user-visible-flag t) nil [73502 73713])
+            ("neotree-enter-ace-window" function (:user-visible-flag t) nil [73715 73915])
+            ("neotree-copy-filepath-to-yank-ring" function (:user-visible-flag t) nil [73917 74124])
+            ("neotree-split-window-sensibly" function (:arguments ("window")) nil [74126 74955])
+            ("neotree" package nil nil [74957 74975]))          
+      :file "neotree.el"
+      :pointmax 75001
+      :fsize 75008
+      :lastmodtime '(22659 32521 0 0)
+      :unmatched-syntax '((close-paren 2314 . 2315) (symbol 1474 . 1490) (open-paren 1473 . 1474))))
+  :file "!Users!bing!.emacs.d!elpa!neotree-20170110.321!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

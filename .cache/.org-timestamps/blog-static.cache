@@ -1,0 +1,6 @@
+(setq org-publish-cache (make-hash-table :test 'equal :weakness nil :size 100))
+(puthash ":project:" #("blog-static" 0 1 (idx 2)) org-publish-cache)
+(puthash ":cache-file:" #("/Users/bing/.emacs.d/.cache/.org-timestamps/blog-static.cache" 44 45 (idx 2)) org-publish-cache)
+(puthash "X3827f9faa151b5f10a1c7c367311bcdc63fa4962" 1490966501 org-publish-cache)
+(puthash "Xe190a33f1b38b55808b11cc50e8c4171e7d66cb4" 1491110838 org-publish-cache)
+(puthash "Xc0116445b63b1f1a01debd0999b11bc70ba45073" 1490966471 org-publish-cache)
