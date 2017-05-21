@@ -2,14 +2,16 @@
 ;; ----- smex-history -----
 (
  org-publish-project
- check-parens
+ org-edit-src-code
+ new-blog
  toggle-truncate-lines
- org-element-cache-reset
+ flycheck-mode
  eval-buffer
+ check-parens
+ org-element-cache-reset
  goto-line
  emacs-lisp-mode
  osx-dictionary-search-pointer
- blog-new
  customize-group
  package-list-packages
  hs-minor-mode
@@ -31,15 +33,13 @@
  undo-tree-visualize
  eval-defun
  cd
- 5x5
- arp
 )
 
 ;; ----- smex-data -----
 (
- (eval-buffer . 20)
+ (eval-buffer . 21)
  (eval-defun . 1)
- (toggle-truncate-lines . 71)
+ (toggle-truncate-lines . 80)
  (undo-tree-visualize . 2)
  (occur . 1)
  (ispell . 2)
@@ -74,8 +74,10 @@
  (my-org-screenshot . 2)
  (osx-dictionary-search-pointer . 1)
  (goto-line . 2)
- (org-edit-src-code . 3)
- (org-publish-project . 96)
+ (org-edit-src-code . 27)
+ (org-publish-project . 109)
  (org-element-cache-reset . 2)
  (check-parens . 3)
+ (new-blog . 3)
+ (flycheck-mode . 3)
 )
