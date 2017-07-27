@@ -1,6 +1,8 @@
 
 ;; ----- smex-history -----
 (
+ dired
+ package-list-packages
  org-publish-project
  org-edit-src-code
  new-blog
@@ -13,7 +15,6 @@
  emacs-lisp-mode
  osx-dictionary-search-pointer
  customize-group
- package-list-packages
  hs-minor-mode
  man
  ggtags-mode
@@ -32,7 +33,6 @@
  occur
  undo-tree-visualize
  eval-defun
- cd
 )
 
 ;; ----- smex-data -----
@@ -45,7 +45,7 @@
  (ispell . 2)
  (emacs-lisp-mode . 3)
  (recentf-mode . 1)
- (package-list-packages . 2)
+ (package-list-packages . 4)
  (help . 1)
  (magit-status . 3)
  (magit-commit . 2)
@@ -80,4 +80,5 @@
  (check-parens . 3)
  (new-blog . 3)
  (flycheck-mode . 3)
+ (dired . 1)
 )
