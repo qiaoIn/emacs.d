@@ -1,0 +1,293 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+#include <mpi.h>
+
+/*
+  说明：
+快速排序算法并行化的一个简单思想是，对每次划分过后所得到的两个序列分别使用两个处理器完成递归排序。
+例如对一个长为n的序列，首先划分得到两个长为n/2的序列，将其交给两个处理器分别处理；
+而后进一步划分得到四个长为n/4的序列，再分别交给四个处理器处理；如此递归下去最终得到排序好的序列。
+当然这里举的是理想的划分情况，如果划分步骤不能达到平均分配的目的，那么排序的效率会相对较差。
+*/
+
+#define NUM_RANGE 10000         /* 定义序列中数的范围 */
+
+void parallel_quicksort(int *data,int start,int end,int m,int id,int my_rank);
+void quicksort(int *data, int start, int end);
+int partition(int *data, int start, int end);
+int get_length();
+int exp2int(int num);
+int log2int(int num);
+void err_msg(char *msg);
+
+/*
+ * 函数名: main
+ * 功能：实现快速排序的主程序
+ * 输入：argc为命令行参数个数；
+ *      argv为每个命令行参数组成的字符串数组。
+ * 输出：返回0代表程序正常结束
+ */
+int main(int argc, char *argv[])
+{
+    int length;
+    int *data = NULL;
+
+    /* my_rank表示进程标志符；common_sz表示组内进程数 */
+    int	my_rank, common_sz;
+    int i;
+    int m;
+
+    /* 启动MPI计算 */
+    MPI_Init(&argc, &argv);
+
+    /* MPI_COMM_WORLD是通信子 */
+    /* 确定自己的进程标志符 my_rank */
+    MPI_Comm_rank(MPI_COMM_WORLD, &my_rank);
+    /* 进程数是 common_sz */
+    MPI_Comm_size(MPI_COMM_WORLD, &common_sz);
+
+    /* master (my_rank=0)获取必要信息，并分配各处理机进行工作 */
+    if (my_rank==0)
+    {
+        /* 获取待排序数组的长度 */
+        length = get_length();
+        data = (int *)malloc(length * sizeof(int));
+
+        /* 内存分配错误 */
+        if (data == NULL)
+            err_msg("Malloc memory error!");
+
+        /* 动态生成待排序序列 */
+        srand(time(NULL));
+        for (i = 0; i < length; i++)
+        {
+            data[i] = (int)(rand() % NUM_RANGE);
+        }
+    }
+
+    m = log2int(common_sz);
+
+    /* 从 master 将数据序列广播到其他处理器 */
+    /* "1" 表示传送的输入缓冲中的元素的个数 */
+    /* "MPI_INT" 表示输入元素的类型 */
+    /* "0" 表示 master processor 的 ID */
+    MPI_Bcast(&length, 1, MPI_INT, 0, MPI_COMM_WORLD);
+
+    /* ID号为0的处理器调度执行排序 */
+    parallel_quicksort(data, 0, length - 1, m, 0, my_rank);
+
+    /* ID号为0的处理器打印排序完的有序序列 */
+    if (my_rank == 0)
+    {
+        printf("result:\n");
+        for (i = 0; i < length; i++)
+        {
+            printf("%d ", data[i]);
+        }
+        printf("\n");
+    }
+
+    MPI_Finalize();		//结束计算
+    return 0;
+}
+
+/*
+ * 函数名: para_quicksort
+ * 功能：并行快速排序，对起止位置为 start 和 end 的序列，使用 2 的 m 次幂个处理器进行排序
+ * 输入：无序数组 data[1,n]，使用的处理器个数 2^m
+ * 输出：有序数组data[1,n]
+ */
+
+void parallel_quicksort(int *data, int start, int end, int m, int id, int my_rank)
+{
+    int j;
+    int r = 0;
+    int MyLength;
+    int *tmp;
+    MPI_Status status;
+
+    MyLength = -1;
+
+    /* 如果可供选择的处理器只有一个，那么由处理器 id 调用串行排序 */
+    if (m == 0)
+    {
+        if (my_rank == id)
+            quicksort(data, start, end);
+        return;
+    }
+
+    /* 由第 id 号处理器划分数据，并将后一部分数据发送到处理器 id+exp2int(m-1) */
+    if (my_rank == id)
+    {
+        /* 将当前的无序区 data[1，n] 划分成左右两个无序的子区 data[1，i-1] 和 data[i，n](1≤i≤n) */
+        r = partition(data, start, end);
+        MyLength = end - r;
+
+        /* MyLength表示发送缓冲区地址 */
+        /* 发送元素数目为1 */
+        /* my_rank是消息标签 */
+        MPI_Send(&MyLength, 1, MPI_INT, id+exp2int(m-1), my_rank, MPI_COMM_WORLD);
+        /* 若缓冲区不空，则第 id+2m-1 号处理器取数据的首址是 data[r+1] */
+        if (MyLength != 0)
+            MPI_Send(data+r+1, MyLength, MPI_INT, id+exp2int(m-1), my_rank, MPI_COMM_WORLD);
+    }
+
+    /* 处理器id+exp2int(m-1)接受处理器id发送的消息 */
+    if (my_rank == id+exp2int(m-1))
+    {
+        MPI_Recv(&MyLength, 1, MPI_INT, id, id, MPI_COMM_WORLD, &status);
+        if (MyLength != 0)
+        {
+            tmp = (int *)malloc(MyLength * sizeof(int));
+            if (tmp == NULL)
+                err_msg("Malloc memory error!");
+            MPI_Recv(tmp, MyLength, MPI_INT, id, id, MPI_COMM_WORLD, &status);
+        }
+    }
+
+    /* 递归调用并行排序 */
+
+    /* 用 2^m-1 个处理器对 start--(r-1) 的数据进行递归排序 */
+    j = r - 1 - start;
+    MPI_Bcast(&j, 1, MPI_INT, id, MPI_COMM_WORLD);
+    if (j > 0)
+        parallel_quicksort(data, start, r-1, m-1, id, my_rank);
+
+    /* 用 2^m-1 个处理器对 (r+1)--end 的数据进行递归排序 */
+    j = MyLength;
+    MPI_Bcast(&j, 1, MPI_INT, id, MPI_COMM_WORLD);
+    if (j > 0)
+        parallel_quicksort(tmp, 0, MyLength-1, m-1, id+exp2int(m-1), my_rank);
+
+    /* 将排序好的数据由处理器 id+exp2int(m-1) 发回 id 号处理器 */
+    if((my_rank == id+exp2int(m-1)) && (MyLength != 0))
+        MPI_Send(tmp, MyLength, MPI_INT, id, id+exp2int(m-1), MPI_COMM_WORLD);
+
+    if((my_rank == id) && (MyLength != 0))
+        MPI_Recv(data+r+1, MyLength, MPI_INT, id+exp2int(m-1), id+exp2int(m-1), MPI_COMM_WORLD, &status);
+
+}
+
+/*
+ * 函数名: quicksort
+ * 功能：对起止位置为start和end的数组序列，进行串行快速排序。
+ * 输入：无序数组data[1,n]
+ * 返回：有序数组data[1,n]
+ */
+void quicksort(int *data, int start, int end)
+{
+    int r;
+
+    if(start < end)
+    {
+        r = partition(data, start, end);
+        quicksort(data, start, r-1);
+        quicksort(data, r+1, end);
+    }
+}
+
+/*
+ * 函数名: partition
+ * 功能：对起止位置为 start 和 end 的数组序列，将其分成两个非空子序列，
+ *		   其中前一个子序列中的任意元素小于后个子序列的元素。
+ * 输入：无序数组data[1,n]
+ * 返回: 两个非空子序列的分界下标
+ */
+int partition(int *data, int start, int end)
+{
+    int pivo;
+    int i, j;
+    int tmp;
+
+    pivo = data[end];
+    i = start-1;				/* i(活动指针) */
+
+    for (j = start; j < end; j++)
+        if (data[j] <= pivo)
+        {
+            i++;			/* i表示比pivo小的元素的个数 */
+            tmp = data[i];
+            data[i] = data[j];
+            data[j] = tmp;
+        }
+
+    tmp = data[i+1];
+    data[i+1] = data[end];
+    data[end] = tmp;			/* 以pivo为分界，data[i+1]=pivo */
+
+    return i+1;
+}
+
+/*
+ * 函数名: exp2int
+ * 功能：求2的num次幂
+ * 输入：int型数据num
+ * 返回: 2的num次幂
+ */
+int exp2int(int num)
+{
+    int i;
+
+    i = 1;
+
+    while (num > 0)
+    {
+        num--;
+        i = i * 2;
+    }
+
+    return i;
+}
+
+/*
+ * 函数名: log2int
+ * 功能：求以2为底的num的对数
+ * 输入：int型数据num
+ * 返回: 以2为底的num的对数
+ */
+int log2int(int num)
+{
+    int i, j;
+
+    i = 1;
+    j = 2;
+
+    while (j < num)
+    {
+        j = j * 2;
+        i++;
+    }
+
+    if (j > num)
+        i--;
+
+    return i;
+}
+
+/*
+ * 函数名: get_length
+ * 功能：读入待排序序列长度
+ */
+int get_length()
+{
+    int i;
+
+    while (1)
+    {
+        printf("Input the Data Size : ");
+        scanf("%d", &i);
+        /*读出正确的i，返回；否则，继续要求输入*/
+        if ((i > 0) && (i <= 65535))
+            break;
+        err_msg("Wrong Data Size, must between [1..65535]");
+    }
+    return i;
+}
+
+
+/*输出错误信息*/
+void err_msg(char *msg)
+{
+    printf("Error: %s \n",msg);
+}

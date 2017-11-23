@@ -1,9 +1,9 @@
 
 ;; ----- smex-history -----
 (
+ org-publish-project
  dired
  package-list-packages
- org-publish-project
  org-edit-src-code
  new-blog
  toggle-truncate-lines
@@ -75,7 +75,7 @@
  (osx-dictionary-search-pointer . 1)
  (goto-line . 2)
  (org-edit-src-code . 27)
- (org-publish-project . 109)
+ (org-publish-project . 112)
  (org-element-cache-reset . 2)
  (check-parens . 3)
  (new-blog . 3)
